@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T13:38:09.414Z",
+  "updated": "2026-11-25T01:22:47.920Z",
   "modes": [
     {
       "id": "pulse",
@@ -464,12 +464,361 @@
       "key": "claude#0",
       "name": "Claude",
       "mode": "practice",
-      "ok": false,
-      "error": "503 https://claude.com/resources/articles/rss.xml",
-      "kept": 12
+      "ok": true,
+      "count": 12,
+      "feed": "https://claude.com/resources/articles/rss.xml"
     }
   ],
   "items": [
+    {
+      "id": "24dc3bd800f9",
+      "sourceId": "core77",
+      "sourceName": "Core77",
+      "feedUrl": "http://feeds.feedburner.com/core77/blog",
+      "mode": "pulse",
+      "title": "The Cheval Mirror: When Mirrors were Actually Furniture",
+      "excerpt": "These days when we think of a dressing mirror, we picture something that you hang on the wall. But in the 1700s, that wasn't done. Dressing mirrors were freestanding furniture pieces.",
+      "url": "https://www.core77.com/posts/145999/The-Cheval-Mirror-When-Mirrors-were-Actually-Furniture",
+      "publishedAt": null,
+      "firstSeen": "2026-11-25T01:20:35.409Z",
+      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1858124_lead_400_145999_.jpg",
+      "extractionStatus": null,
+      "tags": [
+        "Product"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "839f2e83b208",
+      "sourceId": "core77",
+      "sourceName": "Core77",
+      "feedUrl": "http://feeds.feedburner.com/core77/blog",
+      "mode": "pulse",
+      "title": "The Load Choker: An Australian Invention That Makes Tie-Down Faster and Safer",
+      "excerpt": "When loads are not properly secured to trucks, disaster can ensue. Here we see a driver who, luckily, was able to pull over before his improperly-secured load caused an accident. Below we see the full extent of what can go wrong.",
+      "url": "https://www.core77.com/posts/145995/The-Load-Choker-An-Australian-Invention-That-Makes-Tie-Down-Faster-and-Safer",
+      "publishedAt": null,
+      "firstSeen": "2026-11-25T01:19:35.409Z",
+      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1858065_lead_400_145995_.jpg",
+      "extractionStatus": null,
+      "tags": [
+        "HMI / Mobility",
+        "Product"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "8bc179433150",
+      "sourceId": "core77",
+      "sourceName": "Core77",
+      "feedUrl": "http://feeds.feedburner.com/core77/blog",
+      "mode": "pulse",
+      "title": "Old-School Adjustable-Height Candleholders",
+      "excerpt": "This so-called \"courting candle\" is a spiral of iron holding a dowel matching the spiral's interior diameter. A smaller dowel protrudes from the larger one, serving as both a registration point and a handle.",
+      "url": "https://www.core77.com/posts/145993/Old-School-Adjustable-Height-Candleholders",
+      "publishedAt": null,
+      "firstSeen": "2026-11-25T01:18:35.409Z",
+      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1858044_lead_400_145993_.jpg",
+      "extractionStatus": null,
+      "tags": [
+        "HMI / Mobility",
+        "Product"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "766bb8aedbf1",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "US financial crimes bureau discloses ‘cybersecurity incident’",
+      "excerpt": "The Financial Crimes Enforcement Network (FinCEN) disclosed on Tuesday that it's investigating a \"cybersecurity incident.\" The bureau, which is part of the Treasury Department, said it's looking into an \"incident that resulted in unauthorized access to a limited subset of its systems.\"",
+      "url": "https://www.theverge.com/policy/1041957/fincen-treasury-cybersecurity-incident",
+      "publishedAt": "2026-11-25T01:00:00.000Z",
+      "firstSeen": "2026-11-25T01:20:34.265Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_B.png?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": null,
+      "tags": [
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "b8d97a97ed48",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The Verge’s 2026 gift guide for dads",
+      "excerpt": "Gone are the days when you could just buy your father a random tie or some leather-clad alcohol vessel or a shaving kit. Dads want - nay, deserve - something memorable.",
+      "url": "https://www.theverge.com/gadgets/1024777/best-gifts-for-dad-2026",
+      "publishedAt": "2026-11-24T23:59:29.000Z",
+      "firstSeen": "2026-11-25T01:19:34.266Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268757_2026_gift_guides_CVirginia_DADS.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": null,
+      "tags": [
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "cffe7bfdfa1c",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Why the US Army is about to blow up nearly 10,000 pounds of unstable explosives in Iowa",
+      "excerpt": "The US Army is moving ahead with plans to detonate the nation's stockpile of lead azide at an ammunition plant in Middletown, Iowa, at approximately 9:00AM CST on Wednesday.",
+      "url": "https://www.theverge.com/science/1041819/us-army-detonation-lead-explosives-iowa",
+      "publishedAt": "2026-11-24T23:25:46.000Z",
+      "firstSeen": "2026-11-25T01:18:34.266Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2305973751.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": null,
+      "tags": [
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "4e956f5da294",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Huawei found guilty of stealing trade secrets",
+      "excerpt": "A jury has found Huawei guilty of stealing US trade secrets, as reported earlier by NBC News and Bloomberg. The verdict, handed down in a federal court in New York, concludes a years-long legal battle that accused the Chinese telecom giant of stealing source code and proprietary technology from several companies, including T-Mobile, Cisco, and […].",
+      "url": "https://www.theverge.com/tech/1041820/huawei-guilty-trade-secrets-trial",
+      "publishedAt": "2026-11-24T22:23:27.000Z",
+      "firstSeen": "2026-11-25T01:17:34.266Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2302952808.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": null,
+      "tags": [
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "68cc9358a6d2",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "SO–IL imagines a museum wrapped in shimmering glass scales in the norwegian forest",
+      "excerpt": "a translucent skin of glass scales shelters an intricate network of timber beams and elevated walkways within the norwegian forest.",
+      "url": "https://www.designboom.com/architecture/so-il-museum-shimmering-glass-scales-norway-forest-kistefos/",
+      "publishedAt": "2026-11-24T21:45:52.000Z",
+      "firstSeen": "2026-11-25T01:21:41.662Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/SO-IL-kistefos-museum-norway-designboom-700-500x400-22b08q85r948.jpg",
+      "extractionStatus": null,
+      "tags": [
+        "Product"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "16b41b9e1d8a",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "GTA VI PC recompilation project shut down by Take-Two",
+      "excerpt": "Game modding communities are racing to get Grand Theft Auto VI running on PC, but one big effort has been taken down by Take-Two today.",
+      "url": "https://www.theverge.com/news/1041690/grand-theft-auto-6-pc-recompilation-project-leonida-takedown-take-two",
+      "publishedAt": "2026-11-24T21:39:14.000Z",
+      "firstSeen": "2026-11-25T01:16:34.266Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/STKS540_GTA_VI_2_A.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": null,
+      "tags": [
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "897edcb402e0",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The Verge’s 2026 holiday gift guide for moms",
+      "excerpt": "Given everything moms do for us, it feels good to give back during the holidays. But where to start? How do you come up with a physical representation of how you feel about such a key and influential figure in your life?",
+      "url": "https://www.theverge.com/gadgets/1021621/best-gifts-for-mom-2026",
+      "publishedAt": "2026-11-24T21:09:59.000Z",
+      "firstSeen": "2026-11-25T01:15:34.266Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268757_2026_gift_guides_UNDER_25_CVirginia_MOMS.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": null,
+      "tags": [
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "79070e62a418",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "TikTok was down",
+      "excerpt": "Earlier on Tuesday, TikTok experienced some issues, with videos, search results, favorites, and other features not loading as they usually do, following a slew of other outages over the past couple of weeks.",
+      "url": "https://www.theverge.com/tech/1041618/tiktok-down-outage",
+      "publishedAt": "2026-11-24T20:27:27.000Z",
+      "firstSeen": "2026-11-25T01:14:34.266Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25406817/STK051_TIKTOK_CVirginia_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": null,
+      "tags": [
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "32af257829de",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Jensen Huang reportedly tells Nvidia staff it’s ‘not true’ Trump got him rehired",
+      "excerpt": "Nvidia CEO Jensen Huang apologized to staff during his first all-hands since returning to the company, while attempting to distance himself from the narrative that the White House and tech leaders helped him get his job back, according to reports from Bloomberg, The New York Times, and The Handbasket's Marisa Kabas.",
+      "url": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology",
+      "publishedAt": "2026-11-24T20:02:03.000Z",
+      "firstSeen": "2026-11-25T01:13:34.266Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2300373989.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": null,
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "491556fd0ddd",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The clock is running out for America’s most contentious spying law",
+      "excerpt": "Weeks before the end of the legislative session, some members of Congress are scrambling to reauthorize a controversial warrantless wiretapping authority, possibly by attaching it to a must-pass military spending bill.",
+      "url": "https://www.theverge.com/policy/1041568/fisa-ndaa-blue-wave",
+      "publishedAt": "2026-11-24T20:00:00.000Z",
+      "firstSeen": "2026-11-25T01:12:34.267Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STK471_Government_Surveillance_CVirginia_E.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": null,
+      "tags": [
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "fe3401e2cda5",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Amazon is knocking almost $50 off six months of Apple TV",
+      "excerpt": "Streaming deals aren’t as plentiful as they used to be, but they’re still around if you know where to look. One that caught our eye is an offer for Apple TV for those with an Amazon account in the US.",
+      "url": "https://www.theverge.com/gadgets/1040046/apple-tv-subscription-streaming-sale-deal-black-friday",
+      "publishedAt": "2026-11-24T19:00:00.000Z",
+      "firstSeen": "2026-11-25T01:11:34.267Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/Severance_Photo_021019.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": null,
+      "tags": [
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "5d2f348b3aa4",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "terminal design solutions cuts through urban clutter with vivid aluminum street furniture",
+      "excerpt": "by combining crisp machined aluminum with vibrant anodized finishes, the studio creates benches, lean bars, and shelters that act as bold, functional anchors in the public realm.",
+      "url": "https://www.designboom.com/design/terminal-design-solutions-urban-clutter-vivid-aluminum-street-furniture/",
+      "publishedAt": "2026-11-24T18:55:16.000Z",
+      "firstSeen": "2026-11-25T01:20:41.662Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/terminal-design-solutions-collection-street-furniture-designboom-700-500x400-22b08q85r063.jpg",
+      "extractionStatus": null,
+      "tags": [
+        "Product"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "0e4148512247",
+      "sourceId": "dezeen",
+      "sourceName": "Dezeen",
+      "feedUrl": "https://www.dezeen.com/design/feed/",
+      "mode": "inspiration",
+      "title": "Dezeen reports from New York's new November design week",
+      "excerpt": "A collection of showcases, old and new, took place in New York this November, effectively becoming the city's second design week. The post Dezeen reports from New York's new November design week appeared first on Dezeen .",
+      "url": "https://www.dezeen.com/2026/11/24/new-york-design-events-november-2026/",
+      "publishedAt": "2026-11-24T16:57:28.000Z",
+      "firstSeen": "2026-11-25T01:21:37.310Z",
+      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/new-york-november-design-week-2026_dezeen_2364_sq-1024x1024.jpg",
+      "extractionStatus": null,
+      "tags": [
+        "Product"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "3f4e3303fc56",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "teenage engineering’s first CD player puts the spinning disc on full display",
+      "excerpt": "with its exposed mechanism and variable playback speed, the EP/BC–1 brings a hands-on approach to digital music. The post teenage engineering’s first CD player puts the spinning disc on full display appeared first on designboom | architecture & design magazine .",
+      "url": "https://www.designboom.com/technology/teenage-engineering-first-cd-player-spinning-disc-display-ep-bc-1/",
+      "publishedAt": "2026-11-24T16:35:27.000Z",
+      "firstSeen": "2026-11-25T01:19:41.662Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/teenage-engineering-ep-bc-1-cd-player-designboom-700-500x400-22b08q85r556.jpg",
+      "extractionStatus": null,
+      "tags": [
+        "Tech Industry",
+        "Product"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "22d7270e7a58",
+      "sourceId": "mittr",
+      "sourceName": "MIT Technology Review",
+      "feedUrl": "https://www.technologyreview.com/feed/",
+      "mode": "research",
+      "title": "Raising the stakes for enterprise networks with AI modernization",
+      "excerpt": "Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load.",
+      "url": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
+      "publishedAt": "2026-11-24T15:15:16.000Z",
+      "firstSeen": "2026-11-25T01:22:30.903Z",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/MITTR-Tata-report-cover.jpg?w=840",
+      "extractionStatus": null,
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "d9a5308ad882",
+      "sourceId": "microsoft",
+      "sourceName": "Microsoft Design",
+      "feedUrl": "https://microsoft.design/feed/",
+      "mode": "practice",
+      "title": "The art of playing a supporting role",
+      "excerpt": "How character, motion, and expression help people stay oriented and in control The post The art of playing a supporting role appeared first on Microsoft Design .",
+      "url": "https://microsoft.design/articles/the-art-of-playing-a-supporting-role/",
+      "publishedAt": "2026-11-24T14:00:00.000Z",
+      "firstSeen": "2026-11-25T01:21:17.569Z",
+      "thumbnail": "https://microsoft.design/wp-content/uploads/2026/11/Autopilots-UI-Hero.webp",
+      "extractionStatus": null,
+      "tags": [
+        "Product",
+        "Tech Industry",
+        "UX"
+      ],
+      "contentHtml": null
+    },
     {
       "id": "c7ab3514b5d6",
       "sourceId": "core77",
@@ -634,60 +983,6 @@
       "contentHtml": null
     },
     {
-      "id": "6013cd51e896",
-      "sourceId": "core77",
-      "sourceName": "Core77",
-      "feedUrl": "http://feeds.feedburner.com/core77/blog",
-      "mode": "pulse",
-      "title": "Furniture That Signified Social Change: The Curiously Enduring TV Tray",
-      "excerpt": "For a young couple starting a family in the 20th century, you'd need to buy a house, and furniture to fill it. The types of furniture required were prescribed: A bed and dressers for the bedroom; a sofa, chairs and coffee table for the living room; a dining table and chairs for the kitchen.",
-      "url": "https://www.core77.com/posts/145930/Furniture-That-Signified-Social-Change-The-Curiously-Enduring-TV-Tray",
-      "publishedAt": null,
-      "firstSeen": "2026-11-24T13:20:57.906Z",
-      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1857376_lead_400_145930_.jpg",
-      "extractionStatus": null,
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "b77929c1f0bd",
-      "sourceId": "core77",
-      "sourceName": "Core77",
-      "feedUrl": "http://feeds.feedburner.com/core77/blog",
-      "mode": "pulse",
-      "title": "Recycled Plastic, 3D-Printed Into Public Outdoor Gym Equipment",
-      "excerpt": "These outdoor Gym Elements are by The New Raw , a Rotterdam-based design/fabrication studio. They comprise an outdoor gym placed along the Yellow Carpet, a 5km walking and running loop weaving through Rotterdam.",
-      "url": "https://www.core77.com/posts/145922/Recycled-Plastic-3D-Printed-Into-Public-Outdoor-Gym-Equipment",
-      "publishedAt": null,
-      "firstSeen": "2026-11-24T13:19:57.906Z",
-      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1857274_lead_400_145922_.jpg",
-      "extractionStatus": null,
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "f81afed8d884",
-      "sourceId": "core77",
-      "sourceName": "Core77",
-      "feedUrl": "http://feeds.feedburner.com/core77/blog",
-      "mode": "pulse",
-      "title": "A Good Idea, Though Fake: This Bicycle Safety Projection System",
-      "excerpt": "Yes, this footage is fake, though the idea is a good one. This $30 DragonGlow product, being sold by a no-history company called Elevarely, is allegedly a single LED projector that you strap to your bike's seatpost.",
-      "url": "https://www.core77.com/posts/145921/A-Good-Idea-Though-Fake-This-Bicycle-Safety-Projection-System",
-      "publishedAt": null,
-      "firstSeen": "2026-11-24T13:18:57.906Z",
-      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1857265_lead_400_145921_.jpg",
-      "extractionStatus": null,
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "5ece1567bced",
       "sourceId": "mittr",
       "sourceName": "MIT Technology Review",
@@ -708,32 +1003,13 @@
       "contentHtml": null
     },
     {
-      "id": "834b0144ccd8",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Uber, Nuro, and Lucid kick off fully driverless robotaxi testing",
-      "excerpt": "Uber's high-stakes robotaxi bet is officially ditching its human safety net. Nuro, Lucid, and Uber are starting fully driverless public road testing in the San Francisco Bay Area, with employee-only rides launching shortly after.",
-      "url": "https://www.theverge.com/transportation/1040676/uber-nuro-lucid-driverless-robotaxi-testing-bay-area",
-      "publishedAt": "2026-11-24T13:00:00.000Z",
-      "firstSeen": "2026-11-24T13:10:43.729Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Driverless-Image-2.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": null,
-      "tags": [
-        "HMI / Mobility",
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "f83f06b9298a",
       "sourceId": "designboom",
       "sourceName": "designboom",
       "feedUrl": "https://www.designboom.com/feed/",
       "mode": "inspiration",
       "title": "learning to move is how we first construct ourselves, and then everything around us",
-      "excerpt": "in states of motion, we follow the people changing how we build for movement: airports turned into places worth staying in, vehicles designed as rooms, lanes taken back from cars, trains running slowly on purpose, transit drawn for bodies it was never drawn for, and corridors stitched together again for the animals whose routes the roads once cut.",
+      "excerpt": "a station worth staying in, a car no longer shaped by its engine, a home that needs no ground beneath it, a night train where arriving late is the point.",
       "url": "https://www.designboom.com/editorials/learning-move-construct-ourselves-everything-around-us-states-of-motion/",
       "publishedAt": "2026-11-24T11:53:45.000Z",
       "firstSeen": "2026-11-24T13:36:35.027Z",
@@ -930,43 +1206,6 @@
       "contentHtml": null
     },
     {
-      "id": "45c9f74a718d",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "the aaltosiilo transforms itself again at oulu’s lumo light festival 2026",
-      "excerpt": "artists use light, projection and sound to activate alvar and aino aalto's former pulp mill during the region’s european capital of culture year.",
-      "url": "https://www.designboom.com/art/aaltosiilo-transforms-itself-oulu-lumo-light-festival-2026/",
-      "publishedAt": "2026-11-24T08:45:37.000Z",
-      "firstSeen": "2026-11-24T13:29:35.028Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/aaltosiilo-oulu2026-designboom-700-500x400-22b08q85r676.jpg",
-      "extractionStatus": null,
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "3d9dfb546dbd",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "MIT researchers use robotic motion to weave clothing directly around the human body",
-      "excerpt": "InSituWear lets the body's contours and the tension of ultrafine fibers help determine the garment's final form. The post MIT researchers use robotic motion to weave clothing directly around the human body appeared first on designboom | architecture & design magazine .",
-      "url": "https://www.designboom.com/technology/mit-media-lab-robotic-motion-weave-clothing-body-insituwear-textile/",
-      "publishedAt": "2026-11-24T08:10:18.000Z",
-      "firstSeen": "2026-11-24T13:28:35.028Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/MIT-media-lab-insituwear-on-body-robotic-fabrication-textiles-designboom-700.jpg",
-      "extractionStatus": null,
-      "tags": [
-        "Tech Industry",
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "0ab1b1cded24",
       "sourceId": "sidebar",
       "sourceName": "Sidebar",
@@ -1022,24 +1261,6 @@
       "contentHtml": null
     },
     {
-      "id": "33a51b12cd49",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "inside the graphic design history of the world’s underground networks",
-      "excerpt": "from hector guimard’s art nouveau entrances in paris to the custom typefaces developed for london’s underground, transportation networks have shaped how cities communicate with their inhabitants.",
-      "url": "https://www.designboom.com/design/graphic-design-world-underground-networks-fonts-maps/",
-      "publishedAt": "2026-11-24T07:15:28.000Z",
-      "firstSeen": "2026-11-24T13:27:35.028Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/city-exercise-graphic-design-subway-signage-typography-designboom-700-500x400-22b08q85r881.jpg",
-      "extractionStatus": null,
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "e573f4115502",
       "sourceId": "sidebar",
       "sourceName": "Sidebar",
@@ -1077,60 +1298,6 @@
       "contentHtml": null
     },
     {
-      "id": "485decdaf481",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Google alternative Kagi launches an email service",
-      "excerpt": "Kagi, which already offers a paid alternative to Google Search and its own Orion browser as a rival to Chrome, is taking on another Google service: Gmail.",
-      "url": "https://www.theverge.com/tech/1041000/kagi-mail-email-google-gmail-alternative",
-      "publishedAt": "2026-11-24T00:02:52.000Z",
-      "firstSeen": "2026-11-24T13:09:43.730Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/mail-inbox-overview.RlzZ8Gtt.png?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": null,
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "eca24540e663",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The hacker behind early GTA VI leaks has been sentenced — and released",
-      "excerpt": "Arion Kurtaj, who pleaded guilty last week to hacking Grand Theft Auto VI developer Rockstar Games and other companies, including Uber and Revolut, was sentenced to seven years in prison but released on license, the BBC reports.",
-      "url": "https://www.theverge.com/games/1040966/arion-kurtaj-gta-vi-leaks-sentenced-released",
-      "publishedAt": "2026-11-23T23:25:01.000Z",
-      "firstSeen": "2026-11-24T13:08:43.730Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Jason_and_Lucia_03.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": null,
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "89d2a35976f4",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The Verge’s 2026 holiday gift guide",
-      "excerpt": "Gift-giving isn't just about grabbing something solid under a determined spending limit. It's an expression of love, a way to show someone how well you really know them. That doesn't mean you have to do it all on your own, though.",
-      "url": "https://www.theverge.com/gadgets/1026041/holiday-gift-guide-2026",
-      "publishedAt": "2026-11-23T23:14:10.000Z",
-      "firstSeen": "2026-11-24T13:07:43.730Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268757_2026_gift_guides_UNDER_25_CVirginia_MAIN_STILL0_09b4c3.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": null,
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "d389a8472963",
       "sourceId": "marginalian",
       "sourceName": "The Marginalian",
@@ -1145,172 +1312,6 @@
       "extractionStatus": null,
       "tags": [
         "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "5d7720922390",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Ladybird, the first new browser engine in years, is now available to test",
-      "excerpt": "Ladybird, an independent web browser with a built-from-scratch engine, is finally available for testing. On Monday, Ladybird developer Andreas Kling announced that the browser is launching in alpha on macOS and Linux following more than four years of development.",
-      "url": "https://www.theverge.com/tech/1040872/ladybird-indie-browser-engine-alpha-testing",
-      "publishedAt": "2026-11-23T22:38:09.000Z",
-      "firstSeen": "2026-11-24T13:06:43.730Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/ladybird-screenshot.webp?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": null,
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "049542555c2c",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Trump engineered a risky comeback for Jensen Huang",
-      "excerpt": "After Nvidia's board accepted Jensen Huang's resignation as CEO, following reports that Huang had an affair with an alleged Chinese spy, President Donald Trump, too, appeared to submit to the new reality. Appearing on Stephen A.",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
-      "publishedAt": "2026-11-23T22:25:12.000Z",
-      "firstSeen": "2026-11-24T13:05:43.730Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2297774940.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": null,
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "15c28179b2dc",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Nvidia CEO Jensen Huang is back. What happens next?",
-      "excerpt": "After the leather-jacketed CEO, president, and co-founder of Nvidia, Jensen Huang, acknowledged an affair with Megaspeed exec Alice Huang, his company initially announced an investigation.",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-      "publishedAt": "2026-11-23T22:10:32.000Z",
-      "firstSeen": "2026-11-24T13:04:43.730Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKP210_JENSEN_HUANG_A.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": null,
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "8ab70d6f89cf",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Welcome to elite impunity, Jensen Huang",
-      "excerpt": "I suppose I must issue a hearty congratulations to Jensen Huang. Huang is CEO of Nvidia again, to the surprise of basically everyone except President Donald Trump and Vice President JD Vance, who made sure it happened.",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang",
-      "publishedAt": "2026-11-23T22:09:26.000Z",
-      "firstSeen": "2026-11-24T13:03:43.730Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Nvidia_Jensen_huang_06.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": null,
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "7964d2edf739",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The Apple Watch Series 12 is cheaper than ever ahead of Black Friday",
-      "excerpt": "If you’re still sporting an Apple Watch that launched five or so years ago, now is a good time to upgrade. Apple’s latest smartwatch, the 42mm Apple Watch Series 12 with Wi-Fi and GPS connectivity, has dropped to a new all-time low of $299 ($100 off) at Amazon and Walmart, beating its most sale price […].",
-      "url": "https://www.theverge.com/gadgets/1034512/apple-watch-series-12-black-friday-deal-sale",
-      "publishedAt": "2026-11-23T21:36:48.000Z",
-      "firstSeen": "2026-11-24T13:02:43.730Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/268738_Apple_Watch_Series_12_AKrales_0280.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": null,
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "e277391e1ad3",
-      "sourceId": "claude",
-      "sourceName": "Claude",
-      "feedUrl": "https://claude.com/resources/articles/rss.xml",
-      "mode": "practice",
-      "title": "Introducing Claude Ship",
-      "excerpt": "Open a pull request and get back to building. Claude can now review pull requests, fix them, and approve the ones that a team's policy allows. Anyone who has opened a pull request knows how this goes.",
-      "url": "https://claude.com/resources/articles/introducing-claude-ship",
-      "publishedAt": "2026-11-23T21:33:16.000Z",
-      "firstSeen": "2026-11-24T12:29:43.954Z",
-      "thumbnail": "https://claude.com/resources/articles/introducing-claude-ship/opengraph-image/og",
-      "extractionStatus": null,
-      "tags": [
-        "AI"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "ac09a7197caa",
-      "sourceId": "claude",
-      "sourceName": "Claude",
-      "feedUrl": "https://claude.com/resources/articles/rss.xml",
-      "mode": "practice",
-      "title": "KPMG's Todd Lohr on AI when your data is also your clients' data",
-      "excerpt": "Adopting frontier AI and building safeguards at the same time, and what that means for a firm that holds its clients' most sensitive data.",
-      "url": "https://claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data",
-      "publishedAt": "2026-11-23T21:26:18.000Z",
-      "firstSeen": "2026-11-24T12:28:43.954Z",
-      "thumbnail": "https://claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data/opengraph-image/og",
-      "extractionStatus": null,
-      "tags": [
-        "AI"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "0cd17937bdc8",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "AI data centers throw another wrench into chaotic UN climate talks",
-      "excerpt": "The clean energy revolution hinges on electrifying the entire global economy just as power-hungry data centers are surging. It's a challenge delegates from all over the world had to grapple with during the United Nations climate conference, called COP31, that came to a chaotic and unsatisfying close in Antalya, Turkey, on Sunday.",
-      "url": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
-      "publishedAt": "2026-11-23T21:09:37.000Z",
-      "firstSeen": "2026-11-24T13:01:43.730Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2306098413.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": null,
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "89fabf4c9972",
-      "sourceId": "claude",
-      "sourceName": "Claude",
-      "feedUrl": "https://claude.com/resources/articles/rss.xml",
-      "mode": "practice",
-      "title": "The enterprise guide to securing coding agents",
-      "excerpt": "How security and technical leaders can scope and bound coding agent risk: AI-specific risks, Claude Code’s layered defenses, and centrally enforced policy.",
-      "url": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
-      "publishedAt": "2026-11-23T20:54:39.000Z",
-      "firstSeen": "2026-11-24T12:27:43.955Z",
-      "thumbnail": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents/opengraph-image/og",
-      "extractionStatus": null,
-      "tags": [
-        "AI"
       ],
       "contentHtml": null
     },
@@ -2178,25 +2179,6 @@
       "contentHtml": null
     },
     {
-      "id": "1208f01e00a6",
-      "sourceId": "mittr",
-      "sourceName": "MIT Technology Review",
-      "feedUrl": "https://www.technologyreview.com/feed/",
-      "mode": "research",
-      "title": "What a billion-dollar deal says about the US battery market",
-      "excerpt": "The deal between Sila and Panasonic Energy is a bright spot for the industry, and it shows how politics have shifted recently for batteries.",
-      "url": "https://www.technologyreview.com/2026/11/19/1148922/sila-panasonic-battery-deal/",
-      "publishedAt": "2026-11-19T11:00:00.000Z",
-      "firstSeen": "2026-11-24T13:23:10.339Z",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/Moses-Lake-Facility_.jpg?resize=1200,600",
-      "extractionStatus": null,
-      "tags": [
-        "Tech Industry",
-        "AI"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "45350310df7f",
       "sourceId": "ideo",
       "sourceName": "IDEO",
@@ -2248,24 +2230,6 @@
       "tags": [
         "Speculative",
         "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "8798ff893c79",
-      "sourceId": "dezeen",
-      "sourceName": "Dezeen",
-      "feedUrl": "https://www.dezeen.com/design/feed/",
-      "mode": "inspiration",
-      "title": "Bubbly lamp by Canalside Studio among nine new products on Dezeen Showroom",
-      "excerpt": "A table lamp comprising a plastic base topped with five magnetically attached glowing orbs is among the products recently published on our Showroom section.",
-      "url": "https://www.dezeen.com/2026/11/18/bubbly-lamp-canalside-studio-lighting-furniture-products-surfaces-dezeen-showroom/",
-      "publishedAt": "2026-11-18T19:00:00.000Z",
-      "firstSeen": "2026-11-24T13:00:43.006Z",
-      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/bubbly-lamp-canalside-studio-dezeen-showroom_dezeen_2364_col_0-1-1024x1024.jpg",
-      "extractionStatus": null,
-      "tags": [
-        "Product"
       ],
       "contentHtml": null
     },
@@ -2656,24 +2620,6 @@
       "contentHtml": null
     },
     {
-      "id": "984d08da3cf7",
-      "sourceId": "claude",
-      "sourceName": "Claude",
-      "feedUrl": "https://claude.com/resources/articles/rss.xml",
-      "mode": "practice",
-      "title": "Building always-on agents",
-      "excerpt": "Always-on agents run indefinitely, deciding how and when to act across many sessions. This guide walks through their core primitives and how they fit together.",
-      "url": "https://claude.com/resources/articles/building-always-on-agents",
-      "publishedAt": "2026-11-13T00:00:00.000Z",
-      "firstSeen": "2026-11-22T06:26:28.988Z",
-      "thumbnail": "https://claude.com/resources/articles/building-always-on-agents/opengraph-image/og",
-      "extractionStatus": null,
-      "tags": [
-        "AI"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "1ff47ef3e1a0",
       "sourceId": "noema",
       "sourceName": "Noema",
@@ -2911,6 +2857,79 @@
         "Tech Industry",
         "AI",
         "Product"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "eb06b7a71ce1",
+      "sourceId": "claude",
+      "sourceName": "Claude",
+      "feedUrl": "https://claude.com/resources/articles/rss.xml",
+      "mode": "practice",
+      "title": "Your apps can now open in Claude, and Claude can work in them",
+      "excerpt": "Interactive connectors can now open beside your chat or full screen, so you and Claude can work in the same tool, where the connector supports it.",
+      "url": "https://claude.com/resources/articles/interactive-connectors-full-tool",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "firstSeen": "2026-11-25T01:14:47.918Z",
+      "thumbnail": "https://claude.com/resources/articles/interactive-connectors-full-tool/opengraph-image/og",
+      "extractionStatus": null,
+      "tags": [
+        "AI"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "3180dbea1b88",
+      "sourceId": "claude",
+      "sourceName": "Claude",
+      "feedUrl": "https://claude.com/resources/articles/rss.xml",
+      "mode": "practice",
+      "title": "How Curative is building a national provider network with agents on Claude",
+      "excerpt": "How Curative built a hierarchy of agents on Claude to sign provider contracts about 50 times faster than its team did in 2025. Curative’s deal-making agent negotiates 2,000+ provider contracts a week.",
+      "url": "https://claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "firstSeen": "2026-11-25T01:13:47.918Z",
+      "thumbnail": "https://claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude/opengraph-image/og",
+      "extractionStatus": null,
+      "tags": [
+        "AI"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "45561964eabb",
+      "sourceId": "claude",
+      "sourceName": "Claude",
+      "feedUrl": "https://claude.com/resources/articles/rss.xml",
+      "mode": "practice",
+      "title": "More ways to work with Claude: Sheets, Whiteboards, and Interactive Connectors",
+      "excerpt": "Anthropic introduces Claude Sheets and Claude Whiteboards, and an upgrade to interactive connectors. We've seen Claude Code change how developers work.",
+      "url": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "firstSeen": "2026-11-25T01:12:47.918Z",
+      "thumbnail": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors/opengraph-image/og",
+      "extractionStatus": null,
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "7737e173e31a",
+      "sourceId": "claude",
+      "sourceName": "Claude",
+      "feedUrl": "https://claude.com/resources/articles/rss.xml",
+      "mode": "practice",
+      "title": "Introducing Claude Whiteboards, Claude Sheets, and Claude Data",
+      "excerpt": "Brainstorm on a shared whiteboard, build a spreadsheet, and share dashboards with your team, all with Claude. Available today on all paid plans.",
+      "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "firstSeen": "2026-11-25T01:11:47.918Z",
+      "thumbnail": "https://claude.com/resources/articles/sheets-whiteboards-data/opengraph-image/og",
+      "extractionStatus": null,
+      "tags": [
+        "AI"
       ],
       "contentHtml": null
     },
@@ -3566,26 +3585,6 @@
         "Speculative",
         "Product",
         "AI"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "91a10214f0be",
-      "sourceId": "microsoft",
-      "sourceName": "Microsoft Design",
-      "feedUrl": "https://microsoft.design/feed/",
-      "mode": "practice",
-      "title": "Putting the user back into AI Evaluation",
-      "excerpt": "The post Putting the user back into AI Evaluation appeared first on Microsoft Design . In our last episode , three researchers described rebuilding their workflows from the ground up.",
-      "url": "https://microsoft.design/articles/putting-the-user-back-into-ai-evaluation/",
-      "publishedAt": "2026-09-17T14:44:04.000Z",
-      "firstSeen": "2026-11-24T13:02:33.980Z",
-      "thumbnail": "https://microsoft.design/wp-content/uploads/2026/09/Thumbnail_E02_16x9.jpg",
-      "extractionStatus": null,
-      "tags": [
-        "AI",
-        "Tech Industry",
-        "UX"
       ],
       "contentHtml": null
     },
