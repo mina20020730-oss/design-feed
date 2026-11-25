@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T10:32:10.546Z",
+  "updated": "2026-11-25T13:47:34.069Z",
   "modes": [
     {
       "id": "pulse",
@@ -472,6 +472,285 @@
   "public": true,
   "items": [
     {
+      "id": "e010f7203325",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Tapo’s new indoor security camera includes a touchscreen for video calls",
+      "excerpt": "TP-Link's Tapo smart home brand announced a new indoor security camera that can help keep an eye on your house while you're away or connect you to family and friends while you're at home.",
+      "url": "https://www.theverge.com/tech/1041221/tapo-c825-security-indoor-2k-camera-video-calls-tracking-pan-tilt",
+      "publishedAt": "2026-11-25T13:30:00.000Z",
+      "firstSeen": "2026-11-25T13:45:14.727Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/tapo1.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "TP-Link’s Tapo smart home brand announced a new indoor security camera that can help keep an eye on your house while you’re away or connect you to family and friends while you’re at home. The C825 upgrades a 2K pan-and-tilt camera with a 4-inch touchscreen, so when it’s not watching for intruders or misbehaving pets, it can be used to make hands-free video calls.",
+        "keywords": [
+          "security camera",
+          "hands-free video",
+          "Tapo",
+          "calls"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "79d027e2e048",
+      "sourceId": "mittr",
+      "sourceName": "MIT Technology Review",
+      "feedUrl": "https://www.technologyreview.com/feed/",
+      "mode": "research",
+      "title": "The Download: AI swamping open records, and firefighting for permafrost",
+      "excerpt": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology.",
+      "url": "https://www.technologyreview.com/2026/11/25/1149808/the-download-ai-open-records-permafrost-fires/",
+      "publishedAt": "2026-11-25T13:10:00.000Z",
+      "firstSeen": "2026-11-25T13:47:13.437Z",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/3_HighChair-crop.jpg?w=840",
+      "extractionStatus": "full",
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Over the last few years, venture-backed startups have raised upwards of $100 million to collect data from thousands of agencies and turn it into AI-powered “signals” that help businesses sell to governments. In July 2021, a wildfire burned through a forest on the University of Alaska, Fairbanks campus, stripping away the moss and soil insulating the permafrost below.",
+        "keywords": [
+          "permafrost",
+          "million",
+          "data"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "929f2b2360df",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Has vibe coding made open source the new normal for synths?",
+      "excerpt": "The emergence of powerful vibe-coding agents and tools like Reverse Engineer Anything has caused chaos in the music gear world, leaving companies scrambling to figure out how to respond.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
+      "publishedAt": "2026-11-25T13:00:00.000Z",
+      "firstSeen": "2026-11-25T13:44:14.728Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/vibe_coding_synths_.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "In the last several weeks, as it’s become clear that no piece of music gear is safe from Claude and a subreddit full of curious tinkerers, companies have begun making more and more of their devices open source. Erica Synths recently released the source code for its LXR-02 drum machine, but founder Ģirts Ozoliņš isn’t necessarily fully on board with vibe coding.",
+        "keywords": [
+          "vibe coding",
+          "open source",
+          "music gear",
+          "devices"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "baf3d3e6b1aa",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "the search for a home without a fixed address, from prefabricated houses to floating dwellings",
+      "excerpt": "from postwar demountable houses to floating neighborhoods, architects have repeatedly questioned the assumption that buildings must remain tied to one site.",
+      "url": "https://www.designboom.com/architecture/search-home-fixed-address-prefabricated-houses-floating-dwellings/",
+      "publishedAt": "2026-11-25T11:50:54.000Z",
+      "firstSeen": "2026-11-25T13:46:25.008Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/search-home-fixed-address-prefabricated-houses-floating-dwellings-designboom-700-500x400-22b08q85r938.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "For decades, architects have imagined homes that can be packed up, transported, and assembled somewhere new, designing alternatives to the idea that housing must be tied to a permanent address. From prefabricated dwellings designed for mass production to experimental houses conceived for remote landscapes, these projects explore how architecture might exist beyond the limits of a fixed site.",
+        "keywords": [
+          "mass production",
+          "prefabricated",
+          "houses",
+          "dwellings"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "a7a2b8a55068",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "nick cave and india pavilion win the visitors’ lions at the venice art biennale 2026",
+      "excerpt": "following the resignation of the international jury, this year’s biennale gives audiences a direct role in deciding which artists and national presentations receive recognition.",
+      "url": "https://www.designboom.com/art/nick-cave-india-pavilion-visitors-lions-2026-venice-art-biennale/",
+      "publishedAt": "2026-11-25T11:16:36.000Z",
+      "firstSeen": "2026-11-25T13:45:25.008Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/nick-cave-india-pavilion-visitors-lions-2026-venice-art-biennale-designboom-700-500x400-22b08q85r074.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "The public has selected its favorites at the 61st Venice Art Biennale, with American artist Nick Cave receiving the Visitors’ Lion for Best Participant and India winning Best National Participation for its pavilion, Geographies of Distance: Remembering Home. Announced by La Biennale di Venezia on November 25th, 2026, the awards reflect the preferences of visitors to In Minor Keys, curated by the late Koyo Kouoh.",
+        "keywords": [
+          "Nick Cave",
+          "Art Biennale",
+          "National Participation",
+          "India winning"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "49df1091dd04",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Microsoft declares ‘Code Red’ after huge Outlook outage",
+      "excerpt": "This month's Exchange Online and Microsoft Outlook outage has prompted the software giant to declare an unusual \"Code Red\" internally, Reuters reports.",
+      "url": "https://www.theverge.com/news/1042025/microsoft-code-red-outlook-outage",
+      "publishedAt": "2026-11-25T11:12:42.000Z",
+      "firstSeen": "2026-11-25T13:43:14.728Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK153_MICROSOFT_OUTLOOK_C.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "This month’s Exchange Online and Microsoft Outlook outage has prompted the software giant to declare an unusual “Code Red” internally, Reuters reports. In a memo to the teams responsible for Exchange Online, Microsoft 365 Core president Jason Henderson revealed the outage was the most significant in history for Microsoft’s customers.",
+        "keywords": [
+          "Code Red",
+          "Exchange Online",
+          "outage",
+          "Microsoft"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "0d990107490e",
+      "sourceId": "aeon",
+      "sourceName": "Aeon / Psyche",
+      "feedUrl": "https://aeon.co/feed.rss",
+      "mode": "deep",
+      "title": "The passing",
+      "excerpt": "With compassion and care, a veterinarian helps Cindy say a tender final goodbye to her beloved elderly dog, Fiona - by Aeon Video Watch on Aeon.",
+      "url": "https://aeon.co/videos/a-veterinarian-helps-cindy-say-goodbye-to-fiona-her-17-year-old-dog",
+      "publishedAt": "2026-11-25T11:01:00.000Z",
+      "firstSeen": "2026-11-25T13:46:40.401Z",
+      "thumbnail": "https://images.aeonmedia.co/images/385ed371-546c-49fb-ae83-20783d17e0c3/the-passing-landscape-1.jpg?width=1200&quality=75&format=auto",
+      "extractionStatus": "excerpt-only",
+      "tags": [
+        "Health",
+        "Speculative"
+      ],
+      "digest": {
+        "brief": "The Passing captures the veterinarian Michael Mullen as he provides pet care with deep empathy, at owners’ homes in Austin, Texas. In their portrait, the local filmmakers Ivete Lucas and Patrick Bresnan mirror Mullen’s gentle manner, documenting this process with an unobtrusive observational approach that allows the emotions at hand to unfold with a quiet subtlety and power.",
+        "keywords": [
+          "Passing"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "552ea75135cf",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "human point frames architecture as an unfolding timeline",
+      "excerpt": "in conversation with designboom, human point founder loukas fotopoulos reveals how the practice choreographs architecture, development and construction around human movement, connection and experience.",
+      "url": "https://www.designboom.com/architecture/human-point-architecture/",
+      "publishedAt": "2026-11-25T11:00:50.000Z",
+      "firstSeen": "2026-11-25T13:44:25.008Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/whispering-elia-mykonos_human-point_-designboom_700-500x400-22b08q85r800.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Loukas Fotopoulos established his own architectural practice in 1996, continuing a family tradition of architecture. In 2008, his practice evolved into Human Point, expanding its approach beyond architecture. Across residential, hospitality, and urban scales, the studio brings architecture, strategic development consulting, and immersive visual communication under one roof.",
+        "keywords": [
+          "architectural practice",
+          "Loukas Fotopoulos",
+          "architecture",
+          "Human"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "fbabe09e11e1",
+      "sourceId": "dezeen",
+      "sourceName": "Dezeen",
+      "feedUrl": "https://www.dezeen.com/design/feed/",
+      "mode": "inspiration",
+      "title": "Meet Laerke Ryom, Patricia Urquiola's pick for the most influential designer of the next 20 years",
+      "excerpt": "Patricia Urquiola has chosen fellow multidisciplinary Laerke Ryom as her pick for Dezeen’s 20x20 project in partnership with Kohler. Here, Ryom discusses her innovative work and how it's still rooted in Danish design traditions.",
+      "url": "https://www.dezeen.com/2026/11/25/laerke-ryom-interview-patricia-urquiola-20x20/",
+      "publishedAt": "2026-11-25T11:00:00.000Z",
+      "firstSeen": "2026-11-25T13:46:19.768Z",
+      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/laerke-ryom-20x20-portrait-sq_dezeen_2364_col_0-1024x1024.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Architect and designer Patricia Urquiola has chosen fellow multidisciplinary Laerke Ryom as her pick for Dezeen’s 20x20 project, in partnership with Kohler. Since graduating from the Royal Academy of Fine Art in Copenhagen's master’s program in furniture and object in 2022, Ryom's tactile designs have continued to evolve, and she has worked with a range of materials and products.",
+        "keywords": [
+          "Laerke Ryom",
+          "Patricia Urquiola",
+          "Royal Academy",
+          "designer"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "e4828c4fc469",
+      "sourceId": "aeon",
+      "sourceName": "Aeon / Psyche",
+      "feedUrl": "https://psyche.co/feed.rss",
+      "mode": "deep",
+      "title": "Alone-together in Karachi",
+      "excerpt": "Here, women pass from father to husband, like property. My friend and I rented our own apartment instead - by Sadia Khatri Read on Psyche.",
+      "url": "https://psyche.co/turning-points/the-streets-of-karachi-scared-me-less-than-home-did",
+      "publishedAt": "2026-11-25T11:00:00.000Z",
+      "firstSeen": "2026-11-25T13:46:43.648Z",
+      "thumbnail": "https://images.aeonmedia.co/images/2c93b1cd-a5bf-4097-8468-9c953c8367c7/v4-badarcommercial4.jpg?top=138&left=0&cropWidth=2624&cropHeight=1476&width=1200&quality=75&format=auto",
+      "extractionStatus": "full",
+      "tags": [
+        "Health"
+      ],
+      "digest": {
+        "brief": "With bloodshot eyes, my father watched me drive away – to another part of the city, where my childhood best friend Aesha and I had found an apartment for ourselves. Salute to the girls who do this here, in Karachi: live outside of blood, family, marriage or whatever patriarchal bargain most women in my city use to seek their freedom.",
+        "keywords": [
+          "Karachi",
+          "city",
+          "women",
+          "family"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
       "id": "701a8ccc0dc8",
       "sourceId": "designboom",
       "sourceName": "designboom",
@@ -484,9 +763,6 @@
       "firstSeen": "2026-11-25T10:30:55.890Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/designboom-listens-yuri-suzuki-many-dimensions-sound-interview-designboom-700-500x400-22b08q85r175.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Yuri Suzuki uses sound as a material for shaping spaces, creating encounters, and bringing people together. Asked which track best captures his practice, the Tokyo-born artist and designer, based between London and Margate, chooses Cornelius’ The Micro Disneycal World Tour, describing it as ‘a wonderful mixture of different musical elements, almost like a melting pot of sounds and ideas.’",
         "keywords": [
@@ -497,6 +773,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -512,9 +791,6 @@
       "firstSeen": "2026-11-25T10:30:52.035Z",
       "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/simon-skinner-portrait_dezeen_2364_col_0-1024x1024.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "This year Simon Skinner was named emerging designer of the year at the Dezeen Awards. Swedish designer Skinner set up his studio in 2020 and has rapidly become known for his sculptural furniture and installations that explore rethinking and reusing found materials. \"My practice is centred around material culture, exploring the relationship between objects, meaning and everyday life,\" Skinner told Dezeen.",
         "keywords": [
@@ -525,6 +801,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -540,11 +819,6 @@
       "firstSeen": "2026-11-25T10:31:43.551Z",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/loc-sales2a.jpg?resize=1200,600",
       "extractionStatus": "full",
-      "tags": [
-        "AI",
-        "Product",
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "During morning office hours at the town hall—a wood-frame structure built as a church in 1858—he also fielded public records requests. “I’m happy to answer public records requests from people,” says Rowe, who recently moved into a position at a nearby town. At the same time, AI tools have made it easier for individuals to draft public records requests.",
         "keywords": [
@@ -555,6 +829,11 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "AI",
+        "Product",
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -570,9 +849,6 @@
       "firstSeen": "2026-11-25T10:29:52.035Z",
       "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/edinburgh-college-of-art-sq-1024x1024.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Over one hundred staff at Edinburgh College of Art have signed an open letter addressed to the university, calling on the institution to reverse its decision to cut three craft-focussed design courses from its programme. The move is part of a wider decision by the University of Edinburgh, which the art college merged with in 2011, to make £140 million's worth of cuts to arts and humanities courses.",
         "keywords": [
@@ -583,6 +859,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -598,9 +877,6 @@
       "firstSeen": "2026-11-25T10:29:55.890Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/kanal-centre-pompidou-brussels-restored-1930s-citroen-garage-em2n-noaarchitecten-sergison-bates-designboom-700-500x400-22b08q85r450.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Designed by Atelier Kanal, a consortium comprising EM2N, noAarchitecten and Sergison Bates architects, Kanal opens in Brussels on November 28th, 2026, transforming a former Citroën garage into a 40,000-square-meter museum and public cultural center (find designboom’s previous coverage here). A basement gallery, reaching seven meters in height, adds another dimension to the exhibition program.",
         "keywords": [
@@ -611,6 +887,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -626,9 +905,6 @@
       "firstSeen": "2026-11-25T10:30:00.126Z",
       "thumbnail": "https://mattstromawn.com/images/og/og-89456771dc-1200.jpeg",
       "extractionStatus": "full",
-      "tags": [
-        "UX"
-      ],
       "digest": {
         "brief": "Even before the Cambrian explosion of AI-enabled-design, design engineers introduced a new genre of hot takes: designers should either work directly from the production codebase, or ignore production and build and maintain a separate prototyping sandbox. In a recent project, my prototype branch went from being 100% mock APIs to 100% real APIs over the course of 6 months as we built the product 0 → 1.",
         "keywords": [
@@ -639,6 +915,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "UX"
+      ],
       "contentHtml": null
     },
     {
@@ -710,10 +989,6 @@
       "firstSeen": "2026-11-25T10:26:00.127Z",
       "thumbnail": "https://storage.ghost.io/c/62/6e/626e965b-3b3c-484d-9872-fb6d95152863/content/images/size/w1200/2026/11/Slopnami.png",
       "extractionStatus": "full",
-      "tags": [
-        "AI",
-        "UX"
-      ],
       "digest": {
         "brief": "Disabled people have the least margin to absorb that cost, whether we pay it in screen reader listening time, energy, cognitive load, or the chance to reach a human who can actually help. When discussing disability and accessibility, the intersections and complexity are both the challenge in the space and also what generates energy for problem-solvers.",
         "keywords": [
@@ -724,6 +999,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "AI",
+        "UX"
+      ],
       "contentHtml": null
     },
     {
@@ -739,9 +1018,6 @@
       "firstSeen": "2026-11-25T10:28:55.890Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/miami-art-week-basel-2026-designboom-700-500x400-22b08q85r320.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Miami Art Week returns from November 30th to December 6th, 2026, bringing a packed program of art fairs, outdoor installations, exhibitions, and unexpected encounters across Miami and Miami Beach. From established fairs to temporary interventions along the beachfront, here’s designboom’s guide to what to see across Miami Art Week 2026.",
         "keywords": [
@@ -752,6 +1028,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -767,9 +1046,6 @@
       "firstSeen": "2026-11-25T10:28:52.035Z",
       "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/assemble-building-blue-skwat-tokyo_dezeen_2364_col_sq2-1024x1024.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Architecture collective Assemble has created small, climbable cedar buildings that \"play with scale\" to showcase a new pigment made from industrial waste at Tokyo's SKAC gallery. The post Assemble covers miniature agricultural buildings in intense blue pigment for Building Blue exhibition in Tokyo appeared first on Dezeen.",
         "keywords": [
@@ -780,6 +1056,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -795,9 +1074,6 @@
       "firstSeen": "2026-11-25T10:27:55.890Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/australia-victorian-alps-flower-alpine-sun-lookout-public-sculpture-gio-veronesi-designboom-700-500x400-22b08q85r248.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Installed at an elevation of 1,750 meters in Falls Creek, within Australia’s Victorian Alps, Flower of the Alpine Sun is a 10-meter-diameter occupiable lookout and public sculpture designed by Gio Veronesi. Accessible via a pedestrian walkway, the structure by designer Gio Veronesi invites visitors into its interior platform to view the surrounding mountain range through an open geometric lattice.",
         "keywords": [
@@ -808,6 +1084,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -823,9 +1102,6 @@
       "firstSeen": "2026-11-25T10:26:55.890Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/shanghai-sculpture-park-catching-feelings-interactive-playscape-wade-leta-designboom-700-500x400-22b08q85r413.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Installed in Shanghai’s Jing’an Sculpture Park for the ninth edition of the Jing’an International Sculpture Project (2026 JISP), Catching Feelings is an interactive sculptural playscape created by multidisciplinary duo Wade and Leta. The post wade and leta shape human-powered kinetic landscape for play in shanghai sculpture park appeared first on designboom | architecture & design magazine.",
         "keywords": [
@@ -836,6 +1112,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -1047,9 +1326,6 @@
       "firstSeen": "2026-11-25T10:31:33.096Z",
       "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2026/11/Silence_by_MariaPopova.jpg?resize=680%2C877&ssl=1",
       "extractionStatus": "full",
-      "tags": [
-        "Speculative"
-      ],
       "digest": {
         "brief": "Music is the hand of silence cupped to hold the feeling of being alive, lifted to the lips and tasted. Silence is the listening presence through which you hear the music of your own life, presence purified to become peace — a peace greater than joy and unburdened by understanding, a peace the other word for which may be love.",
         "keywords": [
@@ -1060,6 +1336,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Speculative"
+      ],
       "contentHtml": null
     },
     {
@@ -1075,9 +1354,6 @@
       "firstSeen": "2026-11-25T10:30:33.097Z",
       "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2016/01/kahlilgibran_madman.jpg?fit=320%2C512&ssl=1",
       "extractionStatus": "full",
-      "tags": [
-        "Speculative"
-      ],
       "digest": {
         "brief": "A self is an illusion, and yet it is the place where we live, the costume the naked soul wears to survive in the world. Kahlil Gibran (January 6, 1883–April 10, 1931), who thought deeply about the art of becoming yourself over the sweep of life, takes up this question in one of his signature parable-poems found in his 1918 classic The Madman (public library | free ebook).",
         "keywords": [
@@ -1088,6 +1364,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Speculative"
+      ],
       "contentHtml": null
     },
     {
@@ -1202,63 +1481,6 @@
       "contentHtml": null
     },
     {
-      "id": "32af257829de",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Jensen Huang reportedly tells Nvidia staff it’s ‘not true’ Trump got him rehired",
-      "excerpt": "Nvidia CEO Jensen Huang apologized to staff during his first all-hands since returning to the company, while attempting to distance himself from the narrative that the White House and tech leaders helped him get his job back, according to reports from Bloomberg, The New York Times, and The Handbasket's Marisa Kabas.",
-      "url": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology",
-      "publishedAt": "2026-11-24T20:02:03.000Z",
-      "firstSeen": "2026-11-25T01:13:34.266Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2300373989.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "During the meeting, Huang reportedly called claims that President Donald Trump was directly involved in his reinstatement — an idea publicly promoted by Trump himself — “completely untrue.” Along with attempting to dismiss Trump’s involvement, Huang reportedly said he also didn’t return because he was a “tech bro” who was “above the law” or “above the code of conduct.”",
-        "keywords": [
-          "Huang reportedly",
-          "Trump",
-          "return",
-          "President"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "491556fd0ddd",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The clock is running out for America’s most contentious spying law",
-      "excerpt": "Weeks before the end of the legislative session, some members of Congress are scrambling to reauthorize a controversial warrantless wiretapping authority, possibly by attaching it to a must-pass military spending bill.",
-      "url": "https://www.theverge.com/policy/1041568/fisa-ndaa-blue-wave",
-      "publishedAt": "2026-11-24T20:00:00.000Z",
-      "firstSeen": "2026-11-25T01:12:34.267Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STK471_Government_Surveillance_CVirginia_E.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Weeks before the end of the legislative session, some members of Congress are scrambling to reauthorize a controversial warrantless wiretapping authority, possibly by attaching it to a must-pass military spending bill. Mike Rounds (R-SD) told Politicothat Section 702 of the Foreign Intelligence Surveillance Act (FISA) could be attached to the National Defense Authorization Act.",
-        "keywords": [
-          "FISA",
-          "Surveillance",
-          "Section",
-          "Intelligence"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "38f3d822d564",
       "sourceId": "claude",
       "sourceName": "Claude",
@@ -1271,9 +1493,6 @@
       "firstSeen": "2026-11-25T10:32:00.108Z",
       "thumbnail": "https://claude.com/resources/articles/install-as-app/opengraph-image/og",
       "extractionStatus": "full",
-      "tags": [
-        "AI"
-      ],
       "digest": {
         "brief": "Starting today, you can use Claude artifacts to create, run, and share desktop apps. The \"Install as app\" feature is rolling out in beta in Claude for Mac and Windows. When an artifact is installed as a Mac or Windows app, it gets its own icon and opens in its own window instead of inside Claude.",
         "keywords": [
@@ -1284,31 +1503,8 @@
         ],
         "by": "extract"
       },
-      "contentHtml": null
-    },
-    {
-      "id": "fe3401e2cda5",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Amazon is knocking almost $50 off six months of Apple TV",
-      "excerpt": "Streaming deals aren’t as plentiful as they used to be, but they’re still around if you know where to look. One that caught our eye is an offer for Apple TV for those with an Amazon account in the US.",
-      "url": "https://www.theverge.com/gadgets/1040046/apple-tv-subscription-streaming-sale-deal-black-friday",
-      "publishedAt": "2026-11-24T19:00:00.000Z",
-      "firstSeen": "2026-11-25T01:11:34.267Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/Severance_Photo_021019.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "One that caught our eye is an offer for Apple TV for those with an Amazon account in the US. Amazon hasn’t shared how long this offer will be available for, so I’d strike on it sooner than later. The subscription includes exclusive access to Formula 1 races and Major League Soccer matches, not to mention a bunch of acclaimed shows like Severance, Silo, The Morning Show, Pachinko, Pluribus, Slow Horses, and many more.",
-        "keywords": [
-          "Amazon",
-          "Apple"
-        ],
-        "by": "extract"
-      },
       "tags": [
-        "Tech Industry"
+        "AI"
       ],
       "contentHtml": null
     },
@@ -1353,9 +1549,6 @@
       "firstSeen": "2026-11-25T10:31:00.108Z",
       "thumbnail": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more/opengraph-image/og",
       "extractionStatus": "full",
-      "tags": [
-        "AI"
-      ],
       "digest": {
         "brief": "Skills over MCP is now in public beta in Claude, so MCP servers can ship skills alongside their tools. With Tasks, servers can run operations that take time, or even full agent loops, while Claude keeps working and picks up the result when it's ready. Claude will be able to pass files to MCP servers, not just text.",
         "keywords": [
@@ -1366,6 +1559,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "AI"
+      ],
       "contentHtml": null
     },
     {
@@ -1392,35 +1588,6 @@
         "by": "extract"
       },
       "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "3f4e3303fc56",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "teenage engineering’s first CD player puts the spinning disc on full display",
-      "excerpt": "with its exposed mechanism and variable playback speed, the EP/BC–1 brings a hands-on approach to digital music. The post teenage engineering’s first CD player puts the spinning disc on full display appeared first on designboom | architecture & design magazine .",
-      "url": "https://www.designboom.com/technology/teenage-engineering-first-cd-player-spinning-disc-display-ep-bc-1/",
-      "publishedAt": "2026-11-24T16:35:27.000Z",
-      "firstSeen": "2026-11-25T01:19:41.662Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/teenage-engineering-ep-bc-1-cd-player-designboom-700-500x400-22b08q85r556.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Swedish electronics company teenage engineering introduces its first-ever CD player, the EP/BC–1, with a design that leaves the spinning compact disc entirely exposed. Released on November 20th, 2026, the EP/BC–1 marks the debut of teenage engineering’s Broadcast series, a new family of audio equipment developed around older music formats and their place within contemporary sound systems.",
-        "keywords": [
-          "teenage engineering",
-          "compact disc",
-          "audio equipment",
-          "player"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry",
         "Product"
       ],
       "contentHtml": null
@@ -1723,61 +1890,6 @@
         "Speculative",
         "Tech Industry"
       ],
-      "contentHtml": null
-    },
-    {
-      "id": "f83f06b9298a",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "learning to move is how we first construct ourselves, and then everything around us",
-      "excerpt": "a station worth staying in, a car no longer shaped by its engine, a home that needs no ground beneath it, a night train where arriving late is the point.",
-      "url": "https://www.designboom.com/editorials/learning-move-construct-ourselves-everything-around-us-states-of-motion/",
-      "publishedAt": "2026-11-24T11:53:45.000Z",
-      "firstSeen": "2026-11-24T13:36:35.027Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/designboom-chapter-states-of-motion-700a-500x400-22b08q85r005.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": ", Greek sculptors worked out a way to put motion into something that could not move. Contrapposto, as Renaissance artists would later name it, describes a standing figure resting its weight on a single leg, allowing the hips, shoulders, and torso to tilt in opposing directions. Against the stiff, frontal poses of the Archaic statues that came before it, contrapposto introduced a frozen promise of movement.",
-        "keywords": [
-          "move",
-          "Contrapposto"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "HMI / Mobility",
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "5ea3e3b42f1b",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "can le corbusier’s last building be disassembled and shipped?",
-      "excerpt": "some 22,000 screws hold together the pavillon le corbusier's prefabricated steel frames in zurich, yet its concrete ramp, staircase, and legacy make relocation near-impossible.",
-      "url": "https://www.designboom.com/architecture/can-le-corbusier-last-building-disassembled-shipped/",
-      "publishedAt": "2026-11-24T11:25:21.000Z",
-      "firstSeen": "2026-11-25T10:21:55.891Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/pavillon-le-corbusier-designboom-700-500x400-22b08q85r822.jpg",
-      "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
-      "digest": {
-        "brief": "The Pavillon Le Corbusier on Lake Zurich is the last completed building by the late French-Swiss architect. In order to claim the building as part of the dispute, it has been said that she tried to take the Pavillon Le Corbusier apart and bring it with her alongside the other interior furnishings. The building opened on July 15, 1967, as the Centre Le Corbusier – Heidi Weber Museum.",
-        "keywords": [
-          "Heidi Weber",
-          "Corbusier",
-          "building",
-          "architect"
-        ],
-        "by": "extract"
-      },
       "contentHtml": null
     },
     {
@@ -2431,9 +2543,6 @@
       "firstSeen": "2026-11-25T10:29:00.108Z",
       "thumbnail": "https://claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data/opengraph-image/og",
       "extractionStatus": "full",
-      "tags": [
-        "AI"
-      ],
       "digest": {
         "brief": "KPMG is one of the world's largest professional services firms, with more than 276,000 employees providing audit, tax, and advisory services across 138 countries and territories. Todd Lohr, KPMG US Vice Chair and Head of Client Technology & Innovation, focuses on bringing AI to clients through products and platforms. Much of the data KPMG handles belongs to its clients, often in highly regulated industries.",
         "keywords": [
@@ -2444,6 +2553,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "AI"
+      ],
       "contentHtml": null
     },
     {
@@ -2459,9 +2571,6 @@
       "firstSeen": "2026-11-25T10:28:00.108Z",
       "thumbnail": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents/opengraph-image/og",
       "extractionStatus": "full",
-      "tags": [
-        "AI"
-      ],
       "digest": {
         "brief": "Coding agents likely write code and open pull requests at your organization already. As agents do more, technical and security leaders must mitigate risks like prompt injection and privilege abuse with layered controls such as checked permissions and bounded environments. On Enterprise, BAA coverage for the Claude Code CLI and the desktop app’s Code tab in local mode, once the HIPAA configuration is applied.",
         "keywords": [
@@ -2472,6 +2581,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "AI"
+      ],
       "contentHtml": null
     },
     {
@@ -2487,9 +2599,6 @@
       "firstSeen": "2026-11-25T10:27:00.108Z",
       "thumbnail": "https://claude.com/resources/articles/introducing-claude-ship/opengraph-image/og",
       "extractionStatus": "full",
-      "tags": [
-        "AI"
-      ],
       "digest": {
         "brief": "Claude Ship is made up of Code Review, which is already generally available, and two new agents in beta: PR Steward and Claude Approvals. Turning Claude Ship on for an entire repository puts it to work across a team's pull requests automatically, under settings and an approval policy the team controls.",
         "keywords": [
@@ -2500,6 +2609,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "AI"
+      ],
       "contentHtml": null
     },
     {
@@ -2832,34 +2944,6 @@
       "contentHtml": null
     },
     {
-      "id": "bc118539232a",
-      "sourceId": "dezeen",
-      "sourceName": "Dezeen",
-      "feedUrl": "https://www.dezeen.com/design/feed/",
-      "mode": "inspiration",
-      "title": "Unprecedented Design Museum exhibition surveys \"the beauty and the depth of Black design\"",
-      "excerpt": "Work from 16 of the most exciting Black designers working today has been brought together under one roof for the first time as part of The Nue Black Aesthetic exhibition at London's Design Museum.",
-      "url": "https://www.dezeen.com/2026/11/20/the-nue-black-aesthetic-exhibition/",
-      "publishedAt": "2026-11-20T11:00:00.000Z",
-      "firstSeen": "2026-11-24T13:04:43.006Z",
-      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/the-nue-black-aesthetic-design-museum-herp_dezeen_2364_col_0-1024x1024.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Work from 16 of the most exciting Black designers working today has been brought together under one roof for the first time as part of The Nue Black Aesthetic exhibition at London's Design Museum. With The Nue Black Aesthetic, Prempeh and the Design Museum's project curator Tiya Dahyabhai hope to remedy this.",
-        "keywords": [
-          "Black Aesthetic",
-          "Design Museum",
-          "brought together",
-          "exhibition"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "b894d8c59d05",
       "sourceId": "aeon",
       "sourceName": "Aeon / Psyche",
@@ -3081,36 +3165,6 @@
       },
       "tags": [
         "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "200c26dcc801",
-      "sourceId": "mittr",
-      "sourceName": "MIT Technology Review",
-      "feedUrl": "https://www.technologyreview.com/feed/",
-      "mode": "research",
-      "title": "A human liver has been kept alive outside the body for a record seven weeks",
-      "excerpt": "Technology called “machine perfusion” is creating the chance for more transplants—and daring new science. Researchers in Australia claim they’ve kept a human liver alive, on life support, outside the body for seven weeks, opening up speculative new possibilities in biomedical engineering.",
-      "url": "https://www.technologyreview.com/2026/11/19/1148934/a-human-liver-has-been-kept-alive-outside-the-body-for-seven-weeks-setting-a-record/",
-      "publishedAt": "2026-11-19T12:00:00.000Z",
-      "firstSeen": "2026-11-24T13:24:10.339Z",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/EOPS-V1.1-.jpg?resize=1200,600",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Researchers in Australia claim they’ve kept a human liver alive, on life support, outside the body for seven weeks, opening up speculative new possibilities in biomedical engineering. The previous record for keeping an internal organ alive outside the body was set in Switzerland several years ago. Perfusion has already enabled doctors to restart hearts from dead people and keep them beating outside the body.",
-        "keywords": [
-          "human liver",
-          "seven weeks",
-          "life support",
-          "body"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Speculative",
-        "AI",
-        "Tech Industry"
       ],
       "contentHtml": null
     },
@@ -3818,9 +3872,6 @@
       "firstSeen": "2026-11-25T10:24:00.108Z",
       "thumbnail": "https://claude.com/resources/articles/building-always-on-agents/opengraph-image/og",
       "extractionStatus": "full",
-      "tags": [
-        "AI"
-      ],
       "digest": {
         "brief": "Over the past few months, we’ve seen a resurgence of always-on agents. Always-on agents are stateful and proactive, meaning they manage context across sessions and take actions without direct supervision. The surrounding architecture of an always-on agent has five core primitives: an event inbox, timers, memory, permissions, and an outbox.",
         "keywords": [
@@ -3831,6 +3882,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "AI"
+      ],
       "contentHtml": null
     },
     {
@@ -3853,33 +3907,6 @@
           "housing stock",
           "economic stagnation",
           "public spending"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "61c1d15bba51",
-      "sourceId": "aeon",
-      "sourceName": "Aeon / Psyche",
-      "feedUrl": "https://aeon.co/feed.rss",
-      "mode": "deep",
-      "title": "My grandfather been tell me a lot of story about Lasseter",
-      "excerpt": "A strange man on camelback – the artist Nora Abbott retells her grandfather’s story of a prospector’s last ride - by Aeon Video Watch on Aeon.",
-      "url": "https://aeon.co/videos/a-legendary-australian-gold-hunt-told-from-an-aboriginal-perspective",
-      "publishedAt": "2026-11-12T11:01:00.000Z",
-      "firstSeen": "2026-11-24T13:01:13.213Z",
-      "thumbnail": "https://images.aeonmedia.co/images/02c07749-78d1-493a-a9e1-7e47e869d59a/nyinuta-nora-abbott-landscape-2.jpg?width=1200&quality=75&format=auto",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Among them is the story of Lewis Harold Bell Lasseter, who went in search of what he believed to be an abundant ‘gold reef’ in the region in 1930. While Lasseter’s fateful journey and ultimate death in the bush are a staple of settler Australian folklore, Abbott’s colourfully rendered account tells the story from the An̲angu point of view, centred on a peculiar outsider ‘searching for minerals’ and losing his way.",
-        "keywords": [
-          "Lasseter",
-          "story",
-          "Abbott"
         ],
         "by": "extract"
       },
@@ -4055,34 +4082,6 @@
       },
       "tags": [
         "AI"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "fe2a4ddb0525",
-      "sourceId": "aeon",
-      "sourceName": "Aeon / Psyche",
-      "feedUrl": "https://psyche.co/feed.rss",
-      "mode": "deep",
-      "title": "Why ‘patient influencers’ should come with a health warning",
-      "excerpt": "People who share their health experiences usually mean well. But their posts could be shaping your symptoms and identity - by Zoe Cunniffe Read on Psyche.",
-      "url": "https://psyche.co/ideas/why-patient-influencers-should-come-with-a-health-warning",
-      "publishedAt": "2026-11-11T11:00:00.000Z",
-      "firstSeen": "2026-11-24T13:01:19.139Z",
-      "thumbnail": "https://images.aeonmedia.co/images/7e28b2b6-7e01-4091-bd7a-da03f9bdd262/sz-this-gettyimages-1207479876.jpg?top=64&left=0&cropWidth=2000&cropHeight=1125&width=1200&quality=75&format=auto",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Patient influencers like Miller often build deeply personal bonds with their followers, many of whom live with the same condition. At the heart of it is the way social media serves up a distorted version of reality, drawing on selected content from patient influencers in ways that often don’t reflect the full range of chronic illness experiences people have in real life.",
-        "keywords": [
-          "Patient influencers",
-          "social media",
-          "chronic illness",
-          "real life"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Health"
       ],
       "contentHtml": null
     },
