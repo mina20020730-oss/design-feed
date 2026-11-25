@@ -474,6 +474,19 @@ html,body{overflow-x:clip}
 /* home-screen app: the page runs under the phone's status bar, so the menu starts below it */
 .picker{padding-top:calc(18px + env(safe-area-inset-top,0px))}
 @media (max-width:760px){.picker{padding-top:calc(10px + env(safe-area-inset-top,0px))}}
+/* phone fixes: the five modes fit the width, the source line wraps instead of running under the picture, and the
+   heart sits in the tag line at the bottom so it never covers the summary */
+@media (max-width:760px){
+  .modes{padding:8px 2px;gap:0}
+  .pick{height:34px;padding:0 clamp(4px,1.9vw,10px);font-size:clamp(11px,3.15vw,13.5px)}
+  .ringlayer i{height:34px;border-radius:17px}
+  .bar{flex-wrap:wrap;row-gap:6px;padding-right:0}
+  .tags{min-height:28px;align-items:center;padding-top:8px;padding-right:0}
+  .card{align-items:stretch}
+  .media{align-self:stretch;height:auto;min-height:0;aspect-ratio:auto}
+  @media (max-width:340px){.pick{padding:0 3px;font-size:11px}}
+  .heart{top:auto;bottom:20px;right:18px;width:30px;height:30px;background:rgba(10,13,11,.42);border-color:rgba(255,255,255,.32);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><filter id="wrap" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feImage id="wrapMap" x="0" y="0" width="84" height="84" preserveAspectRatio="none" result="m"/><feDisplacementMap in="SourceGraphic" in2="m" scale="64" xChannelSelector="R" yChannelSelector="G"/></filter>
@@ -916,7 +929,7 @@ function mountCanvas(cv, item, name){
   let n = 0;
   const P = { bg, card, dpr, get ink(){ return pal[n++ % pal.length]; }, get soft(){ return soft[n++ % pal.length]; }, get dark(){ return dark[n++ % pal.length]; } };
   const offset = seed % 17;
-  const st = { on: !io, draw(t){ try { n = seed; ctx.clearRect(0, 0, cv.width, cv.height); ctx.globalAlpha = 1; scene(ctx, cv.width, cv.height, t * .6 + offset, seed, P);
+  const st = { on: !io, draw(t){ try { const w = Math.round((box.clientWidth || W) * dpr), h = Math.round((box.clientHeight || H) * dpr); if (w !== cv.width || h !== cv.height){ cv.width = w; cv.height = h; } n = seed; ctx.clearRect(0, 0, cv.width, cv.height); ctx.globalAlpha = 1; scene(ctx, cv.width, cv.height, t * .6 + offset, seed, P);
     ctx.globalAlpha = .28; ctx.fillStyle = bg; ctx.fillRect(0, 0, cv.width, cv.height); ctx.globalAlpha = 1; } catch {} } };
   live.set(cv, st); io && io.observe(cv); st.draw(3);
 }

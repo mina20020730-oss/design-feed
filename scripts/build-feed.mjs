@@ -328,7 +328,7 @@ async function main() {
             firstSeen: old?.firstSeen || new Date(Date.now() - k * 60000).toISOString(),
             thumbnail: it.thumbnail || old?.thumbnail || null,
             contentHtml: old?.contentHtml || null, extractionStatus: old?.extractionStatus || null,
-            ...(old?.ai ? { ai: old.ai } : {}), ...(old?.digest ? { digest: old.digest } : {}),
+            ...(old?.ai ? { ai: old.ai } : {}), ...(old?.digest && /^[A-Z0-9"“‘'(]/.test(old.digest.brief || '') ? { digest: old.digest } : {}),   // a summary that starts mid-sentence is made again
           };
           item.tags = tagger({ ...item, categories: it.categories }, feed.defaultTags);
           Object.defineProperty(item, 'feedContent', { value: it.feedContent, enumerable: false });

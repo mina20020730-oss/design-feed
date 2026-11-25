@@ -37,7 +37,7 @@ function sentencesOf(doc) {
     const t = b.textContent.replace(/\s+/g, ' ').trim();
     if (t.length < 50) return;
     const parts = t.match(/[^.!?]+(?:[.!?]+["”’)]*|$)\s*/g) || [t];
-    parts.forEach((s) => { s = s.trim(); if (s.length >= 50 && s.length <= 300 && !JUNK.test(s) && /[a-z]/.test(s) && /[.!?"”’)]$/.test(s)) out.push({ s, block: bi }); });
+    parts.forEach((s) => { s = s.trim(); if (s.length >= 50 && s.length <= 300 && /^[A-Z0-9"“‘'(]/.test(s) && !JUNK.test(s) && /[a-z]/.test(s) && /[.!?"”’)]$/.test(s)) out.push({ s, block: bi }); });
   });
   return out;
 }

@@ -1,7 +1,7 @@
 name: Update feed
 on:
   schedule:
-    - cron: "0 */6 * * *"   # 每 6 小時（UTC）
+    - cron: "23 */6 * * *"   # 每 6 小時（UTC，避開整點尖峰）
   workflow_dispatch:
 permissions:
   contents: write
