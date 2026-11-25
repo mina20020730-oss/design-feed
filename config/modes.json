@@ -1,0 +1,10 @@
+{
+  "_note": "閱讀模式（頂部泡泡）。color 是泡泡的色調，可自行調整。",
+  "modes": [
+    { "id": "pulse",       "name": "Pulse",       "hint": "Scan the headlines",            "color": "#5b8def" },
+    { "id": "practice",    "name": "Practice",    "hint": "How teams do design",           "color": "#22b3a0" },
+    { "id": "inspiration", "name": "Inspiration", "hint": "Images and work",               "color": "#9b6cf0" },
+    { "id": "deep",        "name": "Deep Read",   "hint": "Long reads for the weekend",    "color": "#f0913a" },
+    { "id": "research",    "name": "Research",    "hint": "Worth citing",                  "color": "#4f7a64" }
+  ]
+}

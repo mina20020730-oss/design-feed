@@ -1,0 +1,483 @@
+{
+  "_note": "來源設定。feeds 裡每一個是一個抓取單位，各自對應一個閱讀模式（mode）和預設主題（defaultTags）。discover: true 表示 feed 網址由程式從首頁（或 discoverFrom）的 <link rel=\"alternate\"> 自動找出並驗證，結果存在 config/discovered.json；不要手動猜網址。skin 是閱讀頁的設計 token，目前全是佔位值，字體只用 Google Fonts。",
+  "defaultSkin": {
+    "fontHeading": "Inter",
+    "fontBody": "Source Serif 4",
+    "accent": "#3b3c38",
+    "background": "#f7f6f1",
+    "text": "#1d1d1b",
+    "headingWeight": 600,
+    "imageStyle": "rounded-soft",
+    "maxWidth": 680
+  },
+  "sources": [
+    {
+      "id": "verge",
+      "name": "The Verge",
+      "homepage": "https://www.theverge.com/",
+      "feeds": [
+        {
+          "mode": "pulse",
+          "defaultTags": [
+            "Tech Industry"
+          ],
+          "discover": true
+        }
+      ],
+      "skin": {
+        "fontHeading": "Space Grotesk",
+        "fontBody": "Inter",
+        "accent": "#5200ff",
+        "background": "#fbfbfb",
+        "text": "#131313",
+        "headingWeight": 700,
+        "imageStyle": "full-bleed",
+        "maxWidth": 680
+      }
+    },
+    {
+      "id": "core77",
+      "name": "Core77",
+      "homepage": "https://www.core77.com/",
+      "feeds": [
+        {
+          "mode": "pulse",
+          "defaultTags": [
+            "Product"
+          ],
+          "discover": true
+        }
+      ],
+      "skin": {
+        "fontHeading": "Work Sans",
+        "fontBody": "Work Sans",
+        "accent": "#e0262b",
+        "background": "#ffffff",
+        "text": "#1c1c1c",
+        "headingWeight": 700,
+        "imageStyle": "framed",
+        "maxWidth": 700
+      }
+    },
+    {
+      "id": "sidebar",
+      "name": "Sidebar",
+      "homepage": "https://sidebar.io/",
+      "feeds": [
+        {
+          "mode": "pulse",
+          "defaultTags": [
+            "UX"
+          ],
+          "discover": true
+        }
+      ],
+      "skin": {
+        "fontHeading": "IBM Plex Sans",
+        "fontBody": "IBM Plex Sans",
+        "accent": "#ff4f3f",
+        "background": "#fdfcf9",
+        "text": "#202020",
+        "headingWeight": 600,
+        "imageStyle": "rounded-soft",
+        "maxWidth": 640
+      }
+    },
+    {
+      "id": "ideo",
+      "name": "IDEO",
+      "homepage": "https://www.ideo.com/journal",
+      "feeds": [
+        {
+          "mode": "practice",
+          "defaultTags": [
+            "UX"
+          ],
+          "scrape": {
+            "url": "https://www.ideo.com/thinking",
+            "link": "^https://www\\.ideo\\.com/journal/[a-z0-9-]+$"
+          }
+        }
+      ],
+      "skin": {
+        "fontHeading": "Inter Tight",
+        "fontBody": "Inter",
+        "accent": "#111111",
+        "background": "#ffffff",
+        "text": "#111111",
+        "headingWeight": 600,
+        "imageStyle": "full-bleed",
+        "maxWidth": 700
+      }
+    },
+    {
+      "id": "pair",
+      "name": "Google PAIR",
+      "homepage": "https://pair.withgoogle.com/",
+      "feeds": [
+        {
+          "mode": "practice",
+          "defaultTags": [
+            "AI",
+            "UX"
+          ],
+          "url": "https://medium.com/feed/people-ai-research"
+        }
+      ],
+      "skin": {
+        "fontHeading": "Roboto Flex",
+        "fontBody": "Roboto",
+        "accent": "#1a73e8",
+        "background": "#ffffff",
+        "text": "#202124",
+        "headingWeight": 500,
+        "imageStyle": "rounded-soft",
+        "maxWidth": 680
+      }
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "homepage": "https://www.figma.com/blog/ai/",
+      "feeds": [
+        {
+          "mode": "practice",
+          "defaultTags": [
+            "Product",
+            "UX"
+          ],
+          "scrape": {
+            "url": "https://www.figma.com/blog/ai/",
+            "link": "^https://www\\.figma\\.com/blog/[a-z0-9-]+/$",
+            "richOnly": true
+          }
+        }
+      ],
+      "skin": {
+        "fontHeading": "Inter",
+        "fontBody": "Inter",
+        "accent": "#0d99ff",
+        "background": "#ffffff",
+        "text": "#1e1e1e",
+        "headingWeight": 600,
+        "imageStyle": "rounded-soft",
+        "maxWidth": 680
+      }
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft Design",
+      "homepage": "https://microsoft.design/",
+      "feeds": [
+        {
+          "mode": "practice",
+          "defaultTags": [
+            "UX"
+          ],
+          "url": "https://microsoft.design/feed/"
+        }
+      ],
+      "skin": {
+        "fontHeading": "Manrope",
+        "fontBody": "Manrope",
+        "accent": "#0078d4",
+        "background": "#faf9f8",
+        "text": "#201f1e",
+        "headingWeight": 600,
+        "imageStyle": "rounded-soft",
+        "maxWidth": 700
+      }
+    },
+    {
+      "id": "nngroup",
+      "name": "NN/g",
+      "homepage": "https://www.nngroup.com/",
+      "_note": "同一來源兩個 feed：一般文章 → practice，研究報告 → research。pick 用來從首頁的 feed 連結裡挑；若網站只有一個 feed，itemModeRules 會依文章網址改判模式。",
+      "feeds": [
+        {
+          "mode": "practice",
+          "defaultTags": [
+            "UX"
+          ],
+          "discover": true,
+          "pick": "article",
+          "feedHints": [
+            "https://www.nngroup.com/feed/rss/"
+          ]
+        },
+        {
+          "mode": "research",
+          "defaultTags": [
+            "UX"
+          ],
+          "discover": true,
+          "pick": "report|research",
+          "feedHints": [
+            "https://www.nngroup.com/feed/rss/"
+          ]
+        }
+      ],
+      "itemModeRules": [
+        {
+          "match": "/reports/",
+          "mode": "research"
+        },
+        {
+          "match": "/research-",
+          "mode": "research"
+        }
+      ],
+      "skin": {
+        "fontHeading": "Open Sans",
+        "fontBody": "Open Sans",
+        "accent": "#cc0000",
+        "background": "#ffffff",
+        "text": "#222222",
+        "headingWeight": 700,
+        "imageStyle": "framed",
+        "maxWidth": 720
+      }
+    },
+    {
+      "id": "dezeen",
+      "name": "Dezeen",
+      "homepage": "https://www.dezeen.com/",
+      "_note": "只訂 Design 和 Technology 兩個分類，避免洗版。",
+      "feeds": [
+        {
+          "mode": "inspiration",
+          "defaultTags": [
+            "Product"
+          ],
+          "discover": true,
+          "discoverFrom": "https://www.dezeen.com/design/"
+        },
+        {
+          "mode": "inspiration",
+          "defaultTags": [
+            "Tech Industry"
+          ],
+          "discover": true,
+          "discoverFrom": "https://www.dezeen.com/technology/"
+        }
+      ],
+      "skin": {
+        "fontHeading": "Libre Franklin",
+        "fontBody": "Libre Franklin",
+        "accent": "#000000",
+        "background": "#ffffff",
+        "text": "#000000",
+        "headingWeight": 500,
+        "imageStyle": "full-bleed",
+        "maxWidth": 700
+      }
+    },
+    {
+      "id": "designboom",
+      "name": "designboom",
+      "homepage": "https://www.designboom.com/",
+      "feeds": [
+        {
+          "mode": "inspiration",
+          "defaultTags": [
+            "Product"
+          ],
+          "discover": true,
+          "feedHints": [
+            "https://www.designboom.com/feed/"
+          ]
+        }
+      ],
+      "skin": {
+        "fontHeading": "Roboto Condensed",
+        "fontBody": "Roboto",
+        "accent": "#000000",
+        "background": "#ffffff",
+        "text": "#1a1a1a",
+        "headingWeight": 700,
+        "imageStyle": "full-bleed",
+        "maxWidth": 720
+      }
+    },
+    {
+      "id": "google",
+      "name": "Google Design",
+      "homepage": "https://design.google/library",
+      "feeds": [
+        {
+          "mode": "inspiration",
+          "defaultTags": [
+            "UX"
+          ],
+          "custom": "googleDesign"
+        }
+      ],
+      "skin": {
+        "fontHeading": "Roboto Flex",
+        "fontBody": "Roboto",
+        "accent": "#1a73e8",
+        "background": "#ffffff",
+        "text": "#202124",
+        "headingWeight": 500,
+        "imageStyle": "rounded-soft",
+        "maxWidth": 700
+      }
+    },
+    {
+      "id": "aeon",
+      "name": "Aeon / Psyche",
+      "homepage": "https://aeon.co/",
+      "feeds": [
+        {
+          "mode": "deep",
+          "defaultTags": [
+            "Speculative"
+          ],
+          "discover": true
+        },
+        {
+          "mode": "deep",
+          "defaultTags": [
+            "Health"
+          ],
+          "discover": true,
+          "discoverFrom": "https://psyche.co/"
+        }
+      ],
+      "skin": {
+        "fontHeading": "Source Serif 4",
+        "fontBody": "Source Serif 4",
+        "accent": "#c0392b",
+        "background": "#fbfaf7",
+        "text": "#1d1d1b",
+        "headingWeight": 600,
+        "imageStyle": "framed",
+        "maxWidth": 640
+      }
+    },
+    {
+      "id": "noema",
+      "name": "Noema",
+      "homepage": "https://www.noemamag.com/",
+      "feeds": [
+        {
+          "mode": "deep",
+          "defaultTags": [
+            "Speculative"
+          ],
+          "discover": true
+        }
+      ],
+      "skin": {
+        "fontHeading": "Playfair Display",
+        "fontBody": "Newsreader",
+        "accent": "#e2573b",
+        "background": "#fffdf8",
+        "text": "#141414",
+        "headingWeight": 600,
+        "imageStyle": "full-bleed",
+        "maxWidth": 640
+      }
+    },
+    {
+      "id": "marginalian",
+      "name": "The Marginalian",
+      "homepage": "https://www.themarginalian.org/",
+      "feeds": [
+        {
+          "mode": "deep",
+          "defaultTags": [
+            "Speculative"
+          ],
+          "discover": true
+        }
+      ],
+      "skin": {
+        "fontHeading": "EB Garamond",
+        "fontBody": "EB Garamond",
+        "accent": "#8a5a2b",
+        "background": "#fdfbf6",
+        "text": "#222222",
+        "headingWeight": 500,
+        "imageStyle": "framed",
+        "maxWidth": 620
+      }
+    },
+    {
+      "id": "benevans",
+      "name": "Benedict Evans",
+      "homepage": "https://www.ben-evans.com/",
+      "feeds": [
+        {
+          "mode": "deep",
+          "defaultTags": [
+            "Tech Industry"
+          ],
+          "discover": true,
+          "feedHints": [
+            "https://www.ben-evans.com/benedictevans?format=rss"
+          ]
+        }
+      ],
+      "skin": {
+        "fontHeading": "Lora",
+        "fontBody": "Lora",
+        "accent": "#2a6496",
+        "background": "#ffffff",
+        "text": "#222222",
+        "headingWeight": 600,
+        "imageStyle": "rounded-soft",
+        "maxWidth": 640
+      }
+    },
+    {
+      "id": "mittr",
+      "name": "MIT Technology Review",
+      "homepage": "https://www.technologyreview.com/",
+      "feeds": [
+        {
+          "mode": "research",
+          "defaultTags": [
+            "AI",
+            "Tech Industry"
+          ],
+          "discover": true
+        }
+      ],
+      "skin": {
+        "fontHeading": "Fraunces",
+        "fontBody": "Source Serif 4",
+        "accent": "#e0182d",
+        "background": "#ffffff",
+        "text": "#111111",
+        "headingWeight": 600,
+        "imageStyle": "full-bleed",
+        "maxWidth": 680
+      }
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "homepage": "https://claude.com/resources/articles",
+      "feeds": [
+        {
+          "mode": "practice",
+          "defaultTags": [
+            "AI"
+          ],
+          "url": "https://claude.com/resources/articles/rss.xml"
+        }
+      ],
+      "skin": {
+        "fontHeading": "Source Serif 4",
+        "fontBody": "Inter",
+        "accent": "#d97757",
+        "background": "#faf9f5",
+        "text": "#141413",
+        "headingWeight": 500,
+        "imageStyle": "rounded-soft",
+        "maxWidth": 660
+      }
+    }
+  ]
+}

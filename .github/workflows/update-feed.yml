@@ -1,0 +1,27 @@
+name: Update feed
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # 每 6 小時（UTC）
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npm run build
+        env:
+          # 公開網站只放標題、圖片、摘要和原文連結，不抓全文、不做翻譯
+          PUBLIC_SITE: "1"
+      - name: Commit feed.json
+        run: |
+          git config user.name "feed-bot"
+          git config user.email "feed-bot@users.noreply.github.com"
+          git add data/feed.json config/discovered.json
+          git diff --cached --quiet || git commit -m "Update feed"
+          git push

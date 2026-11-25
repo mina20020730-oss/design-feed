@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Design Feed</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: a monochrome motion-blur backdrop; on top a row of round logos joined like liquid, where the one in the
+   middle is the chosen one; below it a column of wide, see-through cards that scrolls down. Cards open in a reader sheet. */
+:root{
+  --ink:#151518; --muted:rgba(21,21,24,.64); --faint:rgba(21,21,24,.45); --new:#d9434b;
+  --glass:rgba(255,255,255,.26); --glass-hover:rgba(255,255,255,.4); --glass-strong:rgba(244,244,247,.78); --edge:rgba(255,255,255,.55); --edge-hi:rgba(255,255,255,.9);
+  --media:rgba(255,255,255,.22); --tint-ink:#545a78; --ground:#c6c6c3; --blob:#0c0c0e;
+  --font-ui:"Plus Jakarta Sans",system-ui,"Noto Sans TC",sans-serif;
+  color-scheme:light;
+}
+/* the page is a pale, monochrome motion-blur photo by design; dark mode dims it and flips the ink */
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ink:#f1f1f3; --muted:rgba(241,241,243,.66); --faint:rgba(241,241,243,.45); --new:#ff7a7f; --glass:rgba(40,40,44,.34); --glass-hover:rgba(60,60,66,.45);
+  --glass-strong:rgba(30,30,34,.8); --edge:rgba(255,255,255,.16); --edge-hi:rgba(255,255,255,.34); --media:rgba(255,255,255,.07); --tint-ink:#c7c9d6; --ground:#1e1e21; color-scheme:dark}}
+:root[data-theme="dark"]{--ink:#f1f1f3; --muted:rgba(241,241,243,.66); --faint:rgba(241,241,243,.45); --new:#ff7a7f; --glass:rgba(40,40,44,.34); --glass-hover:rgba(60,60,66,.45);
+  --glass-strong:rgba(30,30,34,.8); --edge:rgba(255,255,255,.16); --edge-hi:rgba(255,255,255,.34); --media:rgba(255,255,255,.07); --tint-ink:#c7c9d6; --ground:#1e1e21; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font-family:var(--font-ui);font-size:14px;min-height:100vh;background:var(--ground);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.backdrop{position:fixed;inset:-30px;z-index:-1;background:
+  radial-gradient(60% 45% at 50% 48%,rgba(120,120,118,.38),rgba(120,120,118,0) 70%),
+  radial-gradient(70% 60% at 0% 100%,rgba(205,222,206,.9),rgba(205,222,206,0) 60%),
+  radial-gradient(60% 50% at 100% 0%,rgba(236,236,214,.95),rgba(236,236,214,0) 60%),
+  radial-gradient(50% 45% at 100% 100%,rgba(225,232,214,.8),rgba(225,232,214,0) 60%),
+  radial-gradient(55% 45% at 0% 0%,rgba(232,232,218,.85),rgba(232,232,218,0) 60%),
+  radial-gradient(90% 85% at 50% 50%,#bdbdbb 0%,#c3c3c0 55%,#d6d8cb 85%,#e4e6d6 100%)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .backdrop{filter:brightness(.32)}}
+:root[data-theme="dark"] .backdrop{filter:brightness(.32)}
+/* the page spans the screen like a gallery: side gutters grow with the window, and the cards flow into as many
+   columns as fit (one on a laptop, two or three on a wide monitor), so a big screen fills up instead of leaving
+   empty sides. Reading lines stay short because each card's text sits in its own column. */
+:root{--gutter:clamp(16px,4vw,72px);--page-max:1760px}
+.app{width:min(100% - 2 * max(0px,var(--gutter) - 16px),var(--page-max));margin:0 auto;transform-origin:50% 30%}
+
+/* ---- logo row: blobs on a "goo" filter so neighbours melt into the big middle one; logos sit on top, unfiltered ---- */
+.picker{position:sticky;top:0;z-index:5;height:150px;margin:0 calc(-1 * max(16px,env(safe-area-inset-left,0px))) 6px;overflow:hidden;touch-action:pan-y;cursor:grab;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 22%,#000 78%,transparent);mask-image:linear-gradient(90deg,transparent,#000 22%,#000 78%,transparent)}
+
+.lane{position:absolute;left:50%;top:0;height:100%;display:flex;align-items:center;transition:transform .55s cubic-bezier(.65,0,.25,1);will-change:transform}
+.lane.goo{filter:url(#goo) drop-shadow(0 9px 8px rgba(40,42,36,.16))}
+/* circles further from the middle soften: stacked blur bands on both sides of the row */
+.haze{position:absolute;top:0;bottom:0;width:42%;z-index:2;pointer-events:none}
+.haze.l{left:0}.haze.r{right:0}
+.haze i{position:absolute;inset:0}
+.haze.l i:nth-child(1){-webkit-backdrop-filter:blur(1.5px);backdrop-filter:blur(1.5px);-webkit-mask-image:linear-gradient(90deg,#000 45%,transparent);mask-image:linear-gradient(90deg,#000 45%,transparent)}
+.haze.l i:nth-child(2){-webkit-backdrop-filter:blur(3.5px);backdrop-filter:blur(3.5px);-webkit-mask-image:linear-gradient(90deg,#000 30%,transparent 70%);mask-image:linear-gradient(90deg,#000 30%,transparent 70%)}
+.haze.r i:nth-child(1){-webkit-backdrop-filter:blur(1.5px);backdrop-filter:blur(1.5px);-webkit-mask-image:linear-gradient(270deg,#000 45%,transparent);mask-image:linear-gradient(270deg,#000 45%,transparent)}
+.haze.r i:nth-child(2){-webkit-backdrop-filter:blur(3.5px);backdrop-filter:blur(3.5px);-webkit-mask-image:linear-gradient(270deg,#000 30%,transparent 70%);mask-image:linear-gradient(270deg,#000 30%,transparent 70%)}
+.slot{flex:none;width:106px;height:100%;display:grid;place-items:center}
+/* at rest the circles sit apart; while the row moves they stretch sideways, so thin sticky necks pull between
+   neighbours and then snap back with a little wobble */
+.blob{--z:.42;--pull:0px;width:84px;height:84px;border-radius:50%;background:var(--c,#fff);transform:translateX(0) scale(var(--z));
+  transition:transform .9s cubic-bezier(.25,1.2,.4,1),opacity .5s}
+/* while the row moves, the circles near the middle are drawn together and melt into one shape, then spring apart */
+.lane.goo.moving .blob{transform:translateX(var(--pull)) scale(calc(var(--z) * 1.02));transition:transform .3s cubic-bezier(.45,0,.55,1),opacity .5s}
+/* the droplet that is pulled out of the old circle and flows into the new one */
+.drop{position:absolute;top:50%;left:0;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:#fff;transform:scale(0);pointer-events:none}
+.pick{--z:.42;position:relative;width:84px;height:84px;border-radius:50%;border:0;padding:0;background:none;cursor:pointer;display:grid;place-items:center;
+  transform:translateX(0) scale(var(--z));transition:transform .9s cubic-bezier(.25,1.2,.4,1),opacity .5s;opacity:var(--a,1);color:#fff}
+.lane.moving .pick{transform:translateX(var(--pull)) scale(calc(var(--z) * 1.02));transition:transform .3s cubic-bezier(.45,0,.55,1),opacity .5s}
+/* every mark is white on the translucent black blob */
+/* the logo is printed on the ball itself: a sphere-wrap filter bends it around the surface, the decal rolls toward the
+   outer side as a ball moves off-centre, and the ball's own shading and highlight sit on top of it */
+.pick{overflow:hidden}
+.pick .art{position:absolute;inset:0;z-index:1;pointer-events:none}
+.pick .dec{position:absolute;inset:0;display:grid;place-items:center;transform:perspective(110px) translateX(var(--tx,0px)) rotateY(var(--ry,0deg));transition:transform .6s cubic-bezier(.3,1.2,.5,1);-webkit-mask-image:radial-gradient(circle,#000 52%,rgba(0,0,0,.25) 72%,transparent 80%);mask-image:radial-gradient(circle,#000 52%,rgba(0,0,0,.25) 72%,transparent 80%)}
+.pick::after{content:"";position:absolute;inset:0;border-radius:50%;z-index:2;pointer-events:none;
+  background:radial-gradient(16% 11% at 33% 22%,rgba(255,255,255,.95),rgba(255,255,255,0) 100%),
+    radial-gradient(34% 26% at 36% 26%,rgba(255,255,255,.35),rgba(255,255,255,0) 100%),
+    radial-gradient(46% 20% at 52% 92%,rgba(255,255,255,.4),rgba(255,255,255,0) 100%),
+    radial-gradient(circle at 40% 36%,rgba(60,62,56,0) 58%,rgba(60,62,56,.12) 82%,rgba(60,62,56,.24) 100%)}
+.pick svg{display:block;shape-rendering:geometricPrecision}
+.pick{color:#3b3c38}
+.pick svg *{fill:#3b3c38 !important}.pick svg .ln,.pick .hrt svg *{fill:none !important;stroke:#3b3c38}
+.pick .word{color:#3b3c38 !important}
+.pick .art{mix-blend-mode:multiply;opacity:.88}
+.pick .word{font:800 21px/1 var(--font-ui);letter-spacing:.02em;color:#111}
+.pick svg{width:50px;height:50px}
+.pick svg[viewBox="0 0 40 40"]{width:50px;height:50px}
+.pick .hrt svg{width:44px;height:44px}
+.pick:focus-visible{outline:2px solid var(--ink);outline-offset:6px}
+
+/* ---- cards: wide, low and see-through; the page scrolls down through them ---- */
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,520px),1fr));gap:16px clamp(16px,1.6vw,24px);align-items:stretch;padding:52px 0 180px}
+.list > .empty{grid-column:1 / -1;max-width:760px;justify-self:center}
+/* matte but glossy: a frosted grain over the glass, a soft specular sheen across the top, and a bright rim.
+   Near the top and bottom of the screen, stacked blur bands (.fog) soften whatever scrolls under them, so one card
+   can be sharp in its middle and already blurred at its edge. */
+.card{--e:0;--mw:clamp(150px,30%,216px);position:relative;display:grid;grid-template-columns:minmax(0,1fr) var(--mw);gap:22px;align-items:stretch;padding:16px 16px 16px 22px;border-radius:22px;isolation:isolate;
+  background:
+    radial-gradient(70% 90% at 0% 0%,color-mix(in srgb,var(--src,#888) 9%,transparent),transparent 70%),
+    linear-gradient(168deg,rgba(255,255,255,.55) 0%,rgba(255,255,255,.12) 26%,rgba(255,255,255,0) 46%),
+    var(--glass);
+  border:1px solid var(--edge);-webkit-backdrop-filter:blur(14px) saturate(1.1);backdrop-filter:blur(14px) saturate(1.1);
+  box-shadow:inset 0 1px 0 var(--edge-hi),inset 0 -1px 0 rgba(255,255,255,.18),inset 0 0 0 1px rgba(255,255,255,.08),0 26px 44px -32px rgba(20,20,30,.55);
+  transition:background .3s ease,border-color .3s}
+.card::after{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;pointer-events:none;opacity:.32;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.card:hover{background:radial-gradient(70% 90% at 0% 0%,color-mix(in srgb,var(--src,#888) 12%,transparent),transparent 70%),linear-gradient(168deg,rgba(255,255,255,.7) 0%,rgba(255,255,255,.18) 28%,rgba(255,255,255,0) 50%),var(--glass-hover);border-color:var(--edge-hi)}
+.card:focus-within{outline:2px solid var(--ink);outline-offset:3px}
+.card > a.cover{position:absolute;inset:0;z-index:1;border-radius:inherit}
+.txt{display:flex;flex-direction:column;min-width:0;padding-top:4px}
+.bar{display:flex;align-items:center;gap:10px;font:700 10.5px/1 var(--font-ui);letter-spacing:.14em;text-transform:uppercase;padding-right:46px}
+.bar .date{white-space:nowrap;font-weight:500;letter-spacing:.02em;text-transform:none;color:var(--ink-3,var(--ink));opacity:.6;font-size:11.5px}
+.new{font:700 9px/1 var(--font-ui);letter-spacing:.1em;color:var(--new);border:1px solid currentColor;border-radius:4px;padding:3px 5px}
+.title{margin:12px 0 0;font:500 20px/1.25 var(--font-ui);letter-spacing:-.02em;text-wrap:balance;padding-right:30px}
+.abstract{margin:9px 0 0;font:400 12.5px/1.55 var(--font-ui);color:var(--muted)}
+.tags{margin-top:auto;padding-top:12px;font:600 10px/1.3 var(--font-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.heart{position:absolute;z-index:2;top:14px;right:calc(var(--mw) + 32px);width:34px;height:34px;border-radius:50%;border:1px solid var(--edge);background:transparent;color:var(--ink);
+  display:grid;place-items:center;cursor:pointer;padding:0}
+.heart svg{width:15px;height:15px}
+.heart:hover{background:var(--glass-hover)}
+.heart:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.media{position:relative;border-radius:14px;overflow:hidden;background:var(--media);min-height:150px;align-self:stretch}
+.media img,.media canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.fog{position:fixed;left:0;right:0;z-index:4;pointer-events:none}
+.fog i{position:absolute;inset:0}
+.fog.top{top:0;height:180px}.fog.bot{bottom:0;height:120px}
+.fog.top i:nth-child(1){-webkit-backdrop-filter:blur(1.5px);backdrop-filter:blur(1.5px);-webkit-mask-image:linear-gradient(#000 40%,transparent 100%);mask-image:linear-gradient(#000 40%,transparent 100%)}
+.fog.top i:nth-child(2){-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);-webkit-mask-image:linear-gradient(#000 30%,transparent 80%);mask-image:linear-gradient(#000 30%,transparent 80%)}
+.fog.top i:nth-child(3){-webkit-backdrop-filter:blur(9px);backdrop-filter:blur(8px);-webkit-mask-image:linear-gradient(#000 30%,transparent 70%);mask-image:linear-gradient(#000 30%,transparent 70%)}
+.fog.top i:nth-child(4){background:linear-gradient(rgba(214,215,220,.6) 20%,rgba(214,215,220,0) 70%)}
+.fog.bot i:nth-child(1){-webkit-backdrop-filter:blur(1.5px);backdrop-filter:blur(1.5px);-webkit-mask-image:linear-gradient(0deg,#000 40%,transparent 100%);mask-image:linear-gradient(0deg,#000 40%,transparent 100%)}
+.fog.bot i:nth-child(2){-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);-webkit-mask-image:linear-gradient(0deg,#000 30%,transparent 80%);mask-image:linear-gradient(0deg,#000 30%,transparent 80%)}
+.fog.bot i:nth-child(3){-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);-webkit-mask-image:linear-gradient(0deg,#000 15%,transparent 55%);mask-image:linear-gradient(0deg,#000 15%,transparent 55%)}
+.fog.bot i:nth-child(4){background:linear-gradient(0deg,rgba(214,215,220,.5) 10%,rgba(214,215,220,0) 70%)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .fog.top i:nth-child(4){background:linear-gradient(rgba(30,30,33,.6) 20%,transparent 70%)}
+  :root:not([data-theme="light"]) .fog.bot i:nth-child(4){background:linear-gradient(0deg,rgba(30,30,33,.5) 10%,transparent 70%)}}
+:root[data-theme="dark"] .fog.top i:nth-child(4){background:linear-gradient(rgba(30,30,33,.6) 20%,transparent 70%)}
+:root[data-theme="dark"] .fog.bot i:nth-child(4){background:linear-gradient(0deg,rgba(30,30,33,.5) 10%,transparent 70%)}
+.empty{margin:0;padding:44px 28px;background:var(--glass);border:1px solid var(--edge);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-radius:22px;color:var(--muted);font:500 16px/1.5 var(--font-ui)}
+
+/* ---- reader ---- */
+.reader{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:24px max(16px,env(safe-area-inset-right,0px)) 24px max(16px,env(safe-area-inset-left,0px))}
+.reader[hidden]{display:none}
+.veil{position:absolute;inset:0;background:rgba(200,200,206,.25)}
+.sheet{position:relative;width:min(1360px,100%);height:100%;overflow-y:auto;overscroll-behavior:contain;border-radius:28px;
+  background:var(--glass-strong);border:1px solid var(--edge);-webkit-backdrop-filter:blur(28px) saturate(1.1);backdrop-filter:blur(28px) saturate(1.1);
+  box-shadow:inset 0 1px 0 var(--edge-hi),0 40px 80px -40px rgba(0,0,0,.8);scrollbar-width:thin}
+.tools{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:8px;padding:14px 16px;background:linear-gradient(var(--glass-strong) 60%,transparent)}
+.tools .sp{flex:1}
+.tool{height:38px;min-width:38px;padding:0 14px;border-radius:19px;border:1px solid var(--edge);background:transparent;color:var(--ink);
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;font:600 12px/1 var(--font-ui);text-decoration:none}
+.tool.icon{padding:0;width:38px}
+.tool svg{width:16px;height:16px}
+.tool:hover{background:var(--ink);color:var(--ground)}
+.tool:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.tools .heart{position:static;width:38px;height:38px}
+.doc{padding:4px clamp(20px,5vw,56px) 56px}
+.hero{position:relative;aspect-ratio:16/8;border-radius:18px;overflow:hidden;background:var(--media);margin-bottom:28px}
+.hero img,.hero canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.doc h1{margin:0;font:600 clamp(26px,3.4vw,36px)/1.15 var(--font-ui);letter-spacing:-.025em;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:14px;font:500 12.5px/1.2 var(--font-ui);color:var(--muted)}
+.meta .src{display:inline-flex;align-items:center;gap:8px;color:var(--ink);font-weight:600}
+.meta .src i{width:24px;height:24px;border-radius:50%;background:#fff;display:grid;place-items:center;font-style:normal;overflow:hidden}
+.meta .src i svg{width:14px;height:14px;color:#1d1d1f}.meta .src i .word{font:800 6.5px/1 var(--font-ui);color:#111}
+.summary{margin:26px 0 30px;padding:18px 20px;border-radius:16px;background:var(--glass);border:1px solid var(--edge)}
+.summary b{display:flex;align-items:center;gap:6px;font:700 12px/1 var(--font-ui);letter-spacing:.04em;color:var(--tint-ink);margin-bottom:10px}
+.summary p{margin:0;font:400 14.5px/1.7 var(--font-ui)}
+.body{font:400 16.5px/1.78 var(--font-ui);letter-spacing:-.003em}
+.body p{margin:0 0 1.15em}
+.body h3{margin:1.8em 0 .6em;font:600 20px/1.3 var(--font-ui);letter-spacing:-.015em;color:var(--ink)}
+.body ul{margin:0 0 1.15em;padding-left:1.2em}.body li{margin:.35em 0}
+.body blockquote{margin:1.4em 0;padding:.2em 0 .2em 18px;border-left:3px solid var(--tint-ink);font-size:19px;line-height:1.5;font-weight:500}
+.body figure{margin:1.6em 0}.body figure img{width:100%;border-radius:14px;display:block}
+.body .cap{font-size:12.5px;color:var(--muted);margin:-.4em 0 1.2em}
+.later{margin:0 0 24px;padding:16px 18px;border-radius:14px;border:1px dashed var(--edge-hi);font:500 14px/1.6 var(--font-ui);color:var(--muted)}
+.endnote{margin-top:36px;padding-top:20px;border-top:1px solid var(--edge);display:flex;justify-content:space-between;align-items:center;gap:12px;font:500 12.5px/1.4 var(--font-ui);color:var(--muted)}
+body.reading{overflow:hidden}
+
+@media (max-width:760px){
+  .picker{height:120px}
+  .slot{width:92px}
+  .fog.top{height:150px}.fog.bot{height:90px}
+  .card{grid-template-columns:minmax(0,1fr) 108px;gap:14px;padding:14px 12px 14px 16px;border-radius:18px}
+  .heart{right:132px;top:10px;width:30px;height:30px}
+  .media{min-height:100px;align-self:start;aspect-ratio:1}
+  .title{font-size:17px;padding-right:22px}
+  .abstract{font-size:12px}
+  .reader{padding:0}
+  .sheet{border-radius:0;border:0;width:100%}
+}
+/* ---- cursor: a small dark-green dot; everything under it shows in reverse colours ---- */
+.lens{position:fixed;left:0;top:0;width:28px;height:28px;margin:-14px 0 0 -14px;border-radius:50%;z-index:100;pointer-events:none;opacity:0;transition:opacity .25s;
+  -webkit-backdrop-filter:invert(1) contrast(1.15);backdrop-filter:invert(1) contrast(1.15);background:rgba(18,70,46,.22)}
+html.lensed .lens{opacity:1}
+html.lensed,html.lensed *{cursor:none !important}
+@media (hover:none),(pointer:coarse){.lens{display:none}}
+
+/* ---- filters under the bubbles: mode name, topic chips (multi-select, Any/All), Saved, and the source filter ---- */
+:root{--mode:#22b3a0}
+/* the mode sits in its own small tile; the filters run beside it in one line that scrolls sideways when it runs out of room */
+.chips{display:flex;align-items:center;justify-content:center;gap:12px;margin:-4px auto 0;max-width:100%;padding:0 4px;position:relative;z-index:4}
+.modetile{flex:none;display:grid;gap:4px;padding:9px 14px 9px 12px;border-radius:14px;background:rgba(255,255,255,.34);border:1px solid rgba(255,255,255,.62);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:inset 0 1px 0 rgba(255,255,255,.7)}
+.modetile .mt-name{display:flex;align-items:center;gap:7px;font:700 13px/1 var(--font-ui);letter-spacing:-.01em;color:var(--ink)}
+.modetile .mt-name i{width:8px;height:8px;border-radius:50%;background:var(--mode);box-shadow:0 0 0 3px color-mix(in srgb,var(--mode) 22%,transparent)}
+.modetile small{font:500 11px/1.1 var(--font-ui);color:var(--muted);padding-left:15px;white-space:nowrap}
+.chiprow{flex:0 1 auto;min-width:0;display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none;padding:6px 2px;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 10px),transparent);mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 10px),transparent)}
+.chiprow::-webkit-scrollbar{display:none}
+.chiprow > *{flex:none;white-space:nowrap}
+@media (max-width:760px){.chips{justify-content:flex-start;gap:8px}.modetile{padding:8px 10px}.modetile small{display:none}}
+.chip{height:32px;padding:0 14px;border-radius:16px;display:inline-flex;align-items:center;gap:6px;cursor:pointer;
+  font:600 12.5px/1 var(--font-ui);color:var(--ink);background:rgba(255,255,255,.34);border:1px solid rgba(255,255,255,.62);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:inset 0 1px 0 rgba(255,255,255,.7);transition:background .2s,color .2s,border-color .2s,opacity .2s}
+.chip:hover{background:rgba(255,255,255,.55)}
+.chip[aria-pressed="true"]{background:color-mix(in srgb,var(--mode) 78%,#1d1d1b);border-color:transparent;color:#fff}
+.chip.zero:not([aria-pressed="true"]){opacity:.45}
+.chip b{font-weight:500;opacity:.6;font-size:11px}
+.chip svg{width:14px;height:14px}
+.chip:focus-visible,.seg button:focus-visible,.bar .src:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.seg{display:inline-flex;height:32px;border-radius:16px;padding:3px;gap:2px;background:rgba(255,255,255,.24);border:1px solid rgba(255,255,255,.5)}
+.seg button{border:0;border-radius:13px;padding:0 10px;font:600 11.5px/1 var(--font-ui);color:var(--muted);background:transparent;cursor:pointer}
+.seg button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.chip.source{background:#2f302c;color:#fff;border-color:transparent}
+.chip.source span{opacity:.7;font-weight:500}
+.empty button{margin-top:14px}
+/* the source name on a card is its own button: it filters the list to that source */
+.bar .src{all:unset;display:inline-flex;align-items:center;gap:6px;color:color-mix(in oklab,var(--src,var(--ink)) 78%,var(--ink));cursor:pointer;font:inherit;letter-spacing:inherit;text-transform:inherit;border-radius:4px;position:relative;z-index:3}
+.bar .src:hover{text-decoration:underline;text-underline-offset:3px}
+
+.bar .src::before,.meta .src::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--src,currentColor);flex:none;opacity:.85}
+.meta .src{display:inline-flex;align-items:center;gap:7px}
+
+/* ---- reader: the article in this page, dressed in its source's skin (fonts, colours, column, image style) ---- */
+.sheet.skinned{background:color-mix(in srgb,var(--sk-bg,#f7f6f1) 94%,transparent);color:var(--sk-text,var(--ink))}
+.sheet.skinned::before{content:"";position:sticky;top:0;display:block;height:0;z-index:1;pointer-events:none;
+  box-shadow:0 0 90px 46px color-mix(in srgb,var(--mode) 45%,transparent)}
+.sheet.skinned .tools{background:linear-gradient(color-mix(in srgb,var(--sk-bg,#f7f6f1) 92%,transparent) 60%,transparent)}
+.sheet.skinned .tool{color:var(--sk-text);border-color:color-mix(in srgb,var(--sk-text) 18%,transparent)}
+.sheet.skinned .tool:hover{background:var(--sk-text);color:var(--sk-bg)}
+.sheet.skinned .doc{max-width:var(--sk-max,680px);margin:0 auto;padding-left:clamp(20px,5vw,40px);padding-right:clamp(20px,5vw,40px);box-sizing:content-box}
+.sheet.skinned .doc h1{font-family:var(--sk-fh),var(--font-ui);font-weight:var(--sk-hw,600);color:var(--sk-text)}
+.sheet.skinned .meta{color:color-mix(in srgb,var(--sk-text) 60%,transparent)}
+.sheet.skinned .meta .src{color:var(--sk-text)}
+.meta .modetag{display:inline-flex;align-items:center;gap:6px}.meta .modetag i{width:7px;height:7px;border-radius:50%;background:var(--mode)}
+.sheet.skinned .summary{background:color-mix(in srgb,var(--sk-text) 5%,transparent);border-color:color-mix(in srgb,var(--sk-text) 10%,transparent)}
+.sheet.skinned .summary b{color:var(--sk-accent)}
+.sheet.skinned .body{font-family:var(--sk-fb),Georgia,serif;font-size:17.5px;line-height:1.72;color:var(--sk-text)}
+.sheet.skinned .body h2,.sheet.skinned .body h3,.sheet.skinned .body h4{font-family:var(--sk-fh),var(--font-ui);font-weight:var(--sk-hw,600);margin:1.7em 0 .55em;line-height:1.25;letter-spacing:-.01em}
+.sheet.skinned .body h2{font-size:1.4em}.sheet.skinned .body h3{font-size:1.2em}.sheet.skinned .body h4{font-size:1.05em}
+.sheet.skinned .body a{color:var(--sk-accent);text-underline-offset:3px}
+.sheet.skinned .body blockquote{margin:1.4em 0;padding:.1em 0 .1em 18px;border-left:3px solid var(--sk-accent);font-size:1.08em}
+.sheet.skinned .body ul,.sheet.skinned .body ol{padding-left:1.3em;margin:0 0 1.1em}
+.sheet.skinned .body figure{margin:1.6em 0}.sheet.skinned .body img{max-width:100%;height:auto;display:block;margin:1.4em auto}
+.sheet.skinned .body figure img{margin:0 auto}
+.sheet.skinned .body figcaption{font-size:.78em;opacity:.65;margin-top:.6em;font-family:var(--font-ui)}
+.sheet.skinned .body pre{overflow:auto;padding:14px;border-radius:10px;background:color-mix(in srgb,var(--sk-text) 6%,transparent);font-size:.82em}
+.sheet.skinned .body table{border-collapse:collapse;font-size:.85em;display:block;overflow-x:auto}.sheet.skinned .body td,.sheet.skinned .body th{border:1px solid color-mix(in srgb,var(--sk-text) 15%,transparent);padding:6px 10px}
+.body.img-rounded-soft img{border-radius:14px}
+.body.img-framed img{padding:8px;background:#fff;border:1px solid color-mix(in srgb,var(--sk-text) 14%,transparent)}
+.body.img-full-bleed figure,.body.img-full-bleed > img,.body.img-full-bleed p > img{width:calc(100% + 2 * clamp(20px,5vw,40px));max-width:none;margin-left:calc(-1 * clamp(20px,5vw,40px))}
+.body.img-full-bleed figure img{width:100%}
+.sheet.skinned .hero{border-radius:16px}
+/* when only the summary could be brought in, the way to the original is the main thing on the page */
+.fallback{margin:6px 0 28px;padding:20px 22px;border-radius:16px;border:1px solid color-mix(in srgb,var(--sk-text,#222) 14%,transparent);background:color-mix(in srgb,var(--sk-accent,#333) 7%,transparent)}
+.fallback p{margin:0 0 14px;font:500 14.5px/1.6 var(--font-ui)}
+.btn-orig{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 22px;border-radius:23px;background:var(--sk-accent,#222);color:#fff;text-decoration:none;font:600 15px/1 var(--font-ui)}
+.btn-orig:hover{filter:brightness(1.1)}
+.btn-orig:focus-visible{outline:2px solid var(--sk-text,#222);outline-offset:3px}
+
+/* ---- reading layout, as on long-form sites: the text keeps a comfortable line length in the middle column,
+   while the cover picture, figures, galleries and tables may step out into a wider column. Wide screens get room
+   for pictures; the text never grows wider than the source's measure (--sk-max). ---- */
+.sheet.skinned .doc{--measure:min(var(--sk-max,680px),100%);--wide:1120px;max-width:none;margin:0;box-sizing:border-box;
+  padding:4px var(--gutter) 64px;display:grid;
+  grid-template-columns:[full-start] minmax(0,1fr) [wide-start] minmax(0,calc((var(--wide) - var(--measure)) / 2)) [text-start] var(--measure) [text-end] minmax(0,calc((var(--wide) - var(--measure)) / 2)) [wide-end] minmax(0,1fr) [full-end]}
+.sheet.skinned .doc > *{grid-column:text}
+.sheet.skinned .doc > .hero{grid-column:wide;width:100%}
+.sheet.skinned .doc > .body{grid-column:full;display:grid;grid-template-columns:subgrid;align-content:start}
+.sheet.skinned .body > *{grid-column:text;min-width:0}
+.sheet.skinned .body > figure,.sheet.skinned .body > img,.sheet.skinned .body > table,.sheet.skinned .body > pre,
+.sheet.skinned .body > p:has(> img:only-child),.sheet.skinned .body > p:has(> a:only-child > img:only-child){grid-column:wide}
+.sheet.skinned .body > figure img,.sheet.skinned .body > img,.sheet.skinned .body > p > img,.sheet.skinned .body > p > a > img{width:100%;max-width:100%;margin-left:0;margin-right:0}
+.sheet.skinned .body > figure figcaption{max-width:var(--measure);margin-left:auto;margin-right:auto}
+.sheet.skinned .body.img-full-bleed > figure,.sheet.skinned .body.img-full-bleed > img,.sheet.skinned .body.img-full-bleed > p:has(> img:only-child){grid-column:full;width:auto;margin-left:0}
+@media (max-width:760px){.sheet.skinned .doc{padding-left:20px;padding-right:20px}}
+
+/* ---- summary with key points, highlighted key sentences, and the Chinese reading ---- */
+.summary .sum-text{margin:0}
+.summary .points{margin:14px 0 0;padding:12px 0 0 0;list-style:none;border-top:1px solid color-mix(in srgb,var(--sk-text,#222) 10%,transparent);display:grid;gap:8px}
+.summary .points li{position:relative;padding-left:16px;font:500 14px/1.6 var(--font-ui)}
+.summary .points li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--sk-accent,var(--tint-ink))}
+.summary .ai-state{display:block;margin-top:10px;font:500 11.5px/1.4 var(--font-ui);color:color-mix(in srgb,var(--sk-text,#222) 55%,transparent)}
+.summary .ai-state:empty{display:none}
+.summary.busy .sum-text{background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--sk-text,#222) 6%,transparent),transparent) 0 0/200% 100%;animation:shimmer 1.6s linear infinite}
+@keyframes shimmer{to{background-position:-200% 0}}
+.body mark.hl{color:inherit;background:linear-gradient(transparent 28%,oklch(0.91 0.12 98 / .78) 28%,oklch(0.91 0.12 98 / .78) 94%,transparent 94%);padding:0 .12em;margin:0 -.04em;border-radius:3px;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone}
+.tools .seg.lang{height:38px;border-radius:19px;padding:3px;background:transparent;border:1px solid color-mix(in srgb,var(--sk-text,#222) 18%,transparent)}
+.tools .seg.lang button{border-radius:15px;padding:0 12px;font:600 12px/1 var(--font-ui);color:var(--sk-text,var(--ink));opacity:.7}
+.tools .seg.lang button[aria-pressed="true"]{background:var(--sk-text,var(--ink));color:var(--sk-bg,#fff);opacity:1;box-shadow:none}
+.tools .lang-state{font:500 11.5px/1 var(--font-ui);opacity:.6;white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.sheet.zh{--zh:"Plus Jakarta Sans","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
+.sheet.zh .doc h1{font-family:var(--zh);font-weight:700;letter-spacing:.01em;line-height:1.35}
+.sheet.zh .summary p,.sheet.zh .summary .points li{font-family:var(--zh);letter-spacing:.02em;line-height:1.85}
+.sheet.skinned.zh .body{font-family:var(--zh);font-size:17px;line-height:1.95;letter-spacing:.03em}
+.sheet.skinned.zh .body h2,.sheet.skinned.zh .body h3,.sheet.skinned.zh .body h4{font-family:var(--zh);font-weight:700;letter-spacing:.02em;line-height:1.4}
+.sheet.skinned.zh .body blockquote{font-size:1.04em}
+.body [data-pending]{opacity:.55;transition:opacity .3s}
+
+/* ---- card ↔ reader: shared-element morph through the View Transitions API ---- */
+::view-transition-group(*){animation-duration:.52s;animation-timing-function:cubic-bezier(.2,.8,.2,1)}
+::view-transition-old(vt-sheet),::view-transition-new(vt-sheet){height:100%;object-fit:cover;overflow:clip}
+::view-transition-old(vt-title),::view-transition-new(vt-title){height:100%;width:auto;object-fit:none;object-position:left top}
+@media (prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation-duration:.2s !important}}
+@media (prefers-reduced-motion:reduce){.card,.lane,.blob,.pick{transition:none}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><filter id="wrap" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feImage id="wrapMap" x="0" y="0" width="84" height="84" preserveAspectRatio="none" result="m"/><feDisplacementMap in="SourceGraphic" in2="m" scale="64" xChannelSelector="R" yChannelSelector="G"/></filter>
+<filter id="goo" x="-20%" y="-60%" width="140%" height="220%" color-interpolation-filters="sRGB">
+  <!-- each blob carries its company colour; the blur + alpha threshold makes them melt together like liquid -->
+  <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b"/>
+  <feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 34 -16" result="c"/>
+  <feGaussianBlur in="c" stdDeviation="11" result="h"/>
+  <!-- a rim mask: dense at the edge, clear in the middle, the way glass looks thicker at its silhouette -->
+  <feComponentTransfer in="h" result="rim"><feFuncA type="table" tableValues="0 .7 .6 .42 .24 .12"/></feComponentTransfer>
+  
+  <feFlood flood-color="#fff" flood-opacity=".24"/><feComposite in2="c" operator="in" result="body"/>
+  <feFlood flood-color="#fff" flood-opacity=".42"/><feComposite in2="rim" operator="in" result="frost"/>
+  <feComposite in="c" in2="rim" operator="in" result="tint0"/><feColorMatrix in="tint0" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .55 0" result="tint"/><feOffset in="tint" dx="2" dy="3" result="tintR"/>
+  
+  <feDiffuseLighting in="h" surfaceScale="10" diffuseConstant="1" lighting-color="#fff" result="dif"><feDistantLight azimuth="235" elevation="42"/></feDiffuseLighting>
+  <feColorMatrix in="dif" values="0 0 0 0 .28  0 0 0 0 .28  0 0 0 0 .26  -.75 0 0 0 .62" result="shade0"/><feComposite in="shade0" in2="c" operator="in" result="shade"/>
+  <feSpecularLighting in="h" surfaceScale="10" specularConstant="1.3" specularExponent="30" lighting-color="#fff" result="spe"><feDistantLight azimuth="235" elevation="48"/></feSpecularLighting>
+  <feComposite in="spe" in2="c" operator="in" result="gloss"/>
+  <feMerge result="m"><feMergeNode in="body"/><feMergeNode in="shade"/><feMergeNode in="frost"/><feMergeNode in="tintR"/><feMergeNode in="gloss"/></feMerge>
+  <feGaussianBlur in="m" stdDeviation=".9" result="soft"/><feComposite in="soft" in2="c" operator="in"/></filter></defs></svg>
+<div class="lens" id="lens" aria-hidden="true"></div>
+<div class="backdrop" aria-hidden="true"></div>
+<div class="app" id="app">
+  <nav class="picker" id="picker" aria-label="Choose what to show">
+    <div class="lane goo" id="gooLane" aria-hidden="true"></div>
+    <div class="lane" id="lane" role="listbox" aria-orientation="horizontal"></div>
+    <div class="haze l" aria-hidden="true"><i></i><i></i></div><div class="haze r" aria-hidden="true"><i></i><i></i></div>
+  </nav>
+  <div class="chips" id="chips" role="toolbar" aria-label="Filter articles"></div>
+  <main class="list" id="grid" aria-label="Articles"></main>
+  <div class="fog top" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="fog bot" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+</div>
+<div class="reader" id="reader" hidden role="dialog" aria-modal="true" aria-labelledby="r-title">
+  <div class="veil" data-close></div>
+  <article class="sheet" id="sheet"></article>
+</div>
+
+<script>
+const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.2s-7.6-4.6-7.6-10.1A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 7.6 2.7c0 5.5-7.6 10.1-7.6 10.1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>';
+const LABEL = { google:'Google', apple:'Apple', microsoft:'Microsoft', ideo:'IDEO', pair:'PAIR', figma:'Figma', claude:'Claude' };
+const store = {
+  get(k,d){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+};
+let favs = new Set(store.get('design-feed-favs', []));
+let view = store.get('design-feed-view', 'latest');
+let data = { items: [], sources: [] };
+
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const when = i => Date.parse(i.date || i.firstSeen) || 0;
+const daysAgo = i => Math.max(0, Math.floor((Date.now() - when(i)) / 864e5));
+const posted = i => new Date(when(i)).toLocaleDateString('en-US', { month:'short', day:'numeric' });
+const hash = s => [...s].reduce((a, c) => (Math.imul(a, 31) + c.charCodeAt(0)) >>> 0, 2166136261);
+
+/* a summary shown in full: whole sentences only, never cut with "…" */
+function fit(t, max = 235){
+  t = String(t || '').trim(); if (t.length <= max) return t;
+  const parts = t.match(/[^.!?]+[.!?]+["”’)]*\s*/g) || [t]; let out = '';
+  for (const p of parts){ if ((out + p).trim().length > max) break; out += p; }
+  if (out.trim()) return out.trim();
+  const cut = t.slice(0, max); return cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:\s]+$/, '') + '.';
+}
+
+/* ---- filters: mode (bubble) × topics (chips, Any/All) × source (from a card) × Saved; all kept in the URL hash ---- */
+const F = { topics: new Set(), match: 'any', source: null, saved: false };
+const modeOf = id => (data.modes || []).find(m => m.id === id);
+const srcOf = id => (data.sources || []).find(s => s.id === id);
+/* each source gets its own quiet colour: same lightness and low chroma for all, only the hue differs (golden-angle
+   steps, so neighbours in the list never look alike). sources.json may set "tint" to pick one by hand. */
+const srcColor = id => { const s = srcOf(id); if (s && s.tint) return s.tint; const k = Math.max(0, (data.sources || []).indexOf(s));
+  return `oklch(0.58 0.085 ${Math.round((k * 137.508 + 25) % 360)})`; };
+
+function inFilters(i, ignoreTopics){
+  if (F.saved ? !favs.has(i.link) : i.mode !== view) return false;
+  if (F.source && i.sourceId !== F.source) return false;
+  if (!ignoreTopics && F.topics.size){
+    const t = i.tags || [];
+    if (F.match === 'all' ? ![...F.topics].every(x => t.includes(x)) : ![...F.topics].some(x => t.includes(x))) return false;
+  }
+  return true;
+}
+function pick(){ return [...data.items].filter(i => inFilters(i)).sort((a, b) => when(b) - when(a)); }
+const heartIcon = on => on ? HEART.replace('fill="none"', 'fill="currentColor"') : HEART;
+const fmtDate = i => { const t = when(i); return t ? new Date(t).toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric', timeZone:'UTC' }) : ''; };
+
+function card(i){
+  const src = i.thumbnail;
+  const on = favs.has(i.link);
+  const tags = (i.tags && i.tags.length ? i.tags : ['Design']).join(' · ');
+  return `<article class="card" data-k="${data.items.indexOf(i)}" style="--src:${srcColor(i.sourceId)}">
+    <a class="cover" href="${esc(i.link)}" target="_blank" rel="noopener noreferrer" aria-label="Read: ${esc(i.title)}"></a>
+    <div class="txt">
+      <div class="bar"><button class="src" data-source="${esc(i.sourceId)}" title="Only show ${esc(i.sourceName)}">${esc(i.sourceName)}</button><span class="date">${fmtDate(i)}</span>${daysAgo(i) <= 7 ? '<span class="new">NEW</span>' : ''}</div>
+      <h2 class="title">${esc(i.title)}</h2>
+      <p class="abstract">${esc(fit(i.desc || ''))}</p>
+      <div class="tags">${esc(tags)}</div>
+    </div>
+    <button class="heart" data-link="${esc(i.link)}" aria-pressed="${on}" aria-label="${on ? 'Remove from saved' : 'Save'}">${heartIcon(on)}</button>
+    <div class="media">${src ? `<img src="${esc(src)}" alt="" loading="lazy" referrerpolicy="no-referrer" draggable="false">` : '<canvas></canvas>'}</div>
+  </article>`;
+}
+/* ---- generated motion for articles without a usable image ----
+   Each scene draws one full frame: scene(ctx, W, H, t, seed, pal). Palette comes from the theme tokens. */
+const TAU = Math.PI * 2;
+const rnd = s => { let x = s || 1; return () => (x = (Math.imul(x ^ (x >>> 15), 2246822507) + 0x9e3779b9) >>> 0) / 4294967296; };
+const ease = x => .5 - .5 * Math.cos(Math.PI * Math.min(1, Math.max(0, x)));
+
+function halftone(f){ return (ctx, W, H, t, s, P) => {
+  ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H); ctx.fillStyle = P.ink;
+  const cell = 7 * P.dpr, cols = Math.ceil(W / cell), rows = Math.ceil(H / cell), asp = H / W;
+  for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++){
+    const v = Math.min(1, Math.max(0, f((c / cols) * 2 - 1, ((r / rows) * 2 - 1) * asp, t, s)));
+    if (v < .04) continue; ctx.beginPath(); ctx.arc(c * cell + cell / 2, r * cell + cell / 2, v * cell * .52, 0, TAU); ctx.fill();
+  } }; }
+
+const SCENES = {
+  /* halftone family */
+  bloom: halftone((x, y, t, s) => { const a = Math.atan2(y, x), r = Math.hypot(x, y), p = 5 + (s % 4) * 2;
+    const e = .55 + .18 * Math.cos(p * a + t * .6) + .05 * Math.sin(3 * a - t); return Math.max(0, 1 - Math.abs(r - e * .6) * 4) * (r < e ? 1 : .6) + (r < .12 ? .8 : 0); }),
+  metaballs: halftone((x, y, t, s) => { let v = 0; for (let k = 0; k < 4; k++){ const px = .45 * Math.sin(t * .35 + k * 1.7 + s), py = .5 * Math.cos(t * .28 + k * 2.3 + s * .5); v += .045 / ((x - px) ** 2 + (y - py) ** 2 + .01); } return Math.min(1, Math.max(0, v - .55)); }),
+  ripples: halftone((x, y, t, s) => { const r = Math.hypot(x + .15 * Math.sin(t * .3 + s), y); const d = Math.abs(((r * 6 - t * .25) % 1 + 1) % 1 - .5); return Math.max(0, 1 - d * 3) * Math.max(0, 1 - r * .9); }),
+
+  /* Google · Material-style shape morph: circle → scalloped cookie → rounded star */
+  material(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H);
+    const cx = W / 2, cy = H / 2, R = Math.min(W, H) * .3, lobes = [6, 8, 9, 12][s % 4];
+    const phase = (t * .25) % 3, k = Math.floor(phase), m = ease(phase - k);
+    const amp = [0, .09, .22][k] * (1 - m) + [.09, .22, 0][k] * m;
+    const draw = (sc, col, rot) => { ctx.beginPath(); for (let i = 0; i <= 180; i++){ const a = i / 180 * TAU;
+      const r = R * sc * (1 + amp * Math.cos(lobes * a)); const x = cx + r * Math.cos(a + rot), y = cy + r * Math.sin(a + rot); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }
+      ctx.fillStyle = col; ctx.fill(); };
+    draw(1.25, P.soft, -t * .15); draw(1, P.ink, t * .2);
+    ctx.fillStyle = P.bg; ctx.beginPath(); ctx.arc(cx, cy, R * .28 * (1 + .1 * Math.sin(t * 1.4)), 0, TAU); ctx.fill();
+  },
+
+  /* Apple · frosted glass orbs drifting behind a glass pane */
+  glass(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H);
+    const R = rnd(s); const orbs = Array.from({ length: 4 }, () => [R(), R(), .25 + R() * .25, R() * TAU]);
+    ctx.save(); ctx.filter = `blur(${18 * P.dpr}px)`;
+    orbs.forEach(([x, y, r, ph], i) => { ctx.fillStyle = i % 2 ? P.ink : P.soft;
+      ctx.beginPath(); ctx.arc(W * (x + .12 * Math.sin(t * .4 + ph)), H * (y + .1 * Math.cos(t * .33 + ph)), Math.min(W, H) * r, 0, TAU); ctx.fill(); });
+    ctx.restore();
+    const px = W * .16, py = H * .22, pw = W * .68, ph = H * .56, rr = 22 * P.dpr;
+    ctx.save(); ctx.beginPath(); ctx.roundRect(px, py, pw, ph, rr); ctx.clip();
+    ctx.fillStyle = 'rgba(255,255,255,.38)'; ctx.fillRect(px, py, pw, ph);
+    const g = ctx.createLinearGradient(px, py, px + pw, py + ph); const sh = (t * .12) % 1.6 - .3;
+    const cl = v => Math.min(1, Math.max(0, v)); g.addColorStop(cl(sh - .1), 'rgba(255,255,255,0)'); g.addColorStop(cl(sh), 'rgba(255,255,255,.55)'); g.addColorStop(cl(sh + .1), 'rgba(255,255,255,0)');
+    ctx.fillStyle = g; ctx.fillRect(px, py, pw, ph); ctx.restore();
+    ctx.strokeStyle = 'rgba(255,255,255,.85)'; ctx.lineWidth = 1.2 * P.dpr; ctx.beginPath(); ctx.roundRect(px, py, pw, ph, rr); ctx.stroke();
+  },
+
+  /* Microsoft · layered fluent ribbons */
+  ribbons(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H);
+    const n = 5;
+    for (let k = 0; k < n; k++){
+      const base = H * (.25 + k * .13), amp = H * (.06 + .02 * k), f = 1.6 + k * .35 + (s % 3) * .2, sp = .5 + k * .12;
+      ctx.beginPath(); ctx.moveTo(0, H);
+      for (let x = 0; x <= W; x += 4 * P.dpr){ const u = x / W; ctx.lineTo(x, base + amp * Math.sin(u * f * TAU * .5 + t * sp + k) + amp * .4 * Math.sin(u * 7 - t * .6)); }
+      ctx.lineTo(W, H); ctx.closePath();
+      const g = ctx.createLinearGradient(0, base - amp, W, base + amp * 3);
+      g.addColorStop(0, k % 2 ? P.soft : P.ink); g.addColorStop(1, P.bg);
+      ctx.globalAlpha = .35 + k * .1; ctx.fillStyle = g; ctx.fill(); ctx.globalAlpha = 1;
+    }
+  },
+
+  /* IDEO · hand-drawn scribble that draws itself on, then fades */
+  scribble(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H);
+    const R = rnd(s + 7); const pts = []; let x = W * .5, y = H * .5, a = R() * TAU;
+    for (let i = 0; i < 160; i++){ a += (R() - .5) * 1.4; x += Math.cos(a) * W * .045; y += Math.sin(a) * H * .035;
+      x = Math.min(W * .85, Math.max(W * .15, x)); y = Math.min(H * .82, Math.max(H * .18, y)); pts.push([x, y]); }
+    const cyc = (t * .18) % 1.3, n = Math.floor(Math.min(1, cyc) * pts.length);
+    ctx.globalAlpha = cyc > 1 ? 1 - (cyc - 1) / .3 : 1;
+    ctx.strokeStyle = P.ink; ctx.lineWidth = 3 * P.dpr; ctx.lineCap = ctx.lineJoin = 'round';
+    ctx.beginPath(); for (let i = 1; i < n; i++){ const [x0, y0] = pts[i - 1], [x1, y1] = pts[i]; i === 1 && ctx.moveTo(x0, y0); ctx.quadraticCurveTo(x0, y0, (x0 + x1) / 2, (y0 + y1) / 2); } ctx.stroke();
+    if (n > 1){ const [hx, hy] = pts[n - 1]; ctx.fillStyle = P.dark; ctx.beginPath(); ctx.arc(hx, hy, 4.5 * P.dpr, 0, TAU); ctx.fill(); }
+    ctx.globalAlpha = 1;
+  },
+
+  /* PAIR · explorable: particles that sort themselves into clusters and back */
+  particles(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H);
+    const R = rnd(s + 3), N = 70, m = ease(.5 + .5 * Math.sin(t * .45));
+    const centers = [[.3, .35], [.7, .4], [.5, .72]];
+    for (let i = 0; i < N; i++){
+      const rx = R(), ry = R(), c = centers[i % 3], ang = R() * TAU, rad = .05 + R() * .09;
+      const fx = c[0] + Math.cos(ang + t * .3) * rad, fy = c[1] + Math.sin(ang + t * .3) * rad * (W / H);
+      const x = W * (rx * (1 - m) + fx * m), y = H * (ry * (1 - m) + fy * m);
+      ctx.fillStyle = [P.ink, P.dark, P.soft][i % 3]; ctx.beginPath(); ctx.arc(x, y, (2.2 + (i % 3)) * P.dpr, 0, TAU); ctx.fill();
+    }
+    ctx.strokeStyle = P.ink; ctx.globalAlpha = .25 * m; ctx.lineWidth = P.dpr;
+    centers.forEach(([cx, cy]) => { ctx.beginPath(); ctx.arc(W * cx, H * cy, W * .17, 0, TAU); ctx.stroke(); }); ctx.globalAlpha = 1;
+  },
+
+  /* Figma · multiplayer canvas: frames being nudged by named cursors */
+  canvas(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H);
+    ctx.fillStyle = P.soft; const g = 14 * P.dpr; for (let y = g; y < H; y += g) for (let x = g; x < W; x += g) ctx.fillRect(x, y, P.dpr, P.dpr);
+    const R = rnd(s + 11);
+    const frames = [[.12, .16, .44, .3], [.52, .3, .36, .26], [.2, .55, .3, .3]].map(f => f.map(v => v + (R() - .5) * .04));
+    frames.forEach(([x, y, w, h], i) => { const dx = Math.sin(t * .6 + i * 2) * W * .02, dy = Math.cos(t * .5 + i) * H * .015;
+      ctx.fillStyle = i === 1 ? P.ink : '#ffffff'; ctx.fillRect(W * x + dx, H * y + dy, W * w, H * h);
+      if (i === 0){ ctx.strokeStyle = P.ink; ctx.lineWidth = 1.5 * P.dpr; ctx.strokeRect(W * x + dx, H * y + dy, W * w, H * h);
+        ctx.fillStyle = '#fff'; [[0,0],[1,0],[0,1],[1,1]].forEach(([a, b]) => { const hx = W * x + dx + a * W * w, hy = H * y + dy + b * H * h;
+          ctx.fillRect(hx - 3 * P.dpr, hy - 3 * P.dpr, 6 * P.dpr, 6 * P.dpr); ctx.strokeRect(hx - 3 * P.dpr, hy - 3 * P.dpr, 6 * P.dpr, 6 * P.dpr); }); }
+    });
+    [['Nonnon', P.dark, 0], ['Ari', P.ink, 2.1]].forEach(([name, col, ph]) => {
+      const x = W * (.5 + .3 * Math.sin(t * .5 + ph)), y = H * (.5 + .28 * Math.sin(t * .37 + ph * 1.7)), u = P.dpr;
+      ctx.fillStyle = col; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x, y + 16 * u); ctx.lineTo(x + 4.5 * u, y + 12 * u); ctx.lineTo(x + 11 * u, y + 12 * u); ctx.closePath(); ctx.fill();
+      ctx.font = `600 ${10 * u}px Inter, sans-serif`; const tw = ctx.measureText(name).width;
+      ctx.beginPath(); ctx.roundRect(x + 10 * u, y + 15 * u, tw + 12 * u, 17 * u, 5 * u); ctx.fill();
+      ctx.fillStyle = '#fff'; ctx.fillText(name, x + 16 * u, y + 27 * u);
+    });
+  },
+
+  /* Claude · radial burst that breathes */
+  burst(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H);
+    const cx = W / 2, cy = H / 2, n = 12 + (s % 3) * 2, R = Math.min(W, H) * .36, R2 = rnd(s + 5);
+    ctx.lineCap = 'round';
+    for (let i = 0; i < n; i++){ const a = i / n * TAU + t * .05, len = R * (.55 + .45 * (.5 + .5 * Math.sin(t * 1.1 + i * 1.9 + R2() * 6)));
+      ctx.strokeStyle = i % 3 ? P.ink : P.dark; ctx.lineWidth = (5 + (i % 2) * 3) * P.dpr;
+      ctx.beginPath(); ctx.moveTo(cx + Math.cos(a) * R * .12, cy + Math.sin(a) * R * .12); ctx.lineTo(cx + Math.cos(a) * len, cy + Math.sin(a) * len); ctx.stroke(); }
+  },
+
+  /* Type specimen · a glyph slowly cycling weights and letters */
+  specimen(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H);
+    const letters = 'AaGgRrQ&ey', i = Math.floor(t * .35 + s) % letters.length, w = 300 + Math.round(400 * (.5 + .5 * Math.sin(t * .8)));
+    ctx.fillStyle = P.ink; ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
+    ctx.font = `${w > 500 ? 500 : 400} ${Math.min(W, H) * .62}px Newsreader, Georgia, serif`;
+    ctx.fillText(letters[i], W / 2, H * .66);
+    ctx.strokeStyle = P.soft; ctx.lineWidth = P.dpr; [.66, .34, .76].forEach(f => { ctx.beginPath(); ctx.moveTo(W * .08, H * f); ctx.lineTo(W * .92, H * f); ctx.stroke(); });
+    ctx.fillStyle = P.dark; ctx.font = `500 ${10 * P.dpr}px Inter, sans-serif`; ctx.textAlign = 'left';
+    ctx.fillText(`WGHT ${w}`, W * .08, H * .9); ctx.textAlign = 'right'; ctx.fillText(`${letters[i]} · U+${letters.charCodeAt(i).toString(16).toUpperCase().padStart(4, '0')}`, W * .92, H * .9);
+  },
+
+  /* Bauhaus tiles flipping between circle, quarter and square */
+  tiles(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H);
+    const cols = 4, size = W / cols, rows = Math.ceil(H / size), R = rnd(s + 2);
+    for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++){
+      const ph = R() * 4, kind = Math.floor(t * .4 + ph) % 4, x = c * size, y = r * size, col = [P.ink, P.soft, P.dark][(r + c + kind) % 3];
+      ctx.fillStyle = col; ctx.beginPath();
+      if (kind === 0) ctx.arc(x + size / 2, y + size / 2, size * .42, 0, TAU);
+      else if (kind === 1){ ctx.moveTo(x, y + size); ctx.arc(x, y + size, size * .92, -Math.PI / 2, 0); }
+      else if (kind === 2) ctx.roundRect(x + size * .1, y + size * .1, size * .8, size * .8, size * .2);
+      else { ctx.moveTo(x + size / 2, y + size * .1); ctx.lineTo(x + size * .9, y + size * .9); ctx.lineTo(x + size * .1, y + size * .9); }
+      ctx.fill();
+    }
+  },
+
+  /* Orbits · little planets on tilted rings */
+  orbits(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H);
+    const cx = W / 2, cy = H / 2;
+    ctx.fillStyle = P.dark; ctx.beginPath(); ctx.arc(cx, cy, 9 * P.dpr, 0, TAU); ctx.fill();
+    for (let k = 1; k <= 4; k++){ const rx = W * .1 * k, ry = rx * .42, tilt = -.35;
+      ctx.save(); ctx.translate(cx, cy); ctx.rotate(tilt); ctx.strokeStyle = P.soft; ctx.lineWidth = P.dpr;
+      ctx.beginPath(); ctx.ellipse(0, 0, rx, ry, 0, 0, TAU); ctx.stroke();
+      const a = t * (.9 / k) + k * 1.3 + s; ctx.fillStyle = k % 2 ? P.ink : P.dark;
+      ctx.beginPath(); ctx.arc(Math.cos(a) * rx, Math.sin(a) * ry, (4 + k) * P.dpr, 0, TAU); ctx.fill(); ctx.restore(); }
+  },
+};
+
+
+/* ---- more scenes ---- */
+Object.assign(SCENES, {
+  /* topographic contour lines drifting */
+  contours(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H); ctx.strokeStyle = P.ink; ctx.lineWidth = 1.1 * P.dpr;
+    const f = (x, y) => Math.sin(x * 2.1 + t * .3 + s) + Math.cos(y * 1.7 - t * .25) + .6 * Math.sin((x + y) * 1.3 + t * .2);
+    for (let lv = -2; lv <= 2; lv += .4){ ctx.beginPath(); const step = 6 * P.dpr;
+      for (let y = 0; y < H; y += step) for (let x = 0; x < W; x += step){
+        const a = f(x / W * 3, y / H * 3) - lv, b = f((x + step) / W * 3, y / H * 3) - lv, c = f(x / W * 3, (y + step) / H * 3) - lv;
+        if (a * b < 0) { ctx.moveTo(x + step * a / (a - b), y); ctx.lineTo(x + step * a / (a - b), y + step * .9); }
+        if (a * c < 0) { ctx.moveTo(x, y + step * a / (a - c)); ctx.lineTo(x + step * .9, y + step * a / (a - c)); } }
+      ctx.stroke(); }
+  },
+  /* gentle op-art stripes bending */
+  stripes(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H); ctx.fillStyle = P.soft;
+    const n = 18, bw = H / n;
+    for (let i = 0; i < n; i++){ ctx.beginPath();
+      for (let x = 0; x <= W; x += 4 * P.dpr){ const y = i * bw + Math.sin(x / W * 3 + t * .5 + i * .25) * bw * .9 * Math.sin(t * .2 + s); x ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }
+      for (let x = W; x >= 0; x -= 4 * P.dpr){ const y = i * bw + bw * .45 + Math.sin(x / W * 3 + t * .5 + i * .25) * bw * .9 * Math.sin(t * .2 + s); ctx.lineTo(x, y); }
+      ctx.fill(); }
+  },
+  /* dot grid pushed by a slow wave */
+  dotgrid(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H); const g = 16 * P.dpr;
+    const cx = W * (.5 + .3 * Math.sin(t * .3 + s)), cy = H * (.5 + .3 * Math.cos(t * .23));
+    for (let y = g / 2; y < H; y += g) for (let x = g / 2; x < W; x += g){
+      const d = Math.hypot(x - cx, y - cy) / W, push = Math.sin(d * 14 - t * 1.2) * 4 * P.dpr * Math.max(0, 1 - d);
+      const ang = Math.atan2(y - cy, x - cx); ctx.fillStyle = d < .25 ? P.ink : P.soft;
+      ctx.beginPath(); ctx.arc(x + Math.cos(ang) * push, y + Math.sin(ang) * push, (1.6 + Math.max(0, .5 - d) * 4) * P.dpr, 0, TAU); ctx.fill(); }
+  },
+  /* clock-like dial: tick marks and a slow sweeping hand */
+  dial(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H); const cx = W / 2, cy = H / 2, R = Math.min(W, H) * .36;
+    ctx.fillStyle = P.card; ctx.beginPath(); ctx.arc(cx, cy, R * 1.12, 0, TAU); ctx.fill();
+    ctx.strokeStyle = P.soft; ctx.lineCap = 'round';
+    for (let i = 0; i < 60; i++){ const a = i / 60 * TAU, l = i % 5 ? .06 : .13; ctx.lineWidth = (i % 5 ? 1 : 2) * P.dpr;
+      ctx.beginPath(); ctx.moveTo(cx + Math.cos(a) * R, cy + Math.sin(a) * R); ctx.lineTo(cx + Math.cos(a) * R * (1 - l), cy + Math.sin(a) * R * (1 - l)); ctx.stroke(); }
+    const a = t * .25 + s; ctx.strokeStyle = P.ink; ctx.lineWidth = 2 * P.dpr;
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + Math.cos(a) * R * .85, cy + Math.sin(a) * R * .85); ctx.stroke();
+    ctx.fillStyle = P.ink; ctx.beginPath(); ctx.arc(cx, cy, 6 * P.dpr, 0, TAU); ctx.fill();
+  },
+  /* pixel mosaic slowly re-tiling */
+  mosaic(ctx, W, H, t, s, P){
+    const c = 22 * P.dpr, R = rnd(s + 9), cols = [P.bg, P.soft, P.ink, P.card];
+    for (let y = 0; y < H; y += c) for (let x = 0; x < W; x += c){ const ph = R() * 10; const k = Math.floor((Math.sin(t * .35 + ph) + 1) * 1.6 + R() * .5) % 4;
+      ctx.fillStyle = cols[k]; ctx.globalAlpha = k === 2 ? .55 : 1; ctx.fillRect(x, y, c, c); } ctx.globalAlpha = 1;
+  },
+  /* lines of placeholder text scrolling like a reading view */
+  reading(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H); const lh = 14 * P.dpr, R = rnd(s + 4), off = (t * 9 * P.dpr) % (lh * 40);
+    ctx.save(); ctx.beginPath(); ctx.roundRect(W * .12, H * .1, W * .76, H * .8, 10 * P.dpr); ctx.fillStyle = P.card; ctx.fill(); ctx.clip();
+    for (let i = 0; i < 80; i++){ const y = H * .14 + i * lh - off, w = (i % 7 === 6 ? .3 : .55 + R() * .45) * W * .64;
+      if (y < H * .05 || y > H) continue; ctx.fillStyle = i % 11 === 0 ? P.ink : P.soft; ctx.globalAlpha = i % 11 === 0 ? .8 : .7;
+      ctx.beginPath(); ctx.roundRect(W * .18, y, w, (i % 11 === 0 ? 7 : 5) * P.dpr, 3 * P.dpr); ctx.fill(); }
+    ctx.restore(); ctx.globalAlpha = 1;
+  },
+  /* soft bubbles rising */
+  bubbles(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H); const R = rnd(s + 6);
+    for (let i = 0; i < 22; i++){ const x = R() * W, sp = .04 + R() * .06, r = (6 + R() * 22) * P.dpr, y = H + r - ((t * sp + R()) % 1) * (H + r * 2);
+      ctx.strokeStyle = i % 4 ? P.soft : P.ink; ctx.lineWidth = 1.4 * P.dpr; ctx.beginPath(); ctx.arc(x + Math.sin(t * .8 + i) * 6 * P.dpr, y, r, 0, TAU); ctx.stroke(); }
+  },
+  /* single lissajous thread */
+  lissajous(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H); const a = 3 + (s % 3), b = 2 + (s % 2), d = t * .2;
+    ctx.strokeStyle = P.ink; ctx.lineWidth = 1.3 * P.dpr; ctx.globalAlpha = .8; ctx.beginPath();
+    for (let i = 0; i <= 600; i++){ const u = i / 600 * TAU; const x = W / 2 + Math.sin(a * u + d) * W * .36, y = H / 2 + Math.sin(b * u) * H * .3; i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }
+    ctx.stroke(); ctx.globalAlpha = 1;
+  },
+  /* blurred gradient mesh shifting */
+  mesh(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H); ctx.save(); ctx.filter = `blur(${28 * P.dpr}px)`;
+    [[P.soft, .3, .3], [P.card, .7, .45], [P.ink, .45, .75]].forEach(([c, x, y], i) => { ctx.fillStyle = c; ctx.globalAlpha = i === 2 ? .45 : .9;
+      ctx.beginPath(); ctx.arc(W * (x + .15 * Math.sin(t * .25 + i * 2 + s)), H * (y + .12 * Math.cos(t * .2 + i)), W * .38, 0, TAU); ctx.fill(); });
+    ctx.restore(); ctx.globalAlpha = 1;
+  },
+  /* sun rising behind horizontal lines */
+  horizon(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H); const cy = H * (.62 - .08 * Math.sin(t * .3 + s)), R = W * .3;
+    ctx.fillStyle = P.soft; ctx.beginPath(); ctx.arc(W / 2, cy, R, 0, TAU); ctx.fill();
+    ctx.fillStyle = P.bg; for (let i = 0; i < 9; i++){ const y = H * .5 + i * i * 2.2 * P.dpr + ((t * 6 * P.dpr) % (4 * P.dpr)); ctx.fillRect(0, y, W, (1 + i * .45) * P.dpr); }
+    ctx.fillStyle = P.bg; ctx.fillRect(0, H * .8, W, H * .2); ctx.strokeStyle = P.ink; ctx.lineWidth = P.dpr; ctx.beginPath(); ctx.moveTo(W * .1, H * .8); ctx.lineTo(W * .9, H * .8); ctx.stroke();
+  },
+  /* stacked UI cards sliding */
+  stack(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H);
+    for (let i = 3; i >= 0; i--){ const ph = (t * .2 + i * .25 + s * .01) % 1, y = H * (.2 + i * .12) - ease(ph) * H * .04, x = W * (.14 + i * .03);
+      ctx.fillStyle = P.card; ctx.shadowColor = 'rgba(40,30,90,.10)'; ctx.shadowBlur = 14 * P.dpr; ctx.beginPath(); ctx.roundRect(x, y, W * .72 - i * W * .06, H * .3, 12 * P.dpr); ctx.fill(); ctx.shadowBlur = 0;
+      ctx.fillStyle = i === 0 ? P.ink : P.soft; ctx.globalAlpha = .75; ctx.beginPath(); ctx.arc(x + 18 * P.dpr, y + 18 * P.dpr, 7 * P.dpr, 0, TAU); ctx.fill();
+      ctx.fillRect(x + 32 * P.dpr, y + 14 * P.dpr, W * .3, 4 * P.dpr); ctx.fillRect(x + 32 * P.dpr, y + 22 * P.dpr, W * .2, 3 * P.dpr); ctx.globalAlpha = 1; }
+  },
+  /* soft area chart redrawing */
+  chart(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H); const base = H * .78, R = rnd(s + 1), pts = Array.from({ length: 8 }, () => R());
+    ctx.beginPath(); ctx.moveTo(0, base);
+    for (let x = 0; x <= W; x += 3 * P.dpr){ const u = x / W * 7, i = Math.floor(u), f = ease(u - i);
+      const v = (pts[i] * (1 - f) + pts[Math.min(7, i + 1)] * f) * (.75 + .25 * Math.sin(t * .4 + u)); ctx.lineTo(x, base - v * H * .45); }
+    ctx.lineTo(W, base); ctx.closePath(); ctx.fillStyle = P.soft; ctx.globalAlpha = .8; ctx.fill(); ctx.globalAlpha = 1;
+    ctx.strokeStyle = P.ink; ctx.lineWidth = P.dpr; ctx.globalAlpha = .4; for (let k = 1; k < 4; k++){ ctx.beginPath(); ctx.moveTo(0, base - k * H * .15); ctx.lineTo(W, base - k * H * .15); ctx.stroke(); } ctx.globalAlpha = 1;
+  },
+  /* constellation of slow-drifting nodes */
+  constellation(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H); const R = rnd(s + 13);
+    const pts = Array.from({ length: 16 }, (_, i) => [W * (R() + .05 * Math.sin(t * .3 + i)), H * (R() + .05 * Math.cos(t * .27 + i * 1.3))]);
+    ctx.strokeStyle = P.soft; ctx.lineWidth = P.dpr;
+    pts.forEach((a, i) => pts.slice(i + 1).forEach(b => { const d = Math.hypot(a[0] - b[0], a[1] - b[1]); if (d < W * .3){ ctx.globalAlpha = 1 - d / (W * .3); ctx.beginPath(); ctx.moveTo(...a); ctx.lineTo(...b); ctx.stroke(); } }));
+    ctx.globalAlpha = 1; pts.forEach(([x, y], i) => { ctx.fillStyle = i % 5 ? P.soft : P.ink; ctx.beginPath(); ctx.arc(x, y, (i % 5 ? 2.5 : 4) * P.dpr, 0, TAU); ctx.fill(); });
+  },
+  /* paper folds: triangles flipping */
+  folds(ctx, W, H, t, s, P){
+    ctx.fillStyle = P.bg; ctx.fillRect(0, 0, W, H); const n = 3, cw = W / n, R = rnd(s + 8);
+    for (let r = 0; r * cw < H; r++) for (let c = 0; c < n; c++){ const k = (Math.sin(t * .4 + R() * 6) + 1) / 2, x = c * cw, y = r * cw;
+      ctx.fillStyle = P.card; ctx.fillRect(x + 2, y + 2, cw - 4, cw - 4);
+      ctx.fillStyle = (r + c) % 2 ? P.soft : P.ink; ctx.globalAlpha = (r + c) % 2 ? 1 : .55; ctx.beginPath(); ctx.moveTo(x + 2, y + 2); ctx.lineTo(x + cw - 2, y + 2); ctx.lineTo(x + 2 + (cw - 4) * k, y + cw - 2); ctx.closePath(); ctx.fill(); ctx.globalAlpha = 1; }
+  },
+});
+
+// Each company gets its own family of scenes and its own colour, echoing that company's visual language.
+const STYLE = {
+  google:    { scenes: ['material', 'tiles', 'dotgrid', 'bloom'],          pal: ['#4285f4','#ea4335','#fbbc04','#34a853'] }, // Material: bold playful shapes
+  apple:     { scenes: ['glass', 'dial', 'mesh', 'orbits'],               pal: ['#0071e3','#86868b','#1d1d1f'] }, // glass, precision, calm
+  microsoft: { scenes: ['ribbons', 'mosaic', 'horizon', 'stripes'],       pal: ['#f25022','#7fba00','#00a4ef','#ffb900'] }, // Fluent layers and tiles
+  ideo:      { scenes: ['scribble', 'folds', 'bubbles', 'metaballs'],     pal: ['#1a1a1a','#e8503a','#8c8c8c'] }, // hand-made, human, craft
+  pair:      { scenes: ['particles', 'chart', 'constellation', 'contours'], pal: ['#1a73e8','#12b5cb','#9334e6'] }, // explorables and data
+  figma:     { scenes: ['canvas', 'stack', 'lissajous'],                  pal: ['#f24e1e','#a259ff','#1abcfe','#0acf83','#ff7262'] }, // canvas, cursors, vectors
+  claude:    { scenes: ['burst', 'reading', 'ripples'],                   pal: ['#d97757','#6a9bcc','#788c5d'] }, // warm, writing, radiating
+};
+const cursors = {};
+function sceneFor(item){
+  if (item.tags && item.tags.includes('Type')) return 'specimen';
+  const list = (STYLE[item.source] || STYLE.pair).scenes;
+  const k = cursors[item.source] = ((cursors[item.source] ?? (hash(item.source) % list.length)) + 1);
+  return list[k % list.length];
+}
+const live = new Map();
+const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { const st = live.get(e.target); if (st) st.on = e.isIntersecting; }), { rootMargin:'80px' }) : null;
+const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function mountCanvas(cv, item, name){
+  const box = cv.parentElement; const dpr = Math.min(2, devicePixelRatio || 1);
+  const W = box.clientWidth || 260, H = box.clientHeight || 325; cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+  const ctx = cv.getContext('2d'); const seed = hash(item.link) % 997; name = name || sceneFor(item); cv.dataset.scene = name; const scene = SCENES[name];
+  const css = getComputedStyle(document.documentElement); const tok = n => css.getPropertyValue(n).trim();
+  const bg = getComputedStyle(box).backgroundColor || tok('--media');
+  const host = box.closest('.card') || box; const card = getComputedStyle(host).backgroundColor || '#fff';
+  // Softer palette: lavender only, the "dark" role is a muted violet-grey instead of black.
+  // Brand colours: each read of P.ink / P.soft / P.dark hands out the next colour of the company's palette,
+  // so shapes in one scene pick up the brand's different colours. The counter resets every frame, so colours stay put.
+  const mix = (h, o, w) => { const a = [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)), b = [1, 3, 5].map(i => parseInt(o.slice(i, i + 2), 16));
+    return '#' + a.map((v, i) => Math.round(v * w + b[i] * (1 - w)).toString(16).padStart(2, '0')).join(''); };
+  const pal = (STYLE[item.source] || STYLE.pair).pal, soft = pal.map(c => mix(c, '#ffffff', .5)), dark = pal.map(c => mix(c, '#2b2b33', .8));
+  let n = 0;
+  const P = { bg, card, dpr, get ink(){ return pal[n++ % pal.length]; }, get soft(){ return soft[n++ % pal.length]; }, get dark(){ return dark[n++ % pal.length]; } };
+  const offset = seed % 17;
+  const st = { on: !io, draw(t){ try { n = seed; ctx.clearRect(0, 0, cv.width, cv.height); ctx.globalAlpha = 1; scene(ctx, cv.width, cv.height, t * .6 + offset, seed, P);
+    ctx.globalAlpha = .28; ctx.fillStyle = bg; ctx.fillRect(0, 0, cv.width, cv.height); ctx.globalAlpha = 1; } catch {} } };
+  live.set(cv, st); io && io.observe(cv); st.draw(3);
+}
+let last = 0;
+function loop(ts){ if (!still && ts - last > 50){ last = ts; const t = ts / 1000; live.forEach((st, cv) => { if (st.on && cv.isConnected) st.draw(t); }); } requestAnimationFrame(loop); }
+
+
+/* ---- the bubble row: one glass ball per reading mode, tinted with the mode's colour. The middle one is the choice;
+   click, wheel, swipe or arrow keys bring another into the middle, and neighbours melt into it through the goo filter. ---- */
+const picker = document.getElementById('picker'), lane = document.getElementById('lane'), goo = document.getElementById('gooLane'), chipsEl = document.getElementById('chips');
+const GLYPH = {
+  pulse:'<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M22.5 6 11 22.5h8L17.5 34 29 17.5h-8z"/></svg>',
+  practice:'<svg viewBox="0 0 40 40" aria-hidden="true"><path class="ln" d="M9 31l3.2-8.6L26 8.6a3 3 0 0 1 4.2 0l1.2 1.2a3 3 0 0 1 0 4.2L17.6 27.8z M23.5 11.2l5.3 5.3 M9 31l8.6-3.2" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/></svg>',
+  inspiration:'<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 5c1.2 7.6 4.4 13.4 15 15-10.6 1.6-13.8 7.4-15 15-1.2-7.6-4.4-13.4-15-15 10.6-1.6 13.8-7.4 15-15z"/></svg>',
+  deep:'<svg viewBox="0 0 40 40" aria-hidden="true"><path class="ln" d="M20 12c-3-2.6-7.4-3.4-12-3v20c4.6-.4 9 .4 12 3 3-2.6 7.4-3.4 12-3V9c-4.6-.4-9 .4-12 3zm0 0v20" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/></svg>',
+  research:'<svg viewBox="0 0 40 40" aria-hidden="true"><path class="ln" d="M17.5 8a9.5 9.5 0 1 1 0 19 9.5 9.5 0 0 1 0-19zm6.8 16.3L32 32" stroke-width="3" stroke-linecap="round"/></svg>',
+};
+const ROWS = () => (data.modes || []).map(m => ({ id:m.id, name:`${m.name}: ${m.hint}`, dot:GLYPH[m.id] || '', color:m.color }));
+const SCALE = [1, .8, .64, .52, .44];
+function buildPicker(){
+  const rows = ROWS();
+  goo.innerHTML = rows.map(r => `<div class="slot"><span class="blob" style="--c:${r.color}"></span></div>`).join('');
+  lane.innerHTML = rows.map(r => `<div class="slot"><button class="pick" role="option" data-view="${r.id}" aria-label="${esc(r.name)}" title="${esc(r.name)}" style="--c:${r.color}"><span class="art"><span class="dec">${r.dot}</span></span></button></div>`).join('');
+  place();
+}
+function place(moving){
+  if (moving && !still){ goo.classList.add('moving'); lane.classList.add('moving'); clearTimeout(place.t); place.t = setTimeout(() => { goo.classList.remove('moving'); lane.classList.remove('moving'); }, 270); }
+  const rows = ROWS(), k = Math.max(0, rows.findIndex(r => r.id === view)), w = lane.firstElementChild ? lane.firstElementChild.offsetWidth : 68;
+  const x = `translateX(${-(k * w + w / 2)}px)`; lane.style.transform = goo.style.transform = x;
+  [lane, goo].forEach(l => [...l.querySelectorAll(':scope > .slot')].forEach((s, i) => { const d = Math.abs(i - k), el = s.firstElementChild;
+    el.style.setProperty('--z', SCALE[Math.min(d, SCALE.length - 1)]); el.style.setProperty('--pull', (d === 0 ? 0 : -Math.sign(i - k) * (d === 1 ? 32 : 10)) + 'px'); el.style.setProperty('--a', d > 4 ? .35 : 1 - d * .12);
+    const t = Math.max(-2, Math.min(2, i - k)); el.style.setProperty('--tx', (t * 16) + 'px'); el.style.setProperty('--ry', (t * 26) + 'deg');
+    if (el.matches('.pick')){ el.setAttribute('aria-selected', d === 0 && !F.saved); el.tabIndex = d === 0 ? 0 : -1; } }));
+  const m = modeOf(view); if (m) document.documentElement.style.setProperty('--mode', m.color);
+}
+function choose(id, focus){
+  if (!id || (id === view && !F.saved)) return;
+  view = id; F.saved = false; store.set('design-feed-mode', view); place(true); render(true);
+  if (focus) lane.querySelector(`[data-view="${id}"]`)?.focus({ preventScroll:true });
+}
+const nudge = (d, focus) => { const o = ROWS().map(r => r.id), k = Math.min(o.length - 1, Math.max(0, o.indexOf(view) + d)); choose(o[k], focus); };
+let wheelAt = 0;
+picker.addEventListener('wheel', e => { e.preventDefault(); const v = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+  const now = performance.now(); if (now - wheelAt < 380 || Math.abs(v) < 6) return; wheelAt = now; nudge(v > 0 ? 1 : -1); }, { passive:false });
+let swipe = null;
+picker.addEventListener('pointerdown', e => { swipe = { x:e.clientX }; });
+addEventListener('pointerup', e => { if (!swipe) return; const dx = e.clientX - swipe.x; swipe = null;
+  if (Math.abs(dx) > 24){ const w = lane.firstElementChild?.offsetWidth || 68; nudge(-Math.sign(dx) * Math.max(1, Math.round(Math.abs(dx) / w))); picker.dataset.swiped = '1'; setTimeout(() => delete picker.dataset.swiped, 0); } });
+picker.addEventListener('keydown', e => { const d = { ArrowRight:1, ArrowLeft:-1 }[e.key]; if (!d) return; e.preventDefault(); nudge(d, true); });
+addEventListener('resize', () => place());
+
+/* ---- chips row ---- */
+function buildChips(){
+  const m = modeOf(view), pool = data.items.filter(i => inFilters(i, true));
+  const count = t => pool.filter(i => (i.tags || []).includes(t)).length;
+  const src = F.source && srcOf(F.source);
+  chipsEl.innerHTML =
+    (F.saved ? `<div class="modetile"><span class="mt-name"><i style="background:#ff4f6d;box-shadow:0 0 0 3px rgba(255,79,109,.22)"></i>Saved</span><small>Across every mode</small></div>`
+             : m ? `<div class="modetile"><span class="mt-name"><i></i>${esc(m.name)}</span><small>${esc(m.hint)}</small></div>` : '') +
+    '<div class="chiprow">' +
+    (src ? `<button class="chip source" data-clear-source aria-label="Clear source filter ${esc(src.name)}"><span>Source</span> ${esc(src.name)} <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7l10 10M17 7 7 17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>` : '') +
+    (data.topics || []).map(t => { const n = count(t), on = F.topics.has(t);
+      return `<button class="chip${n ? '' : ' zero'}" data-topic="${esc(t)}" aria-pressed="${on}">${esc(t)} <b>${n}</b></button>`; }).join('') +
+    `<span class="seg" role="group" aria-label="Match topics"><button data-match="any" aria-pressed="${F.match === 'any'}" title="Show articles with any chosen topic">Any</button><button data-match="all" aria-pressed="${F.match === 'all'}" title="Show articles with every chosen topic">All</button></span>` +
+    `<button class="chip" data-saved aria-pressed="${F.saved}">${heartIcon(F.saved)} Saved</button>` +
+    '</div>';
+  const row = chipsEl.querySelector('.chiprow'); row.scrollLeft = buildChips.x || 0; row.addEventListener('scroll', () => { buildChips.x = row.scrollLeft; }, { passive:true });
+}
+chipsEl.addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.topic){ const t = b.dataset.topic; F.topics.has(t) ? F.topics.delete(t) : F.topics.add(t); }
+  else if (b.dataset.match) F.match = b.dataset.match;
+  else if ('saved' in b.dataset) F.saved = !F.saved;
+  else if ('clearSource' in b.dataset) F.source = null;
+  else return;
+  place(); render(true);
+});
+function setSource(id){ F.source = id; render(true); }
+function clearFilters(){ F.topics.clear(); F.source = null; F.saved = false; place(); render(true); }
+
+/* ---- state in the URL: #mode=deep&topics=AI,UX&match=all&source=nngroup&saved=1 ---- */
+function writeHash(){
+  const p = new URLSearchParams(); p.set('mode', view);
+  if (F.topics.size) p.set('topics', [...F.topics].join(','));
+  if (F.match === 'all') p.set('match', 'all');
+  if (F.source) p.set('source', F.source);
+  if (F.saved) p.set('saved', '1');
+  const st = history.state && history.state.read ? history.state : null;
+  if (!st) history.replaceState(null, '', '#' + p.toString().replace(/%2C/g, ','));
+}
+function readHash(){
+  const p = new URLSearchParams(location.hash.slice(1));
+  if (p.get('mode') && modeOf(p.get('mode'))) view = p.get('mode');
+  F.topics = new Set((p.get('topics') || '').split(',').filter(t => (data.topics || []).includes(t)));
+  F.match = p.get('match') === 'all' ? 'all' : 'any';
+  F.source = srcOf(p.get('source')) ? p.get('source') : null;
+  F.saved = p.get('saved') === '1';
+  return p.get('read');
+}
+
+function render(fromFilter){
+  const items = pick();
+  const grid = document.getElementById('grid');
+  live.forEach((_, cv) => io && io.unobserve(cv)); live.clear(); for (const k in cursors) delete cursors[k];
+  const m = modeOf(view), filtered = F.topics.size || F.source;
+  grid.innerHTML = items.length ? items.map(card).join('')
+    : `<div class="empty">${F.saved ? 'Nothing saved yet. Tap the heart on any card to keep it here.'
+        : filtered ? 'No articles match these filters.'
+        : `No ${esc(m ? m.name : '')} articles yet. They arrive the next time the feed script runs with these sources.`}
+        ${filtered || F.saved ? '<br><button class="chip" data-clear-all>Clear filters</button>' : ''}</div>`;
+  buildChips(); writeHash();
+  if (fromFilter) scrollTo({ top:0 });
+  grid.querySelectorAll('.card').forEach(el => {
+    const it = data.items[+el.dataset.k]; const img = el.querySelector('img'); const cv = el.querySelector('canvas');
+    if (cv) mountCanvas(cv, it);
+    if (img){ const swap = () => { const mm = img.parentElement; mm.innerHTML = '<canvas></canvas>'; mountCanvas(mm.firstChild, it); };
+      if (img.complete && img.naturalWidth === 0) swap(); else img.addEventListener('error', swap, { once:true }); }
+  });
+}
+/* a mouse wheel over the filter line scrolls it sideways when it doesn't fit */
+chipsEl.addEventListener('wheel', e => { const row = e.target.closest('.chiprow'); if (!row || row.scrollWidth <= row.clientWidth || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+  e.preventDefault(); row.scrollLeft += e.deltaY; }, { passive:false });
+
+/* ---- reader: the article opens in this page, in its source's skin. The card grows into the sheet (View Transitions:
+   the card, its title and its picture each morph to their place); back plays it in reverse. ---- */
+const reader = document.getElementById('reader'), sheet = document.getElementById('sheet'), app = document.getElementById('app');
+const EASE = 'cubic-bezier(.2,.8,.2,1)';
+const motion = () => !still;
+const canMorph = () => typeof document.startViewTransition === 'function';
+let opened = null;
+
+const fontsLoaded = new Set();
+function loadFont(f){
+  if (!f || fontsLoaded.has(f)) return; fontsLoaded.add(f);
+  const l = document.createElement('link'); l.rel = 'stylesheet';
+  l.href = `https://fonts.googleapis.com/css2?family=${encodeURIComponent(f).replace(/%20/g, '+')}:wght@400;600;700&display=swap`;
+  document.head.appendChild(l);
+}
+function skinFor(i){
+  const s = { ...(data.defaultSkin || {}), ...((srcOf(i.sourceId) || {}).skin || {}) };
+  loadFont(s.fontHeading); loadFont(s.fontBody);
+  return s;
+}
+const PURIFY = { ALLOWED_TAGS:['p','h2','h3','h4','h5','ul','ol','li','blockquote','figure','figcaption','img','a','em','strong','b','i','code','pre','hr','br','sup','sub','mark','table','thead','tbody','tr','th','td'],
+  ALLOWED_ATTR:['href','src','alt','title','width','height','colspan','rowspan','target','rel','loading'] };
+/* if the DOMPurify script can't load, a strict allow-list copy is made from an inert parse instead */
+function strictClean(html){
+  const src = new DOMParser().parseFromString(html, 'text/html').body, out = document.createElement('div');
+  const walk = (from, to) => from.childNodes.forEach(n => {
+    if (n.nodeType === 3){ to.appendChild(document.createTextNode(n.textContent)); return; }
+    if (n.nodeType !== 1) return;
+    const tagName = n.tagName.toLowerCase();
+    if (!PURIFY.ALLOWED_TAGS.includes(tagName)){ if (!/^(script|style|iframe|object|embed|svg|math|template|noscript)$/.test(tagName)) walk(n, to); return; }
+    const el = document.createElement(tagName);
+    for (const a of PURIFY.ALLOWED_ATTR){ const v = n.getAttribute(a); if (v == null) continue;
+      if ((a === 'href' || a === 'src') && !/^https?:/i.test(v)) continue; el.setAttribute(a, v); }
+    to.appendChild(el); walk(n, el);
+  });
+  walk(src, out); return out.innerHTML;
+}
+function articleHtml(i){
+  if (!i.contentHtml) return '';
+  const box = document.createElement('div');
+  box.innerHTML = window.DOMPurify ? DOMPurify.sanitize(i.contentHtml, PURIFY) : strictClean(i.contentHtml);
+  const first = box.querySelector('h1,h2');
+  if (first && !first.previousElementSibling && first.textContent.trim().toLowerCase() === i.title.trim().toLowerCase()) first.remove();
+  box.querySelectorAll('a').forEach(a => { a.target = '_blank'; a.rel = 'noopener noreferrer'; });
+  box.querySelectorAll('img').forEach(img => { img.loading = 'lazy'; img.referrerPolicy = 'no-referrer'; img.removeAttribute('width'); img.removeAttribute('height'); });
+  return box.innerHTML;
+}
+
+function fill(i, el){
+  const on = favs.has(i.link), sk = skinFor(i), m = modeOf(i.mode);
+  const img = el && el.querySelector('.media img'), cv = el && el.querySelector('.media canvas');
+  const body = i.extractionStatus === 'full' ? articleHtml(i) : '';
+  const orig = `<a class="btn-orig" href="${esc(i.link)}" target="_blank" rel="noopener noreferrer">Read on ${esc(i.sourceName)} <span aria-hidden="true">↗</span></a>`;
+  sheet.className = 'sheet skinned';
+  sheet.style.setProperty('--src', srcColor(i.sourceId));
+  Object.entries({ '--sk-bg':sk.background, '--sk-text':sk.text, '--sk-accent':sk.accent, '--sk-hw':sk.headingWeight,
+    '--sk-max':sk.maxWidth + 'px', '--sk-fh':`'${sk.fontHeading}'`, '--sk-fb':`'${sk.fontBody}'` }).forEach(([k, v]) => sheet.style.setProperty(k, v));
+  const thumb = img && img.naturalWidth ? img.src : i.thumbnail;
+  sheet.innerHTML = `<div class="tools">
+      <button class="tool" data-close aria-label="Back to the list"><span aria-hidden="true">←</span> Back</button>
+      <span class="sp"></span>
+      <span class="lang-state" aria-live="polite"></span>
+      <span class="seg lang" role="group" aria-label="Language" hidden><button data-lang="en" aria-pressed="true">EN</button><button data-lang="zh" aria-pressed="false" lang="zh-Hant">中文</button></span>
+      <button class="tool icon heart" data-link="${esc(i.link)}" aria-pressed="${on}" aria-label="${on ? 'Remove from saved' : 'Save'}">${heartIcon(on)}</button>
+      <a class="tool" href="${esc(i.link)}" target="_blank" rel="noopener noreferrer">Original <span aria-hidden="true">↗</span></a></div>
+    <div class="doc">
+      <div class="hero">${thumb ? `<img src="${esc(thumb)}" alt="" referrerpolicy="no-referrer">` : '<canvas></canvas>'}</div>
+      <h1 id="r-title">${esc(i.title)}</h1>
+      <div class="meta"><span class="src">${esc(i.sourceName)}</span><span>${fmtDate(i)}</span>${m ? `<span class="modetag"><i></i>${esc(m.name)}</span>` : ''}<span>${esc((i.tags || []).join(' · '))}</span></div>
+      ${i.desc || body ? `<div class="summary" id="r-sum"><b>Summary</b><p class="sum-text">${esc(i.desc || '')}</p><ul class="points" hidden></ul><span class="ai-state" aria-live="polite"></span></div>` : ''}
+      ${body ? `<div class="body img-${esc(sk.imageStyle || 'rounded-soft')}">${body}</div>`
+        : `<div class="fallback"><p>${i.extractionStatus === 'failed' ? `This article couldn't be brought in here.`
+            : i.extractionStatus === 'excerpt-only' ? `Only the summary is available here; the rest is on ${esc(i.sourceName)}${/paywall|subscri/i.test(i.desc || '') ? ' and may need a subscription' : ''}.`
+            : `The full text hasn't been saved yet. It is added the next time the feed updates.`}</p>${orig}</div>`}
+      ${body ? `<div class="endnote"><span>From ${esc(i.sourceName)}</span>${orig}</div>` : ''}
+    </div>`;
+  sheet.querySelectorAll('.body img').forEach(x => x.addEventListener('error', () => (x.closest('figure') || x).remove(), { once:true }));
+  sheet.querySelector('.hero img')?.addEventListener('error', e => { const h = e.target.parentElement; h.innerHTML = '<canvas></canvas>'; mountCanvas(h.firstChild, i); }, { once:true });
+  const hc = sheet.querySelector('.hero canvas'); if (hc) mountCanvas(hc, i, cv && cv.dataset.scene);
+  aiStart(i);
+}
+
+const VT = { card:'vt-sheet', title:'vt-title', media:'vt-media' };
+const nameCard = (el, on) => { if (!el) return; el.style.viewTransitionName = on ? VT.card : ''; el.querySelector('.title').style.viewTransitionName = on ? VT.title : ''; el.querySelector('.media').style.viewTransitionName = on ? VT.media : ''; };
+const nameSheet = on => { sheet.style.viewTransitionName = on ? VT.card : ''; const t = sheet.querySelector('#r-title'), h = sheet.querySelector('.hero');
+  if (t) t.style.viewTransitionName = on ? VT.title : ''; if (h) h.style.viewTransitionName = on ? VT.media : ''; };
+
+function show(i, el){
+  fill(i, el); reader.hidden = false; document.body.classList.add('reading'); sheet.scrollTop = 0; opened = el;
+}
+function openReader(el, noHistory){
+  const i = data.items[+el.dataset.k]; if (!i) return;
+  if (!noHistory) history.pushState({ read:i.id }, '', location.hash.replace(/&?read=[^&]*/, '') + '&read=' + i.id);
+  if (motion() && canMorph()){
+    nameCard(el, true);
+    const vt = document.startViewTransition(() => { nameCard(el, false); show(i, el); nameSheet(true); app.style.filter = 'blur(10px)'; });
+    vt.finished.finally(() => nameSheet(false));
+    vt.updateCallbackDone.then(() => sheet.querySelector('[data-close]')?.focus({ preventScroll:true }));
+    return;
+  } else {
+    show(i, el);
+    const d = motion() ? 1 : 0;
+    reader.querySelector('.veil').animate([{ opacity:0 }, { opacity:1 }], { duration:400 * d || 160, fill:'both' });
+    sheet.animate(d ? [{ clipPath:'inset(0 0 100% 0 round 28px)', filter:'blur(14px)', transform:'translateY(-18px) scale(.97)' }, { clipPath:'inset(0 0 0 0 round 28px)', filter:'blur(0)', transform:'none' }]
+                    : [{ opacity:0 }, { opacity:1 }], { duration:d ? 620 : 180, easing:EASE, fill:'both' });
+    if (d) app.animate([{ filter:'blur(0)' }, { filter:'blur(10px)' }], { duration:500, easing:EASE, fill:'forwards' });
+  }
+  sheet.querySelector('[data-close]').focus({ preventScroll:true });
+}
+/* Back, Esc, the veil and a swipe all go through history, so the browser's own back button does the same thing */
+function closeReader(){ if (reader.hidden) return; if (history.state && history.state.read) history.back(); else hideReader(); }
+function hideReader(){
+  if (reader.hidden) return;
+  const el = opened && document.contains(opened) ? opened : null; opened = null;
+  aiStop();
+  const done = () => { reader.hidden = true; document.body.classList.remove('reading'); sheet.querySelectorAll('canvas').forEach(c => live.delete(c)); sheet.innerHTML = '';
+    app.style.filter = ''; app.getAnimations().forEach(a => a.cancel()); el?.querySelector('.cover')?.focus({ preventScroll:true }); };
+  if (motion() && canMorph() && el && el.getBoundingClientRect().bottom > 0 && el.getBoundingClientRect().top < innerHeight){
+    nameSheet(true);
+    const vt = document.startViewTransition(() => { nameSheet(false); done(); nameCard(el, true); });
+    vt.finished.finally(() => nameCard(el, false));
+    return;
+  }
+  if (!motion()){ sheet.animate([{ opacity:1 }, { opacity:0 }], { duration:160, fill:'forwards' }); return setTimeout(done, 170); }
+  sheet.animate([{ clipPath:'inset(0 0 0 0 round 28px)', filter:'blur(0)', opacity:1 }, { clipPath:'inset(0 0 100% 0 round 28px)', filter:'blur(10px)', opacity:.6 }], { duration:380, easing:'cubic-bezier(.5,0,.75,0)', fill:'forwards' });
+  reader.querySelector('.veil').animate([{ opacity:1 }, { opacity:0 }], { duration:380, fill:'forwards' });
+  app.animate([{ filter:'blur(10px)' }, { filter:'blur(0)' }], { duration:420, easing:EASE, fill:'forwards' });
+  setTimeout(done, 400);
+}
+addEventListener('popstate', () => {
+  const id = history.state && history.state.read;
+  if (!id && !reader.hidden) hideReader();
+  else if (id && reader.hidden){ const el = document.querySelector(`.card[data-k="${data.items.findIndex(x => x.id === id)}"]`); if (el) openReader(el, true); }
+});
+document.addEventListener('keydown', e => { if (!reader.hidden && e.key === 'Escape') closeReader(); });
+/* touch: swipe right on the sheet to go back */
+let sw = null;
+sheet.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse') sw = { x:e.clientX, y:e.clientY, t:performance.now() }; });
+sheet.addEventListener('pointerup', e => { if (!sw) return; const dx = e.clientX - sw.x, dy = Math.abs(e.clientY - sw.y); const fast = performance.now() - sw.t < 600; sw = null;
+  if (dx > 80 && dy < 60 && fast) closeReader(); });
+sheet.addEventListener('pointercancel', () => { sw = null; });
+
+/* ---- Claude helps with reading: a fuller summary with key points, the key sentences highlighted in the text, and a
+   Traditional Chinese reading of the whole article. Results built by the feed script (item.ai) are used first; in the
+   Claude preview the page asks Claude itself and keeps the answers in this browser, so each article is done once. ---- */
+const samplePromise = (window.claude && typeof claude.use === 'function') ? claude.use('sample').then(s => s || null, () => null) : Promise.resolve(null);
+/* inside Claude (the preview) the article always opens in this page, even before Claude has answered */
+let claudeHere = !!(window.claude && typeof claude.use === 'function'); samplePromise.then(s => { if (s) claudeHere = true; });
+const AI_KEY = id => 'design-feed-ai:' + id;
+const aiStore = {
+  get(id){ try { return JSON.parse(localStorage.getItem(AI_KEY(id))) || {}; } catch { return {}; } },
+  set(id, v){
+    const put = () => localStorage.setItem(AI_KEY(id), JSON.stringify(v));
+    try { put(); } catch { try { Object.keys(localStorage).filter(k => k.startsWith('design-feed-ai:') && k !== AI_KEY(id)).slice(0, 20).forEach(k => localStorage.removeItem(k)); put(); } catch {} }
+  }
+};
+let lang = store.get('design-feed-lang', 'en') === 'zh' ? 'zh' : 'en';
+let A = null;   // the open article: { i, ai, ctl, units, summaryJob, zhJob }
+
+const cleanHtml = html => { const b = document.createElement('div');
+  b.innerHTML = window.DOMPurify ? DOMPurify.sanitize(html, PURIFY) : strictClean(html);
+  b.querySelectorAll('mark').forEach(m => { m.className = 'hl'; });
+  b.querySelectorAll('a').forEach(a => { a.target = '_blank'; a.rel = 'noopener noreferrer'; });
+  b.querySelectorAll('img').forEach(img => { img.loading = 'lazy'; img.referrerPolicy = 'no-referrer'; });
+  return b.innerHTML; };
+const aiNote = t => { const s = sheet.querySelector('.ai-state'); if (s) s.textContent = t || ''; };
+const langNote = t => { const s = sheet.querySelector('.lang-state'); if (s) s.textContent = t || ''; };
+const ERR = { not_granted:'Claude is turned off for this page.', rate_limited:'Claude is busy for now. Try again in a little while.', session_expired:'Sign in to Claude again to use this.',
+  prompt_too_large:'This article is too long to send in one go.', refused:'Claude could not do this one.', cancelled:'' };
+const errText = e => (e && ERR[e.code] !== undefined) ? ERR[e.code] : 'Something went wrong. Open the article again to retry.';
+
+function aiStop(){ if (A && A.ctl) A.ctl.abort(); A = null; }
+
+async function aiStart(i){
+  aiStop();
+  const ai = { ...(i.ai || {}), ...aiStore.get(i.id) };
+  A = { i, ai, ctl: new AbortController() };
+  const me = A;
+  setLangButtons();
+  const body = sheet.querySelector('.body');
+  if (ai.summary) showSummary(ai);
+  if (ai.highlights && body) markSentences(body, ai.highlights);
+  const sample = await samplePromise;
+  if (A !== me) return;
+  const seg = sheet.querySelector('.seg.lang');
+  if (seg) seg.hidden = !(sample || ai.zh) || !body;
+  if (!ai.summary && sample && body && i.extractionStatus === 'full') me.summaryJob = summarize(sample, me, body);
+  if (lang === 'zh' && body) toZh();
+}
+
+function showSummary(ai){
+  const box = sheet.querySelector('#r-sum'); if (!box) return;
+  const zh = lang === 'zh' && ai.zh;
+  box.querySelector('.sum-text').textContent = zh && ai.zh.summary || ai.summary;
+  const ul = box.querySelector('.points'), pts = zh && ai.zh.points || ai.points || [];
+  ul.innerHTML = pts.map(p => `<li>${esc(p)}</li>`).join(''); ul.hidden = !pts.length;
+  box.querySelector('b').textContent = zh ? '摘要' : 'Summary';
+}
+
+async function summarize(sample, me, body){
+  const box = sheet.querySelector('#r-sum'); box?.classList.add('busy'); aiNote('Writing a fuller summary and marking the key sentences…');
+  const text = body.innerText.replace(/\n{3,}/g, '\n\n').slice(0, 30000);
+  const prompt = `You help a design-literate reader grasp an article quickly.
+Article: "${me.i.title}" from ${me.i.sourceName}.
+
+Reply with only a JSON object of this shape:
+{"summary": "...", "points": ["...", "..."], "highlights": ["...", "..."]}
+
+- summary: 4 to 6 sentences in English (about 110 to 160 words). Say what the article argues or reports, the main evidence or examples, and why it matters to people who design products, services or interfaces. Plain, precise language, no hype.
+- points: 3 to 5 key takeaways, each one short sentence.
+- highlights: 3 to 6 sentences from the article that carry its main ideas, copied EXACTLY as they appear in the text below, character for character, each under 280 characters. Spread them across the article.
+
+Article text:
+<<<
+${text}
+>>>`;
+  try {
+    const r = await sample.json(prompt, { modelTier:'default', signal: me.ctl.signal });
+    if (A !== me) return;
+    const ai = me.ai;
+    ai.summary = String(r.summary || '').trim() || ai.summary;
+    ai.points = Array.isArray(r.points) ? r.points.map(String).filter(Boolean).slice(0, 6) : [];
+    ai.highlights = Array.isArray(r.highlights) ? r.highlights.map(String).filter(Boolean).slice(0, 8) : [];
+    delete ai.zh;   // a translation made before the highlights existed would lack them
+    aiStore.set(me.i.id, ai);
+    showSummary(ai); const n = markSentences(body, ai.highlights);
+    aiNote(n ? `${n} key sentence${n > 1 ? 's are' : ' is'} highlighted in the text.` : '');
+  } catch (e) { if (A === me) aiNote(errText(e)); }
+  finally { box?.classList.remove('busy'); }
+}
+
+/* find each sentence in the body's text (ignoring differences in spaces and quote marks) and wrap it in <mark> */
+function markSentences(root, sentences){
+  const norm = c => /[‘’‛′]/.test(c) ? "'" : /[“”‟″]/.test(c) ? '"' : /[–—]/.test(c) ? '-' : c;
+  let count = 0;
+  const blocks = [...root.querySelectorAll('p, li, blockquote, h2, h3, h4')].filter(b => !b.querySelector('p, li'));
+  const flatOf = block => {   // recomputed per sentence, because wrapping splits the text nodes
+    const nodes = []; const w = document.createTreeWalker(block, NodeFilter.SHOW_TEXT); let n; while ((n = w.nextNode())) nodes.push(n);
+    let flat = '', map = [], lastSpace = true;
+    nodes.forEach(node => { for (let k = 0; k < node.data.length; k++){ const c = node.data[k];
+      if (/\s/.test(c)){ if (lastSpace) continue; flat += ' '; lastSpace = true; } else { flat += norm(c).toLowerCase(); lastSpace = false; }
+      map.push([node, k]); } });
+    return { flat, map };
+  };
+  for (const s of sentences){
+    const want = s.split('').map(c => /\s/.test(c) ? ' ' : norm(c).toLowerCase()).join('').replace(/ +/g, ' ').trim();
+    if (want.length < 12) continue;
+    for (const block of blocks){
+      const f = flatOf(block);
+      let at = f.flat.indexOf(want), len = want.length;
+      if (at < 0 && want.length > 90){ at = f.flat.indexOf(want.slice(0, 90)); if (at >= 0){ const end = f.flat.indexOf('. ', at + 90); len = (end < 0 ? f.flat.length : end + 1) - at; } }
+      if (at < 0) continue;
+      wrapRange(f.map, at, at + len - 1); count++; break;
+    }
+  }
+  return count;
+}
+function wrapRange(map, from, to){
+  const parts = new Map();
+  for (let k = from; k <= to && k < map.length; k++){ const [node, off] = map[k]; const p = parts.get(node); if (p) p[1] = off; else parts.set(node, [off, off]); }
+  [...parts].reverse().forEach(([node, [a, b]]) => {
+    if (node.parentElement && node.parentElement.closest('mark')) return;
+    const r = document.createRange(); r.setStart(node, a); r.setEnd(node, b + 1);
+    const m = document.createElement('mark'); m.className = 'hl';
+    try { r.surroundContents(m); } catch {}
+  });
+}
+
+/* ---- language switch ---- */
+function setLangButtons(){
+  sheet.querySelectorAll('.seg.lang button').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
+  sheet.classList.toggle('zh', lang === 'zh' && !!(A && A.ai.zh && (A.ai.zh.done || A.ai.zh.html)));
+  if (lang === 'zh'){ loadFont('Noto Sans TC'); }
+}
+sheet.addEventListener('click', e => {
+  const b = e.target.closest('.seg.lang button'); if (!b || !A) return;
+  const want = b.dataset.lang; if (want === lang) return;
+  lang = want; store.set('design-feed-lang', lang); setLangButtons();
+  if (lang === 'zh') toZh(); else toEn();
+});
+
+/* the parts of the article that get translated, in order; their English HTML is kept so EN can come back */
+function collectUnits(){
+  const body = sheet.querySelector('.body'); const units = [];
+  if (body) [...body.children].forEach(el => {
+    const t = el.tagName.toLowerCase();
+    if (t === 'figure'){ const c = el.querySelector('figcaption'); if (c && c.textContent.trim()) units.push(c); return; }
+    if (/^(p|h2|h3|h4|h5|ul|ol|blockquote)$/.test(t) && el.textContent.trim()) units.push(el);
+  });
+  units.forEach(el => { if (el.dataset.en === undefined) el.dataset.en = el.innerHTML; });
+  return units;
+}
+function toEn(){
+  if (!A) return; if (A.zhCtl) A.zhCtl.abort();
+  const body = sheet.querySelector('.body');
+  if (A.enBody !== undefined && body){ body.innerHTML = A.enBody; A.enBody = undefined; }
+  sheet.querySelectorAll('.body [data-en]').forEach(el => { el.innerHTML = el.dataset.en; el.removeAttribute('data-pending'); });
+  const h = sheet.querySelector('#r-title'); if (h) h.textContent = A.i.title;
+  sheet.classList.remove('zh'); showSummary(A.ai); langNote('');
+}
+async function toZh(){
+  const me = A; if (!me) return;
+  if (me.summaryJob){ langNote('Waiting for the summary…'); await me.summaryJob; if (A !== me || lang !== 'zh') return; }
+  const ai = me.ai;
+  if (ai.zh && ai.zh.html){   // made by the feed script: the whole article in one piece
+    const body = sheet.querySelector('.body');
+    if (body){ if (me.enBody === undefined) me.enBody = body.innerHTML; body.innerHTML = cleanHtml(ai.zh.html);
+      body.querySelectorAll('img').forEach(x => x.addEventListener('error', () => (x.closest('figure') || x).remove(), { once:true })); }
+    applyHead(ai.zh); setLangButtons(); langNote(''); return;
+  }
+  const units = collectUnits();
+  if (ai.zh && ai.zh.done && ai.zh.blocks.length === units.length){ applyZh(units, ai.zh); return; }
+  const sample = await samplePromise;
+  if (!sample){ langNote('Translation is available in the Claude preview.'); return; }
+  const zh = (ai.zh && ai.zh.blocks && ai.zh.blocks.length === units.length) ? ai.zh : { blocks: new Array(units.length).fill(null) };
+  // segments: title, summary and points first (as plain text), then the article's blocks (as HTML)
+  const head = [me.i.title, ai.summary || me.i.desc || '', ...(ai.points || [])];
+  const jobs = []; let cur = [], size = 0;
+  units.forEach((el, k) => { if (zh.blocks[k]) return; const h = el.dataset.en;
+    if (cur.length && (size + h.length > 5000 || cur.length >= 18)){ jobs.push(cur); cur = []; size = 0; }
+    cur.push(k); size += h.length; });
+  if (cur.length) jobs.push(cur);
+  if (zh.title) applyHead(zh);
+  me.zhCtl = new AbortController(); const signal = me.zhCtl.signal;
+  units.forEach((el, k) => { if (!zh.blocks[k]) el.setAttribute('data-pending', ''); });
+  let done = 0; const total = jobs.length + (zh.title ? 0 : 1);
+  const tick = () => langNote(`Translating ${Math.min(done + 1, total)} of ${total}…`); tick();
+  const ask = segs => sample.json(zhPrompt(me.i, segs), { modelTier:'default', signal }).then(r => {
+    if (!Array.isArray(r) || r.length !== segs.length) throw { code:'mismatch' }; return r.map(x => String(x ?? '')); });
+  const runHead = zh.title ? Promise.resolve() : ask(head).then(r => { zh.title = r[0]; zh.summary = r[1]; zh.points = r.slice(2); done++; tick(); if (A === me && lang === 'zh') applyHead(zh); });
+  const runBody = async () => { for (let q = 0; q < jobs.length; q += 2){
+      await Promise.all(jobs.slice(q, q + 2).map(job => ask(job.map(k => units[k].dataset.en)).then(r => {
+        job.forEach((k, n) => { zh.blocks[k] = cleanHtml(r[n]); if (A === me && lang === 'zh'){ units[k].innerHTML = zh.blocks[k]; units[k].removeAttribute('data-pending'); } });
+        done++; tick(); }))); } };
+  try {
+    await Promise.all([runHead, runBody()]);
+    zh.done = true; ai.zh = zh; aiStore.set(me.i.id, ai);
+    if (A === me && lang === 'zh'){ applyZh(units, zh); }
+  } catch (e) {
+    ai.zh = zh; aiStore.set(me.i.id, ai);   // keep the finished parts; the rest is asked again next time
+    if (A === me){ units.forEach(el => el.removeAttribute('data-pending'));
+      langNote(e && e.code === 'mismatch' ? 'Part of the translation came back incomplete. Switch to EN and back to finish it.' : errText(e)); }
+  }
+}
+function applyHead(zh){ aiNote(''); const h = sheet.querySelector('#r-title'); if (h && zh.title) h.textContent = zh.title; sheet.classList.add('zh'); showSummary(A.ai.zh ? A.ai : { ...A.ai, zh }); }
+function applyZh(units, zh){
+  units.forEach((el, k) => { if (zh.blocks[k] != null){ el.innerHTML = zh.blocks[k]; el.removeAttribute('data-pending'); } });
+  applyHead(zh); setLangButtons(); langNote('');
+}
+function zhPrompt(i, segs){
+  return `Translate these ${segs.length} segments of an article from ${i.sourceName} ("${i.title}") into Traditional Chinese as written in Taiwan (zh-Hant-TW).
+
+Write as a professional translator for a respected design and technology publication would: accurate, natural and concise Chinese that reads as if written in Chinese, not word for word. Use the established Taiwanese terms of the field (for example: user experience 使用者經驗, user interface 使用者介面, interaction design 互動設計, usability 易用性, prototype 原型, software 軟體, information 資訊, network 網路, data 資料, model 模型, accessibility 無障礙). Keep names of people, companies, products, publications and code as they are in English; for a specialist term without an established Chinese form, write the Chinese followed by the English in parentheses the first time. Use full-width Chinese punctuation (，。、；：？！「」『』——) and put a space between Chinese and English words or numbers. Do not add, explain or leave out anything.
+
+Segments may contain HTML. Keep every tag and attribute exactly as it is (a, em, strong, b, i, code, mark, br, li, sup, sub and so on), translate only the text between tags, keep links on the matching words, and keep each <mark> around the Chinese words that correspond to the marked English.
+
+Reply with only a JSON array of ${segs.length} strings: the translations, in the same order.
+
+Segments:
+${JSON.stringify(segs)}`;
+}
+
+document.addEventListener('click', e => {
+  const h = e.target.closest('.heart');
+  if (h){ e.preventDefault(); const l = h.dataset.link; favs.has(l) ? favs.delete(l) : favs.add(l); store.set('design-feed-favs', [...favs]);
+    const on = favs.has(l);
+    document.querySelectorAll(`.heart[data-link="${CSS.escape(l)}"]`).forEach(b => { b.setAttribute('aria-pressed', on); b.setAttribute('aria-label', on ? 'Remove from saved' : 'Save'); b.innerHTML = heartIcon(on); });
+    if (F.saved && reader.hidden) render(); else buildChips(); return; }
+  if (e.target.closest('[data-close]')){ closeReader(); return; }
+  if (e.target.closest('[data-clear-all]')){ clearFilters(); return; }
+  const s = e.target.closest('.bar .src');
+  if (s){ e.preventDefault(); setSource(s.dataset.source); return; }
+  const p = e.target.closest('.pick');
+  if (p){ if (!picker.dataset.swiped) choose(p.dataset.view); return; }
+  const c = e.target.closest('.card');
+  /* the in-page reader is used where summaries and translation exist (the Claude preview, or articles the feed script
+     has already done); anywhere else a card simply opens the original article in a new tab */
+  if (c && !e.metaKey && !e.ctrlKey && !e.shiftKey && e.button === 0){
+    const it = data.items[+c.dataset.k];
+    if (!(claudeHere || (it && it.ai && it.ai.summary))) return;
+    e.preventDefault(); openReader(c); }
+});
+
+/* feed.json v2 uses the spec's Article fields; the list code reads a few short aliases */
+function normalize(i){
+  i.link = i.url; i.source = i.sourceId; i.desc = i.excerpt; i.date = i.publishedAt; i.image = i.thumbnail;
+  return i;
+}
+/* a hash typed or pasted by hand (our own updates use replaceState, which doesn't fire this) */
+addEventListener('hashchange', () => { if (!data.modes) return; readHash(); place(); render(true); });
+(async () => {
+  try { data = await (await fetch('data/feed.json', { cache:'no-store' })).json(); data.items.forEach(normalize); }
+  catch { document.getElementById('grid').innerHTML = '<p class="empty">Could not load data/feed.json. Run npm install and npm run build, then open this page from a local server.</p>'; return; }
+  view = store.get('design-feed-mode', null);
+  if (!modeOf(view)) view = (data.modes.find(m => data.items.some(i => i.mode === m.id)) || data.modes[0]).id;
+  const readId = readHash();
+  buildPicker(); render(); requestAnimationFrame(loop);
+  if (readId){
+    const it = data.items.find(i => i.id === readId);
+    if (it){ if (!inFilters(it)){ view = it.mode; F.topics.clear(); F.source = null; F.saved = false; place(); render(); }
+      const el = document.querySelector(`.card[data-k="${data.items.indexOf(it)}"]`);
+      history.replaceState(null, '', location.hash.replace(/&?read=[^&]*/, ''));
+      if (el) openReader(el); }
+  }
+})();
+</script>

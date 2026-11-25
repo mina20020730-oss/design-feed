@@ -1,0 +1,20 @@
+{
+  "_note": "主題 chips。先比對 feed 自己的 category（categories 清單），對不上再用 keywords 比對標題和摘要，最後補上 feed 的 defaultTags。每篇最多 maxTags 個。",
+  "maxTags": 3,
+  "topics": [
+    { "id": "AI", "categories": ["ai", "artificial intelligence", "machine learning", "generative ai"],
+      "keywords": ["ai", "a\\.i\\.", "agent", "agents", "agentic", "llm", "llms", "gpt", "chatgpt", "gemini", "claude", "copilot", "generative", "machine learning", "neural", "prompt", "mcp"] },
+    { "id": "HMI / Mobility", "categories": ["automotive", "cars", "transport", "mobility", "transportation", "vehicles"],
+      "keywords": ["hmi", "car", "cars", "vehicle", "vehicles", "automotive", "mobility", "cockpit", "dashboard", "driver", "driving", "autonomous", "ev", "evs", "electric vehicle", "concept car", "interior"] },
+    { "id": "Product", "categories": ["product design", "industrial design", "products", "design"],
+      "keywords": ["product", "products", "industrial design", "launch", "hardware", "device", "furniture", "lamp", "chair", "packaging", "manufactur"] },
+    { "id": "UX", "categories": ["ux", "user experience", "ui", "interaction design", "usability"],
+      "keywords": ["ux", "ui", "user experience", "usability", "interface", "interaction", "prototype", "prototyping", "navigation", "accessibility", "accessible", "user research", "design system"] },
+    { "id": "Health", "categories": ["health", "healthcare", "wellbeing", "mental health", "medicine"],
+      "keywords": ["health", "healthcare", "patient", "patients", "medical", "medicine", "care", "caregiver", "wellbeing", "well-being", "mental health", "therapy", "clinic"] },
+    { "id": "Speculative", "categories": ["future", "futures", "philosophy", "ideas", "culture"],
+      "keywords": ["future", "futures", "speculative", "fiction", "imagine", "imagining", "utopia", "dystopia", "scenario", "philosophy", "consciousness", "meaning", "civilisation", "civilization"] },
+    { "id": "Tech Industry", "categories": ["tech", "technology", "business", "policy", "big tech"],
+      "keywords": ["apple", "google", "microsoft", "meta", "amazon", "openai", "anthropic", "nvidia", "startup", "startups", "funding", "ipo", "antitrust", "regulation", "market", "industry", "chip", "chips", "layoffs", "earnings"] }
+  ]
+}

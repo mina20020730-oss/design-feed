@@ -1,0 +1,16 @@
+{
+  "verge#0": "https://www.theverge.com/rss/index.xml",
+  "dezeen#0": "https://www.dezeen.com/design/feed/",
+  "dezeen#1": "https://www.dezeen.com/technology/feed/",
+  "aeon#0": "https://aeon.co/feed.rss",
+  "aeon#1": "https://psyche.co/feed.rss",
+  "noema#0": "https://www.noemamag.com/feed/",
+  "marginalian#0": "https://feeds.feedburner.com/brainpickings/rss",
+  "core77#0": "http://feeds.feedburner.com/core77/blog",
+  "sidebar#0": "https://sidebar.io/feed.xml",
+  "mittr#0": "https://www.technologyreview.com/feed/",
+  "nngroup#0": "https://www.nngroup.com/feed/rss/",
+  "nngroup#1": "https://www.nngroup.com/feed/rss/",
+  "designboom#0": "https://www.designboom.com/feed/",
+  "benevans#0": "https://www.ben-evans.com/benedictevans?format=rss"
+}
