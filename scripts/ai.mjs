@@ -12,14 +12,19 @@
 
 const MODEL = process.env.AI_MODEL || 'claude-opus-5-5';
 const MAX = process.env.AI_MAX === undefined ? 50 : Number(process.env.AI_MAX) || Infinity;
+const CARD_TEXT_LIMIT = 20000;   // 公開網站只做卡片摘要，送前 2 萬字元就夠，省費用
 const TEXT_LIMIT = 60000;   // 送去做摘要的純文字上限（字元），超過的長文只送前段，並在報告裡註明
 
 export const aiEnabled = () => !process.env.AI_OFF && !!(process.env.ANTHROPIC_API_KEY || process.env.ANTHROPIC_AUTH_TOKEN);
-export const needsAi = (i) => i.extractionStatus === 'full' && i.contentHtml && !(i.ai && i.ai.summary && i.ai.zh && i.ai.zh.html);
+// cardOnly（公開網站用）：只做卡片用的短摘要＋關鍵字（和長摘要、重點），不做重點句與翻譯，一篇只呼叫一次
+export const needsAi = (i, cardOnly = false) => !(i.ai && i.ai.brief && (cardOnly || (i.ai.zh && i.ai.zh.html)));
+const ready = (i) => i.extractionStatus === 'full' && i.contentHtml;
+export const AI_MAX = MAX;
 
-export async function runAi(items, { JSDOM, save }) {
-  const todo = items.filter(needsAi).slice(0, MAX);
-  const waiting = items.filter(needsAi).length - todo.length;
+export async function runAi(items, { JSDOM, save, cardOnly = false }) {
+  const all = items.filter((i) => ready(i) && needsAi(i, cardOnly));
+  const todo = all.slice(0, MAX);
+  const waiting = all.length - todo.length;
   if (!todo.length) { console.log('AI 摘要與翻譯：沒有新文章要處理'); return; }
   let Anthropic;
   try { ({ default: Anthropic } = await import('@anthropic-ai/sdk')); }
@@ -44,7 +49,7 @@ export async function runAi(items, { JSDOM, save }) {
 
   for (let q = 0; q < todo.length; q += 2) {
     await Promise.all(todo.slice(q, q + 2).map(async (item) => {
-      try { item.ai = await processItem(item, ask, JSDOM); done++; console.log(`  ✓ ${item.sourceName}｜${item.title}`); }
+      try { item.ai = await processItem(item, ask, JSDOM, cardOnly); done++; console.log(`  ✓ ${item.sourceName}｜${item.title}`); }
       catch (e) { failed++; console.warn(`  ✗ ${item.sourceName}｜${item.title}：${errText(e, Anthropic)}`); }
     }));
     if (save) await save();   // 每做完兩篇就存一次，中途停掉也不會白做
@@ -60,7 +65,7 @@ function errText(e, Anthropic) {
   return String(e.message || e);
 }
 
-async function processItem(item, ask, JSDOM) {
+async function processItem(item, ask, JSDOM, cardOnly) {
   const dom = new JSDOM(`<body>${item.contentHtml}</body>`);
   const doc = dom.window.document, body = doc.body;
   const first = body.querySelector('h1,h2');
@@ -68,11 +73,26 @@ async function processItem(item, ask, JSDOM) {
   const text = body.textContent.replace(/[ \t]+/g, ' ').replace(/\n\s*\n+/g, '\n\n').trim();
 
   // 1. 摘要、重點、重點句
-  const s = await ask(summaryPrompt(item, text.slice(0, TEXT_LIMIT)), {
-    type: 'object', additionalProperties: false, required: ['summary', 'points', 'highlights'],
-    properties: { summary: { type: 'string' }, points: { type: 'array', items: { type: 'string' } }, highlights: { type: 'array', items: { type: 'string' } } },
+  const s = await ask(summaryPrompt(item, text.slice(0, cardOnly ? CARD_TEXT_LIMIT : TEXT_LIMIT)), {
+    type: 'object', additionalProperties: false, required: ['brief', 'keywords', 'summary', 'points', 'highlights'],
+    properties: { brief: { type: 'string' }, keywords: { type: 'array', items: { type: 'string' } },
+      summary: { type: 'string' }, points: { type: 'array', items: { type: 'string' } }, highlights: { type: 'array', items: { type: 'string' } } },
   }, 16000);
-  const ai = { summary: String(s.summary || '').trim(), points: (s.points || []).map(String).slice(0, 6), highlights: (s.highlights || []).map(String).slice(0, 8) };
+  const brief = String(s.brief || '').trim();
+  const ai = { brief, keywords: (s.keywords || []).map(String).filter((k) => k.length > 1 && brief.toLowerCase().includes(k.toLowerCase())).slice(0, 5),
+    summary: String(s.summary || '').trim(), points: (s.points || []).map(String).slice(0, 6), highlights: (s.highlights || []).map(String).slice(0, 8) };
+  if (cardOnly) { ai.model = MODEL; ai.at = new Date().toISOString(); return ai; }
+
+  const arraySchema = (n) => ({ type: 'object', additionalProperties: false, required: ['translations'],
+    properties: { translations: { type: 'array', items: { type: 'string' }, minItems: n, maxItems: n } } });
+  const tr = async (segs) => { const r = await ask(zhPrompt(item, segs), arraySchema(segs.length));
+    if (!Array.isArray(r.translations) || r.translations.length !== segs.length) throw new Error('翻譯段數不符'); return r.translations; };
+  const head = [item.title, ai.summary, ...ai.points];
+  const zhHead = await tr(head);
+  ai.zh = { title: zhHead[0], summary: zhHead[1], points: zhHead.slice(2) };
+  ai.model = MODEL; ai.at = new Date().toISOString();
+  if (text.length > TEXT_LIMIT) ai.note = 'summary-from-first-part';
+  if (headOnly) return ai;
 
   // 2. 在原文畫上重點句，再整篇翻譯（<mark> 會跟著翻譯保留）
   markSentences(doc, body, ai.highlights);
@@ -81,19 +101,11 @@ async function processItem(item, ask, JSDOM) {
   const groups = []; let cur = [], size = 0;
   for (const k of want) { if (cur.length && (size + blocks[k].length > 9000 || cur.length >= 30)) { groups.push(cur); cur = []; size = 0; } cur.push(k); size += blocks[k].length; }
   if (cur.length) groups.push(cur);
-  const head = [item.title, ai.summary, ...ai.points];
-  const arraySchema = (n) => ({ type: 'object', additionalProperties: false, required: ['translations'],
-    properties: { translations: { type: 'array', items: { type: 'string' }, minItems: n, maxItems: n } } });
-  const tr = async (segs) => { const r = await ask(zhPrompt(item, segs), arraySchema(segs.length));
-    if (!Array.isArray(r.translations) || r.translations.length !== segs.length) throw new Error('翻譯段數不符'); return r.translations; };
-  const zhHead = await tr(head);
   const out = blocks.slice();
   for (let g = 0; g < groups.length; g += 2) {
     await Promise.all(groups.slice(g, g + 2).map(async (grp) => { const r = await tr(grp.map((k) => blocks[k])); grp.forEach((k, n) => { out[k] = r[n]; }); }));
   }
-  ai.zh = { title: zhHead[0], summary: zhHead[1], points: zhHead.slice(2), html: out.join('\n') };
-  ai.model = MODEL; ai.at = new Date().toISOString();
-  if (text.length > TEXT_LIMIT) ai.note = 'summary-from-first-part';
+  ai.zh.html = out.join('\n');
   return ai;
 }
 
@@ -104,6 +116,8 @@ function summaryPrompt(item, text) {
 Article: "${item.title}" from ${item.sourceName}.
 
 Return:
+- brief: 2 or 3 sentences in English (about 45 to 65 words) for a card in a list, so the reader can decide whether to open the article: what it is about, its main claim or finding, and what makes it worth reading. Concrete, no hype, no "This article".
+- keywords: 3 to 5 key phrases (1 to 4 words each) that carry the brief's meaning, copied exactly as they appear in the brief.
 - summary: 4 to 6 sentences in English (about 110 to 160 words). Say what the article argues or reports, the main evidence or examples, and why it matters to people who design products, services or interfaces. Plain, precise language, no hype.
 - points: 3 to 5 key takeaways, each one short sentence.
 - highlights: 3 to 6 sentences from the article that carry its main ideas, copied EXACTLY as they appear in the text below, character for character, each under 280 characters. Spread them across the article.

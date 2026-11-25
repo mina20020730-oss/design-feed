@@ -17,16 +17,17 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
-import { aiEnabled, runAi } from './ai.mjs';
+import { aiEnabled, runAi, needsAi, AI_MAX } from './ai.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = resolve(ROOT, 'data/feed.json');
 const CONFIG = (f) => resolve(ROOT, 'config', f);
 const PER_FEED = 12;
 const UA = 'DesignFeedReader/2.0 (personal RSS reader; one request per second per site)';
-const MIN_GAP_MS = 1000;
-// PUBLIC_SITE=1（GitHub 自動更新用）：公開網站只放標題、圖片、摘要和原文連結，不抓也不存全文與翻譯
-const PUBLIC = !!process.env.PUBLIC_SITE;           // 同一網站兩次請求至少間隔 1 秒
+const MIN_GAP_MS = 1000;           // 同一網站兩次請求至少間隔 1 秒
+// PUBLIC_SITE=1（GitHub 自動更新用）：公開網站放標題、圖片、卡片用的 Claude 短摘要與關鍵字、原文連結；
+// 不存全文、不翻譯。全文只在產生摘要時暫時抓來用，不寫進 feed.json。
+const PUBLIC = !!process.env.PUBLIC_SITE;
 const FULL_MIN_CHARS = 900;        // 抽出的純文字少於這個長度，視為只有摘要
 const PAYWALL = /subscribe to (continue|read)|subscribers only|become a (member|subscriber)|already a subscriber|sign in to continue reading|this (article|content) is (for|available to) (members|subscribers)|premium content/i;
 
@@ -288,7 +289,9 @@ function migrate(old) {
 }
 
 // ---------- main ----------
-const publicItem = ({ contentHtml, ai, ...i }) => ({ ...i, contentHtml: null, extractionStatus: null });
+const sortedNow = (all) => [...all.values()].sort((a, b) => (Date.parse(b.publishedAt || b.firstSeen) || 0) - (Date.parse(a.publishedAt || a.firstSeen) || 0));
+const publicAi = (ai) => ai && ai.brief ? { brief: ai.brief, keywords: ai.keywords || [], model: ai.model, at: ai.at } : undefined;
+const publicItem = ({ contentHtml, ai, ...i }) => ({ ...i, contentHtml: null, ...(publicAi(ai) ? { ai: publicAi(ai) } : {}) });
 
 async function main() {
   const modesCfg = await readJSON(CONFIG('modes.json'));
@@ -339,7 +342,10 @@ async function main() {
   }
 
   // 全文：還沒抽過、或上次失敗的才抓（feed.json 就是快取）
-  const todo = PUBLIC ? [] : [...all.values()].filter((i) => !i.contentHtml && !['excerpt-only', 'failed'].includes(i.extractionStatus));
+  // 公開網站：只為這次要做摘要的文章暫時抓全文（沒有 API key 就不抓）
+  const todo = PUBLIC
+    ? (aiEnabled() ? sortedNow(all).filter((i) => needsAi(i, true) && !['excerpt-only', 'failed'].includes(i.extractionStatus)).slice(0, AI_MAX) : [])
+    : [...all.values()].filter((i) => !i.contentHtml && !['excerpt-only', 'failed'].includes(i.extractionStatus));
   console.log(`抽取全文：${todo.length} 篇（每個網站每秒最多一次請求）`);
   await pool(todo, 6, async (i) => {
     try { const r = await extract(i); i.extractionStatus = r.status; i.contentHtml = r.html || null; }
@@ -353,16 +359,16 @@ async function main() {
     await mkdir(dirname(OUT), { recursive: true });
     await writeFile(OUT, JSON.stringify({
       updated: new Date().toISOString(), modes: modesCfg.modes, topics: topicsCfg.topics.map((t) => t.id),
-      defaultSkin: srcCfg.defaultSkin, sources, report, items: PUBLIC ? sorted().map(publicItem) : sorted(),
+      defaultSkin: srcCfg.defaultSkin, sources, report, ...(PUBLIC ? { public: true } : {}), items: PUBLIC ? sorted().map(publicItem) : sorted(),
     }, null, 2));
   };
   await writeOut();
   await writeFile(CONFIG('discovered.json'), JSON.stringify(cache, null, 2));
 
   // 摘要與翻譯（需要 API key；沒有就跳過）
-  if (aiEnabled() && !PUBLIC) {
+  if (aiEnabled()) {
     const lib = await libs();
-    if (lib) await runAi(sorted(), { JSDOM: lib.JSDOM, save: writeOut });
+    if (lib) await runAi(sorted(), { JSDOM: lib.JSDOM, save: writeOut, cardOnly: PUBLIC });
     await writeOut();
   } else console.log('（沒有設定 ANTHROPIC_API_KEY，這次不產生摘要與翻譯）');
   const items = sorted();

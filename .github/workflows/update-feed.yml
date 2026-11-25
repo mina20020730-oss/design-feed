@@ -16,8 +16,12 @@ jobs:
       - run: npm install --no-audit --no-fund
       - run: npm run build
         env:
-          # 公開網站只放標題、圖片、摘要和原文連結，不抓全文、不做翻譯
+          # 公開網站只放標題、圖片、卡片短摘要與關鍵字、原文連結，不存全文、不做翻譯
           PUBLIC_SITE: "1"
+          # 在 repo 的 Settings > Secrets and variables > Actions 新增 ANTHROPIC_API_KEY 才會產生卡片摘要；沒設就照舊用 RSS 摘要
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AI_MODEL: claude-sonnet-5-5
+          AI_MAX: "40"
       - name: Commit feed.json
         run: |
           git config user.name "feed-bot"

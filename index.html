@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Design Feed</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -115,6 +114,11 @@ body{margin:0;color:var(--ink);font-family:var(--font-ui);font-size:14px;min-hei
 .new{font:700 9px/1 var(--font-ui);letter-spacing:.1em;color:var(--new);border:1px solid currentColor;border-radius:4px;padding:3px 5px}
 .title{margin:12px 0 0;font:500 20px/1.25 var(--font-ui);letter-spacing:-.02em;text-wrap:balance;padding-right:30px}
 .abstract{margin:9px 0 0;font:400 12.5px/1.55 var(--font-ui);color:var(--muted)}
+.abstract.brief{font-size:13.5px;line-height:1.62;color:color-mix(in srgb,var(--ink) 74%,transparent)}
+.abstract mark.kw{--kw:oklch(0.91 0.12 98 / .7);color:var(--ink);font-weight:600;padding:0 .1em;margin:0 -.03em;border-radius:3px;-webkit-box-decoration-break:clone;box-decoration-break:clone;
+  background:linear-gradient(transparent 34%,var(--kw) 34%,var(--kw) 92%,transparent 92%)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .abstract mark.kw{--kw:oklch(0.62 0.1 95 / .38)}}
+:root[data-theme="dark"] .abstract mark.kw{--kw:oklch(0.62 0.1 95 / .38)}
 .tags{margin-top:auto;padding-top:12px;font:600 10px/1.3 var(--font-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
 .heart{position:absolute;z-index:2;top:14px;right:calc(var(--mw) + 32px);width:34px;height:34px;border-radius:50%;border:1px solid var(--edge);background:transparent;color:var(--ink);
   display:grid;place-items:center;cursor:pointer;padding:0}
@@ -186,7 +190,7 @@ body.reading{overflow:hidden}
   .heart{right:132px;top:10px;width:30px;height:30px}
   .media{min-height:100px;align-self:start;aspect-ratio:1}
   .title{font-size:17px;padding-right:22px}
-  .abstract{font-size:12px}
+  .abstract{font-size:12px} .abstract.brief{font-size:12.5px}
   .reader{padding:0}
   .sheet{border-radius:0;border:0;width:100%}
 }
@@ -403,6 +407,16 @@ function pick(){ return [...data.items].filter(i => inFilters(i)).sort((a, b) =>
 const heartIcon = on => on ? HEART.replace('fill="none"', 'fill="currentColor"') : HEART;
 const fmtDate = i => { const t = when(i); return t ? new Date(t).toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric', timeZone:'UTC' }) : ''; };
 
+/* the card's short Claude summary, with its key phrases marked (longest first, no overlaps) */
+function briefHtml(ai){
+  const t = String(ai.brief), low = t.toLowerCase(), taken = [];
+  [...(ai.keywords || [])].map(String).sort((a, b) => b.length - a.length).forEach(k => {
+    const a = low.indexOf(k.toLowerCase()); if (k.length < 2 || a < 0) return; const b = a + k.length;
+    if (!taken.some(([x, y]) => a < y && b > x)) taken.push([a, b]); });
+  taken.sort((p, q) => p[0] - q[0]); let out = '', at = 0;
+  taken.forEach(([a, b]) => { out += esc(t.slice(at, a)) + `<mark class="kw">${esc(t.slice(a, b))}</mark>`; at = b; });
+  return out + esc(t.slice(at));
+}
 function card(i){
   const src = i.thumbnail;
   const on = favs.has(i.link);
@@ -412,7 +426,7 @@ function card(i){
     <div class="txt">
       <div class="bar"><button class="src" data-source="${esc(i.sourceId)}" title="Only show ${esc(i.sourceName)}">${esc(i.sourceName)}</button><span class="date">${fmtDate(i)}</span>${daysAgo(i) <= 7 ? '<span class="new">NEW</span>' : ''}</div>
       <h2 class="title">${esc(i.title)}</h2>
-      <p class="abstract">${esc(fit(i.desc || ''))}</p>
+      ${i.ai && i.ai.brief ? `<p class="abstract brief">${briefHtml(i.ai)}</p>` : `<p class="abstract">${esc(fit(i.desc || '', 320))}</p>`}
       <div class="tags">${esc(tags)}</div>
     </div>
     <button class="heart" data-link="${esc(i.link)}" aria-pressed="${on}" aria-label="${on ? 'Remove from saved' : 'Save'}">${heartIcon(on)}</button>
@@ -934,10 +948,11 @@ function fill(i, el){
       <div class="hero">${thumb ? `<img src="${esc(thumb)}" alt="" referrerpolicy="no-referrer">` : '<canvas></canvas>'}</div>
       <h1 id="r-title">${esc(i.title)}</h1>
       <div class="meta"><span class="src">${esc(i.sourceName)}</span><span>${fmtDate(i)}</span>${m ? `<span class="modetag"><i></i>${esc(m.name)}</span>` : ''}<span>${esc((i.tags || []).join(' · '))}</span></div>
-      ${i.desc || body ? `<div class="summary" id="r-sum"><b>Summary</b><p class="sum-text">${esc(i.desc || '')}</p><ul class="points" hidden></ul><span class="ai-state" aria-live="polite"></span></div>` : ''}
+      ${i.desc || body || (i.ai && i.ai.summary) ? `<div class="summary" id="r-sum"><b>Summary</b><p class="sum-text">${esc(i.desc || '')}</p><ul class="points" hidden></ul><span class="ai-state" aria-live="polite"></span></div>` : ''}
       ${body ? `<div class="body img-${esc(sk.imageStyle || 'rounded-soft')}">${body}</div>`
         : `<div class="fallback"><p>${i.extractionStatus === 'failed' ? `This article couldn't be brought in here.`
             : i.extractionStatus === 'excerpt-only' ? `Only the summary is available here; the rest is on ${esc(i.sourceName)}${/paywall|subscri/i.test(i.desc || '') ? ' and may need a subscription' : ''}.`
+            : data.public ? `${i.ai && i.ai.summary ? 'This is a summary. ' : ''}The full article is on ${esc(i.sourceName)}.`
             : `The full text hasn't been saved yet. It is added the next time the feed updates.`}</p>${orig}</div>`}
       ${body ? `<div class="endnote"><span>From ${esc(i.sourceName)}</span>${orig}</div>` : ''}
     </div>`;
@@ -1050,9 +1065,9 @@ async function aiStart(i){
   const sample = await samplePromise;
   if (A !== me) return;
   const seg = sheet.querySelector('.seg.lang');
-  if (seg) seg.hidden = !(sample || ai.zh) || !body;
+  if (seg) seg.hidden = !((ai.zh && (body || ai.zh.summary)) || (sample && body));
   if (!ai.summary && sample && body && i.extractionStatus === 'full') me.summaryJob = summarize(sample, me, body);
-  if (lang === 'zh' && body) toZh();
+  if (lang === 'zh' && (body || (ai.zh && ai.zh.summary))) toZh();
 }
 
 function showSummary(ai){
@@ -1136,7 +1151,7 @@ function wrapRange(map, from, to){
 /* ---- language switch ---- */
 function setLangButtons(){
   sheet.querySelectorAll('.seg.lang button').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
-  sheet.classList.toggle('zh', lang === 'zh' && !!(A && A.ai.zh && (A.ai.zh.done || A.ai.zh.html)));
+  sheet.classList.toggle('zh', lang === 'zh' && !!(A && A.ai.zh && (A.ai.zh.done || A.ai.zh.html || !sheet.querySelector('.body'))));
   if (lang === 'zh'){ loadFont('Noto Sans TC'); }
 }
 sheet.addEventListener('click', e => {
@@ -1174,6 +1189,9 @@ async function toZh(){
     if (body){ if (me.enBody === undefined) me.enBody = body.innerHTML; body.innerHTML = cleanHtml(ai.zh.html);
       body.querySelectorAll('img').forEach(x => x.addEventListener('error', () => (x.closest('figure') || x).remove(), { once:true })); }
     applyHead(ai.zh); setLangButtons(); langNote(''); return;
+  }
+  if (!sheet.querySelector('.body')){   // the public site: only the title, summary and points are translated
+    if (ai.zh && ai.zh.summary){ applyHead(ai.zh); setLangButtons(); langNote(''); } return;
   }
   const units = collectUnits();
   if (ai.zh && ai.zh.done && ai.zh.blocks.length === units.length){ applyZh(units, ai.zh); return; }
@@ -1240,8 +1258,7 @@ document.addEventListener('click', e => {
   const p = e.target.closest('.pick');
   if (p){ if (!picker.dataset.swiped) choose(p.dataset.view); return; }
   const c = e.target.closest('.card');
-  /* the in-page reader is used where summaries and translation exist (the Claude preview, or articles the feed script
-     has already done); anywhere else a card simply opens the original article in a new tab */
+  /* in the Claude preview a card opens the in-page reader; on the public site it opens the original article in a new tab */
   if (c && !e.metaKey && !e.ctrlKey && !e.shiftKey && e.button === 0){
     const it = data.items[+c.dataset.k];
     if (!(claudeHere || (it && it.ai && it.ai.summary))) return;
