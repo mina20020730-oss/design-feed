@@ -18,6 +18,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { aiEnabled, runAi, needsAi, AI_MAX } from './ai.mjs';
+import { makeDigest, makeDf } from './digest.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = resolve(ROOT, 'data/feed.json');
@@ -25,8 +26,9 @@ const CONFIG = (f) => resolve(ROOT, 'config', f);
 const PER_FEED = 12;
 const UA = 'DesignFeedReader/2.0 (personal RSS reader; one request per second per site)';
 const MIN_GAP_MS = 1000;           // 同一網站兩次請求至少間隔 1 秒
-// PUBLIC_SITE=1（GitHub 自動更新用）：公開網站放標題、圖片、卡片用的 Claude 短摘要與關鍵字、原文連結；
-// 不存全文、不翻譯。全文只在產生摘要時暫時抓來用，不寫進 feed.json。
+// PUBLIC_SITE=1（GitHub 自動更新用）：公開網站放標題、圖片、卡片摘要與關鍵詞、原文連結；不存全文、不翻譯。
+// 卡片摘要免費：從原文挑 2～3 句代表句並標出關鍵詞（scripts/digest.mjs）。有設 ANTHROPIC_API_KEY 時改用 Claude 寫的摘要。
+// 全文只在做摘要時暫時抓來用，不寫進 feed.json。
 const PUBLIC = !!process.env.PUBLIC_SITE;
 const FULL_MIN_CHARS = 900;        // 抽出的純文字少於這個長度，視為只有摘要
 const PAYWALL = /subscribe to (continue|read)|subscribers only|become a (member|subscriber)|already a subscriber|sign in to continue reading|this (article|content) is (for|available to) (members|subscribers)|premium content/i;
@@ -326,7 +328,7 @@ async function main() {
             firstSeen: old?.firstSeen || new Date(Date.now() - k * 60000).toISOString(),
             thumbnail: it.thumbnail || old?.thumbnail || null,
             contentHtml: old?.contentHtml || null, extractionStatus: old?.extractionStatus || null,
-            ...(old?.ai ? { ai: old.ai } : {}),
+            ...(old?.ai ? { ai: old.ai } : {}), ...(old?.digest ? { digest: old.digest } : {}),
           };
           item.tags = tagger({ ...item, categories: it.categories }, feed.defaultTags);
           Object.defineProperty(item, 'feedContent', { value: it.feedContent, enumerable: false });
@@ -344,7 +346,7 @@ async function main() {
   // 全文：還沒抽過、或上次失敗的才抓（feed.json 就是快取）
   // 公開網站：只為這次要做摘要的文章暫時抓全文（沒有 API key 就不抓）
   const todo = PUBLIC
-    ? (aiEnabled() ? sortedNow(all).filter((i) => needsAi(i, true) && !['excerpt-only', 'failed'].includes(i.extractionStatus)).slice(0, AI_MAX) : [])
+    ? sortedNow(all).filter((i) => !i.digest && (!aiEnabled() || needsAi(i, true)) && !['excerpt-only', 'failed', 'no-digest'].includes(i.extractionStatus))
     : [...all.values()].filter((i) => !i.contentHtml && !['excerpt-only', 'failed'].includes(i.extractionStatus));
   console.log(`抽取全文：${todo.length} 篇（每個網站每秒最多一次請求）`);
   await pool(todo, 6, async (i) => {
@@ -352,6 +354,14 @@ async function main() {
     // 連不上網站：狀態留空，下次再試；抽得到網頁但抽不出內文才算 failed
     catch (e) { i.extractionStatus = null; throw e; }
   });
+
+  // 卡片摘要（免費、抽取式）：還沒有的才做
+  const lib0 = await libs();
+  if (lib0) {
+    const corpus = makeDf([...all.values()]); let n = 0;
+    for (const i of all.values()) if (!i.digest && i.contentHtml) { try { const g = makeDigest(i, i.contentHtml, lib0.JSDOM, corpus); if (g) { i.digest = g; n++; } else if (PUBLIC) i.extractionStatus = 'no-digest'; } catch {} }
+    console.log(`卡片摘要：新做 ${n} 篇`);
+  }
 
   const sources = srcCfg.sources.map(({ id, name, homepage, skin, tint }) => ({ id, name, homepage, ...(tint ? { tint } : {}), skin: { ...srcCfg.defaultSkin, ...skin } }));
   const sorted = () => [...all.values()].sort((a, b) => (Date.parse(b.publishedAt || b.firstSeen) || 0) - (Date.parse(a.publishedAt || a.firstSeen) || 0));

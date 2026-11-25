@@ -49,7 +49,9 @@ npx serve .          # 或 python3 -m http.server，然後開瀏覽器
 
 ### 公開網站的卡片摘要
 
-GitHub 自動更新時（PUBLIC_SITE=1）不存全文、不翻譯，只替每篇新文章產生卡片用的 2–3 句英文摘要，並標出 3–5 個關鍵字。要開啟這個功能，到 repo 的 Settings > Secrets and variables > Actions 新增 `ANTHROPIC_API_KEY`。沒有設定時，卡片照舊顯示 RSS 自帶的摘要。每次最多處理 40 篇（AI_MAX），做過的不會重做。
+GitHub 自動更新時（PUBLIC_SITE=1）不存全文、不翻譯。卡片摘要免費產生：scripts/digest.mjs 從原文挑出最能代表全文的 2～3 句，並標出 3～4 個關鍵詞（存在 item.digest，只是幾句引文）。做過的不會重做。
+
+選用：在 repo 的 Settings > Secrets and variables > Actions 新增 `ANTHROPIC_API_KEY`，就會改用 Claude 寫的摘要（item.ai.brief，另外計費，每次最多 AI_MAX 篇）。
 
 ## 摘要、重點與中文翻譯
 

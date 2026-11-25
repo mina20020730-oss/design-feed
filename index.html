@@ -407,7 +407,7 @@ function pick(){ return [...data.items].filter(i => inFilters(i)).sort((a, b) =>
 const heartIcon = on => on ? HEART.replace('fill="none"', 'fill="currentColor"') : HEART;
 const fmtDate = i => { const t = when(i); return t ? new Date(t).toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric', timeZone:'UTC' }) : ''; };
 
-/* the card's short Claude summary, with its key phrases marked (longest first, no overlaps) */
+/* the card's summary (Claude's, or key sentences picked from the article), with its key phrases marked (longest first, no overlaps) */
 function briefHtml(ai){
   const t = String(ai.brief), low = t.toLowerCase(), taken = [];
   [...(ai.keywords || [])].map(String).sort((a, b) => b.length - a.length).forEach(k => {
@@ -426,7 +426,8 @@ function card(i){
     <div class="txt">
       <div class="bar"><button class="src" data-source="${esc(i.sourceId)}" title="Only show ${esc(i.sourceName)}">${esc(i.sourceName)}</button><span class="date">${fmtDate(i)}</span>${daysAgo(i) <= 7 ? '<span class="new">NEW</span>' : ''}</div>
       <h2 class="title">${esc(i.title)}</h2>
-      ${i.ai && i.ai.brief ? `<p class="abstract brief">${briefHtml(i.ai)}</p>` : `<p class="abstract">${esc(fit(i.desc || '', 320))}</p>`}
+      ${(() => { const d = i.ai && i.ai.brief ? i.ai : i.digest && i.digest.brief ? i.digest : null;
+        return d ? `<p class="abstract brief">${briefHtml(d)}</p>` : `<p class="abstract">${esc(fit(i.desc || '', 320))}</p>`; })()}
       <div class="tags">${esc(tags)}</div>
     </div>
     <button class="heart" data-link="${esc(i.link)}" aria-pressed="${on}" aria-label="${on ? 'Remove from saved' : 'Save'}">${heartIcon(on)}</button>
