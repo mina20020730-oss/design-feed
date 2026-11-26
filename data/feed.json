@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T13:47:34.069Z",
+  "updated": "2026-11-26T08:41:48.839Z",
   "modes": [
     {
       "id": "pulse",
@@ -472,28 +472,597 @@
   "public": true,
   "items": [
     {
-      "id": "e010f7203325",
+      "id": "3b0722f2328f",
+      "sourceId": "core77",
+      "sourceName": "Core77",
+      "feedUrl": "http://feeds.feedburner.com/core77/blog",
+      "mode": "pulse",
+      "title": "Curtains Made Out of Aluminum or Wood",
+      "excerpt": "Nolastar , by German-Spanish industrial designer Pablo Octavio , is a curtain system made of aluminum or wooden tiles rather than fabric.",
+      "url": "https://www.core77.com/posts/146013/Curtains-Made-Out-of-Aluminum-or-Wood",
+      "publishedAt": null,
+      "firstSeen": "2026-11-26T08:39:27.922Z",
+      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1858309_lead_400_146013_.jpeg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Nolastar, by German-Spanish industrial designer Pablo Octavio, is a curtain system made of aluminum or wooden tiles rather than fabric. Despite being heavier than fabric, the curtains are reportedly compatible with standard curtain tracks, whether motorized or manual. The Nolastar room divider and curtain system is more than just a functional element, it is a statement of timeless design and innovative materiality.",
+        "keywords": [
+          "curtain tracks",
+          "aluminum",
+          "system"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "77e7a2d80513",
+      "sourceId": "core77",
+      "sourceName": "Core77",
+      "feedUrl": "http://feeds.feedburner.com/core77/blog",
+      "mode": "pulse",
+      "title": "Adaptive Eyeglasses that Automatically Adjust for Close or Distant Viewing",
+      "excerpt": "This seems too good to be true: A Chinese startup called VIVIFoCAL claims to have invented adaptive eyeglasses, which automatically adjust between close and distant viewing.",
+      "url": "https://www.core77.com/posts/146011/Adaptive-Eyeglasses-that-Automatically-Adjust-for-Close-or-Distant-Viewing",
+      "publishedAt": null,
+      "firstSeen": "2026-11-26T08:38:27.922Z",
+      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1858250_lead_400_146011_.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry",
+        "Product"
+      ],
+      "digest": {
+        "brief": "This seems too good to be true: A Chinese startup called VIVIFoCAL claims to have invented adaptive eyeglasses, which automatically adjust between close and distant viewing. A laser sensor on their S1 glasses supposedly measures the distance of what you're looking at, and a tiny motor then slides a pair of interior lenses sideways to change their focusing strength.",
+        "keywords": [
+          "laser sensor",
+          "glasses",
+          "adaptive",
+          "eyeglasses"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "9511636b6500",
+      "sourceId": "core77",
+      "sourceName": "Core77",
+      "feedUrl": "http://feeds.feedburner.com/core77/blog",
+      "mode": "pulse",
+      "title": "This Stainless Steel Cube Unfolds Into a Camping Stove",
+      "excerpt": "This diminutive stainless steel box unfolds into a camping stove. Designed by South Korean camping gear company Kovea, the Container Stove measures just 83 × 124 × 85 mm (3.",
+      "url": "https://www.core77.com/posts/146010/This-Stainless-Steel-Cube-Unfolds-Into-a-Camping-Stove",
+      "publishedAt": null,
+      "firstSeen": "2026-11-26T08:37:27.922Z",
+      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1858219_lead_400_146010_.jpg",
+      "extractionStatus": "excerpt-only",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "This diminutive stainless steel box unfolds into a camping stove. Designed by South Korean camping gear company Kovea, the Container Stove measures just 83 × 124 × 85 mm (3. One end of the box opens up to reveal the burner, and you then fold out four support legs to hold your pot or pan.",
+        "keywords": [
+          "Container Stove",
+          "support legs",
+          "camping",
+          "box"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "fe20b76d4a35",
+      "sourceId": "dezeen",
+      "sourceName": "Dezeen",
+      "feedUrl": "https://www.dezeen.com/design/feed/",
+      "mode": "inspiration",
+      "title": "Jabez Bartlett channels “brutalist-folk” spirit for debut furniture collection",
+      "excerpt": "The London maker of Milan design week's much-discussed inflatable coffee table has unveiled his debut furniture collection, which includes veiny wax chairs and a rug adorned with cattle tags.",
+      "url": "https://www.dezeen.com/2026/11/26/jabez-bartlett-channels-brutalist-folk-spirit-for-debut-furniture-collection/",
+      "publishedAt": "2026-11-26T06:00:00.000Z",
+      "firstSeen": "2026-11-26T08:40:28.068Z",
+      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/jabez-bartlett-debut-furniture-exhibition-hackney-london_dezeen_2364_col_0-1024x1024.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "The London maker of Milan design week's much-discussed inflatable coffee table has unveiled his debut furniture collection, which includes veiny wax chairs and a rug adorned with cattle tags. A circular version followed, and both pieces are part of The Freight Proportioned to the Groove, an exhibition of his debut furniture collection that opens today in Hackney, London.",
+        "keywords": [
+          "furniture collection",
+          "coffee table",
+          "Freight Proportioned",
+          "Milan design"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "e482a9f2f187",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "developed with travelers aged 75+, moove on reimagines luggage as discreet mobility aid",
+      "excerpt": "combining luggage storage, walking support and an integrated resting perch, moove on by lorenzo rimini challenges the conventional aesthetics of assistive products.",
+      "url": "https://www.designboom.com/design/older-travelers-moove-on-luggage-discreet-mobility-aid-lorenzo-rimini/",
+      "publishedAt": "2026-11-26T03:10:28.000Z",
+      "firstSeen": "2026-11-26T08:40:32.848Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/lorenzo-rimini-moove-on-rolling-suitcase-mobility-aid-designboom-700-1-500x400-22b08q85r579.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product",
+        "HMI / Mobility"
+      ],
+      "digest": {
+        "brief": "Designed by Lorenzo Rimini, Moove On reconfigures the conventional rolling suitcase into a multi-functional mobility aid for older travelers. Developed by designer Lorenzo Rimini over an eight-month period, the project progressed through 45 iterative prototypes examining alternative form factors, handle geometries, structural reinforcements, and functional configurations.",
+        "keywords": [
+          "mobility aid",
+          "Lorenzo Rimini",
+          "Moove",
+          "Developed"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "756604ab9283",
+      "sourceId": "marginalian",
+      "sourceName": "The Marginalian",
+      "feedUrl": "https://feeds.feedburner.com/brainpickings/rss",
+      "mode": "deep",
+      "title": "How to Love the World More: Artist and Poet Rachel Hébert’s Breathtaking Catalogue of Gratitudes",
+      "excerpt": "Here we are, living these lives bright and perishable as a poppy, hard and shimmering as obsidian. We know that they are entirely improbable, that we bless that bright improbability with each flash of gratitude for it all, that if we pay attention closely and generously enough we are always repaid in gladness, that it is the handle of the door to the world.",
+      "url": "https://www.themarginalian.org/2026/11/25/rachel-hebert-thanks/",
+      "publishedAt": "2026-11-26T02:29:10.000Z",
+      "firstSeen": "2026-11-26T08:41:10.517Z",
+      "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2025/11/hebert_thanks1.jpg?fit=320%2C407&ssl=1",
+      "extractionStatus": "full",
+      "tags": [
+        "Speculative"
+      ],
+      "digest": {
+        "brief": "In our age of competitive prostration, this is a headstand hard to hold for long. Artist and poet Rachel Hébert offers a bright patch of training ground in The Book of Thanks: A Catalogue of Gratitudes — one of the most miraculous books I have ever encountered, trembling with tenacious tenderness for the bewilderment of being alive.",
+        "keywords": [
+          "bright",
+          "poet",
+          "Rachel",
+          "bert"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "0a95f1b09baa",
       "sourceId": "verge",
       "sourceName": "The Verge",
       "feedUrl": "https://www.theverge.com/rss/index.xml",
       "mode": "pulse",
-      "title": "Tapo’s new indoor security camera includes a touchscreen for video calls",
-      "excerpt": "TP-Link's Tapo smart home brand announced a new indoor security camera that can help keep an eye on your house while you're away or connect you to family and friends while you're at home.",
-      "url": "https://www.theverge.com/tech/1041221/tapo-c825-security-indoor-2k-camera-video-calls-tracking-pan-tilt",
-      "publishedAt": "2026-11-25T13:30:00.000Z",
-      "firstSeen": "2026-11-25T13:45:14.727Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/tapo1.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Now Google’s Familiar Faces AI feature works on Walmart’s $35 smart home camera too",
+      "excerpt": "A couple of Walmart's budget-friendly smart home cameras will be able to recognize people around your house now using Google's familiar face detection feature.",
+      "url": "https://www.theverge.com/tech/1042938/google-home-familiar-faces-onn-cameras",
+      "publishedAt": "2026-11-26T00:04:34.000Z",
+      "firstSeen": "2026-11-26T08:39:26.661Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23451196/acastro_220510_STK123_0002.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry",
+        "AI"
+      ],
+      "digest": {
+        "brief": "You can get Familiar Faces alerts from Walmart’s budget smart home cameras. A new Google Home update brings Familiar Faces support to the $35 Onn Outdoor Camera Plug-In and $77 Onn Floodlight Camera Hardwired. Now it says those improvements are rolling out over the coming weeks, along with new smart home control, as “Gemini Live now supports all your daily actions, from setting timers to turning off the lights.”",
+        "keywords": [
+          "smart home",
+          "Familiar Faces",
+          "Gemini Live",
+          "Walmart"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "dade25531ce5",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Amazon loses its latest attempt to get out of handling more recall notices",
+      "excerpt": "Amazon is on the hook to recall more than 400,000 hazardous products after losing its legal battle against the US Consumer Product Safety Commission (CPSC).",
+      "url": "https://www.theverge.com/tech/1042870/amazon-recall-order-cpsc",
+      "publishedAt": "2026-11-25T23:56:44.000Z",
+      "firstSeen": "2026-11-26T08:38:26.662Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23935558/acastro_STK103__01.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry",
+        "Product"
+      ],
+      "digest": {
+        "brief": "A court ruled in favor of the US CPSC’s argument that Amazon is responsible for recalled products that other companies sell on its platforms. Amazon is on the hook to recall more than 400,000 hazardous products after losing its legal battle against the US Consumer Product Safety Commission (CPSC). Amazon must maintain the recall releases on the “Recalls and Product Safety Alerts” webpage on amazon.",
+        "keywords": [
+          "recall releases",
+          "recalled products",
+          "court ruled",
+          "Amazon"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "5916a6dd47f6",
+      "sourceId": "marginalian",
+      "sourceName": "The Marginalian",
+      "feedUrl": "https://feeds.feedburner.com/brainpickings/rss",
+      "mode": "deep",
+      "title": "The Paradox of “Finding Yourself”",
+      "excerpt": "\"The self is a style of being, continually expanding in a vital process of definition, affirmation, revision, and growth...\" Every month, I spend hundreds of hours and thousands of dollars keeping The Marginalian going.",
+      "url": "https://www.themarginalian.org/2026/11/25/robert-penn-warren-democracy-poetry-finding-yourself/",
+      "publishedAt": "2026-11-25T23:15:57.000Z",
+      "firstSeen": "2026-11-26T08:40:10.517Z",
+      "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2017/05/democracyandpoetry_warren.jpg?fit=320%2C478&ssl=1",
+      "extractionStatus": "full",
+      "tags": [
+        "Speculative"
+      ],
+      "digest": {
+        "brief": "“No one can build you the bridge on which you, and only you, must cross the river of life,” thirty-year-old Nietzsche wrote in his treatise on how to find yourself. No, rather an object like a nugget of gold in the placer pan, the Easter egg under the bush at an Easter-egg hunt, a four-leaf clover to promise miraculous luck.",
+        "keywords": [
+          "life"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "ceecf9e348f1",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+      "excerpt": "Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows about its users.",
+      "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+      "publishedAt": "2026-11-25T21:51:26.000Z",
+      "firstSeen": "2026-11-26T08:37:26.663Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-25-at-11.34.07-AM.png?quality=90&strip=all&crop=2.859375,3.7218027238494,93.788122558594,91.658221639303",
+      "extractionStatus": "full",
+      "tags": [
+        "AI",
+        "Tech Industry",
+        "Speculative"
+      ],
+      "digest": {
+        "brief": "The patent has been rejected, but unfortunately, Google might appeal or resubmit an amended version, and we could see this monstrosity come to market. The patent details how My Channel might be able to connect to other streaming services — which would give it even more information about users and, presumably, access to useful training data for video generation.",
+        "keywords": [
+          "video generation",
+          "streaming services",
+          "patent",
+          "Google"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "9cd7e84cbfd2",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The Verge’s 2026 holiday gift guide for travelers",
+      "excerpt": "Everyone has that traveler in their life. That person who feels more at home on a 14-hour train ride than a quiet Sunday on the couch. They speak multiple languages, have a gut like a goat, and make friends wherever they go.",
+      "url": "https://www.theverge.com/gadgets/1021917/best-gifts-for-travelers-2026",
+      "publishedAt": "2026-11-25T21:48:00.000Z",
+      "firstSeen": "2026-11-26T08:36:26.663Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268757_2026_gift_guides_UNDER_25_CVirginia_TRAVEL.jpg?quality=90&strip=all&crop=0,0,100,100",
       "extractionStatus": "full",
       "tags": [
         "Tech Industry"
       ],
       "digest": {
-        "brief": "TP-Link’s Tapo smart home brand announced a new indoor security camera that can help keep an eye on your house while you’re away or connect you to family and friends while you’re at home. The C825 upgrades a 2K pan-and-tilt camera with a 4-inch touchscreen, so when it’s not watching for intruders or misbehaving pets, it can be used to make hands-free video calls.",
+        "brief": "From streaming gadgets for the hotel to portable espresso makers and high-capacity chargers, these are our favorite gifts to help travelers take their next adventure to the next level. The company’s foldable tray table mount is particularly brilliant, offering travelers an ergonomic way to mount devices — including larger gaming handhelds like the Steam Deck — for easy access on long flights.",
         "keywords": [
-          "security camera",
-          "hands-free video",
-          "Tapo",
-          "calls"
+          "long flights",
+          "travelers",
+          "portable",
+          "favorite"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "7ee86c50b95b",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "the spectacle of entry: how concept car designers set entire bodies in motion",
+      "excerpt": "In the golden age of experimental concept car design, the many ways a car could open turned the act of entering into a theatrical event.",
+      "url": "https://www.designboom.com/technology/car-open-architecture-automotive-entry-doorless-wedge-experimental-concept/",
+      "publishedAt": "2026-11-25T21:35:48.000Z",
+      "firstSeen": "2026-11-26T08:39:32.848Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/cars-theater-entry-motion-doorless-designboom-700-500x400-22b08q85r420.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry",
+        "HMI / Mobility",
+        "Product"
+      ],
+      "digest": {
+        "brief": "When Pininfarina presented its Ferrari 512S Modulo at the 1970 Geneva Motor Show, the Italian design team brought a vision of the automobile with almost all its familiar elements erased. To enter Paolo Martin’s futuristic concept car, the entire canopy had to slide forward. Built on the chassis of a Ferrari 512S racing car, the concept was composed of two broad, almost horizontal volumes separated by a fine red line.",
+        "keywords": [
+          "concept car",
+          "entire canopy",
+          "Geneva Motor",
+          "Paolo Martin"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "2669f263fdac",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "WhatsApp’s new scheduled messages let you choose the right time to send",
+      "excerpt": "WhatsApp's 3 billion users are getting an option that Meta says is one of the most requested features, with the ability to schedule messages in advance for both private conversations and group chats.",
+      "url": "https://www.theverge.com/tech/1042532/whatsapp-scheduled-messages",
+      "publishedAt": "2026-11-25T20:31:48.000Z",
+      "firstSeen": "2026-11-26T08:35:26.663Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/whatsapp-scheduled-messages-launch.jpeg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "WhatsApp’s 3 billion users are getting an option that Meta says is one of the most requested features, with the ability to schedule messages in advance for both private conversations and group chats. If you think of a text at an inconvenient time or don’t want to forget to fire off a birthday message at 4AM, you can draft it and set it to send anywhere from 10 minutes to two weeks later.",
+        "keywords": [
+          "messages",
+          "WhatsApp",
+          "send"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "aeef62858770",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "EPA reports ‘zero’ airborne lead following controlled Army detonation in Iowa",
+      "excerpt": "Saying it was necessary to prevent the possible spontaneous explosion of a stockpile of material used in igniters and blasting caps, the US Army conducted a controlled detonation of over 9,700 pounds of lead azide today at the Iowa Army Ammunition Plant (IAAAP) in Middletown, Iowa.",
+      "url": "https://www.theverge.com/science/1042109/us-army-detonation-lead-azide-explosives-iowa-ammunition-plant",
+      "publishedAt": "2026-11-25T19:45:51.000Z",
+      "firstSeen": "2026-11-26T08:34:26.663Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2306835116.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Saying it was necessary to prevent the possible spontaneous explosion of a stockpile of material used in igniters and blasting caps, the US Army conducted a controlled detonation of over 9,700 pounds of lead azide today at the Iowa Army Ammunition Plant (IAAAP) in Middletown, Iowa. Videos of the detonation showed plumes of smoke several hundred feet high drifting south before quickly dissipating.",
+        "keywords": [
+          "lead azide",
+          "Ammunition Plant",
+          "detonation",
+          "Army"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "1c78b60b5fc1",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "fabrizio giugiaro looks to the wedge cars of the 1970s for his copper-bodied supercar",
+      "excerpt": "beneath its gleaming copper skin, the one-off supercar revisits the experimental automotive geometry of the 1970s. The post fabrizio giugiaro looks to the wedge cars of the 1970s for his copper-bodied supercar appeared first on designboom | architecture & design magazine .",
+      "url": "https://www.designboom.com/technology/fabrizio-giugiaro-copper-bodied-supercar-peralta-d-gfg-style/",
+      "publishedAt": "2026-11-25T19:10:44.000Z",
+      "firstSeen": "2026-11-26T08:38:32.848Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/GFG-Peralta-D-fabrizio-giugiaro-copper-designboom-700-500x400-22b08q85r383.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry",
+        "HMI / Mobility",
+        "Product"
+      ],
+      "digest": {
+        "brief": "Italian automotive designer Fabrizio Giugiaro and his studio GFG Style unveil the Peralta D, a one-off supercar with bodywork made entirely from hand-hammered copper. The project follows GFG Style’s 2025 Peralta S, a sports car sculpted from mirror-polished aluminum and inspired by Giorgetto Giugiaro’s 1971 Maserati Boomerang.",
+        "keywords": [
+          "Fabrizio Giugiaro",
+          "GFG Style",
+          "Maserati Boomerang",
+          "Peralta"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "11b99dd6ea41",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "1Password breach leaked customer names and emails, but not passwords",
+      "excerpt": "1Password says a hacker stole customer names and email addresses after gaining access to its backend systems. The breach didn't expose passwords or other information stored in customer vaults, but could put users at risk of phishing attempts, according to a post disclosing the incident.",
+      "url": "https://www.theverge.com/tech/1042409/1password-data-breach-leak",
+      "publishedAt": "2026-11-25T19:10:15.000Z",
+      "firstSeen": "2026-11-26T08:33:26.663Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STKB339_1PASSWORD.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "1Password says a hacker stole customer names and email addresses after gaining access to its backend systems. Using the compromised account, the hacker accessed 1Password’s source code and pushed malicious code to backend services to download customer data. Along with customer names and emails, the leaked data included public keys, as well as account and user identifiers.",
+        "keywords": [
+          "customer names",
+          "account",
+          "emails",
+          "leaked"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "9576e3e695b5",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The Fairphone 6 Plus is modular, repairable, and $100 off right now",
+      "excerpt": "Unlike most smartphones, the Fairphone 6 Plus is designed for home repair, with easily replaceable parts that could help extend its lifespan well into the future.",
+      "url": "https://www.theverge.com/gadgets/1041460/fairphone-6-plus-repairable-phone-black-friday-2026-deal-sale",
+      "publishedAt": "2026-11-25T18:00:00.000Z",
+      "firstSeen": "2026-11-26T08:32:26.663Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/fairphone-6-plus-4.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Speculative",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Unlike most smartphones, the Fairphone 6 Plus is designed for home repair, with easily replaceable parts that could help extend its lifespan well into the future. 3-inch Fairphone 6 Plus features 12 user-replaceable parts, including the battery, screen, USB-C port, and cameras, all of which you can swap out with the included screwdriver.",
+        "keywords": [
+          "Fairphone",
+          "Plus",
+          "battery",
+          "parts"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "e38156e0dc6c",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The loneliest peptide party in New York",
+      "excerpt": "This is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going to change your life. Opt in for Optimizer here.",
+      "url": "https://www.theverge.com/column/1041761/optimizer-peptide-parties-afterglow",
+      "publishedAt": "2026-11-25T18:00:00.000Z",
+      "firstSeen": "2026-11-26T08:31:26.663Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268815_Peptide_Party_JCalifano_0019.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Health",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "The “Afterglow Peptide Field Guide” also described what each sample does, dosing recommendations, and potential side effects. A man, staring into his bag of Afterglow samples, was mostly interested in weight loss but scared about the safety of gray market products. If I were peptide curious, the Afterglow launch party was a pretty awful way to learn anything about these substances.",
+        "keywords": [
+          "peptide curious",
+          "gray market",
+          "side effects",
+          "weight loss"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "6359c2ce0900",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+      "excerpt": "In an announcement on Wednesday, the FCC says it authorized SpaceX to deploy up to 1 million AI chip-equipped satellites as part of the Elon Musk-owned company's \"Starmind\" initiative.",
+      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "publishedAt": "2026-11-25T17:44:51.000Z",
+      "firstSeen": "2026-11-26T08:30:26.663Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2269580650.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "SpaceX aims to power AI capabilities here on Earth with its ‘Starmind’ constellation. The FCC also deferred SpaceX’s request to dispose of satellites located above 600km in space “graveyard” orbits, rather than having them burn up in the Earth’s atmosphere, saying the company hasn’t provided “sufficient information” about its disposal process plans.",
+        "keywords": [
+          "SpaceX aims",
+          "satellites",
+          "FCC",
+          "space"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "ddad6bd46fa1",
+      "sourceId": "mittr",
+      "sourceName": "MIT Technology Review",
+      "feedUrl": "https://www.technologyreview.com/feed/",
+      "mode": "research",
+      "title": "How data centers are driving a US natural-gas boom",
+      "excerpt": "Rising electricity demand is locking in fossil-fuel generation. In May 2025, my colleague David Rotman wrote a feature story describing how AI could keep us dependent on natural gas.",
+      "url": "https://www.technologyreview.com/2026/11/25/1149836/data-centers-gas-power-plants/",
+      "publishedAt": "2026-11-25T17:00:00.000Z",
+      "firstSeen": "2026-11-26T08:41:21.139Z",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/261124_RichlandParishDataCenter.jpg?resize=1200,600",
+      "extractionStatus": "full",
+      "tags": [
+        "AI",
+        "HMI / Mobility",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Sure, it’s technically possible to meet the world’s rising electricity demand with other power sources, including renewables like wind and solar supported by batteries. Just one example: Plans for the Meta data center in Louisiana that David focused on in his story have expanded, and its power needs have too.",
+        "keywords": [
+          "data center",
+          "electricity demand",
+          "power",
+          "solar"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "411f8c9c95f3",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "living heather roof and poplar bark cladding anchor timber office in dutch heathland",
+      "excerpt": "on the tafelberg heath in blaricum, the netherlands, studio massimo models a timber office on the regional plaggenhut, a traditional sod-roofed dwelling integrated into the terrain.",
+      "url": "https://www.designboom.com/architecture/living-heather-roof-poplar-bark-cladding-timber-office-dutch-heathland-studio-massimo/",
+      "publishedAt": "2026-11-25T16:55:00.000Z",
+      "firstSeen": "2026-11-26T08:37:32.848Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/tafelberg-heath-blaricum-office-nature-timber-studio-massimo-designboom-700-500x400-22b08q85r716.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Situated on the Tafelberg heath in Blaricum, east of Amsterdam, Office by Nature, Tafelberg is a 1,120-sqm timber office designed by Studio Massimo. The east and west gables are clad in untreated poplar bark shingles, a timber-industry byproduct that weathers from umber to silver-gray, while six-meter-wide sliding glass doors on the south facade open the workspaces directly onto the heath.",
+        "keywords": [
+          "timber office",
+          "poplar bark",
+          "south facade"
         ],
         "by": "extract"
       },
@@ -512,10 +1081,6 @@
       "firstSeen": "2026-11-25T13:47:13.437Z",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/3_HighChair-crop.jpg?w=840",
       "extractionStatus": "full",
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "Over the last few years, venture-backed startups have raised upwards of $100 million to collect data from thousands of agencies and turn it into AI-powered “signals” that help businesses sell to governments. In July 2021, a wildfire burned through a forest on the University of Alaska, Fairbanks campus, stripping away the moss and soil insulating the permafrost below.",
         "keywords": [
@@ -525,35 +1090,10 @@
         ],
         "by": "extract"
       },
-      "contentHtml": null
-    },
-    {
-      "id": "929f2b2360df",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Has vibe coding made open source the new normal for synths?",
-      "excerpt": "The emergence of powerful vibe-coding agents and tools like Reverse Engineer Anything has caused chaos in the music gear world, leaving companies scrambling to figure out how to respond.",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
-      "publishedAt": "2026-11-25T13:00:00.000Z",
-      "firstSeen": "2026-11-25T13:44:14.728Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/vibe_coding_synths_.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
       "tags": [
         "AI",
         "Tech Industry"
       ],
-      "digest": {
-        "brief": "In the last several weeks, as it’s become clear that no piece of music gear is safe from Claude and a subreddit full of curious tinkerers, companies have begun making more and more of their devices open source. Erica Synths recently released the source code for its LXR-02 drum machine, but founder Ģirts Ozoliņš isn’t necessarily fully on board with vibe coding.",
-        "keywords": [
-          "vibe coding",
-          "open source",
-          "music gear",
-          "devices"
-        ],
-        "by": "extract"
-      },
       "contentHtml": null
     },
     {
@@ -569,9 +1109,6 @@
       "firstSeen": "2026-11-25T13:46:25.008Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/search-home-fixed-address-prefabricated-houses-floating-dwellings-designboom-700-500x400-22b08q85r938.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "For decades, architects have imagined homes that can be packed up, transported, and assembled somewhere new, designing alternatives to the idea that housing must be tied to a permanent address. From prefabricated dwellings designed for mass production to experimental houses conceived for remote landscapes, these projects explore how architecture might exist beyond the limits of a fixed site.",
         "keywords": [
@@ -582,6 +1119,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -597,9 +1137,6 @@
       "firstSeen": "2026-11-25T13:45:25.008Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/nick-cave-india-pavilion-visitors-lions-2026-venice-art-biennale-designboom-700-500x400-22b08q85r074.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "The public has selected its favorites at the 61st Venice Art Biennale, with American artist Nick Cave receiving the Visitors’ Lion for Best Participant and India winning Best National Participation for its pavilion, Geographies of Distance: Remembering Home. Announced by La Biennale di Venezia on November 25th, 2026, the awards reflect the preferences of visitors to In Minor Keys, curated by the late Koyo Kouoh.",
         "keywords": [
@@ -610,34 +1147,9 @@
         ],
         "by": "extract"
       },
-      "contentHtml": null
-    },
-    {
-      "id": "49df1091dd04",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Microsoft declares ‘Code Red’ after huge Outlook outage",
-      "excerpt": "This month's Exchange Online and Microsoft Outlook outage has prompted the software giant to declare an unusual \"Code Red\" internally, Reuters reports.",
-      "url": "https://www.theverge.com/news/1042025/microsoft-code-red-outlook-outage",
-      "publishedAt": "2026-11-25T11:12:42.000Z",
-      "firstSeen": "2026-11-25T13:43:14.728Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK153_MICROSOFT_OUTLOOK_C.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
       "tags": [
-        "Tech Industry"
+        "Product"
       ],
-      "digest": {
-        "brief": "This month’s Exchange Online and Microsoft Outlook outage has prompted the software giant to declare an unusual “Code Red” internally, Reuters reports. In a memo to the teams responsible for Exchange Online, Microsoft 365 Core president Jason Henderson revealed the outage was the most significant in history for Microsoft’s customers.",
-        "keywords": [
-          "Code Red",
-          "Exchange Online",
-          "outage",
-          "Microsoft"
-        ],
-        "by": "extract"
-      },
       "contentHtml": null
     },
     {
@@ -653,10 +1165,6 @@
       "firstSeen": "2026-11-25T13:46:40.401Z",
       "thumbnail": "https://images.aeonmedia.co/images/385ed371-546c-49fb-ae83-20783d17e0c3/the-passing-landscape-1.jpg?width=1200&quality=75&format=auto",
       "extractionStatus": "excerpt-only",
-      "tags": [
-        "Health",
-        "Speculative"
-      ],
       "digest": {
         "brief": "The Passing captures the veterinarian Michael Mullen as he provides pet care with deep empathy, at owners’ homes in Austin, Texas. In their portrait, the local filmmakers Ivete Lucas and Patrick Bresnan mirror Mullen’s gentle manner, documenting this process with an unobtrusive observational approach that allows the emotions at hand to unfold with a quiet subtlety and power.",
         "keywords": [
@@ -664,6 +1172,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Health",
+        "Speculative"
+      ],
       "contentHtml": null
     },
     {
@@ -679,9 +1191,6 @@
       "firstSeen": "2026-11-25T13:44:25.008Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/whispering-elia-mykonos_human-point_-designboom_700-500x400-22b08q85r800.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Loukas Fotopoulos established his own architectural practice in 1996, continuing a family tradition of architecture. In 2008, his practice evolved into Human Point, expanding its approach beyond architecture. Across residential, hospitality, and urban scales, the studio brings architecture, strategic development consulting, and immersive visual communication under one roof.",
         "keywords": [
@@ -692,6 +1201,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -707,9 +1219,6 @@
       "firstSeen": "2026-11-25T13:46:19.768Z",
       "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/laerke-ryom-20x20-portrait-sq_dezeen_2364_col_0-1024x1024.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Architect and designer Patricia Urquiola has chosen fellow multidisciplinary Laerke Ryom as her pick for Dezeen’s 20x20 project, in partnership with Kohler. Since graduating from the Royal Academy of Fine Art in Copenhagen's master’s program in furniture and object in 2022, Ryom's tactile designs have continued to evolve, and she has worked with a range of materials and products.",
         "keywords": [
@@ -720,6 +1229,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -735,9 +1247,6 @@
       "firstSeen": "2026-11-25T13:46:43.648Z",
       "thumbnail": "https://images.aeonmedia.co/images/2c93b1cd-a5bf-4097-8468-9c953c8367c7/v4-badarcommercial4.jpg?top=138&left=0&cropWidth=2624&cropHeight=1476&width=1200&quality=75&format=auto",
       "extractionStatus": "full",
-      "tags": [
-        "Health"
-      ],
       "digest": {
         "brief": "With bloodshot eyes, my father watched me drive away – to another part of the city, where my childhood best friend Aesha and I had found an apartment for ourselves. Salute to the girls who do this here, in Karachi: live outside of blood, family, marriage or whatever patriarchal bargain most women in my city use to seek their freedom.",
         "keywords": [
@@ -748,6 +1257,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Health"
+      ],
       "contentHtml": null
     },
     {
@@ -1062,62 +1574,6 @@
       "contentHtml": null
     },
     {
-      "id": "92fefeb948a8",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "resembling a geometric flower, 10-meter aluminum lookout frames views in australia’s victorian alps",
-      "excerpt": "flower of the alpine sun is a monument to the sensational light of the alps, a thoughtful abstraction in dialogue with the surrounding environment.",
-      "url": "https://www.designboom.com/art/geometric-flower-10-meter-aluminum-lookout-views-australia-victorian-alps-gio-veronesi/",
-      "publishedAt": "2026-11-25T04:05:56.000Z",
-      "firstSeen": "2026-11-25T10:27:55.890Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/australia-victorian-alps-flower-alpine-sun-lookout-public-sculpture-gio-veronesi-designboom-700-500x400-22b08q85r248.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Installed at an elevation of 1,750 meters in Falls Creek, within Australia’s Victorian Alps, Flower of the Alpine Sun is a 10-meter-diameter occupiable lookout and public sculpture designed by Gio Veronesi. Accessible via a pedestrian walkway, the structure by designer Gio Veronesi invites visitors into its interior platform to view the surrounding mountain range through an open geometric lattice.",
-        "keywords": [
-          "Victorian Alps",
-          "Gio Veronesi",
-          "Alpine Sun",
-          "geometric"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "47cf959c9a8e",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "wade and leta shape human-powered kinetic landscape for play in shanghai sculpture park",
-      "excerpt": "featuring a four-sided slide, multiple spinners embedded within the ground, and sky-high kinetics, this work transforms sculpture into an exhilarating experience of play for people of all ages.",
-      "url": "https://www.designboom.com/art/wade-leta-human-powered-kinetic-landscape-play-shanghai-sculpture-park-catching-feelings/",
-      "publishedAt": "2026-11-25T01:55:52.000Z",
-      "firstSeen": "2026-11-25T10:26:55.890Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/shanghai-sculpture-park-catching-feelings-interactive-playscape-wade-leta-designboom-700-500x400-22b08q85r413.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Installed in Shanghai’s Jing’an Sculpture Park for the ninth edition of the Jing’an International Sculpture Project (2026 JISP), Catching Feelings is an interactive sculptural playscape created by multidisciplinary duo Wade and Leta. The post wade and leta shape human-powered kinetic landscape for play in shanghai sculpture park appeared first on designboom | architecture & design magazine.",
-        "keywords": [
-          "Sculpture Park",
-          "duo Wade",
-          "Leta",
-          "Shanghai"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "24dc3bd800f9",
       "sourceId": "core77",
       "sourceName": "Core77",
@@ -1202,118 +1658,6 @@
       "contentHtml": null
     },
     {
-      "id": "766bb8aedbf1",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "US financial crimes bureau discloses ‘cybersecurity incident’",
-      "excerpt": "The Financial Crimes Enforcement Network (FinCEN) disclosed on Tuesday that it's investigating a \"cybersecurity incident.\" The bureau, which is part of the Treasury Department, said it's looking into an \"incident that resulted in unauthorized access to a limited subset of its systems.\"",
-      "url": "https://www.theverge.com/policy/1041957/fincen-treasury-cybersecurity-incident",
-      "publishedAt": "2026-11-25T01:00:00.000Z",
-      "firstSeen": "2026-11-25T01:20:34.265Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_B.png?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "FinCEN’s alert comes in the wake of a reported breach of unclassified information at US spy agencies, including the CIA. The Financial Crimes Enforcement Network (FinCEN) disclosed on Tuesday that it’s investigating a “cybersecurity incident.” FinCEN also houses reports of suspicious activity that financial institutions file as part of the Bank Secrecy Act.",
-        "keywords": [
-          "financial institutions",
-          "unclassified information",
-          "reported breach",
-          "suspicious activity"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "b8d97a97ed48",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The Verge’s 2026 gift guide for dads",
-      "excerpt": "Gone are the days when you could just buy your father a random tie or some leather-clad alcohol vessel or a shaving kit. Dads want - nay, deserve - something memorable.",
-      "url": "https://www.theverge.com/gadgets/1024777/best-gifts-for-dad-2026",
-      "publishedAt": "2026-11-24T23:59:29.000Z",
-      "firstSeen": "2026-11-25T01:19:34.266Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268757_2026_gift_guides_CVirginia_DADS.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "NotNeutral’s hand-pressed, timeless tumbler offers ’70s vibes with a modern twist, making it the perfect vessel for whatever Dad twists into his favorite drink. The retro-inspired digital camera serves up 16-megapixel stills and offers four filters accessible from its tactile dial, plus USB-C charging, a high-quality Xenon flash, and a 4GB SD card for plenty of vintage photo fun.",
-        "keywords": [
-          "USB-C charging",
-          "Dad",
-          "offers",
-          "favorite"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "cffe7bfdfa1c",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Why the US Army is about to blow up nearly 10,000 pounds of unstable explosives in Iowa",
-      "excerpt": "The US Army is moving ahead with plans to detonate the nation's stockpile of lead azide at an ammunition plant in Middletown, Iowa, at approximately 9:00AM CST on Wednesday.",
-      "url": "https://www.theverge.com/science/1041819/us-army-detonation-lead-explosives-iowa",
-      "publishedAt": "2026-11-24T23:25:46.000Z",
-      "firstSeen": "2026-11-25T01:18:34.266Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2305973751.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "The US Army is moving ahead with plans to detonate the nation’s stockpile of lead azide at an ammunition plant in Middletown, Iowa, at approximately 9:00AM CST on Wednesday. The Army noted some deterioration of the material in 2009 — but not any “dangerous crystallization” at the time, according to Cekada.",
-        "keywords": [
-          "lead azide",
-          "Army",
-          "Iowa",
-          "ammunition plant"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "4e956f5da294",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Huawei found guilty of stealing trade secrets",
-      "excerpt": "A jury has found Huawei guilty of stealing US trade secrets, as reported earlier by NBC News and Bloomberg. The verdict, handed down in a federal court in New York, concludes a years-long legal battle that accused the Chinese telecom giant of stealing source code and proprietary technology from several companies, including T-Mobile, Cisco, and […].",
-      "url": "https://www.theverge.com/tech/1041820/huawei-guilty-trade-secrets-trial",
-      "publishedAt": "2026-11-24T22:23:27.000Z",
-      "firstSeen": "2026-11-25T01:17:34.266Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2302952808.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "A jury has found Huawei guilty of stealing US trade secrets, as reported earlier by NBC News and Bloomberg. The US government blacklisted Huawei in 2019 over national security concerns. In total, the jury found Huawei guilty of 10 of 12 criminal counts, including money laundering, violating US sanctions, bank fraud, wire fraud, and conspiracy to defraud the US.",
-        "keywords": [
-          "Huawei guilty",
-          "NBC News",
-          "national security",
-          "stealing"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "f8ed49a65030",
       "sourceId": "marginalian",
       "sourceName": "The Marginalian",
@@ -1370,117 +1714,6 @@
       "contentHtml": null
     },
     {
-      "id": "68cc9358a6d2",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "SO–IL imagines a museum wrapped in shimmering glass scales in the norwegian forest",
-      "excerpt": "a translucent skin of glass scales shelters an intricate network of timber beams and elevated walkways within the norwegian forest.",
-      "url": "https://www.designboom.com/architecture/so-il-museum-shimmering-glass-scales-norway-forest-kistefos/",
-      "publishedAt": "2026-11-24T21:45:52.000Z",
-      "firstSeen": "2026-11-25T01:21:41.662Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/SO-IL-kistefos-museum-norway-designboom-700-500x400-22b08q85r948.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Architecture studio SO–IL presents its design for the Kistefos Museum in Jevnaker, Norway, where an enveloping skin of translucent glass scales would take on the changing colors of the surrounding forest. Through the translucent glass, the forest would remain partially visible even as visitors move deeper into the museum.",
-        "keywords": [
-          "glass scales",
-          "Architecture studio",
-          "Museum",
-          "forest"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "16b41b9e1d8a",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "GTA VI PC recompilation project shut down by Take-Two",
-      "excerpt": "Game modding communities are racing to get Grand Theft Auto VI running on PC, but one big effort has been taken down by Take-Two today.",
-      "url": "https://www.theverge.com/news/1041690/grand-theft-auto-6-pc-recompilation-project-leonida-takedown-take-two",
-      "publishedAt": "2026-11-24T21:39:14.000Z",
-      "firstSeen": "2026-11-25T01:16:34.266Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/STKS540_GTA_VI_2_A.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Game modding communities are racing to get Grand Theft Auto VI running on PC, but one big effort has been taken down by Take-Two today. Leonida, a fan project by 15-year-old “NotRexed,” has vanished after a DMCA takedown notice from GTA VI publisher Take-Two. Cyberleek, the leaker who posted multiple GTA VI gameplay videos over the summer, published a full Xbox build of the game earlier this week.",
-        "keywords": [
-          "Xbox build",
-          "Grand Theft",
-          "Take-Two",
-          "GTA"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "897edcb402e0",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The Verge’s 2026 holiday gift guide for moms",
-      "excerpt": "Given everything moms do for us, it feels good to give back during the holidays. But where to start? How do you come up with a physical representation of how you feel about such a key and influential figure in your life?",
-      "url": "https://www.theverge.com/gadgets/1021621/best-gifts-for-mom-2026",
-      "publishedAt": "2026-11-24T21:09:59.000Z",
-      "firstSeen": "2026-11-25T01:15:34.266Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268757_2026_gift_guides_UNDER_25_CVirginia_MOMS.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "To help you make the mother figure in your life feel truly appreciated, we’ve created a sprawling list of intriguing, lovingly curated gift ideas. From a ring watch and luxe portable gaming deck to a better robovac and an AI-powered bird feeder that brings nature to her doorstep, our list has something to fit all of your mom’s many facets, at a wide range of price points.",
-        "keywords": [
-          "gift",
-          "mom",
-          "truly",
-          "gaming"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "79070e62a418",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "TikTok was down",
-      "excerpt": "Earlier on Tuesday, TikTok experienced some issues, with videos, search results, favorites, and other features not loading as they usually do, following a slew of other outages over the past couple of weeks.",
-      "url": "https://www.theverge.com/tech/1041618/tiktok-down-outage",
-      "publishedAt": "2026-11-24T20:27:27.000Z",
-      "firstSeen": "2026-11-25T01:14:34.266Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25406817/STK051_TIKTOK_CVirginia_B.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Earlier on Tuesday, TikTok experienced some issues, with videos, search results, favorites, and other features not loading as they usually do, following a slew of other outages over the past couple of weeks. Videos sometimes wouldn’t load in the For You feed on my iPhone, and search results occasionally didn’t show up as expected in the app on iOS or Android, or on the web.",
-        "keywords": [
-          "TikTok",
-          "search results",
-          "videos"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "38f3d822d564",
       "sourceId": "claude",
       "sourceName": "Claude",
@@ -1505,34 +1738,6 @@
       },
       "tags": [
         "AI"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "5d2f348b3aa4",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "terminal design solutions cuts through urban clutter with vivid aluminum street furniture",
-      "excerpt": "by combining crisp machined aluminum with vibrant anodized finishes, the studio creates benches, lean bars, and shelters that act as bold, functional anchors in the public realm.",
-      "url": "https://www.designboom.com/design/terminal-design-solutions-urban-clutter-vivid-aluminum-street-furniture/",
-      "publishedAt": "2026-11-24T18:55:16.000Z",
-      "firstSeen": "2026-11-25T01:20:41.662Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/terminal-design-solutions-collection-street-furniture-designboom-700-500x400-22b08q85r063.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Founded in 2026 as a family-run practice working across industrial design, urban planning, and architecture, Terminal Design has introduced a collection of street furniture engineered to regulate circulation and occupation in public spaces. The post terminal design solutions cuts through urban clutter with vivid aluminum street furniture appeared first on designboom | architecture & design magazine.",
-        "keywords": [
-          "street furniture",
-          "Terminal Design",
-          "aluminum",
-          "urban"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
       ],
       "contentHtml": null
     },
@@ -1772,88 +1977,6 @@
           "glass",
           "microwaveable",
           "Misenware"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "a466c3788b1e",
-      "sourceId": "core77",
-      "sourceName": "Core77",
-      "feedUrl": "http://feeds.feedburner.com/core77/blog",
-      "mode": "pulse",
-      "title": "An Ergonomic Desk for Your Armchair or Sofa, that Unfolds for Ingress/Egress",
-      "excerpt": "After reading an ergonomic study that showed office chairs aren't good for your back , German product designer Paul Weatherstone resolved to do something about it.",
-      "url": "https://www.core77.com/posts/145934/An-Ergonomic-Desk-for-Your-Armchair-or-Sofa-that-Unfolds-for-IngressEgress",
-      "publishedAt": null,
-      "firstSeen": "2026-11-24T13:23:57.906Z",
-      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1857427_lead_400_145934_.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "After reading an ergonomic study that showed office chairs aren't good for your back, German product designer Paul Weatherstone resolved to do something about it. As for why the keyboard doesn't fall to the floor when the worksurface is tilted upwards: Beneath the padded top of the worksurface is a 1mm-thick steel sheet.",
-        "keywords": [
-          "worksurface",
-          "ergonomic"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "badaceacbeb7",
-      "sourceId": "core77",
-      "sourceName": "Core77",
-      "feedUrl": "http://feeds.feedburner.com/core77/blog",
-      "mode": "pulse",
-      "title": "Are Ergonomic Office Chairs Just a Scam?",
-      "excerpt": "Do you use an ergonomic office chair? If so, do you sit in it the way people do in the marketing materials, or do you find yourself slouching forward throughout the day?",
-      "url": "https://www.core77.com/posts/145931/Are-Ergonomic-Office-Chairs-Just-a-Scam",
-      "publishedAt": null,
-      "firstSeen": "2026-11-24T13:22:57.906Z",
-      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1857420_lead_400_145931_.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Bashir used a positional MRI machine—that's an MRI machine that you can actually sit down inside of—to examine the spines of 22 people with no history of back pain, sitting in three different positions: Straight-backed at 90 degrees, slouched forward, and reclining back at 135 degrees. Bashir found that the slouched position compressed the discs into the worst position.",
-        "keywords": [
-          "positional MRI",
-          "position",
-          "discs",
-          "sitting"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "faabc177c324",
-      "sourceId": "core77",
-      "sourceName": "Core77",
-      "feedUrl": "http://feeds.feedburner.com/core77/blog",
-      "mode": "pulse",
-      "title": "Sponsored: MADE Bush Terminal: Building Brooklyn's Next Generation of Makers",
-      "excerpt": "When Irving T. Bush started building his waterfront terminal in Sunset Park at the end of the 19th century, the idea was simple: put the warehouses, the factories, the rail and the piers in one place, and let goods move from production to shipment without ever leaving the property.",
-      "url": "https://www.core77.com/posts/145889/MADE-Bush-Terminal-Building-Brooklyns-Next-Generation-of-Makers",
-      "publishedAt": null,
-      "firstSeen": "2026-11-24T13:21:57.906Z",
-      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1856939_lead_400_145889_.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Bush started building his waterfront terminal in Sunset Park at the end of the 19th century, the idea was simple: put the warehouses, the factories, the rail and the piers in one place, and let goods move from production to shipment without ever leaving the property. Makelab, the on-demand 3D printing studio founded by Christina Perla and Manny Mota, took around 4,000 square feet on a five-year lease this spring.",
-        "keywords": [
-          "square feet",
-          "Sunset Park",
-          "terminal",
-          "Bush"
         ],
         "by": "extract"
       },
@@ -2671,34 +2794,6 @@
       "contentHtml": null
     },
     {
-      "id": "b432ce75f067",
-      "sourceId": "dezeen",
-      "sourceName": "Dezeen",
-      "feedUrl": "https://www.dezeen.com/design/feed/",
-      "mode": "inspiration",
-      "title": "Jony Ive and Margaret Calvert create posters to celebrate decade of Design Museum in Kensington",
-      "excerpt": "Ten leading designers have unveiled posters that celebrate 10 years of London’s Design Museum in Kensington. The post Jony Ive and Margaret Calvert create posters to celebrate decade of Design Museum in Kensington appeared first on Dezeen .",
-      "url": "https://www.dezeen.com/2026/11/22/jony-ive-margaret-calvert-posters-decade-london-design-museum-kensington/",
-      "publishedAt": "2026-11-22T06:00:00.000Z",
-      "firstSeen": "2026-11-24T13:05:43.006Z",
-      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/margaret-calvert-design-museum-kensington-poster-sq-1024x1024.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Ten leading designers have unveiled posters that celebrate 10 years of London's Design Museum in Kensington, which was completed by OMA, Allies and Morrison and John Pawson in 2016. The post Jony Ive and Margaret Calvert create posters to celebrate decade of Design Museum in Kensington appeared first on Dezeen.",
-        "keywords": [
-          "Design Museum",
-          "Margaret Calvert",
-          "Jony Ive",
-          "create posters"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "00fdd4d79c0c",
       "sourceId": "marginalian",
       "sourceName": "The Marginalian",
@@ -3112,35 +3207,6 @@
       "contentHtml": null
     },
     {
-      "id": "0011ae0145f0",
-      "sourceId": "mittr",
-      "sourceName": "MIT Technology Review",
-      "feedUrl": "https://www.technologyreview.com/feed/",
-      "mode": "research",
-      "title": "The Download: a living liver, a billion-dollar battery deal, and AI hype",
-      "excerpt": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology.",
-      "url": "https://www.technologyreview.com/2026/11/19/1148979/the-download-liver-kept-alive-sila-battery-deal-ai-hype/",
-      "publishedAt": "2026-11-19T13:10:00.000Z",
-      "firstSeen": "2026-11-24T13:25:10.339Z",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/china-bci.jpg?fit=2128,1196",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "After a tough few years littered with high-profile failures, there’s some positive news for next-generation batteries in the US: Sila has signed a deal with battery maker Panasonic Energy to supply silicon-carbon anode material that could be worth more than $1 billion. Find out what this deal reveals about the US battery industry.",
-        "keywords": [
-          "battery",
-          "deal",
-          "billion",
-          "industry"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "7ab37f990d57",
       "sourceId": "marginalian",
       "sourceName": "The Marginalian",
@@ -3245,61 +3311,6 @@
       },
       "tags": [
         "UX"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "1bfc3350faf2",
-      "sourceId": "marginalian",
-      "sourceName": "The Marginalian",
-      "feedUrl": "https://feeds.feedburner.com/brainpickings/rss",
-      "mode": "deep",
-      "title": "Where the Joy Is",
-      "excerpt": "One of the most important things I have learned about life is that joy is a choice, an orientation, a practice of bending the mind in the direction of gladness — a choice increasingly countercultural in our age of competitive complaint, and yet all the more urgent precisely because our world gives us so many valid reasons for despair.",
-      "url": "https://www.themarginalian.org/2026/11/18/where-the-joy-is/",
-      "publishedAt": "2026-11-18T22:39:29.000Z",
-      "firstSeen": "2026-11-24T13:03:52.430Z",
-      "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2026/11/maira_joy_cover.jpg?fit=320%2C404&ssl=1",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "“We’ve all had too much sorrow — now is the time for joy,” Nick Cave sang an epoch later as he contemplated the paradox of joy against the backdrop of unimaginable loss. Emerging from these painted pages is a beckoning to train our attention on joy in all its variousness, its unassuming abundance, its sacred smallness.",
-        "keywords": [
-          "joy",
-          "attention"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "0fac6f5814bc",
-      "sourceId": "marginalian",
-      "sourceName": "The Marginalian",
-      "feedUrl": "https://feeds.feedburner.com/brainpickings/rss",
-      "mode": "deep",
-      "title": "Between Psyche and Cyborg: Carl Jung’s Legacy and the Countercultural Courage to Reclaim the Deeply Human in a Posthuman Age",
-      "excerpt": "\"A reanimated world is one in which spirit and matter are not just equally regarded but recognized as mutually dependent.\" Every month, I spend hundreds of hours and thousands of dollars keeping The Marginalian going.",
-      "url": "https://www.themarginalian.org/2026/11/18/jung-vs-borg/",
-      "publishedAt": "2026-11-18T22:38:46.000Z",
-      "firstSeen": "2026-11-24T13:02:52.430Z",
-      "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2024/03/jungvsborg.jpg?fit=320%2C480&ssl=1",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "The deeply human anchors the vertical axis of inner understanding; it grounds the ecology of mind. Dissociation thrives on the denial of death that began with our ancestors’ mythologies of immortality and is culminating in Silicon Valley’s lurid and lucrative dreams of redesigning human nature, of downloading the mind onto disembodied machines and reducing the soul to a datum.",
-        "keywords": [
-          "deeply human",
-          "Silicon Valley",
-          "inner",
-          "nature"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Speculative",
-        "Tech Industry"
       ],
       "contentHtml": null
     },
