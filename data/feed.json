@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T08:41:48.839Z",
+  "updated": "2026-11-26T21:47:21.839Z",
   "modes": [
     {
       "id": "pulse",
@@ -472,6 +472,983 @@
   "public": true,
   "items": [
     {
+      "id": "595d11ee7ffa",
+      "sourceId": "core77",
+      "sourceName": "Core77",
+      "feedUrl": "http://feeds.feedburner.com/core77/blog",
+      "mode": "pulse",
+      "title": "A Vintage Lighting Design Classic: Carlo Nason's Sfumato Floor Lamp",
+      "excerpt": "In 1966 Carlo Nason, an Italian glassmaker and self-taught designer, created this LT316 Lamp. Designed for manufacturer Mazzega, the lamp consisted of hand-blown glass sections that stacked, with one section per lightbulb.",
+      "url": "https://www.core77.com/posts/146023/A-Vintage-Lighting-Design-Classic-Carlo-Nasons-Sfumato-Floor-Lamp",
+      "publishedAt": null,
+      "firstSeen": "2026-11-26T21:45:03.110Z",
+      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1858404_lead_400_146023_.jpg",
+      "extractionStatus": "excerpt-only",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "In 1966 Carlo Nason, an Italian glassmaker and self-taught designer, created this LT316 Lamp. Designed for manufacturer Mazzega, the lamp consisted of hand-blown glass sections that stacked, with one section per lightbulb. Had 2001: A Space Odyssey come out earlier than it did (1968), you get the feeling this lamp would have appeared in it.",
+        "keywords": [
+          "Lamp",
+          "Carlo",
+          "Nason"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "5386766dec60",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "charred wooden modules conceal six-sided mirror chamber inside interactive play installation",
+      "excerpt": "alchemy is a two-module free-play installation that guides children and adults through dark inflatable chambers, a six-sided mirror room, and a pink recycled foam space.",
+      "url": "https://www.designboom.com/art/charred-wooden-modules-six-sided-mirror-chamber-interactive-play-installation-alchemy-florian-lopez/",
+      "publishedAt": "2026-11-26T21:35:15.000Z",
+      "firstSeen": "2026-11-26T21:46:09.268Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/alchemy-interactive-free-play-installation-exhibition-space-florian-lopez-designboom-700-500x400-22b08q85r122.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Designed by Florian López, Alchemy is an interactive free-play installation for children and adults that organizes an exhibition space as an anatomical body to be traversed. The post charred wooden modules conceal six-sided mirror chamber inside interactive play installation appeared first on designboom | architecture & design magazine.",
+        "keywords": [
+          "interactive",
+          "modules",
+          "charred",
+          "six-sided"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "0cd196b5fc14",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Netflix’s coziest show has made a very quiet return",
+      "excerpt": "The bigger Netflix gets, the easier it is to miss stuff. This is true of all digital platforms, of course, but it's especially true of Netflix of late, as the streaming service's lineup now also includes a growing library of reality shows, live-programming, and even games.",
+      "url": "https://www.theverge.com/entertainment/1043489/midnight-diner-season3",
+      "publishedAt": "2026-11-26T21:00:00.000Z",
+      "firstSeen": "2026-11-26T21:45:01.925Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-26-at-3.34.34-PM.png?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "The bigger Netflix gets, the easier it is to miss stuff. If you haven’t seen it, Midnight Diner is probably the most comforting thing available on Netflix. What’s especially notable about the show’s return is the huge gap: season 2 of the Netflix iteration streamed in 2019, and it took seven years for it to come back.",
+        "keywords": [
+          "Midnight Diner",
+          "Netflix",
+          "return",
+          "season"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "78109675cb58",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "sinuous stone-roofed visitor center meanders through the mountains of china",
+      "excerpt": "a river's movement informs the geometry of two visitor centers, where sweeping roofs choreograph pedestrian journeys through the mountains.",
+      "url": "https://www.designboom.com/architecture/sinuous-stone-roofed-visitor-center-mountains-china-huangguoshu-scenic-area/",
+      "publishedAt": "2026-11-26T19:10:19.000Z",
+      "firstSeen": "2026-11-26T21:45:09.268Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/huangguoshu-waterfall-tianxingqiao-scenic-area-china-designboom-700-500x400-22b08q85r823.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "The Huangguoshu Scenic Area in China‘s mountainous Guizhou province welcomes visitors beneath a pair of serpentine roofs designed by the China Academy of Urban Planning and Design (CAUPD) and AEPA&TSC. At the Great Waterfall visitor center, the design team takes advantage of an existing five-meter difference in elevation between the entrance and exit of the scenic area.",
+        "keywords": [
+          "visitor center",
+          "Scenic Area",
+          "China",
+          "Waterfall"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "8cf8fb1747c8",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The Garmin Forerunner 265S is down to $300, its best price of the year",
+      "excerpt": "The Forerunner 265S may not be the newest or flashiest Garmin, but it’s one that I’ve always loved most in testing. For runners with smaller wrists, it fits nicely.",
+      "url": "https://www.theverge.com/gadgets/1042483/garmin-forerunner-265s-fitness-tracker-wearable-deal-sale-black-friday",
+      "publishedAt": "2026-11-26T19:00:00.000Z",
+      "firstSeen": "2026-11-26T21:44:01.926Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24483620/236554_Garmin_Forerunner_265S_AKrales_0072.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "The Forerunner 265S may not be the newest or flashiest Garmin, but it’s one that I’ve always loved most in testing. 99 (a $150 discount off its MSRP) at Amazon and Best Buy for Black Friday, I can easily recommend it. The Garmin Fenix 8 is $749 at Amazon, Best Buy, and REI, which is a 25 percent discount off its original price.",
+        "keywords": [
+          "percent discount",
+          "Garmin",
+          "Black Friday",
+          "price"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "81f72210a874",
+      "sourceId": "dezeen",
+      "sourceName": "Dezeen",
+      "feedUrl": "https://www.dezeen.com/design/feed/",
+      "mode": "inspiration",
+      "title": "Five lighting designs listed by Marset on Dezeen Showroom",
+      "excerpt": "Spanish lighting brand Marset has showcased five of its products on Dezeen Showroom, including a mid-century reissue and a ceiling light that appears like a block of ice.",
+      "url": "https://www.dezeen.com/2026/11/26/lighting-designs-marset-dezeen-showroom/",
+      "publishedAt": "2026-11-26T19:00:00.000Z",
+      "firstSeen": "2026-11-26T21:46:04.515Z",
+      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/03/gambosa-lamp-mathias-hahn-marset-design_dezeen_2364_sq2-411x411.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Spanish lighting brand Marset has showcased five of its products on Dezeen Showroom, including a mid-century reissue and a ceiling light that appears like a block of ice. Marset's selection includes the Gambosa table lamp, created by designer Mathias Hahn to reinterpret the classic shade, stem and base as one smooth, glossy sculpture in steel and opal polycarbonate.",
+        "keywords": [
+          "Dezeen Showroom",
+          "Marset",
+          "lighting",
+          "five"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "a0d6237912bc",
+      "sourceId": "dezeen",
+      "sourceName": "Dezeen",
+      "feedUrl": "https://www.dezeen.com/design/feed/",
+      "mode": "inspiration",
+      "title": "Royal Society for Arts appoints five Royal Designers for Industry",
+      "excerpt": "The UK's Royal Society for Arts has announced the five Royal Designers for Industry thand named an Honorary Royal Designer. The post Royal Society for Arts appoints five Royal Designers for Industry appeared first on Dezeen .",
+      "url": "https://www.dezeen.com/2026/11/26/royal-society-for-arts-royal-designers-industry/",
+      "publishedAt": "2026-11-26T18:30:00.000Z",
+      "firstSeen": "2026-11-26T21:45:04.516Z",
+      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/royal-scoiety-arts-royal-designers-for-industry_dezeen_2364_col_sq-1024x1024.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "The UK's Royal Society for Arts has announced five Royal Designers for Industry, who include Durrell Bishop and Bridget Baines, as well as naming an Honorary Royal Designer as it celebrates its 90th anniversary. Baines co-founded international practice Gross Max, and her fellow Gross Max founder Eelco Hooftman (pictured in main image with Baines) was given the Honorary Royal Designer award this year.",
+        "keywords": [
+          "Royal Designers",
+          "Bridget Baines",
+          "Gross Max",
+          "Arts"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "497f392fc747",
+      "sourceId": "dezeen",
+      "sourceName": "Dezeen",
+      "feedUrl": "https://www.dezeen.com/design/feed/",
+      "mode": "inspiration",
+      "title": "Base Design gives Visa a brand refresh \"for the next generation\"",
+      "excerpt": "As part of a visual identity update for Visa, design agency Base Design created a more \"compact\" version of its logo and worked with Displaay Type Foundry on a new typeface.",
+      "url": "https://www.dezeen.com/2026/11/26/visa-logo-redesign-base-design/",
+      "publishedAt": "2026-11-26T18:00:00.000Z",
+      "firstSeen": "2026-11-26T21:44:04.516Z",
+      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/visa-base-design-brand-identity_dezeen_2364_sq-1-1024x1024.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Design agency Base Design has created a more compact version of credit card company Visa's logo and worked with Displaay Type Foundry on a new typeface, as part of a refresh of the brand's visual identity. \"When you’re working with a brand as iconic as Visa, the challenge isn't recognition – it's relevance,\" said Base Design executive creative director Min Lew.",
+        "keywords": [
+          "Base Design",
+          "Visa",
+          "Displaay Type",
+          "refresh"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "b8b8a9d24770",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The MacBook Neo is receiving a rare $100 discount for Black Friday",
+      "excerpt": "If you’re looking for a new laptop or a gift for the student in your life, you can save $100 on the MacBook Neo at several retailers, in both storage sizes and all four colors. The 256GB model is currently discounted to $599.",
+      "url": "https://www.theverge.com/gadgets/1035932/apple-macbook-neo-black-friday-2026-deal-sale",
+      "publishedAt": "2026-11-26T17:07:00.000Z",
+      "firstSeen": "2026-11-26T21:43:01.926Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268387_Apple_MacBook_Neo_AKrales_0543.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "If you’re looking for a new laptop or a gift for the student in your life, you can save $100 on the MacBook Neo at several retailers, in both storage sizes and all four colors. None of the retailers currently list an end date for the discount, which is the biggest price drop we’ve seen since Apple raised the laptop’s MSRP by $100 in July in response to the ongoing RAM crisis.",
+        "keywords": [
+          "Neo",
+          "discount",
+          "MacBook"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "fc3f6c861a53",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Android app developers will soon have to share their address publicly",
+      "excerpt": "Independent Android app developers are worried about their privacy after Google announced that from next year many of them will be required to share a phone number and address publicly.",
+      "url": "https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu",
+      "publishedAt": "2026-11-26T17:06:24.000Z",
+      "firstSeen": "2026-11-26T21:42:01.926Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24007893/acastro_STK112_android_02.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Independent Android app developers are worried about their privacy after Google announced that from next year many of them will be required to share a phone number and address publicly. If they self-declare as a trader, developers’ contact details will be shared publicly starting March 1st, including a phone number and address.",
+        "keywords": [
+          "contact details",
+          "address",
+          "developers",
+          "phone number"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "fe91aace4bda",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "concrete, lime-washed brick, and color-blocked zones organize movebon boutique training studio",
+      "excerpt": "designed by jotajota+, movebon is a 126-sqm boutique training studio organized around an elliptical tubular lighting fixture, a concrete block focal wall, color-blocked zones, and custom galvanized steel and timber storage units.",
+      "url": "https://www.designboom.com/architecture/concrete-block-lime-washed-brick-color-blocked-zones-movebon-boutique-training-studio-jotajotamas/",
+      "publishedAt": "2026-11-26T16:55:16.000Z",
+      "firstSeen": "2026-11-26T21:44:09.268Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/movebon-boutique-training-studio-jotajotamas-madrid-designboom-700-500x400-22b08q85r890.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Occupying 126 sqm, Movebon is a boutique training studio in Madrid designed by JOTAJOTA+ around a clear spatial division between an open workout area and private service facilities. In the main workout space, both the floor and ceiling are coated in brown-red (RAL 3011), framing sightlines toward a newly built concrete block wall at the rear.",
+        "keywords": [
+          "training studio",
+          "concrete block",
+          "Movebon",
+          "boutique"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "b10ebf43407e",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The best Black Friday deals we’ve already found",
+      "excerpt": "The countdown to Black Friday is on, and many discounts have already arrived. Although the shopping holiday isn’t officially until tomorrow, November 27th, retailers are already dropping early deals on some of our favorite tech.",
+      "url": "https://www.theverge.com/gadgets/1028991/black-friday-best-early-deals-2026",
+      "publishedAt": "2026-11-26T16:55:00.000Z",
+      "firstSeen": "2026-11-26T21:41:01.926Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268838_BF_CM_EARLY_DEALS_Headers_CVirginia.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "The countdown to Black Friday is on, and many discounts have already arrived. Although the shopping holiday isn’t officially until tomorrow, November 27th, retailers are already dropping early deals on some of our favorite tech. Prices could drop further as Black Friday approaches, as is always the case, but these deals are worth considering if you’d rather shop early and beat the holiday rush.",
+        "keywords": [
+          "Black Friday",
+          "deals",
+          "already",
+          "holiday"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "b00ec16112e2",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Federal judge blocks the FCC from reviewing ABC’s licenses early",
+      "excerpt": "US District Judge Loren AliKhan has blocked the Federal Communications Commission from conducting an early review of ABC's broadcast licenses in a preliminary injunction, and rejected its efforts to dismiss ABC's First Amendment lawsuit.",
+      "url": "https://www.theverge.com/policy/1043116/fcc-disney-abc-broadcast-licenses-review-early-judge-block",
+      "publishedAt": "2026-11-26T16:38:00.000Z",
+      "firstSeen": "2026-11-26T21:40:01.926Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25840497/STKP211_BRENDAN_CARR_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "The judge has preliminarily sided with ABC, rejecting the FCC’s efforts to dismiss the case. The preliminary injunction issued by the judge on Wednesday prohibits the FCC from taking any further action in the early review of ABC’s broadcast licenses and noted that the network had shown that the court’s intervention in the agency’s actions was in the public interest.",
+        "keywords": [
+          "broadcast licenses",
+          "early review",
+          "ABC",
+          "preliminarily sided"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "8400b48488a4",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Disney Plus, Hulu, and HBO Max are all over 50 percent off for Black Friday",
+      "excerpt": "Black Friday isn’t just a good time to save on a new TV but also a chance to spend less on what you watch on it. The shopping holiday often brings steep streaming discounts, and this year is no exception, with some streamers offering more than 50 percent off.",
+      "url": "https://www.theverge.com/gadgets/1041762/best-black-friday-streaming-deals-2026",
+      "publishedAt": "2026-11-26T16:00:00.000Z",
+      "firstSeen": "2026-11-26T21:39:01.926Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/peter-claffey-dexter-sol-ansell.jpg?quality=90&strip=all&crop=0,0,92.21171875,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Black Friday isn’t just a good time to save on a new TV but also a chance to spend less on what you watch on it. With everything from Disney classics and Marvel movies to FX dramas like The Bear and Shōgun, the Disney Plus and Hulu bundle offers plenty for the whole family to watch. 99 per month ($8 off) for a year via Hulu or Disney Plus, saving you $96 in total.",
+        "keywords": [
+          "Disney Plus",
+          "Black Friday",
+          "Hulu bundle",
+          "Marvel movies"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "8018eae6270d",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "GTA VI developers vote against unionization",
+      "excerpt": "Workers at Grand Theft Auto VI developer Rockstar Games won't unionize, after the vote for a formal recognition agreement failed, with only 25 percent of votes in favor of unionization.",
+      "url": "https://www.theverge.com/games/1043169/rockstar-games-union-vote-iwgb",
+      "publishedAt": "2026-11-26T15:55:24.000Z",
+      "firstSeen": "2026-11-26T21:38:01.926Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Jason_and_Lucia_01.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Workers at Grand Theft Auto VI developer Rockstar Games won’t unionize, after the vote for a formal recognition agreement failed, with only 25 percent of votes in favor of unionization. The Independent Workers Union of Great Britain (IWGB) said that Rockstar workers in the union will continue organizing even without formal recognition.",
+        "keywords": [
+          "Rockstar Games",
+          "formal recognition",
+          "Grand Theft",
+          "vote"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "719fecde25d5",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Why GTA VI’s version of Florida feels so real",
+      "excerpt": "There are plenty of reasons why Grand Theft Auto VI is so popular: the 13 years of anticipation, the relatable lead characters and romantic storyline, the sheer level of depth. But another major factor is the sense of place.",
+      "url": "https://www.theverge.com/entertainment/1042629/gta-6-city-design",
+      "publishedAt": "2026-11-26T15:00:00.000Z",
+      "firstSeen": "2026-11-26T21:37:01.926Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/1a20dbee8d365-screenshotUrl.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "The GTA series is unmatched when it comes to re-creating the feeling of a bustling, real-world city, and GTA VI’s fictional rendition of Florida is the studio’s most lifelike setting yet. For Emma Fraser, an assistant professor at UC Berkeley who studies urban ruins and virtual cities, the sense of realism has created a unique sensation while playing.",
+        "keywords": [
+          "GTA",
+          "real",
+          "Florida",
+          "Fraser"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "2c8e23270b54",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Here’s where you can save (a little) on the Ocarina of Time remake",
+      "excerpt": "A lot of people have The Legend of Zelda: Ocarina of Time for the Nintendo Switch 2 on their holiday wishlist. In case you haven’t bought it yet, I wanted to share some small but welcome deals happening on the physical and digital versions of the game.",
+      "url": "https://www.theverge.com/gadgets/1040110/zelda-ocarina-of-time-switch-2-black-friday-2026-deal-sale",
+      "publishedAt": "2026-11-26T14:00:00.000Z",
+      "firstSeen": "2026-11-26T21:36:01.926Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/NS2_TheLegendofZeldaOcarinaofTime_scrn_15_dce060.png?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "A lot of people have The Legend of Zelda: Ocarina of Time for the Nintendo Switch 2 on their holiday wishlist. In case you haven’t bought it yet, I wanted to share some small but welcome deals happening on the physical and digital versions of the game. Ocarina of Time is one of Nintendo’s most groundbreaking titles, having served as its first 3D Zelda game when it launched in 1998.",
+        "keywords": [
+          "Ocarina",
+          "game",
+          "Switch",
+          "digital"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "df757b3ca1dd",
+      "sourceId": "mittr",
+      "sourceName": "MIT Technology Review",
+      "feedUrl": "https://www.technologyreview.com/feed/",
+      "mode": "research",
+      "title": "The Download: Better bionic hands and AI’s natural-gas boom",
+      "excerpt": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology.",
+      "url": "https://www.technologyreview.com/2026/11/26/1149934/the-download-better-bionic-hands-ai-natural-gas-boom/",
+      "publishedAt": "2026-11-26T13:10:00.000Z",
+      "firstSeen": "2026-11-26T21:46:57.110Z",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/vincentkilbride-mit-technology-review-ai-puzzles.jpg?w=840",
+      "extractionStatus": "full",
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Just one example: Plans for the Meta data center in Louisiana that David focused on have expanded, and the local utility went from three planned natural-gas plants to 10. 1 SpaceX has won approval to launch 1 million data center satellitesThe FCC says they’ll help meet AI computing demand. 2 The US Army just blew up nearly five tons of unstable explosivesThe EPA reports ‘zero’ airborne lead following the detonation.",
+        "keywords": [
+          "won approval",
+          "data center",
+          "natural-gas"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "85ecb9e6be31",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "nendo on bringing the river-inspired design of france’s TGV INOUI into motion",
+      "excerpt": "seven years of development turned an idea about the movement of water into a detailed design language, from the train’s exterior patterns to its passenger spaces and everyday fittings.",
+      "url": "https://www.designboom.com/design/nendo-river-inspired-design-france-tgv-inoui-motion-interview/",
+      "publishedAt": "2026-11-26T11:50:24.000Z",
+      "firstSeen": "2026-11-26T21:43:09.268Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/nendo-river-inspired-design-france-tgv-inoui-motion-interview-designboom-700-500x400-22b08q85r843.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "This observation from Japanese design studio nendo became the starting point for the design of France’s TGV INOUI, developed in collaboration with French agency AREP. The studio was interested in all the different qualities water carries: ‘The smooth flow and depth of a river, pebbles on the riverbed, and the sense of floating and bubbles on the water’s surface informed both the exterior and interior.’",
+        "keywords": [
+          "TGV INOUI",
+          "nendo",
+          "France",
+          "river"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "64da2d6c0c3f",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "hoor al qasimi appointed curator of the venice art biennale 2028",
+      "excerpt": "the sharjah art foundation founder will lead the 62nd international art exhibition, bringing her experience in cross-cultural exchange and international exhibition-making to venice The post hoor al qasimi appointed curator of the venice art biennale 2028 appeared first on designboom | architecture & design magazine .",
+      "url": "https://www.designboom.com/art/hoor-al-qasimi-curator-venice-art-biennale-2028/",
+      "publishedAt": "2026-11-26T11:28:54.000Z",
+      "firstSeen": "2026-11-26T21:42:09.268Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/hoor-al-qasimi-curator-venice-art-biennale-2028-designboom-700-500x400-22b08q85r621.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Hoor Al Qasimi has been appointed curator of the 62nd Venice Art Biennale, taking on the role of Director of the Visual Arts Department at La Biennale di Venezia ahead of the 2028 edition. Since founding the Sharjah Art Foundation, Al Qasimi has developed an extensive program of exhibitions, commissions, and public initiatives, positioning Sharjah as an important meeting point for contemporary art.",
+        "keywords": [
+          "Art Biennale",
+          "appointed curator",
+          "Qasimi",
+          "Venice"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "8b2d94ad8c02",
+      "sourceId": "sidebar",
+      "sourceName": "Sidebar",
+      "feedUrl": "https://sidebar.io/feed.xml",
+      "mode": "pulse",
+      "title": "Lighting that feels just right",
+      "excerpt": "An explainer and personal experience learning and leveraging screen-space and probe-based Global Illumination rendering methods. In The Gap , Ira Glass talks about the frustration of your output falling short of what you originally envisioned when learning a new skill.",
+      "url": "https://blog.maximeheckel.com/posts/lighting-that-feels-just-right/",
+      "publishedAt": "2026-11-26T11:13:47.000Z",
+      "firstSeen": "2026-11-26T21:45:09.802Z",
+      "thumbnail": "https://blog.maximeheckel.com/static/og/05d28cd9a3b09d119f267f91435fc43b.png?v2",
+      "extractionStatus": "full",
+      "tags": [
+        "UX"
+      ],
+      "digest": {
+        "brief": "A brightly lit surface contributes no lighting at all to the objects or scene around it. In our Volumetric Lighting work, we had to reconstruct a surface’s position to know when to stop marching a ray from the camera 5. A surface can receive light from many directions, so we can’t just trace a single ray and hope to get a reliable estimate of its indirect lighting.",
+        "keywords": [
+          "indirect lighting",
+          "light",
+          "surface",
+          "scene"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "ff1b98455cbd",
+      "sourceId": "sidebar",
+      "sourceName": "Sidebar",
+      "feedUrl": "https://sidebar.io/feed.xml",
+      "mode": "pulse",
+      "title": "12ft Lab",
+      "excerpt": "Experiments, tools and prototypes from 12ft. Experiments and prototypes that come about alongside our client work, kept because we find them fun or useful.",
+      "url": "https://12ft.studio/lab/",
+      "publishedAt": "2026-11-26T11:12:31.000Z",
+      "firstSeen": "2026-11-26T21:44:09.802Z",
+      "thumbnail": null,
+      "extractionStatus": "full",
+      "tags": [
+        "UX"
+      ],
+      "digest": {
+        "brief": "This is where we collect the experiments, tools and prototypes that come about alongside our projects at 12ft. Experiments and prototypes that come about alongside our client work, kept because we find them fun or useful. Tools we build to make our lives simpler, and hopefully yours too.",
+        "keywords": [
+          "prototypes",
+          "projects",
+          "alongside",
+          "experiments"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "04d35893c30b",
+      "sourceId": "sidebar",
+      "sourceName": "Sidebar",
+      "feedUrl": "https://sidebar.io/feed.xml",
+      "mode": "pulse",
+      "title": "High fidelity, low definition",
+      "excerpt": "Form clarity through deliberate design fidelity. In the beginning of my career I worked as an identity designer. Gradually I moved into digital products as a \"visual designer,\" where I worked alongside an information architect that would spec out wireframes.",
+      "url": "https://www.seangood.win/articles/high-fidelity-low-definition",
+      "publishedAt": "2026-11-26T11:11:36.000Z",
+      "firstSeen": "2026-11-26T21:43:09.802Z",
+      "thumbnail": null,
+      "extractionStatus": "full",
+      "tags": [
+        "Product",
+        "UX"
+      ],
+      "digest": {
+        "brief": "Later, when the industry collapsed both roles into the \"product designer,\" I still found it common to move from low to high fidelity in many of my projects. Now I am seeing a pattern on AI-native teams: they start in high fidelity prototypes. Low fidelity enables your team to move at high velocity in the stages of early definition.",
+        "keywords": [
+          "high fidelity",
+          "low",
+          "definition",
+          "Later"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "288e32210c2c",
+      "sourceId": "sidebar",
+      "sourceName": "Sidebar",
+      "feedUrl": "https://sidebar.io/feed.xml",
+      "mode": "pulse",
+      "title": "Forward-deployed design as plumbing",
+      "excerpt": "Notes on forward-deployed design, coordination debt and two classroom builds of scoped public fixes. I’m revisiting the forward-deployed design discussion, and I think the shape of teams is less important to me.",
+      "url": "https://blog.ronbronson.com/forward-deployed-design-as-plumbing",
+      "publishedAt": "2026-11-26T11:11:10.000Z",
+      "firstSeen": "2026-11-26T21:42:09.802Z",
+      "thumbnail": null,
+      "extractionStatus": "full",
+      "tags": [
+        "UX"
+      ],
+      "digest": {
+        "brief": "The product designer was closer to the designer-engineer archetype that’s always existed in some orgs, but AI is upending this and making everyone feel some need to rebrand into some kind of engineer to stay semirelevant in these complicated times. The whole “Design as Repair” ethos was really about what I told friends: designers as the folks who get into coveralls and tackle the problem.",
+        "keywords": [
+          "Design",
+          "designers",
+          "problem",
+          "orgs"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "e6379652ae1b",
+      "sourceId": "sidebar",
+      "sourceName": "Sidebar",
+      "feedUrl": "https://sidebar.io/feed.xml",
+      "mode": "pulse",
+      "title": "Tegaki",
+      "excerpt": "Open-source handwriting animation library and generator: any font, written stroke by stroke in natural stroke order. An open-source handwriting animation library for any font.",
+      "url": "https://tegaki.ink/",
+      "publishedAt": "2026-11-26T11:10:19.000Z",
+      "firstSeen": "2026-11-26T21:41:09.802Z",
+      "thumbnail": "https://tegaki.ink/tegaki-card.png",
+      "extractionStatus": "full",
+      "tags": [
+        "UX"
+      ],
+      "digest": {
+        "brief": "Tegaki extracts each glyph's strokes, their order and width, and draws them stroke by stroke on a canvas over real, selectable text. Hebrew and Arabic right to left with positional forms, Devanagari and Bengali headlines drawn across the word, and Japanese, Korean and Chinese in reference stroke order (KanjiVG, Make Me a Hanzi).",
+        "keywords": [
+          "stroke",
+          "text",
+          "Tegaki",
+          "order"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "854de6bb1c4c",
+      "sourceId": "aeon",
+      "sourceName": "Aeon / Psyche",
+      "feedUrl": "https://aeon.co/feed.rss",
+      "mode": "deep",
+      "title": "Lina Ghotmeh: archaeology of the future",
+      "excerpt": "In the work of the Lebanese architect Lina Ghotmeh, the scars of the past inform resilient buildings for the future - by Aeon Video Watch on Aeon.",
+      "url": "https://aeon.co/videos/a-lebanese-architects-mission-to-build-structures-that-heal",
+      "publishedAt": "2026-11-26T11:01:00.000Z",
+      "firstSeen": "2026-11-26T21:46:24.726Z",
+      "thumbnail": "https://images.aeonmedia.co/images/54815ddf-dc20-474d-82d9-757571536dd1/lina-ghotmeh-archaeology-of-the-future-landscape-1.jpg?width=1200&quality=75&format=auto",
+      "extractionStatus": "full",
+      "tags": [
+        "Speculative"
+      ],
+      "digest": {
+        "brief": "The Lebanese architect Lina Ghotmeh is known for works that preserve memories of the past but are built for the future. This short documentary from the London-based director Stephen Pook deconstructs Ghotmeh’s approach to architecture, revealing how her designs and thoughtful use of materials are born of a process in which history matters as much as the physical environment.",
+        "keywords": [
+          "Ghotmeh",
+          "Lina",
+          "future"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "085e26343b78",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "mara rethinks how we furnish modern, flexible office at orgatec 2026",
+      "excerpt": "mara unveils an ecosystem of flexible office furniture at orgatec 2026, which aims to shape the future of dynamic, remote-friendly workspaces.",
+      "url": "https://www.designboom.com/design/mara-furniture-ecosystem-office-orgatec-2026/",
+      "publishedAt": "2026-11-26T11:00:20.000Z",
+      "firstSeen": "2026-11-26T21:41:09.268Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/mara-furniture-ecosystem-office-orgatec-2026-designboom700-500x400-22b08q85r844.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product",
+        "Speculative"
+      ],
+      "digest": {
+        "brief": "The past decade has seen countless changes in the working landscape, and Mara’s furniture has evolved alongside them. Aligned with this increasingly fluid and flexible world, the collection Mara presents at Orgatec 2026 stands out for its versatility, flexibility, and durability. Alongside these additions, Mara presents a new interpretation of a classic: Aera Metal, which draws on the brand’s metalworking roots.",
+        "keywords": [
+          "Mara presents",
+          "Orgatec",
+          "flexible",
+          "Aera"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "f4e4840a9f08",
+      "sourceId": "aeon",
+      "sourceName": "Aeon / Psyche",
+      "feedUrl": "https://aeon.co/feed.rss",
+      "mode": "deep",
+      "title": "The pretendian wars",
+      "excerpt": "To falsely claim Indigenous identity is not a frivolous mistake. It’s a grave theft, and the stakes are getting higher - by Dina Gilio-Whitaker Read on Aeon.",
+      "url": "https://aeon.co/essays/falsely-claiming-indigenous-identity-is-a-grave-form-of-theft",
+      "publishedAt": "2026-11-26T11:00:00.000Z",
+      "firstSeen": "2026-11-26T21:45:24.726Z",
+      "thumbnail": "https://images.aeonmedia.co/images/e68a91ac-5959-4ae2-9d6b-7320076b26c7/grey-owl-feather-essay.jpg?width=1200&quality=75&format=auto",
+      "extractionStatus": "full",
+      "tags": [
+        "Speculative"
+      ],
+      "digest": {
+        "brief": "Anthropologists who study Indigenous cultural identity use the term ethnogenesis to describe how the identities of ethnic communities are formed or understood, and how they can change over time. People ‘become’ Indian when they claim to ‘be’ Indian with no connection to a tribal community, or little to no evidence of Native ancestry.",
+        "keywords": [
+          "Indigenous cultural",
+          "Native",
+          "Indian",
+          "ethnic"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "21481b3fb89d",
+      "sourceId": "aeon",
+      "sourceName": "Aeon / Psyche",
+      "feedUrl": "https://psyche.co/feed.rss",
+      "mode": "deep",
+      "title": "There and back",
+      "excerpt": "A lost home lives on in spikes of joy and longing; it shifts in memory as life changes. But it’s never the same - by Pam Weintraub Read on Psyche.",
+      "url": "https://psyche.co/notes-to-self/im-moving-back-where-i-grew-up-i-know-it-wont-be-the-same",
+      "publishedAt": "2026-11-26T11:00:00.000Z",
+      "firstSeen": "2026-11-26T21:46:27.975Z",
+      "thumbnail": "https://images.aeonmedia.co/images/d78fd84c-6589-4089-ac48-f2f7f41cb932/pam-projects-main.jpg?top=283&left=9&cropWidth=2656&cropHeight=1494&width=1200&quality=75&format=auto",
+      "extractionStatus": "full",
+      "tags": [
+        "Health"
+      ],
+      "digest": {
+        "brief": "At first, our cluster of 19 buildings in an East New York housing project had felt like a little town; we walked safely everywhere, just us kids. In our new ‘luxe digs’ in Co-op City in the Bronx, I carried the world that made me: the asphalt park called the Circle, where I raced on roller skates tightened by key; nights on concrete barrels, transistor radios straining with Stevie Wonder and the early Stones.",
+        "keywords": [],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "abfcb376bbab",
+      "sourceId": "aeon",
+      "sourceName": "Aeon / Psyche",
+      "feedUrl": "https://psyche.co/feed.rss",
+      "mode": "deep",
+      "title": "What exile was like for the first people called ‘refugees’",
+      "excerpt": "Persecuted in 17th-century France, the Huguenots fled their homeland. Their memoirs reveal how they suffered and survived - by Nora Baker Read on Psyche.",
+      "url": "https://psyche.co/ideas/what-exile-was-like-for-the-first-people-called-refugees",
+      "publishedAt": "2026-11-26T11:00:00.000Z",
+      "firstSeen": "2026-11-26T21:45:27.976Z",
+      "thumbnail": "https://images.aeonmedia.co/images/68ada2f7-60e3-4dde-8222-99fab8ecc80a/sz-rp-p-1896-a-19368-1049.jpg?top=130&left=0&cropWidth=2480&cropHeight=1395&width=1200&quality=75&format=auto",
+      "extractionStatus": "full",
+      "tags": [
+        "Health"
+      ],
+      "digest": {
+        "brief": "One dark night in 1683, a 19-year-old girl from the small town of Saint-Paul-Trois-Châteaux, not far from Grenoble in southeastern France, approached the fire in the hearth of her family home. This was a time of high religious tension in France, and Blanche Gamond’s Protestant family had been forced to host soldiers in their house whose goal it was to intimidate them into converting to Catholicism.",
+        "keywords": [
+          "Gamond",
+          "religious",
+          "France",
+          "Protestant"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "4c1112d5ac6b",
+      "sourceId": "dezeen",
+      "sourceName": "Dezeen",
+      "feedUrl": "https://www.dezeen.com/design/feed/",
+      "mode": "inspiration",
+      "title": "\"How did young designers become so convinced of their own powerlessness?\"",
+      "excerpt": "In the face of planetary collapse, design education and practice need to change to show young designers that it's possible for them to make a difference, writes Céline Semaan.",
+      "url": "https://www.dezeen.com/2026/11/26/design-power-change-celine-semaan-opinion/",
+      "publishedAt": "2026-11-26T10:00:00.000Z",
+      "firstSeen": "2026-11-26T21:43:04.516Z",
+      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/climate-change-global-warming-sq_dezeen_2364_col_0-1024x1024.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "In the face of planetary collapse, design education and practice need to change to show young designers that it's possible for them to make a difference, writes Céline Semaan. During class, we discussed the political, ecological and economic infrastructures that make design possible: mineral extraction, exploited labour and the colonial systems sustaining much of what we produce and consume.",
+        "keywords": [
+          "young designers",
+          "design education",
+          "line Semaan",
+          "possible"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "3351794e6a63",
+      "sourceId": "mittr",
+      "sourceName": "MIT Technology Review",
+      "feedUrl": "https://www.technologyreview.com/feed/",
+      "mode": "research",
+      "title": "The next generation of bionic hands is here—and they can feel",
+      "excerpt": "Avi Davidson lost his left hand as a teenager. Since then, he’s cycled through a few prosthetics. But his latest is different—it’s wired up to nerves in the upper part of his forearm and allows him to feel pressure.",
+      "url": "https://www.technologyreview.com/2026/11/26/1149923/the-next-generation-of-bionic-hands-is-here-and-they-can-feel/",
+      "publishedAt": "2026-11-26T09:59:00.000Z",
+      "firstSeen": "2026-11-26T21:45:57.110Z",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/261124_ProsetheticHand_Embed1.jpg?w=840",
+      "extractionStatus": "full",
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Helping others, not himself: Davidson won't keep the device forever and isn't compensated. Davidson, who is taking part in a clinical trial run by the University of Utah, is the ninth person to have this experimental device implanted in his arm. Since 2013, the team had been running a trial of a system that could connect with the nerves of a residual limb, allowing an amputee to control a bionic one.",
+        "keywords": [
+          "bionic",
+          "Davidson",
+          "arm",
+          "trial"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "ce7bad55c402",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "podcast: how to create utopia for everyone when architecture scales to the metropolis",
+      "excerpt": "from resident-voted skyscrapers in mumbai to adaptive structural grids, the final episode of the room for utopias podcast series explores what happens when ideals scale up.",
+      "url": "https://www.designboom.com/architecture/podcast-room-for-utopias-11/",
+      "publishedAt": "2026-11-26T09:30:13.000Z",
+      "firstSeen": "2026-11-26T21:40:09.268Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/indx-global-room-for-utopias-06-designboom-700-500x400-22b08q85r482.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Speculative",
+        "Product"
+      ],
+      "digest": {
+        "brief": "Because one person’s utopia rarely matches another’s, architecture only succeeds at a civic scale when it stops being a solitary monument and becomes a collective negotiation. Closing the Room for Utopias podcast series produced in collaboration with INDX|GLOBAL during Paris Design Week 2026, the final episode explores how personal design visions transform into shared urban realities.",
+        "keywords": [
+          "architecture",
+          "utopia",
+          "podcast",
+          "urban"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "7eda9d9f1f9a",
+      "sourceId": "dezeen",
+      "sourceName": "Dezeen",
+      "feedUrl": "https://www.dezeen.com/design/feed/",
+      "mode": "inspiration",
+      "title": "Lucy McRae creates replicant birth bags for Blade Runner 2099 show where \"violence and femininity coexist\"",
+      "excerpt": "Lucy McRae has created tactile, custom-made designs for sci-fi mini-series Blade Runner 2099 that veer away from the traditionally cold and metallic aesthetic of the films.",
+      "url": "https://www.dezeen.com/2026/11/26/lucy-mcrae-replicant-birth-bags-blade-runner-2099/",
+      "publishedAt": "2026-11-26T09:30:00.000Z",
+      "firstSeen": "2026-11-26T21:42:04.516Z",
+      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/lucy-mcrae-blade-runner-2099_dezeen_1704_col_sq.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Los Angeles-based artist Lucy McRae has created tactile, custom-made designs for sci-fi mini-series Blade Runner 2099 that veer away from the traditionally cold and metallic aesthetic of the films. The post Lucy McRae creates replicant birth bags for Blade Runner 2099 show where \"violence and femininity coexist\" appeared first on Dezeen.",
+        "keywords": [
+          "Blade Runner",
+          "birth bags",
+          "Lucy McRae",
+          "femininity coexist"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "e32474da10f6",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "how sound, fungi, and material experimentation shape thomas feriero’s music project",
+      "excerpt": "composer thomas feriero discusses the three experimental systems behind 'will you still love me when i’m a system in the ground?', a collaboration that turns musical erosion, biological growth, and material transformation into a shared creative process.",
+      "url": "https://www.designboom.com/art/sound-fungi-material-experimentation-thomas-feriero-music-project-challenging-conditions-hidden-mountain-alea-work-interview/",
+      "publishedAt": "2026-11-26T08:45:41.000Z",
+      "firstSeen": "2026-11-26T21:39:09.268Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/sound-fungi-material-experimentation-thomas-feriero-music-project-challenging-conditions-hidden-mountain-alea-work-interview-designboom-700-500x400-22b08q85r112.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "In collaboration with Paris-based material design studio Aléa Work and designer Oscar Morgan, these sonic experiments extend into the physical world through a series of objects grown from mycelium. ‘For Condition 01 we wanted the music and the mycelium to actually share a space, so we rented a room in Paris where the piece played continuously while the mycelium grew,’ Feriero tells designboom.",
+        "keywords": [
+          "Oscar Morgan",
+          "Feriero",
+          "played continuously",
+          "tells designboom"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
       "id": "3b0722f2328f",
       "sourceId": "core77",
       "sourceName": "Core77",
@@ -484,9 +1461,6 @@
       "firstSeen": "2026-11-26T08:39:27.922Z",
       "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1858309_lead_400_146013_.jpeg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Nolastar, by German-Spanish industrial designer Pablo Octavio, is a curtain system made of aluminum or wooden tiles rather than fabric. Despite being heavier than fabric, the curtains are reportedly compatible with standard curtain tracks, whether motorized or manual. The Nolastar room divider and curtain system is more than just a functional element, it is a statement of timeless design and innovative materiality.",
         "keywords": [
@@ -496,6 +1470,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -511,10 +1488,6 @@
       "firstSeen": "2026-11-26T08:38:27.922Z",
       "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1858250_lead_400_146011_.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Tech Industry",
-        "Product"
-      ],
       "digest": {
         "brief": "This seems too good to be true: A Chinese startup called VIVIFoCAL claims to have invented adaptive eyeglasses, which automatically adjust between close and distant viewing. A laser sensor on their S1 glasses supposedly measures the distance of what you're looking at, and a tiny motor then slides a pair of interior lenses sideways to change their focusing strength.",
         "keywords": [
@@ -525,6 +1498,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Tech Industry",
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -540,9 +1517,6 @@
       "firstSeen": "2026-11-26T08:37:27.922Z",
       "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1858219_lead_400_146010_.jpg",
       "extractionStatus": "excerpt-only",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "This diminutive stainless steel box unfolds into a camping stove. Designed by South Korean camping gear company Kovea, the Container Stove measures just 83 × 124 × 85 mm (3. One end of the box opens up to reveal the burner, and you then fold out four support legs to hold your pot or pan.",
         "keywords": [
@@ -550,6 +1524,37 @@
           "support legs",
           "camping",
           "box"
+        ],
+        "by": "extract"
+      },
+      "tags": [
+        "Product"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "ae1bfc1e912e",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "clustered cycladic village residences shape aristides dallas architects’ hospitality masterplan",
+      "excerpt": "a landscape-led hospitality settlement explores how architecture can bring together privacy, community and the everyday rituals of living.",
+      "url": "https://www.designboom.com/architecture/clustered-cycladic-village-residences-aristides-dallas-architects-hospitality-masterplan-shared-ground/",
+      "publishedAt": "2026-11-26T07:15:05.000Z",
+      "firstSeen": "2026-11-26T21:38:09.268Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/shared-ground-hospitality-masterplan-aristides-dallas-architects-cyclades-designboom-700-1-500x400-22b08q85r387.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Sited on a sloping hillside on a Greek island in the Cyclades, angled away from the sea, Shared Ground is a hospitality masterplan by Aristides Dallas Architects organized around topography and sightlines. Drawing on the spatial logic of traditional Cycladic villages rather than imitating vernacular forms, the design studio groups residences into small neighborhood clusters.",
+        "keywords": [
+          "hospitality masterplan",
+          "Aristides Dallas",
+          "residences",
+          "Cycladic"
         ],
         "by": "extract"
       },
@@ -568,9 +1573,6 @@
       "firstSeen": "2026-11-26T08:40:28.068Z",
       "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/jabez-bartlett-debut-furniture-exhibition-hackney-london_dezeen_2364_col_0-1024x1024.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "The London maker of Milan design week's much-discussed inflatable coffee table has unveiled his debut furniture collection, which includes veiny wax chairs and a rug adorned with cattle tags. A circular version followed, and both pieces are part of The Freight Proportioned to the Groove, an exhibition of his debut furniture collection that opens today in Hackney, London.",
         "keywords": [
@@ -581,6 +1583,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -596,10 +1601,6 @@
       "firstSeen": "2026-11-26T08:40:32.848Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/lorenzo-rimini-moove-on-rolling-suitcase-mobility-aid-designboom-700-1-500x400-22b08q85r579.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product",
-        "HMI / Mobility"
-      ],
       "digest": {
         "brief": "Designed by Lorenzo Rimini, Moove On reconfigures the conventional rolling suitcase into a multi-functional mobility aid for older travelers. Developed by designer Lorenzo Rimini over an eight-month period, the project progressed through 45 iterative prototypes examining alternative form factors, handle geometries, structural reinforcements, and functional configurations.",
         "keywords": [
@@ -610,6 +1611,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product",
+        "HMI / Mobility"
+      ],
       "contentHtml": null
     },
     {
@@ -625,9 +1630,6 @@
       "firstSeen": "2026-11-26T08:41:10.517Z",
       "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2025/11/hebert_thanks1.jpg?fit=320%2C407&ssl=1",
       "extractionStatus": "full",
-      "tags": [
-        "Speculative"
-      ],
       "digest": {
         "brief": "In our age of competitive prostration, this is a headstand hard to hold for long. Artist and poet Rachel Hébert offers a bright patch of training ground in The Book of Thanks: A Catalogue of Gratitudes — one of the most miraculous books I have ever encountered, trembling with tenacious tenderness for the bewilderment of being alive.",
         "keywords": [
@@ -638,64 +1640,9 @@
         ],
         "by": "extract"
       },
-      "contentHtml": null
-    },
-    {
-      "id": "0a95f1b09baa",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Now Google’s Familiar Faces AI feature works on Walmart’s $35 smart home camera too",
-      "excerpt": "A couple of Walmart's budget-friendly smart home cameras will be able to recognize people around your house now using Google's familiar face detection feature.",
-      "url": "https://www.theverge.com/tech/1042938/google-home-familiar-faces-onn-cameras",
-      "publishedAt": "2026-11-26T00:04:34.000Z",
-      "firstSeen": "2026-11-26T08:39:26.661Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23451196/acastro_220510_STK123_0002.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
       "tags": [
-        "Tech Industry",
-        "AI"
+        "Speculative"
       ],
-      "digest": {
-        "brief": "You can get Familiar Faces alerts from Walmart’s budget smart home cameras. A new Google Home update brings Familiar Faces support to the $35 Onn Outdoor Camera Plug-In and $77 Onn Floodlight Camera Hardwired. Now it says those improvements are rolling out over the coming weeks, along with new smart home control, as “Gemini Live now supports all your daily actions, from setting timers to turning off the lights.”",
-        "keywords": [
-          "smart home",
-          "Familiar Faces",
-          "Gemini Live",
-          "Walmart"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "dade25531ce5",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Amazon loses its latest attempt to get out of handling more recall notices",
-      "excerpt": "Amazon is on the hook to recall more than 400,000 hazardous products after losing its legal battle against the US Consumer Product Safety Commission (CPSC).",
-      "url": "https://www.theverge.com/tech/1042870/amazon-recall-order-cpsc",
-      "publishedAt": "2026-11-25T23:56:44.000Z",
-      "firstSeen": "2026-11-26T08:38:26.662Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23935558/acastro_STK103__01.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Tech Industry",
-        "Product"
-      ],
-      "digest": {
-        "brief": "A court ruled in favor of the US CPSC’s argument that Amazon is responsible for recalled products that other companies sell on its platforms. Amazon is on the hook to recall more than 400,000 hazardous products after losing its legal battle against the US Consumer Product Safety Commission (CPSC). Amazon must maintain the recall releases on the “Recalls and Product Safety Alerts” webpage on amazon.",
-        "keywords": [
-          "recall releases",
-          "recalled products",
-          "court ruled",
-          "Amazon"
-        ],
-        "by": "extract"
-      },
       "contentHtml": null
     },
     {
@@ -711,9 +1658,6 @@
       "firstSeen": "2026-11-26T08:40:10.517Z",
       "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2017/05/democracyandpoetry_warren.jpg?fit=320%2C478&ssl=1",
       "extractionStatus": "full",
-      "tags": [
-        "Speculative"
-      ],
       "digest": {
         "brief": "“No one can build you the bridge on which you, and only you, must cross the river of life,” thirty-year-old Nietzsche wrote in his treatise on how to find yourself. No, rather an object like a nugget of gold in the placer pan, the Easter egg under the bush at an Easter-egg hunt, a four-leaf clover to promise miraculous luck.",
         "keywords": [
@@ -721,294 +1665,9 @@
         ],
         "by": "extract"
       },
-      "contentHtml": null
-    },
-    {
-      "id": "ceecf9e348f1",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
-      "excerpt": "Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows about its users.",
-      "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
-      "publishedAt": "2026-11-25T21:51:26.000Z",
-      "firstSeen": "2026-11-26T08:37:26.663Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-25-at-11.34.07-AM.png?quality=90&strip=all&crop=2.859375,3.7218027238494,93.788122558594,91.658221639303",
-      "extractionStatus": "full",
       "tags": [
-        "AI",
-        "Tech Industry",
         "Speculative"
       ],
-      "digest": {
-        "brief": "The patent has been rejected, but unfortunately, Google might appeal or resubmit an amended version, and we could see this monstrosity come to market. The patent details how My Channel might be able to connect to other streaming services — which would give it even more information about users and, presumably, access to useful training data for video generation.",
-        "keywords": [
-          "video generation",
-          "streaming services",
-          "patent",
-          "Google"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "9cd7e84cbfd2",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The Verge’s 2026 holiday gift guide for travelers",
-      "excerpt": "Everyone has that traveler in their life. That person who feels more at home on a 14-hour train ride than a quiet Sunday on the couch. They speak multiple languages, have a gut like a goat, and make friends wherever they go.",
-      "url": "https://www.theverge.com/gadgets/1021917/best-gifts-for-travelers-2026",
-      "publishedAt": "2026-11-25T21:48:00.000Z",
-      "firstSeen": "2026-11-26T08:36:26.663Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268757_2026_gift_guides_UNDER_25_CVirginia_TRAVEL.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "From streaming gadgets for the hotel to portable espresso makers and high-capacity chargers, these are our favorite gifts to help travelers take their next adventure to the next level. The company’s foldable tray table mount is particularly brilliant, offering travelers an ergonomic way to mount devices — including larger gaming handhelds like the Steam Deck — for easy access on long flights.",
-        "keywords": [
-          "long flights",
-          "travelers",
-          "portable",
-          "favorite"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "7ee86c50b95b",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "the spectacle of entry: how concept car designers set entire bodies in motion",
-      "excerpt": "In the golden age of experimental concept car design, the many ways a car could open turned the act of entering into a theatrical event.",
-      "url": "https://www.designboom.com/technology/car-open-architecture-automotive-entry-doorless-wedge-experimental-concept/",
-      "publishedAt": "2026-11-25T21:35:48.000Z",
-      "firstSeen": "2026-11-26T08:39:32.848Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/cars-theater-entry-motion-doorless-designboom-700-500x400-22b08q85r420.jpg",
-      "extractionStatus": "full",
-      "tags": [
-        "Tech Industry",
-        "HMI / Mobility",
-        "Product"
-      ],
-      "digest": {
-        "brief": "When Pininfarina presented its Ferrari 512S Modulo at the 1970 Geneva Motor Show, the Italian design team brought a vision of the automobile with almost all its familiar elements erased. To enter Paolo Martin’s futuristic concept car, the entire canopy had to slide forward. Built on the chassis of a Ferrari 512S racing car, the concept was composed of two broad, almost horizontal volumes separated by a fine red line.",
-        "keywords": [
-          "concept car",
-          "entire canopy",
-          "Geneva Motor",
-          "Paolo Martin"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "2669f263fdac",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "WhatsApp’s new scheduled messages let you choose the right time to send",
-      "excerpt": "WhatsApp's 3 billion users are getting an option that Meta says is one of the most requested features, with the ability to schedule messages in advance for both private conversations and group chats.",
-      "url": "https://www.theverge.com/tech/1042532/whatsapp-scheduled-messages",
-      "publishedAt": "2026-11-25T20:31:48.000Z",
-      "firstSeen": "2026-11-26T08:35:26.663Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/whatsapp-scheduled-messages-launch.jpeg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "WhatsApp’s 3 billion users are getting an option that Meta says is one of the most requested features, with the ability to schedule messages in advance for both private conversations and group chats. If you think of a text at an inconvenient time or don’t want to forget to fire off a birthday message at 4AM, you can draft it and set it to send anywhere from 10 minutes to two weeks later.",
-        "keywords": [
-          "messages",
-          "WhatsApp",
-          "send"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "aeef62858770",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "EPA reports ‘zero’ airborne lead following controlled Army detonation in Iowa",
-      "excerpt": "Saying it was necessary to prevent the possible spontaneous explosion of a stockpile of material used in igniters and blasting caps, the US Army conducted a controlled detonation of over 9,700 pounds of lead azide today at the Iowa Army Ammunition Plant (IAAAP) in Middletown, Iowa.",
-      "url": "https://www.theverge.com/science/1042109/us-army-detonation-lead-azide-explosives-iowa-ammunition-plant",
-      "publishedAt": "2026-11-25T19:45:51.000Z",
-      "firstSeen": "2026-11-26T08:34:26.663Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2306835116.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "Saying it was necessary to prevent the possible spontaneous explosion of a stockpile of material used in igniters and blasting caps, the US Army conducted a controlled detonation of over 9,700 pounds of lead azide today at the Iowa Army Ammunition Plant (IAAAP) in Middletown, Iowa. Videos of the detonation showed plumes of smoke several hundred feet high drifting south before quickly dissipating.",
-        "keywords": [
-          "lead azide",
-          "Ammunition Plant",
-          "detonation",
-          "Army"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "1c78b60b5fc1",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "fabrizio giugiaro looks to the wedge cars of the 1970s for his copper-bodied supercar",
-      "excerpt": "beneath its gleaming copper skin, the one-off supercar revisits the experimental automotive geometry of the 1970s. The post fabrizio giugiaro looks to the wedge cars of the 1970s for his copper-bodied supercar appeared first on designboom | architecture & design magazine .",
-      "url": "https://www.designboom.com/technology/fabrizio-giugiaro-copper-bodied-supercar-peralta-d-gfg-style/",
-      "publishedAt": "2026-11-25T19:10:44.000Z",
-      "firstSeen": "2026-11-26T08:38:32.848Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/GFG-Peralta-D-fabrizio-giugiaro-copper-designboom-700-500x400-22b08q85r383.jpg",
-      "extractionStatus": "full",
-      "tags": [
-        "Tech Industry",
-        "HMI / Mobility",
-        "Product"
-      ],
-      "digest": {
-        "brief": "Italian automotive designer Fabrizio Giugiaro and his studio GFG Style unveil the Peralta D, a one-off supercar with bodywork made entirely from hand-hammered copper. The project follows GFG Style’s 2025 Peralta S, a sports car sculpted from mirror-polished aluminum and inspired by Giorgetto Giugiaro’s 1971 Maserati Boomerang.",
-        "keywords": [
-          "Fabrizio Giugiaro",
-          "GFG Style",
-          "Maserati Boomerang",
-          "Peralta"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "11b99dd6ea41",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "1Password breach leaked customer names and emails, but not passwords",
-      "excerpt": "1Password says a hacker stole customer names and email addresses after gaining access to its backend systems. The breach didn't expose passwords or other information stored in customer vaults, but could put users at risk of phishing attempts, according to a post disclosing the incident.",
-      "url": "https://www.theverge.com/tech/1042409/1password-data-breach-leak",
-      "publishedAt": "2026-11-25T19:10:15.000Z",
-      "firstSeen": "2026-11-26T08:33:26.663Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STKB339_1PASSWORD.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "1Password says a hacker stole customer names and email addresses after gaining access to its backend systems. Using the compromised account, the hacker accessed 1Password’s source code and pushed malicious code to backend services to download customer data. Along with customer names and emails, the leaked data included public keys, as well as account and user identifiers.",
-        "keywords": [
-          "customer names",
-          "account",
-          "emails",
-          "leaked"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "9576e3e695b5",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The Fairphone 6 Plus is modular, repairable, and $100 off right now",
-      "excerpt": "Unlike most smartphones, the Fairphone 6 Plus is designed for home repair, with easily replaceable parts that could help extend its lifespan well into the future.",
-      "url": "https://www.theverge.com/gadgets/1041460/fairphone-6-plus-repairable-phone-black-friday-2026-deal-sale",
-      "publishedAt": "2026-11-25T18:00:00.000Z",
-      "firstSeen": "2026-11-26T08:32:26.663Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/fairphone-6-plus-4.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Speculative",
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "Unlike most smartphones, the Fairphone 6 Plus is designed for home repair, with easily replaceable parts that could help extend its lifespan well into the future. 3-inch Fairphone 6 Plus features 12 user-replaceable parts, including the battery, screen, USB-C port, and cameras, all of which you can swap out with the included screwdriver.",
-        "keywords": [
-          "Fairphone",
-          "Plus",
-          "battery",
-          "parts"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "e38156e0dc6c",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The loneliest peptide party in New York",
-      "excerpt": "This is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going to change your life. Opt in for Optimizer here.",
-      "url": "https://www.theverge.com/column/1041761/optimizer-peptide-parties-afterglow",
-      "publishedAt": "2026-11-25T18:00:00.000Z",
-      "firstSeen": "2026-11-26T08:31:26.663Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268815_Peptide_Party_JCalifano_0019.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Health",
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "The “Afterglow Peptide Field Guide” also described what each sample does, dosing recommendations, and potential side effects. A man, staring into his bag of Afterglow samples, was mostly interested in weight loss but scared about the safety of gray market products. If I were peptide curious, the Afterglow launch party was a pretty awful way to learn anything about these substances.",
-        "keywords": [
-          "peptide curious",
-          "gray market",
-          "side effects",
-          "weight loss"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "6359c2ce0900",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
-      "excerpt": "In an announcement on Wednesday, the FCC says it authorized SpaceX to deploy up to 1 million AI chip-equipped satellites as part of the Elon Musk-owned company's \"Starmind\" initiative.",
-      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
-      "publishedAt": "2026-11-25T17:44:51.000Z",
-      "firstSeen": "2026-11-26T08:30:26.663Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2269580650.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "SpaceX aims to power AI capabilities here on Earth with its ‘Starmind’ constellation. The FCC also deferred SpaceX’s request to dispose of satellites located above 600km in space “graveyard” orbits, rather than having them burn up in the Earth’s atmosphere, saying the company hasn’t provided “sufficient information” about its disposal process plans.",
-        "keywords": [
-          "SpaceX aims",
-          "satellites",
-          "FCC",
-          "space"
-        ],
-        "by": "extract"
-      },
       "contentHtml": null
     },
     {
@@ -1024,11 +1683,6 @@
       "firstSeen": "2026-11-26T08:41:21.139Z",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/261124_RichlandParishDataCenter.jpg?resize=1200,600",
       "extractionStatus": "full",
-      "tags": [
-        "AI",
-        "HMI / Mobility",
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "Sure, it’s technically possible to meet the world’s rising electricity demand with other power sources, including renewables like wind and solar supported by batteries. Just one example: Plans for the Meta data center in Louisiana that David focused on in his story have expanded, and its power needs have too.",
         "keywords": [
@@ -1039,33 +1693,11 @@
         ],
         "by": "extract"
       },
-      "contentHtml": null
-    },
-    {
-      "id": "411f8c9c95f3",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "living heather roof and poplar bark cladding anchor timber office in dutch heathland",
-      "excerpt": "on the tafelberg heath in blaricum, the netherlands, studio massimo models a timber office on the regional plaggenhut, a traditional sod-roofed dwelling integrated into the terrain.",
-      "url": "https://www.designboom.com/architecture/living-heather-roof-poplar-bark-cladding-timber-office-dutch-heathland-studio-massimo/",
-      "publishedAt": "2026-11-25T16:55:00.000Z",
-      "firstSeen": "2026-11-26T08:37:32.848Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/tafelberg-heath-blaricum-office-nature-timber-studio-massimo-designboom-700-500x400-22b08q85r716.jpg",
-      "extractionStatus": "full",
       "tags": [
-        "Product"
+        "AI",
+        "HMI / Mobility",
+        "Tech Industry"
       ],
-      "digest": {
-        "brief": "Situated on the Tafelberg heath in Blaricum, east of Amsterdam, Office by Nature, Tafelberg is a 1,120-sqm timber office designed by Studio Massimo. The east and west gables are clad in untreated poplar bark shingles, a timber-industry byproduct that weathers from umber to silver-gray, while six-meter-wide sliding glass doors on the south facade open the workspaces directly onto the heath.",
-        "keywords": [
-          "timber office",
-          "poplar bark",
-          "south facade"
-        ],
-        "by": "extract"
-      },
       "contentHtml": null
     },
     {
@@ -1097,62 +1729,6 @@
       "contentHtml": null
     },
     {
-      "id": "baf3d3e6b1aa",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "the search for a home without a fixed address, from prefabricated houses to floating dwellings",
-      "excerpt": "from postwar demountable houses to floating neighborhoods, architects have repeatedly questioned the assumption that buildings must remain tied to one site.",
-      "url": "https://www.designboom.com/architecture/search-home-fixed-address-prefabricated-houses-floating-dwellings/",
-      "publishedAt": "2026-11-25T11:50:54.000Z",
-      "firstSeen": "2026-11-25T13:46:25.008Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/search-home-fixed-address-prefabricated-houses-floating-dwellings-designboom-700-500x400-22b08q85r938.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "For decades, architects have imagined homes that can be packed up, transported, and assembled somewhere new, designing alternatives to the idea that housing must be tied to a permanent address. From prefabricated dwellings designed for mass production to experimental houses conceived for remote landscapes, these projects explore how architecture might exist beyond the limits of a fixed site.",
-        "keywords": [
-          "mass production",
-          "prefabricated",
-          "houses",
-          "dwellings"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "a7a2b8a55068",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "nick cave and india pavilion win the visitors’ lions at the venice art biennale 2026",
-      "excerpt": "following the resignation of the international jury, this year’s biennale gives audiences a direct role in deciding which artists and national presentations receive recognition.",
-      "url": "https://www.designboom.com/art/nick-cave-india-pavilion-visitors-lions-2026-venice-art-biennale/",
-      "publishedAt": "2026-11-25T11:16:36.000Z",
-      "firstSeen": "2026-11-25T13:45:25.008Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/nick-cave-india-pavilion-visitors-lions-2026-venice-art-biennale-designboom-700-500x400-22b08q85r074.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "The public has selected its favorites at the 61st Venice Art Biennale, with American artist Nick Cave receiving the Visitors’ Lion for Best Participant and India winning Best National Participation for its pavilion, Geographies of Distance: Remembering Home. Announced by La Biennale di Venezia on November 25th, 2026, the awards reflect the preferences of visitors to In Minor Keys, curated by the late Koyo Kouoh.",
-        "keywords": [
-          "Nick Cave",
-          "Art Biennale",
-          "National Participation",
-          "India winning"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "0d990107490e",
       "sourceId": "aeon",
       "sourceName": "Aeon / Psyche",
@@ -1175,34 +1751,6 @@
       "tags": [
         "Health",
         "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "552ea75135cf",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "human point frames architecture as an unfolding timeline",
-      "excerpt": "in conversation with designboom, human point founder loukas fotopoulos reveals how the practice choreographs architecture, development and construction around human movement, connection and experience.",
-      "url": "https://www.designboom.com/architecture/human-point-architecture/",
-      "publishedAt": "2026-11-25T11:00:50.000Z",
-      "firstSeen": "2026-11-25T13:44:25.008Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/whispering-elia-mykonos_human-point_-designboom_700-500x400-22b08q85r800.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Loukas Fotopoulos established his own architectural practice in 1996, continuing a family tradition of architecture. In 2008, his practice evolved into Human Point, expanding its approach beyond architecture. Across residential, hospitality, and urban scales, the studio brings architecture, strategic development consulting, and immersive visual communication under one roof.",
-        "keywords": [
-          "architectural practice",
-          "Loukas Fotopoulos",
-          "architecture",
-          "Human"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
       ],
       "contentHtml": null
     },
@@ -1259,34 +1807,6 @@
       },
       "tags": [
         "Health"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "701a8ccc0dc8",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "designboom listens: yuri suzuki explores the many dimensions of sound",
-      "excerpt": "from childhood memories of watching mtv on betamax to punk records that clear his head, the london- and margate-based artist and designer shares the music behind a practice that turns listening into a physical and collective experience.",
-      "url": "https://www.designboom.com/art/designboom-listens-yuri-suzuki-many-dimensions-sound-interview/",
-      "publishedAt": "2026-11-25T10:25:53.000Z",
-      "firstSeen": "2026-11-25T10:30:55.890Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/designboom-listens-yuri-suzuki-many-dimensions-sound-interview-designboom-700-500x400-22b08q85r175.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Yuri Suzuki uses sound as a material for shaping spaces, creating encounters, and bringing people together. Asked which track best captures his practice, the Tokyo-born artist and designer, based between London and Margate, chooses Cornelius’ The Micro Disneycal World Tour, describing it as ‘a wonderful mixture of different musical elements, almost like a melting pot of sounds and ideas.’",
-        "keywords": [
-          "Yuri Suzuki",
-          "wonderful mixture",
-          "Micro Disneycal",
-          "melting pot"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
       ],
       "contentHtml": null
     },
@@ -1368,34 +1888,6 @@
           "design courses",
           "open letter",
           "staff"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "07214b82469d",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "kanal-centre pompidou opens in brussels inside restored 1930s citroën garage",
-      "excerpt": "the new museum combines contemporary art, architecture, performance and more than 20,000 square meters of free public space, proposing a more open relationship between cultural institutions and the city.",
-      "url": "https://www.designboom.com/architecture/kanal-centre-pompidou-brussels-restored-1930s-citroen-garage-em2n-noaarchitecten-sergison-bates/",
-      "publishedAt": "2026-11-25T09:20:19.000Z",
-      "firstSeen": "2026-11-25T10:29:55.890Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/kanal-centre-pompidou-brussels-restored-1930s-citroen-garage-em2n-noaarchitecten-sergison-bates-designboom-700-500x400-22b08q85r450.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Designed by Atelier Kanal, a consortium comprising EM2N, noAarchitecten and Sergison Bates architects, Kanal opens in Brussels on November 28th, 2026, transforming a former Citroën garage into a 40,000-square-meter museum and public cultural center (find designboom’s previous coverage here). A basement gallery, reaching seven meters in height, adds another dimension to the exhibition program.",
-        "keywords": [
-          "former Citro",
-          "Atelier Kanal",
-          "another dimension",
-          "Brussels"
         ],
         "by": "extract"
       },
@@ -1514,34 +2006,6 @@
       "tags": [
         "AI",
         "UX"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "28158813a338",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "designboom’s guide to miami art week 2026: what to see in and out of the fairs",
-      "excerpt": "explore must-see highlights of art basel miami beach, design miami, and other standout shows and events across the city. The post designboom’s guide to miami art week 2026: what to see in and out of the fairs appeared first on designboom | architecture & design magazine .",
-      "url": "https://www.designboom.com/art/designboom-guide-design-miami-art-basel-2026/",
-      "publishedAt": "2026-11-25T07:15:40.000Z",
-      "firstSeen": "2026-11-25T10:28:55.890Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/miami-art-week-basel-2026-designboom-700-500x400-22b08q85r320.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Miami Art Week returns from November 30th to December 6th, 2026, bringing a packed program of art fairs, outdoor installations, exhibitions, and unexpected encounters across Miami and Miami Beach. From established fairs to temporary interventions along the beachfront, here’s designboom’s guide to what to see across Miami Art Week 2026.",
-        "keywords": [
-          "Miami Art",
-          "fairs",
-          "Week",
-          "Beach"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
       ],
       "contentHtml": null
     },
@@ -1958,34 +2422,6 @@
       "contentHtml": null
     },
     {
-      "id": "68ebcf074cf0",
-      "sourceId": "core77",
-      "sourceName": "Core77",
-      "feedUrl": "http://feeds.feedburner.com/core77/blog",
-      "mode": "pulse",
-      "title": "Misenware: Microwaveable Metal Food Storage Containers",
-      "excerpt": "There's a couple rules for using microwaves that we all know. One is that you don't put metal in it, or it will spark. Two is that you don't put a glass container directly from the freezer into the microwave; the rapid heat change can cause the glass to crack.",
-      "url": "https://www.core77.com/posts/145966/Misenware-Microwaveable-Metal-Food-Storage-Containers",
-      "publishedAt": null,
-      "firstSeen": "2026-11-24T13:24:57.906Z",
-      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1857701_lead_400_145966_.png",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Two is that you don't put a glass container directly from the freezer into the microwave; the rapid heat change can cause the glass to crack. Brooklyn-based kitchenware company Misen has developed a product that bucks those rules: A microwaveable Misenware stainless steel food storage container. Unlike glass, the steel won't crack if you go straight from freezer to nuking.",
-        "keywords": [
-          "storage",
-          "glass",
-          "microwaveable",
-          "Misenware"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "5ece1567bced",
       "sourceId": "mittr",
       "sourceName": "MIT Technology Review",
@@ -2161,81 +2597,6 @@
       "thumbnail": null,
       "extractionStatus": "failed",
       "tags": [
-        "UX"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "74d61d2b5e4a",
-      "sourceId": "sidebar",
-      "sourceName": "Sidebar",
-      "feedUrl": "https://sidebar.io/feed.xml",
-      "mode": "pulse",
-      "title": "On drawing icons",
-      "excerpt": "How Pierre designed a new icon library across three sizes and built a Figma-to-React pipeline around canonical SVGs. Pierre has an entirely new icon library today after months of design and development work.",
-      "url": "https://pierre.computer/writing/on-drawing-icons",
-      "publishedAt": "2026-11-24T07:15:28.000Z",
-      "firstSeen": "2026-11-24T13:28:09.907Z",
-      "thumbnail": "https://pierre.computer/writing/on-drawing-icons/og-icons.png",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "The existing workflow is simple: design in Figma, export as SVGs, then process with npm scripts to optimize and convert to React components. The benefits compound quickly for these related icons—squircle, circle, comment, file, and folder combine to account for 65 other components each with nine variants and three sizes for almost 600 individual icons.",
-        "keywords": [
-          "React components",
-          "individual icons",
-          "three sizes",
-          "variants"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "UX"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "e573f4115502",
-      "sourceId": "sidebar",
-      "sourceName": "Sidebar",
-      "feedUrl": "https://sidebar.io/feed.xml",
-      "mode": "pulse",
-      "title": "UI feed",
-      "excerpt": "A feed of live interface components. Scroll through and try each one.",
-      "url": "https://ui-feed.dev/",
-      "publishedAt": "2026-11-24T07:14:53.000Z",
-      "firstSeen": "2026-11-24T13:27:09.907Z",
-      "thumbnail": "https://ui-feed.dev/og.jpg",
-      "extractionStatus": "no-digest",
-      "tags": [
-        "UX"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "d1a2bd34625b",
-      "sourceId": "sidebar",
-      "sourceName": "Sidebar",
-      "feedUrl": "https://sidebar.io/feed.xml",
-      "mode": "pulse",
-      "title": "Strategic building blocks",
-      "excerpt": "Identify the critical move and learn to play it reliably. Last week ( Enter the Game ) I described where to approach product strategy situations: by exploring three kinds of structure and the relationships between them.",
-      "url": "https://www.davesresearch.com/strategic-building-blocks/",
-      "publishedAt": "2026-11-24T07:14:23.000Z",
-      "firstSeen": "2026-11-24T13:26:09.907Z",
-      "thumbnail": "https://storage.ghost.io/c/d1/ba/d1baee41-d47e-4387-b3f4-1436f65958e0/content/images/size/w1200/2026/11/I.2.6_playing-field-timescales_middle-1.png",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "How this work is undertaken and who is involved is no longer stable, and it’s easy for teams to make the mistake of over-emphasizing moves at this level of scale, building much more, simply because it is possible, overlooking the build towards slower-scale moves and considered, long-term play. The first five moves in this scale are classic product-strategic building blocks.",
-        "keywords": [
-          "building blocks",
-          "strategic",
-          "moves",
-          "level"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product",
         "UX"
       ],
       "contentHtml": null
@@ -2465,146 +2826,6 @@
       "contentHtml": null
     },
     {
-      "id": "7eadb8eb6d82",
-      "sourceId": "dezeen",
-      "sourceName": "Dezeen",
-      "feedUrl": "https://www.dezeen.com/design/feed/",
-      "mode": "inspiration",
-      "title": "IKEA's Color of the Year \"unexpectedly fits in\"",
-      "excerpt": "Swedish retailer IKEA has unveiled its prediction for 2027's Color of the Year – a reddish purple shade called Wild Fig. The post IKEA's Color of the Year \"unexpectedly fits in\" appeared first on Dezeen .",
-      "url": "https://www.dezeen.com/2026/11/23/ikeas-color-of-the-year-2027-wild-fig/",
-      "publishedAt": "2026-11-23T10:45:00.000Z",
-      "firstSeen": "2026-11-24T13:10:43.006Z",
-      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/04/ikea-ps-2026-lamp-lex-pott_dezeen_2364_col_2.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Swedish retailer IKEA has unveiled its prediction for 2027's Color of the Year – a dark, reddish-purple shade called Wild Fig. Although revealed by IKEA US as part of its 2027 Style Guide, keen eyes would've already seen the shade pop up earlier this year in the sell-out floor lamp created by Dutch designer Lex Pott for IKEA's PS Collection.",
-        "keywords": [
-          "Wild Fig",
-          "IKEA",
-          "Style Guide",
-          "Color"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "bbd7d84154ce",
-      "sourceId": "sidebar",
-      "sourceName": "Sidebar",
-      "feedUrl": "https://sidebar.io/feed.xml",
-      "mode": "pulse",
-      "title": "WordPress forms that look clean before you style them, up to 50% off",
-      "excerpt": "IvyForms is the Best WordPress Form Builder. Create surveys, calculations, and custom contact forms with no code needed and with ease.",
-      "url": "https://bit.ly/side-ivy1",
-      "publishedAt": "2026-11-23T09:04:00.000Z",
-      "firstSeen": "2026-11-24T13:25:09.907Z",
-      "thumbnail": null,
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Collect, organize, and manage information with forms that fit the way your business works. Manage forms, submissions, and workflows directly inside WordPress instead of juggling disconnected tools and spreadsheets. With IvyForms WordPress form builder plugin, you will get the most advanced features that will help you to easily create stunning custom forms on your website.",
-        "keywords": [
-          "custom forms",
-          "WordPress",
-          "IvyForms",
-          "information"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "UX"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "ac69c46313cd",
-      "sourceId": "sidebar",
-      "sourceName": "Sidebar",
-      "feedUrl": "https://sidebar.io/feed.xml",
-      "mode": "pulse",
-      "title": "The era of personal software",
-      "excerpt": "The effort to create an app that suits your exact needs will be so low that it will eventually replace most traditional software.",
-      "url": "https://jakub.kr/writing/the-era-of-personal-software",
-      "publishedAt": "2026-11-23T09:01:13.000Z",
-      "firstSeen": "2026-11-24T13:24:09.907Z",
-      "thumbnail": "https://oiszjiwtfc65cwa2.public.blob.vercel-storage.com/og-images/the-era-of-personal-software.png",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Something that keeps coming up over and over again, pretty much since LLMs started getting good at building things, is the idea of personal software. As I mentioned earlier, I wanted to use PlanetScale (opens in a new tab) for the database, specifically the $5 Postgres, since that would be a great fit for an app like this.",
-        "keywords": [
-          "personal software",
-          "wanted",
-          "app",
-          "tab"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "UX"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "d14315925638",
-      "sourceId": "dezeen",
-      "sourceName": "Dezeen",
-      "feedUrl": "https://www.dezeen.com/design/feed/",
-      "mode": "inspiration",
-      "title": "Sturdy backs J Cole’s set with neoclassical landmark from rapper’s hometown",
-      "excerpt": "A replica of a historic town hall in Fayetteville, North Carolina, takes centre stage at J Cole’s world tour set by Sturdy. The post Sturdy backs J Cole’s set with neoclassical landmark from rapper’s hometown appeared first on Dezeen .",
-      "url": "https://www.dezeen.com/2026/11/23/sturdy-j-cole-the-fall-off-world-tour-set-design/",
-      "publishedAt": "2026-11-23T09:00:00.000Z",
-      "firstSeen": "2026-11-24T13:09:43.006Z",
-      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/sturdy-j-cole-the-fall-off-tour-set-sq_dezeen_2364_col_0-1024x1024.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "A nine-metre-tall replica of a town hall in Fayetteville, North Carolina, takes centre stage at American rapper J Cole’s world tour set, which has been created by production company Sturdy. The set for The Fall Off Tour was designed by Los Angeles-based Sturdy to realise J Cole’s ambition to take his hometown, Fayetteville – or \"the ville\"– \"to the world\".",
-        "keywords": [
-          "centre stage",
-          "Cole",
-          "Sturdy",
-          "set"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "896d80299441",
-      "sourceId": "dezeen",
-      "sourceName": "Dezeen",
-      "feedUrl": "https://www.dezeen.com/design/feed/",
-      "mode": "inspiration",
-      "title": "\"Sacred\" archaeological finds become raw materials for design in Ex Situ exhibition",
-      "excerpt": "New objects made from mammoth bone, leather from the middle ages and stumps from a road built under Roman Emperor Hadrian feature in the Ex Situ project, set to be exhibited soon in The Hague.",
-      "url": "https://www.dezeen.com/2026/11/23/archaeology-design-ex-situ-exhibition/",
-      "publishedAt": "2026-11-23T06:00:00.000Z",
-      "firstSeen": "2026-11-24T13:08:43.006Z",
-      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/ex-situ-matter-in-translation-exhibition-design_dezeen_2364_sq2-1024x1024.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "New objects made from mammoth bone, leather from the middle ages and stumps from a road built under Roman Emperor Hadrian feature in the Ex Situ project, set to be exhibited soon in The Hague. \"The material that you see here is the lowest of the lowest quality,\" said Isarin at a preview of Ex Situ at this year's Dutch Design Week.",
-        "keywords": [
-          "Dutch Design",
-          "mammoth bone",
-          "Situ",
-          "middle ages"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "af6dd16b75ad",
       "sourceId": "marginalian",
       "sourceName": "The Marginalian",
@@ -2738,62 +2959,6 @@
       "contentHtml": null
     },
     {
-      "id": "3e4c27a8b1e3",
-      "sourceId": "dezeen",
-      "sourceName": "Dezeen",
-      "feedUrl": "https://www.dezeen.com/design/feed/",
-      "mode": "inspiration",
-      "title": "Domes depict constellations of missiles in the night sky at Sharjah Architecture Triennial",
-      "excerpt": "Architect Mohamad Nahleh and architecture professor Ozayr Saloojee created three domed structures at this year's Sharjah Architecture Triennial, which reimagine constellations by mapping military objects in the night sky.",
-      "url": "https://www.dezeen.com/2026/11/22/after-night-there-is-nothing-sharjah-architecture-triennial/",
-      "publishedAt": "2026-11-22T11:00:00.000Z",
-      "firstSeen": "2026-11-24T13:07:43.006Z",
-      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/after-night-there-is-nothing-sharjah-architecture-triennial-sq_dezeen_2364_col_0-1024x1024.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Architect Mohamad Nahleh and architecture professor Ozayr Saloojee have created three domed structures that reimagine constellations by mapping military objects in the night sky, which were displayed at this year's Sharjah Architecture Triennial. Vinyl lines the inner curves, where Nahleh and Saloojee designed creature-like constellations based on man-made military objects in the sky.",
-        "keywords": [
-          "night sky",
-          "Sharjah Architecture",
-          "creature-like constellations",
-          "military objects"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "701ea35fbb6b",
-      "sourceId": "dezeen",
-      "sourceName": "Dezeen",
-      "feedUrl": "https://www.dezeen.com/design/feed/",
-      "mode": "inspiration",
-      "title": "Eight furniture designs informed by life in New York City",
-      "excerpt": "Furniture designers contend with their personal experiences living in New York City through the objects in our most recent roundup. The post Eight furniture designs informed by life in New York City appeared first on Dezeen .",
-      "url": "https://www.dezeen.com/2026/11/22/eight-furniture-designs-informed-by-life-in-new-york-city/",
-      "publishedAt": "2026-11-22T10:00:00.000Z",
-      "firstSeen": "2026-11-24T13:06:43.006Z",
-      "thumbnail": "https://static-2026.dezeen.com/uploads/2023/11/hero2-tian-and-teague-discomfort-new-york-furniture_dezeen_2364_col_5-1704x2130-1-411x411.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Furniture designers contend with their personal experiences living in New York City through the objects in our most recent roundup. The furniture and objects below explore aspects of moving to or living in New York City, whether it's the difficulty of maintaining a career and community, the dissonance of missing home, the architecture, or dead, smooshed rats on the daily commute.",
-        "keywords": [
-          "York City",
-          "daily commute",
-          "Furniture",
-          "aspects"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "00fdd4d79c0c",
       "sourceId": "marginalian",
       "sourceName": "The Marginalian",
@@ -2898,35 +3063,6 @@
       "contentHtml": null
     },
     {
-      "id": "01449c61c8b8",
-      "sourceId": "mittr",
-      "sourceName": "MIT Technology Review",
-      "feedUrl": "https://www.technologyreview.com/feed/",
-      "mode": "research",
-      "title": "The most misunderstood graph in AI just got a major update",
-      "excerpt": "METR’s latest report finds that AI models are still improving at a rapid clip, but they show some weaknesses in tasks that require judgment.",
-      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-      "publishedAt": "2026-11-20T18:15:15.000Z",
-      "firstSeen": "2026-11-24T13:27:10.339Z",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/metr2a.jpg?resize=1200,600",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding. The updated plot adds more tasks—some that are estimated to take humans far longer than those in the original suite, and others that are more open-ended.",
-        "keywords": [
-          "original suite",
-          "require judgment",
-          "tasks",
-          "METR"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "f32627e3c45a",
       "sourceId": "nngroup",
       "sourceName": "NN/g",
@@ -3008,33 +3144,6 @@
       },
       "tags": [
         "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "956a058c400b",
-      "sourceId": "mittr",
-      "sourceName": "MIT Technology Review",
-      "feedUrl": "https://www.technologyreview.com/feed/",
-      "mode": "research",
-      "title": "The Download: inside the quest to make our minds immortal",
-      "excerpt": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology.",
-      "url": "https://www.technologyreview.com/2026/11/20/1149371/the-download-quest-to-make-minds-immortal/",
-      "publishedAt": "2026-11-20T13:10:00.000Z",
-      "firstSeen": "2026-11-24T13:26:10.339Z",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/260524_TechnologyReview_EnhancedGames_276.jpg?fit=2560,1706",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "To preserve our sense of self, some scientists are working on ways to keep our brains going—even beyond death. In the latest MIT Technology Review Roundtables event, senior editor for biomedicine Antonio Regalado joined science editor Mary Beth Griggs to examine these ideas. Immortality can be a hard sell: One company, Nectome, wants to preserve brains within 12 minutes of medically assisted death.",
-        "keywords": [
-          "preserve",
-          "Technology"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "AI",
-        "Tech Industry"
       ],
       "contentHtml": null
     },
@@ -3533,34 +3642,6 @@
       "contentHtml": null
     },
     {
-      "id": "34893789ad9d",
-      "sourceId": "aeon",
-      "sourceName": "Aeon / Psyche",
-      "feedUrl": "https://aeon.co/feed.rss",
-      "mode": "deep",
-      "title": "The horse made the state",
-      "excerpt": "Civilisation wasn’t made possible by grain, but by transportation – and the conquest it enabled, from the steppe to the sea - by Lhamsuren Munkh-Erdene Read on Aeon.",
-      "url": "https://aeon.co/essays/the-origins-of-the-state-are-not-agrarian-but-pastoralist",
-      "publishedAt": "2026-11-16T11:00:00.000Z",
-      "firstSeen": "2026-11-24T13:03:13.213Z",
-      "thumbnail": "https://images.aeonmedia.co/images/60bea515-b55f-48e9-9e81-4fe8bf8afde7/essay-uncavaliersurunepetiteeminencesurlagrandeplacedumarche_cadrageplusserre_a70091x.jpg?width=1200&quality=75&format=auto",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Ultimately, building a state does not require grain, but it does demand extrahuman transportation. In doing so, Lattimore abandoned the traditional conquest theory – a framework he had previously espoused – which held that both China’s early states and most of its subsequent empires were forged by Eurasian nomadic conquerors rather than indigenous dynamics.",
-        "keywords": [
-          "conquest theory",
-          "extrahuman transportation",
-          "Eurasian nomadic",
-          "subsequent empires"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "2c4436e42a64",
       "sourceId": "aeon",
       "sourceName": "Aeon / Psyche",
@@ -3788,34 +3869,6 @@
       "contentHtml": null
     },
     {
-      "id": "082436a7b9cd",
-      "sourceId": "aeon",
-      "sourceName": "Aeon / Psyche",
-      "feedUrl": "https://aeon.co/feed.rss",
-      "mode": "deep",
-      "title": "Fugitive imagination",
-      "excerpt": "Wherever people are confined, displaced, silenced or made disposable, fugitive forms of knowledge and imagination emerge - by Shahram Khosravi Read on Aeon.",
-      "url": "https://aeon.co/essays/those-forced-to-cross-borders-are-imagining-a-radical-new-world",
-      "publishedAt": "2026-11-13T11:00:00.000Z",
-      "firstSeen": "2026-11-24T13:02:13.213Z",
-      "thumbnail": "https://images.aeonmedia.co/images/250df91b-cb37-49ba-b1b1-4c14f75bb40e/essay-panos_00206717.jpg?width=1200&quality=75&format=auto",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "The prison became an unlikely site of knowledge-production: not simply the sharing of survival strategies but the enactment of an imagination that paid no heed to prison walls or state borders. Palestinian resistance is sustained by a fugitive imagination of freedom beyond colonial domination. What the Taliban fear is not women’s education but the fugitive imagination it cultivates.",
-        "keywords": [
-          "fugitive imagination",
-          "state borders",
-          "freedom beyond",
-          "Taliban fear"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "d4bab599791d",
       "sourceId": "aeon",
       "sourceName": "Aeon / Psyche",
@@ -3923,62 +3976,6 @@
       },
       "tags": [
         "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "586d57b87959",
-      "sourceId": "aeon",
-      "sourceName": "Aeon / Psyche",
-      "feedUrl": "https://psyche.co/feed.rss",
-      "mode": "deep",
-      "title": "Shunning people who ‘look homeless’ is an aesthetic injustice",
-      "excerpt": "Society owes unhoused people access to haircuts, showers and clean clothes, not as charity, but as a matter of justice - by Giacomo Floris Read on Psyche.",
-      "url": "https://psyche.co/ideas/shunning-people-who-look-homeless-is-an-aesthetic-injustice",
-      "publishedAt": "2026-11-12T11:00:00.000Z",
-      "firstSeen": "2026-11-24T13:03:19.139Z",
-      "thumbnail": "https://images.aeonmedia.co/images/9418b37e-751a-49b7-98c6-6090f2472c77/sz-final-2023-05-03t223620z_724465317_rc20r0aw7wfg_rtrmadp_3_usa-dailylife.jpg?top=287&left=2&cropWidth=2800&cropHeight=1575&width=1200&quality=75&format=auto",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Unhoused individuals not only lack the resources necessary to satisfy their basic needs, but they are also excluded from the rest of society. Aesthetic injustice against unhoused people is sustained and compounded by the fact that they are deprived of their capacity for self-presentation, that is, the ability to exercise reasonable control over how they present themselves to others.",
-        "keywords": [
-          "Unhoused individuals",
-          "Aesthetic injustice",
-          "resources necessary",
-          "others"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Health"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "c562f63462bf",
-      "sourceId": "aeon",
-      "sourceName": "Aeon / Psyche",
-      "feedUrl": "https://psyche.co/feed.rss",
-      "mode": "deep",
-      "title": "Eye on the mark",
-      "excerpt": "Bob Nygaard, a retired New York policeman, exposes fortune-tellers who profit from turning ordinary human longing into vulnerability. What makes him so good at it? - by Shayla Love Read on Psyche.",
-      "url": "https://psyche.co/portraits/the-ex-cop-on-a-mission-to-see-fortune-tellers-arrested",
-      "publishedAt": "2026-11-12T11:00:00.000Z",
-      "firstSeen": "2026-11-24T13:02:19.139Z",
-      "thumbnail": "https://images.aeonmedia.co/images/185da0c4-a9b1-4d6e-848f-80b475a73fa9/psychea-w1.jpg?top=130&left=0&cropWidth=2496&cropHeight=1404&width=1200&quality=75&format=auto",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "In 2008, Bob Nygaard sat on a stool at the Neighborhood Sports Bar and Grill in Boca Raton, Florida, just before 5 pm. When the doctor asked Nygaard to help her, he asked if the psychic’s last name was Marks. Nygaard had one stipulation for taking the doctor’s case: she would pursue an arrest no matter how much money the psychic offered her to settle.",
-        "keywords": [
-          "Nygaard",
-          "psychic",
-          "Florida",
-          "asked"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Health"
       ],
       "contentHtml": null
     },
