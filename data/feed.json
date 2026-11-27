@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T08:53:05.153Z",
+  "updated": "2026-11-27T21:31:32.743Z",
   "modes": [
     {
       "id": "pulse",
@@ -472,6 +472,721 @@
   "public": true,
   "items": [
     {
+      "id": "bd2f03afc4ed",
+      "sourceId": "core77",
+      "sourceName": "Core77",
+      "feedUrl": "http://feeds.feedburner.com/core77/blog",
+      "mode": "pulse",
+      "title": "Core77 Weekly Roundup (11-23-26 to 11-27-26)",
+      "excerpt": "Here's what we looked at this week: Old-school adjustable-height candleholders , foolishly referred to as \"courting candles.\" An industrial designer with synesthesia reimagines the clock.",
+      "url": "https://www.core77.com/posts/145988/Core77-Weekly-Roundup-11-23-26-to-11-27-26",
+      "publishedAt": null,
+      "firstSeen": "2026-11-27T21:29:15.034Z",
+      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1857936_lead_400_145988_.jpg",
+      "extractionStatus": "no-digest",
+      "tags": [
+        "Product"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "54cf5abb09f0",
+      "sourceId": "core77",
+      "sourceName": "Core77",
+      "feedUrl": "http://feeds.feedburner.com/core77/blog",
+      "mode": "pulse",
+      "title": "Researchers Figure Out How to Turn Your Arm Into a Smartwatch Trackpad",
+      "excerpt": "Smartwatches are a convenient way to display small pieces of information. However, their tiny screens make for lousy input devices.",
+      "url": "https://www.core77.com/posts/146018/Researchers-Figure-Out-How-to-Turn-Your-Arm-Into-a-Smartwatch-Trackpad",
+      "publishedAt": null,
+      "firstSeen": "2026-11-27T21:28:15.034Z",
+      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1858326_lead_400_146018_.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Smartwatches are a convenient way to display small pieces of information. \"Smartwatch screens are too small for the touch interactions people use every day on phones and laptops,\" says Chenhan Xu, an Assistant Professor of Computer Science at North Carolina State University, \"such as two-finger scrolling, pinch-to-zoom, or pressing harder to trigger a different command.\"",
+        "keywords": [
+          "Smartwatch"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "7c1769739d07",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The absolute best Black Friday deals we’ve found (so far)",
+      "excerpt": "This year’s Black Friday deals have launched in waves over the past several weeks, but now the floodgates have officially opened. Posts from this topic will be added to your daily email digest and your homepage feed.",
+      "url": "https://www.theverge.com/gadgets/1039190/best-black-friday-2026-deals-tech-gadgets-gift-ideas",
+      "publishedAt": "2026-11-27T21:09:43.000Z",
+      "firstSeen": "2026-11-27T21:29:13.861Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268838_BF_CM_BLACK_FRIDAY_Headers_CVirginia.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "This year’s Black Friday deals have launched in waves over the past several weeks, but now the floodgates have officially opened. As usual, we sorted through thousands of deals to find the ones truly worth sharing, with an eye for the products and services we’ve tested here at The Verge. With prices up across multiple categories due to RAMageddon, some deals may not seem as big as in prior years.",
+        "keywords": [
+          "deals",
+          "several",
+          "Black",
+          "Friday"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "17214fd653db",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "My favorite MPC beat maker is ready for your vibe-coded firmware and effects",
+      "excerpt": "Akai is continuing to open up its various music-making platforms with the MPC Sample 1. Posts from this topic will be added to your daily email digest and your homepage feed.",
+      "url": "https://www.theverge.com/gadgets/1044485/mpc-sample-firmware-sdk",
+      "publishedAt": "2026-11-27T20:48:04.000Z",
+      "firstSeen": "2026-11-27T21:28:13.862Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268415_MPC_Sample_TO_Brien_0006.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "My favorite (and the most affordable) of the MPC samplers has become a popular home for vibe-coded custom firmwares and mods. The latest update adds several new developer features, including support for the new SDK and custom Knob Effects plugins. Plugins added to the appropriate folder on your microSD card are now automatically recognized and will appear at the bottom of the list in the Knob Effects menu.",
+        "keywords": [
+          "Knob Effects",
+          "custom firmwares",
+          "microSD card",
+          "MPC"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "79cb4c669107",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Nothing’s ANC-equipped earbuds are on sale for less than $20 for Black Friday",
+      "excerpt": "If our sub-$30 Black Friday roundup has you hungry for more great gadgets at low prices, you can currently grab the Nothing CMF Buds 2A in black starting at $17.",
+      "url": "https://www.theverge.com/gadgets/1041717/nothing-cmf-buds-2a-earbuds-black-friday-2026-deal-sale",
+      "publishedAt": "2026-11-27T20:30:00.000Z",
+      "firstSeen": "2026-11-27T21:27:13.862Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/CMF-Buds-2a-in-Dark-Grey.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "If our sub-$30 Black Friday roundup has you hungry for more great gadgets at low prices, you can currently grab the Nothing CMF Buds 2A in black starting at $17. 89 on Amazon for Black Friday, which is about $11 less than the MSRP and the lowest price we’ve seen. The wireless earbuds are discounted in all three colors; however, the light gray and orange sets are slightly more expensive at $19.",
+        "keywords": [
+          "Black Friday",
+          "earbuds",
+          "Buds",
+          "Nothing"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "6499d82ed9e6",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Apple’s latest AirTags have dropped to just $18 a pop for Black Friday",
+      "excerpt": "If you’re tired of constantly scrounging around for your lost belongings, Apple’s second-gen AirTags are on sale for an all-time low of $18 at Amazon, Walmart, and Best Buy.",
+      "url": "https://www.theverge.com/gadgets/1042841/apple-airtag-2-black-friday-deal-2026-sale",
+      "publishedAt": "2026-11-27T20:30:00.000Z",
+      "firstSeen": "2026-11-27T21:26:13.863Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/268280_AirTags_2_AKrales_0003.webp?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "If you’re tired of constantly scrounging around for your lost belongings, Apple’s second-gen AirTags are on sale for an all-time low of $18 at Amazon, Walmart, and Best Buy. The handy location trackers have a list price of $29 each, but have been consistently available for around $24 since Amazon Prime Day in late June.",
+        "keywords": [
+          "AirTags",
+          "Apple"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "05eeaa9c3fd8",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "pliavo’s portable piano folds 84 keys accordion-style into a compact block",
+      "excerpt": "an accordion-like system of hinges allows musicians to compress an entire seven-octave keyboard into a block just over 6 inches long.",
+      "url": "https://www.designboom.com/technology/pliavo-folding-piano-84-keys-accordion-style-compact-kickstarter/",
+      "publishedAt": "2026-11-27T20:05:45.000Z",
+      "firstSeen": "2026-11-27T21:30:24.584Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/84-key-foldable-piano-PLIAVO-designboom-700-500x400-22b08q85r772.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry",
+        "Product"
+      ],
+      "digest": {
+        "brief": "Denver-based Pliavo introduces its Fold-and-Go Piano, a portable digital instrument whose 84 keys collapse into a compact bundle small enough to carry inside a backpack. While many compact electronic pianos take the form of flexible silicone mats, here the musician plays across a continuous arrangement of rigid keys with three millimeters of vertical travel.",
+        "keywords": [
+          "Pliavo",
+          "keys",
+          "Piano",
+          "compact"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "30f525a2f5e2",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "You might lose your Oura health data if you’re still using an old Android phone",
+      "excerpt": "Oura will be dropping support for Android 11 on December 8th, 2026, and users may not have access to all of their data if they don't upgrade to Android 12 or higher before the deadline.",
+      "url": "https://www.theverge.com/gadgets/1044314/oura-ring-health-data-android-11",
+      "publishedAt": "2026-11-27T19:44:19.000Z",
+      "firstSeen": "2026-11-27T21:25:13.863Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/268600_oura_ring_5_AKrales_0176.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Health",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Oura will be dropping support for Android 11 on December 8th, 2026, and users may not have access to all of their data if they don’t upgrade to Android 12 or higher before the deadline. If you are using an Android device, be sure to update to Android 12 or higher to ensure no loss of data or features. Please note that if you do upgrade your smartphone system later, your historical Oura data will not carry over.",
+        "keywords": [
+          "historical Oura",
+          "Android",
+          "data",
+          "support"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "34515dc04fe5",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The best Black Friday deals on smart home gear",
+      "excerpt": "I’ve spent my post-turkey haze powering through reams of deals on smart home gadgets to find the best discounts on some of my favorite products.",
+      "url": "https://www.theverge.com/gadgets/1043912/best-smart-home-deals-black-friday",
+      "publishedAt": "2026-11-27T19:30:00.000Z",
+      "firstSeen": "2026-11-27T21:24:13.863Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/257805_Govee_Table_Lamp_2_Pro_JTuohy_0005.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry",
+        "Product"
+      ],
+      "digest": {
+        "brief": "Smart home is often one of the best categories to shop around Black Friday, as it’s traditionally when robot vacuums, video doorbells, smart locks, and thermostats see their lowest prices of the year. Roborock’s flagship Saros 20 is under $1,000 for the first time, and Ecobee’s excellent Smart Thermostat Premium has finally dropped under $200 (for Costco members and today only).",
+        "keywords": [
+          "Smart home",
+          "Black",
+          "Friday"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "5648d4b4387f",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Anker’s 100W universal travel charger is down to $60, its lowest price yet",
+      "excerpt": "During Black Friday, the Anker 100W Universal Charger is on sale for $59.99 at Amazon, Best Buy, and Walmart, a $20 discount from its list price.",
+      "url": "https://www.theverge.com/gadgets/1041006/anker-100w-universal-travel-charger-black-friday-deal-sale",
+      "publishedAt": "2026-11-27T18:30:00.000Z",
+      "firstSeen": "2026-11-27T21:23:13.863Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/anker-nano-100w-universal-travel-adapter.png?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "During Black Friday, the Anker 100W Universal Charger is on sale for $59. With four USB ports and support for over 200 countries, you can keep all of your devices charged wherever you end up. Anker’s travel charger supports outlets in over 200 countries, including Type A for the United States, Canada, Japan, and China; Type C for the European Union; and Type G for the UK and Singapore.",
+        "keywords": [
+          "Anker",
+          "Charger",
+          "Type",
+          "ports"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "637be427288c",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Here are the best Black Friday deals you can grab for $30 or less",
+      "excerpt": "What can you get for $30 these days? When it comes to tech, you might be surprised. Even as gadgets get more expensive, $30 can still go a long way, especially on Black Friday.",
+      "url": "https://www.theverge.com/gadgets/1039645/black-friday-best-cheap-tech-deals-under-30-2026",
+      "publishedAt": "2026-11-27T17:30:00.000Z",
+      "firstSeen": "2026-11-27T21:22:13.863Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/268280_AirTags_2_AKrales_0003.webp?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Even as gadgets get more expensive, $30 can still go a long way, especially on Black Friday. For just $8, for instance, TP-Link’s Tapo smart plug will let you control the Christmas tree lights from your phone. Below, we’ve rounded up the best Black Friday deals for $30 or less, from charging accessories and smart home tech to earbuds, streaming subscriptions, games, and more.",
+        "keywords": [
+          "Black Friday",
+          "deals"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "707c11767f9b",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "aluminum composite shell and bamboo interior define lavvu mobile home unit in armenia",
+      "excerpt": "lavvu introduces a transportable modular home that combines automotive-inspired engineering, panoramic glazing and a carefully crafted interior to create a more flexible way of living close to nature.",
+      "url": "https://www.designboom.com/architecture/aluminum-composite-shell-bamboo-interior-lavvu-mobile-home-unit-armenia-re-buro/",
+      "publishedAt": "2026-11-27T17:15:48.000Z",
+      "firstSeen": "2026-11-27T21:29:24.584Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/lavvu-xl-re-buro-armenia-modular-mobile-home-unit-designboom-700-500x400-22b08q85r439.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "HMI / Mobility",
+        "Product"
+      ],
+      "digest": {
+        "brief": "Developed and manufactured in Armenia by Re:Büro, LAVVU XL is a transportable modular dwelling that applies automotive manufacturing principles to residential architecture. At the core of the module is a welded steel frame paired with lightweight internal framing, mineral wool insulation, and an aluminum composite exterior shell.",
+        "keywords": [
+          "aluminum composite",
+          "LAVVU",
+          "shell",
+          "Armenia"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "7318d3e20ca1",
+      "sourceId": "nngroup",
+      "sourceName": "NN/g",
+      "feedUrl": "https://www.nngroup.com/feed/rss/",
+      "mode": "practice",
+      "title": "Usability Testing 101",
+      "excerpt": "Usability testing involves watching people use a design to uncover problems and opportunities. Anyone on a product team can learn this. Usability testing (sometimes called user testing ) is a popular UX-research method.",
+      "url": "https://www.nngroup.com/articles/usability-testing-101/",
+      "publishedAt": "2026-11-27T17:00:00.000Z",
+      "firstSeen": "2026-11-27T21:30:18.118Z",
+      "thumbnail": "https://media.nngroup.com/media/articles/opengraph_images/Usability_Testing_101.png",
+      "extractionStatus": "full",
+      "tags": [
+        "Product",
+        "UX"
+      ],
+      "digest": {
+        "brief": "Summary: Usability testing involves watching people use a design to uncover problems and opportunities. Usability testing is a research method in which researchers observe people attempting a realistic task with one or more user interfaces, to identify usability problems and opportunities for improvement.",
+        "keywords": [
+          "Usability testing",
+          "task",
+          "observe",
+          "problems"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "badc48b15acb",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The best Black Friday deals on AirPods, MacBooks, and other Apple gear",
+      "excerpt": "Black Friday is one of the best times of the year to save some cash on a new pair of AirPods or the latest Apple Watch. After all, the holiday savings can help offset the unfortunate price hikes from earlier this year, when Apple raised the cost of some of its most popular gear.",
+      "url": "https://www.theverge.com/gadgets/1043935/best-black-friday-apple-deals-2026",
+      "publishedAt": "2026-11-27T16:30:37.000Z",
+      "firstSeen": "2026-11-27T21:21:13.863Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268836_MacBook_Pro_touchscreen_OLED_handson_ADiBenedetto_0048.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Black Friday is one of the best times of the year to save some cash on a new pair of AirPods or the latest Apple Watch. Apple’s last-gen earbuds lack active noise cancellation, but they still deliver good, relatively bass-rich sound, even if they don’t quite match the newer AirPods 5. The 14-inch M6-powered MacBook Pro is on sale starting at $1,749 ($250 off) at Amazon and Best Buy, which is a new low price.",
+        "keywords": [
+          "Apple Watch",
+          "MacBook Pro",
+          "noise cancellation",
+          "low price"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "1ca6e8834054",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "You can grab a 12-pack of Zepath’s rechargeable AA batteries for just $24",
+      "excerpt": "If you’re picking up any gifts that require AA batteries, it’s not a bad idea to buy a set you can keep using long after the holidays.",
+      "url": "https://www.theverge.com/gadgets/1043272/zepath-rechargeable-aa-batteries-black-friday-2026-deal-sale",
+      "publishedAt": "2026-11-27T15:30:00.000Z",
+      "firstSeen": "2026-11-27T21:20:13.863Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/usb-aa-sean-hollister-verge-331A1632.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "If you’re picking up any gifts that require AA batteries, it’s not a bad idea to buy a set you can keep using long after the holidays. Thankfully, you can currently get a 12-pack of Zepath’s rechargeable 3,000mWh AAs on Amazon with a charger for $23. My colleague Sean Hollister tested Zepath’s higher-capacity 3,600mWh batteries against competing lithium-ion AAs in April, and he picked them as his top choice.",
+        "keywords": [
+          "batteries",
+          "Zepath",
+          "pack",
+          "rechargeable"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "e0750e6833be",
+      "sourceId": "mittr",
+      "sourceName": "MIT Technology Review",
+      "feedUrl": "https://www.technologyreview.com/feed/",
+      "mode": "research",
+      "title": "The Download: Innovators Under 35 nominations are open, and a bionic window into the mind",
+      "excerpt": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology.",
+      "url": "https://www.technologyreview.com/2026/11/27/1149960/the-download-the-download-innovators-under-35-nominations-bionic-hand/",
+      "publishedAt": "2026-11-27T13:00:00.000Z",
+      "firstSeen": "2026-11-27T21:31:11.697Z",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/02/MITcarscams.jpg?w=840",
+      "extractionStatus": "full",
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Every year, MIT Technology Review honors 35 of the world’s brightest young scientists, entrepreneurs, and inventors in our Innovators Under 35 list. MIT Technology Review identified more than a dozen cases involving high-end vehicles, obtained court records, and spoke to law enforcement, brokers, drivers, and victims in multiple states to reveal how transport fraud is wreaking havoc across the country.",
+        "keywords": [
+          "havoc across",
+          "transport fraud",
+          "MIT Technology",
+          "reveal"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "c7cb49a9f718",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "a review of midcentury kinetic environments: when artists turned entire rooms into moving machines",
+      "excerpt": "in the 1960s, artists began using motors, elastic structures, and pneumatic systems to transform the spaces we inhabit. The post a review of midcentury kinetic environments: when artists turned entire rooms into moving machines appeared first on designboom | architecture & design magazine .",
+      "url": "https://www.designboom.com/art/review-midcentury-kinetic-environments-artist-rooms-moving-machines/",
+      "publishedAt": "2026-11-27T11:50:12.000Z",
+      "firstSeen": "2026-11-27T21:28:24.585Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/midcentury-kinetic-environments-states-motion-designboom-700-500x400-22b08q85r760.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Throughout the 1950s and 1960s, an international network of artists began to explore the possibilities of kinetic art at the scale of architecture. Over the following decade, some of the most ambitious projects in kinetic art would take the form of environments that visitors could physically enter. Schöffer also developed an animated light wall for the neighboring building.",
+        "keywords": [
+          "kinetic art",
+          "environments",
+          "artists",
+          "light"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "45a0522be609",
+      "sourceId": "dezeen",
+      "sourceName": "Dezeen",
+      "feedUrl": "https://www.dezeen.com/design/feed/",
+      "mode": "inspiration",
+      "title": "Meet Kiki Goti, Kelly Wearstler's pick for the most influential designer of the next 20 years",
+      "excerpt": "Next up in our 20/20 project marking 20 years of Dezeen is Greek designer Kiki Goti, who was nominated by Kelly Wearstler for her innovative approach to ornament and artisanship.",
+      "url": "https://www.dezeen.com/2026/11/27/kiki-goti-interview-20x20-kelly-wearstler/",
+      "publishedAt": "2026-11-27T11:15:00.000Z",
+      "firstSeen": "2026-11-27T21:30:19.327Z",
+      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/kiki-goti-interview-20x20-kelly-wearstler_dezeen_2364_sq_126-1024x1024.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Next up in Dezeen's 20x20 project in partnership with Kohler, which marks 20 years of Dezeen, is Greek designer Kiki Goti, who was nominated by Kelly Wearstler for her innovative approach to ornament and artisanship. Goti was nominated as an emerging talent to watch by American designer Wearstler, who praised how Goti “approaches ornament with the precision of an engineer and the instincts of a sculptor”.",
+        "keywords": [
+          "Kiki Goti",
+          "Kelly Wearstler",
+          "designer",
+          "approach"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "61caf37732e3",
+      "sourceId": "aeon",
+      "sourceName": "Aeon / Psyche",
+      "feedUrl": "https://psyche.co/feed.rss",
+      "mode": "deep",
+      "title": "Liminal",
+      "excerpt": "Far from home, injured Ukrainians soldiers learn how to be in their bodies once again, and how to inhabit the world - Directed by Brennan Vance Watch on Psyche.",
+      "url": "https://psyche.co/videos/far-from-home-ukrainian-soldiers-relearn-to-inhabit-their-bodies",
+      "publishedAt": "2026-11-27T11:01:00.000Z",
+      "firstSeen": "2026-11-27T21:30:42.104Z",
+      "thumbnail": "https://images.aeonmedia.co/images/beeadc0e-c11c-4e22-b94b-ba83dcc4ef86/liminal-landscape-1.jpg?top=0&left=0&cropWidth=2560&cropHeight=1440&width=1200&quality=75&format=auto",
+      "extractionStatus": "full",
+      "tags": [
+        "Health"
+      ],
+      "digest": {
+        "brief": "At the Protez Foundation in Oakdale, Minnesota, such patients are fitted with state-of-the-art prosthetics free of charge and are taught how to use their new limbs. For the film, the director Brennan Vance profiled a group of Ukrainian soldiers who, injured on the front lines, came to Minnesota to recover far from the brutal war that had defined their lives for years.",
+        "keywords": [
+          "Protez Foundation",
+          "Ukrainian soldiers"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "16fca699b55e",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "singapore’s artscience museum shows design beyond the human realm",
+      "excerpt": "discover how design goes beyond humans to include animals and ecosystems as active collaborators in this expanded exhibition The post singapore’s artscience museum shows design beyond the human realm appeared first on designboom | architecture & design magazine .",
+      "url": "https://www.designboom.com/design/artscience-museum-singapore-more-than-human-exhibition/",
+      "publishedAt": "2026-11-27T11:00:57.000Z",
+      "firstSeen": "2026-11-27T21:27:24.585Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/artscience-museum-singapore-more-than-human-exhibition-designboom700-500x400-22b08q85r712.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "From November 28, 2026, to May 16, 2027, visitors can experience More than Human: Making With the Living World at ArtScience Museum. Building on the original London presentation, the Singapore edition has been significantly expanded and co-curated by ArtScience Museum and the Design Museum, London, with support from the DesignSingapore Council.",
+        "keywords": [
+          "ArtScience Museum",
+          "Singapore",
+          "Human",
+          "Design"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "50965b191457",
+      "sourceId": "aeon",
+      "sourceName": "Aeon / Psyche",
+      "feedUrl": "https://aeon.co/feed.rss",
+      "mode": "deep",
+      "title": "The energy of thought",
+      "excerpt": "We have an astonishing number of models of how the mind works. All of them neglect something essential - by David Colaço & Philipp Haueis Read on Aeon.",
+      "url": "https://aeon.co/essays/all-our-models-of-how-the-mind-functions-are-missing-something",
+      "publishedAt": "2026-11-27T11:00:00.000Z",
+      "firstSeen": "2026-11-27T21:30:39.903Z",
+      "thumbnail": "https://images.aeonmedia.co/images/c26f206d-2e06-4e5b-8156-0d964a42cffc/essay-main-gettyimages-2247445825.jpg?width=1200&quality=75&format=auto",
+      "extractionStatus": "full",
+      "tags": [
+        "Speculative"
+      ],
+      "digest": {
+        "brief": "Making sense of the mind is, in part, a matter of modelling, and philosophers and scientists have created an astonishing number of models. Recently, the philosophers Mazviita Chirimuuta, Corey Maley and Rosa Cao have each argued that information-processing in brains depends on signal amplitudes, metabolic molecules and energy supply.",
+        "keywords": [
+          "energy",
+          "Making sense",
+          "metabolic",
+          "brains"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "4ad589d73d81",
+      "sourceId": "aeon",
+      "sourceName": "Aeon / Psyche",
+      "feedUrl": "https://psyche.co/feed.rss",
+      "mode": "deep",
+      "title": "Fairuz in the morning and Umm Kulthum at night",
+      "excerpt": "Back home in Palestine, my grandparents’ music drove me mad. Now I’m in the US, I’m the one singing along - by Elissa Odeh Read on Psyche.",
+      "url": "https://psyche.co/turning-points/my-grandparents-music-drove-me-mad-now-it-carries-me-home",
+      "publishedAt": "2026-11-27T11:00:00.000Z",
+      "firstSeen": "2026-11-27T21:29:42.104Z",
+      "thumbnail": "https://images.aeonmedia.co/images/4db55ad1-c87d-492b-a65f-c1949765db16/main-img_20261017_0025.jpg?top=130&left=0&cropWidth=2464&cropHeight=1386&width=1200&quality=75&format=auto",
+      "extractionStatus": "full",
+      "tags": [
+        "Health"
+      ],
+      "digest": {
+        "brief": "After playing in their yard until sunset, my cousins and I would gather on their bed, where Teta would turn down Umm Kulthum on the television to tell us the story of the Elderly Woman and her Cow while slicing apples. Eyes half-open, I put on my school uniform and ran down the stairs to my grandparents’ house, the scent of Arabic coffee rising from the stove.",
+        "keywords": [
+          "Umm Kulthum",
+          "Teta",
+          "Eyes",
+          "grandparents"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "b4e61911e477",
+      "sourceId": "mittr",
+      "sourceName": "MIT Technology Review",
+      "feedUrl": "https://www.technologyreview.com/feed/",
+      "mode": "research",
+      "title": "Our 2027 Innovators Under 35 competition is now open",
+      "excerpt": "Nominate yourself or someone you know by January 19. Every year, the editors at MIT Technology Review select 35 of the world’s top young scientists, entrepreneurs, and inventors to honor as our newest class of Innovators Under 35.",
+      "url": "https://www.technologyreview.com/2026/11/27/1149857/2027-innovators-under-35-competition-nominate/",
+      "publishedAt": "2026-11-27T10:48:47.000Z",
+      "firstSeen": "2026-11-27T21:30:11.697Z",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/IU35-2027-SA.jpg?resize=1200,600",
+      "extractionStatus": "full",
+      "tags": [
+        "Speculative",
+        "AI",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Every year, the editors at MIT Technology Review select 35 of the world’s top young scientists, entrepreneurs, and inventors to honor as our newest class of Innovators Under 35. After the deadline, our editors will review all nominees and select a group of semifinalists, whom we’ll invite to complete a formal application.",
+        "keywords": [
+          "Innovators"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "fb53dae24bd8",
+      "sourceId": "dezeen",
+      "sourceName": "Dezeen",
+      "feedUrl": "https://www.dezeen.com/design/feed/",
+      "mode": "inspiration",
+      "title": "The debate over putting trees on buildings",
+      "excerpt": "Plus: what's behind the current trend for food-oriented streetwear? And what's wrong with Snøhetta's amazing new Shanghai Grand Opera House? The post The debate over putting trees on buildings appeared first on Dezeen .",
+      "url": "https://www.dezeen.com/2026/11/27/trees-on-buildings-chipotle-hoodie-shanghai-opera-house-dezeen-weekly/",
+      "publishedAt": "2026-11-27T10:00:00.000Z",
+      "firstSeen": "2026-11-27T21:29:19.327Z",
+      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/dezeen-weekly-27-november_dezeen_2364_col_1-1024x1024.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Listen to the latest episode of Dezeen Weekly now. In this week's episode, Jennifer Hahn and Nat Barker dive into the debate surrounding one of 21st-century architecture's major movements: buildings festooned with trees. The post The debate over putting trees on buildings appeared first on Dezeen.",
+        "keywords": [
+          "latest episode",
+          "Dezeen Weekly",
+          "debate",
+          "trees"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "f7c430bedf7a",
+      "sourceId": "mittr",
+      "sourceName": "MIT Technology Review",
+      "feedUrl": "https://www.technologyreview.com/feed/",
+      "mode": "research",
+      "title": "How cutting-edge prosthetics can help probe the human mind",
+      "excerpt": "Avi Davidson has volunteered to find out how a bionic hand that feels might alter his brain and nervous system. Over the last few weeks, I’ve been talking to Alexander (Avi) Davidson.",
+      "url": "https://www.technologyreview.com/2026/11/27/1149946/cutting-edge-prosthetics-allow-researchers-to-probe-the-human-mind/",
+      "publishedAt": "2026-11-27T10:00:00.000Z",
+      "firstSeen": "2026-11-27T21:29:11.697Z",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/Avi-and-Leanne.jpeg?resize=1200,600",
+      "extractionStatus": "full",
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Unlike standard prosthetics, this one connects directly to nerves in Avi’s arm. What struck me the most over our conversations was Avi’s outlook and approach to not just his injuries and learning to use this cutting-edge technology, but to life itself. By taking part in this trial, he’s had to fit hundreds of hours of lab-based training and physical therapy around his demanding job.",
+        "keywords": [
+          "prosthetics",
+          "Avi",
+          "trial",
+          "arm"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "6f2298d795a0",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "1960s grand touring car design shapes acte deux’s paris apartment renovation",
+      "excerpt": "inspired by automotive interiors and streamlined bodywork, the 65-square-meter renovation combines lacquered surfaces, polished metal and warm timber to rethink domestic space.",
+      "url": "https://www.designboom.com/architecture/1960s-grand-touring-car-design-acte-deux-renovation-paris-apartment/",
+      "publishedAt": "2026-11-27T08:45:23.000Z",
+      "firstSeen": "2026-11-27T21:26:24.585Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/1960s-grand-touring-car-design-acte-deux-renovation-paris-apartment-designboom-700-500x400-22b08q85r121.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "HMI / Mobility",
+        "Product"
+      ],
+      "digest": {
+        "brief": "Acte Deux, founded by Johanna Lapray and Hugo L’ahélec, renovates a 65-square-meter apartment in the Paris’s 18th arrondissement, drawing on the streamlined forms and richly appointed interiors of 1960s grand touring cars. Paris-based design studio Acte Deux reorganizes the living spaces into a continuous horizontal sequence.",
+        "keywords": [
+          "Acte Deux",
+          "grand touring",
+          "living spaces",
+          "apartment"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
       "id": "e2a6ede5943c",
       "sourceId": "dezeen",
       "sourceName": "Dezeen",
@@ -484,10 +1199,6 @@
       "firstSeen": "2026-11-27T08:51:54.124Z",
       "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/brit-award-2026-rachel-whiteread-news-sq-1024x1024.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product",
-        "HMI / Mobility"
-      ],
       "digest": {
         "brief": "Artist Rachel Whiteread has revealed her design for next year's Brit Awards trophy, a silver sculpture covered in holes to \"expose the interior of the statue\". Essex-born Whiteread has designed the statuette for next February's ceremony, which is her interpretation of the annual trophy depicting Britannia, a helmeted warrior that is a traditional symbol of Britain.",
         "keywords": [
@@ -498,6 +1209,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product",
+        "HMI / Mobility"
+      ],
       "contentHtml": null
     },
     {
@@ -532,9 +1247,6 @@
       "firstSeen": "2026-11-27T08:49:59.104Z",
       "thumbnail": "https://mouthprint.com/social/e002/2eea0511698e1c1e5572.png",
       "extractionStatus": "full",
-      "tags": [
-        "UX"
-      ],
       "digest": {
         "brief": "A pebble acquires its shape through contact: with water, with grit, with other stones. The objects gathered here bring that familiarity into manufactured form, from things carried in a pocket to a place to sit. New case files, exhibitions, and interviews, delivered to your inbox.",
         "keywords": [
@@ -542,6 +1254,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "UX"
+      ],
       "contentHtml": null
     },
     {
@@ -557,10 +1272,6 @@
       "firstSeen": "2026-11-27T08:48:59.104Z",
       "thumbnail": "https://dbushell.com/images/articles/2026-11-25-web-industry.png",
       "extractionStatus": "full",
-      "tags": [
-        "Tech Industry",
-        "UX"
-      ],
       "digest": {
         "brief": "Nevertheless, today I’m talking about/to the real web industry. TL;DR: the web industry is dismantling itself from the inside. People who have spent years, decades in some cases, building a reputation as leaders within the web industry are now destroying what they’ve built.",
         "keywords": [
@@ -568,6 +1279,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Tech Industry",
+        "UX"
+      ],
       "contentHtml": null
     },
     {
@@ -583,10 +1298,6 @@
       "firstSeen": "2026-11-27T08:47:59.104Z",
       "thumbnail": "https://veszelovszki.com/og/a/tpe.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "AI",
-        "UX"
-      ],
       "digest": {
         "brief": "194 sweaty, reviewed, production-ready code lines from my own little fingers—okay, with the help of GitHub Copilot. Over the last 10 months, I also built Prvw, a simple and delightful free image viewer (135k LoC), a few libraries that support Cmdr (mtp-rs being 45k LoC and smb2 116k LoC), plus several side projects like gitstrata.",
         "keywords": [
@@ -597,6 +1308,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "AI",
+        "UX"
+      ],
       "contentHtml": null
     },
     {
@@ -612,9 +1327,6 @@
       "firstSeen": "2026-11-27T08:46:59.104Z",
       "thumbnail": "https://christianoliff.com/img/header/2026/header-design-md-vscode-extension.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "UX"
-      ],
       "digest": {
         "brief": "Broken token references, missing primary colors, low contrast, unused tokens and out-of-order sections show up in the Problems panel as you type. Front matter checks for a missing or empty name and duplicate keys, each flagged on the exact line. Rich preview with color swatches, typography samples, spacing and radius scales, component previews, the rendered prose and the lint results.",
         "keywords": [
@@ -625,6 +1337,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "UX"
+      ],
       "contentHtml": null
     },
     {
@@ -640,9 +1355,6 @@
       "firstSeen": "2026-11-27T08:52:36.921Z",
       "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2013/01/lecturesonliterature.jpg?w=680&ssl=1",
       "extractionStatus": "full",
-      "tags": [
-        "Speculative"
-      ],
       "digest": {
         "brief": "“All attempts at gaining literary polish must begin with judicious reading,” H. Vladimir Nabokov (April 22, 1899–July 2, 1977) was a man of wonderfully opinionated insights on literature and life. The reader should prefer a story with action and dialogue to one with none.",
         "keywords": [
@@ -653,6 +1365,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Speculative"
+      ],
       "contentHtml": null
     },
     {
@@ -668,9 +1383,6 @@
       "firstSeen": "2026-11-27T08:51:59.331Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/rounded-volumes-sweet-color-palettes-dessert-lighting-collection-chubby-decadent-studio-designboom-700-500x400-22b08q85r288.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Chubby is the first lighting collection by Decadent Studio, an independent design studio based in Galicia, Spain. Inspired by desserts such as pavlova, cherry pie and tangerine ice cream, the collection explores the relationship between food, design and desire. Decadent Studio pays special attention to every detail, from the color of the textile cable to the back of the lamp.",
         "keywords": [
@@ -681,6 +1393,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -739,34 +1454,6 @@
       "contentHtml": null
     },
     {
-      "id": "0cd196b5fc14",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Netflix’s coziest show has made a very quiet return",
-      "excerpt": "The bigger Netflix gets, the easier it is to miss stuff. This is true of all digital platforms, of course, but it's especially true of Netflix of late, as the streaming service's lineup now also includes a growing library of reality shows, live-programming, and even games.",
-      "url": "https://www.theverge.com/entertainment/1043489/midnight-diner-season3",
-      "publishedAt": "2026-11-26T21:00:00.000Z",
-      "firstSeen": "2026-11-26T21:45:01.925Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-26-at-3.34.34-PM.png?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "The bigger Netflix gets, the easier it is to miss stuff. If you haven’t seen it, Midnight Diner is probably the most comforting thing available on Netflix. What’s especially notable about the show’s return is the huge gap: season 2 of the Netflix iteration streamed in 2019, and it took seven years for it to come back.",
-        "keywords": [
-          "Midnight Diner",
-          "Netflix",
-          "return",
-          "season"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "78109675cb58",
       "sourceId": "designboom",
       "sourceName": "designboom",
@@ -791,34 +1478,6 @@
       },
       "tags": [
         "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "8cf8fb1747c8",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The Garmin Forerunner 265S is down to $300, its best price of the year",
-      "excerpt": "The Forerunner 265S may not be the newest or flashiest Garmin, but it’s one that I’ve always loved most in testing. For runners with smaller wrists, it fits nicely.",
-      "url": "https://www.theverge.com/gadgets/1042483/garmin-forerunner-265s-fitness-tracker-wearable-deal-sale-black-friday",
-      "publishedAt": "2026-11-26T19:00:00.000Z",
-      "firstSeen": "2026-11-26T21:44:01.926Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24483620/236554_Garmin_Forerunner_265S_AKrales_0072.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "The Forerunner 265S may not be the newest or flashiest Garmin, but it’s one that I’ve always loved most in testing. 99 (a $150 discount off its MSRP) at Amazon and Best Buy for Black Friday, I can easily recommend it. The Garmin Fenix 8 is $749 at Amazon, Best Buy, and REI, which is a 25 percent discount off its original price.",
-        "keywords": [
-          "percent discount",
-          "Garmin",
-          "Black Friday",
-          "price"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
       ],
       "contentHtml": null
     },
@@ -920,9 +1579,6 @@
       "firstSeen": "2026-11-27T08:51:36.921Z",
       "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2022/07/donaldhall_without.jpg?fit=320%2C479&ssl=1",
       "extractionStatus": "full",
-      "tags": [
-        "Speculative"
-      ],
       "digest": {
         "brief": "“The encounter between two differences is an event,” French philosopher Alain Badiou wrote in his tremendous treatise on why we fall and how we stay in love. Reflecting on his life with the love of his life — the poet Jane Kenyon, herself the keeper and giver of uncommonly clarifying wisdom on writing and life — Hall considers the secret to the kind of lasting love that blooms between the mundane and the magical.",
         "keywords": [
@@ -933,60 +1589,8 @@
         ],
         "by": "extract"
       },
-      "contentHtml": null
-    },
-    {
-      "id": "b8b8a9d24770",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The MacBook Neo is receiving a rare $100 discount for Black Friday",
-      "excerpt": "If you’re looking for a new laptop or a gift for the student in your life, you can save $100 on the MacBook Neo at several retailers, in both storage sizes and all four colors. The 256GB model is currently discounted to $599.",
-      "url": "https://www.theverge.com/gadgets/1035932/apple-macbook-neo-black-friday-2026-deal-sale",
-      "publishedAt": "2026-11-26T17:07:00.000Z",
-      "firstSeen": "2026-11-26T21:43:01.926Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268387_Apple_MacBook_Neo_AKrales_0543.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "If you’re looking for a new laptop or a gift for the student in your life, you can save $100 on the MacBook Neo at several retailers, in both storage sizes and all four colors. None of the retailers currently list an end date for the discount, which is the biggest price drop we’ve seen since Apple raised the laptop’s MSRP by $100 in July in response to the ongoing RAM crisis.",
-        "keywords": [
-          "Neo",
-          "discount",
-          "MacBook"
-        ],
-        "by": "extract"
-      },
       "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "fc3f6c861a53",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Android app developers will soon have to share their address publicly",
-      "excerpt": "Independent Android app developers are worried about their privacy after Google announced that from next year many of them will be required to share a phone number and address publicly.",
-      "url": "https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu",
-      "publishedAt": "2026-11-26T17:06:24.000Z",
-      "firstSeen": "2026-11-26T21:42:01.926Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24007893/acastro_STK112_android_02.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Independent Android app developers are worried about their privacy after Google announced that from next year many of them will be required to share a phone number and address publicly. If they self-declare as a trader, developers’ contact details will be shared publicly starting March 1st, including a phone number and address.",
-        "keywords": [
-          "contact details",
-          "address",
-          "developers",
-          "phone number"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
+        "Speculative"
       ],
       "contentHtml": null
     },
@@ -1015,174 +1619,6 @@
       },
       "tags": [
         "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "b10ebf43407e",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The best Black Friday deals we’ve already found",
-      "excerpt": "The countdown to Black Friday is on, and many discounts have already arrived. Although the shopping holiday isn’t officially until tomorrow, November 27th, retailers are already dropping early deals on some of our favorite tech.",
-      "url": "https://www.theverge.com/gadgets/1028991/black-friday-best-early-deals-2026",
-      "publishedAt": "2026-11-26T16:55:00.000Z",
-      "firstSeen": "2026-11-26T21:41:01.926Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268838_BF_CM_EARLY_DEALS_Headers_CVirginia.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "The countdown to Black Friday is on, and many discounts have already arrived. Although the shopping holiday isn’t officially until tomorrow, November 27th, retailers are already dropping early deals on some of our favorite tech. Prices could drop further as Black Friday approaches, as is always the case, but these deals are worth considering if you’d rather shop early and beat the holiday rush.",
-        "keywords": [
-          "Black Friday",
-          "deals",
-          "already",
-          "holiday"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "b00ec16112e2",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Federal judge blocks the FCC from reviewing ABC’s licenses early",
-      "excerpt": "US District Judge Loren AliKhan has blocked the Federal Communications Commission from conducting an early review of ABC's broadcast licenses in a preliminary injunction, and rejected its efforts to dismiss ABC's First Amendment lawsuit.",
-      "url": "https://www.theverge.com/policy/1043116/fcc-disney-abc-broadcast-licenses-review-early-judge-block",
-      "publishedAt": "2026-11-26T16:38:00.000Z",
-      "firstSeen": "2026-11-26T21:40:01.926Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25840497/STKP211_BRENDAN_CARR_B.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "The judge has preliminarily sided with ABC, rejecting the FCC’s efforts to dismiss the case. The preliminary injunction issued by the judge on Wednesday prohibits the FCC from taking any further action in the early review of ABC’s broadcast licenses and noted that the network had shown that the court’s intervention in the agency’s actions was in the public interest.",
-        "keywords": [
-          "broadcast licenses",
-          "early review",
-          "ABC",
-          "preliminarily sided"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "8400b48488a4",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Disney Plus, Hulu, and HBO Max are all over 50 percent off for Black Friday",
-      "excerpt": "Black Friday isn’t just a good time to save on a new TV but also a chance to spend less on what you watch on it. The shopping holiday often brings steep streaming discounts, and this year is no exception, with some streamers offering more than 50 percent off.",
-      "url": "https://www.theverge.com/gadgets/1041762/best-black-friday-streaming-deals-2026",
-      "publishedAt": "2026-11-26T16:00:00.000Z",
-      "firstSeen": "2026-11-26T21:39:01.926Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/peter-claffey-dexter-sol-ansell.jpg?quality=90&strip=all&crop=0,0,92.21171875,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Black Friday isn’t just a good time to save on a new TV but also a chance to spend less on what you watch on it. With everything from Disney classics and Marvel movies to FX dramas like The Bear and Shōgun, the Disney Plus and Hulu bundle offers plenty for the whole family to watch. 99 per month ($8 off) for a year via Hulu or Disney Plus, saving you $96 in total.",
-        "keywords": [
-          "Disney Plus",
-          "Black Friday",
-          "Hulu bundle",
-          "Marvel movies"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "8018eae6270d",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "GTA VI developers vote against unionization",
-      "excerpt": "Workers at Grand Theft Auto VI developer Rockstar Games won't unionize, after the vote for a formal recognition agreement failed, with only 25 percent of votes in favor of unionization.",
-      "url": "https://www.theverge.com/games/1043169/rockstar-games-union-vote-iwgb",
-      "publishedAt": "2026-11-26T15:55:24.000Z",
-      "firstSeen": "2026-11-26T21:38:01.926Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Jason_and_Lucia_01.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Workers at Grand Theft Auto VI developer Rockstar Games won’t unionize, after the vote for a formal recognition agreement failed, with only 25 percent of votes in favor of unionization. The Independent Workers Union of Great Britain (IWGB) said that Rockstar workers in the union will continue organizing even without formal recognition.",
-        "keywords": [
-          "Rockstar Games",
-          "formal recognition",
-          "Grand Theft",
-          "vote"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "719fecde25d5",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Why GTA VI’s version of Florida feels so real",
-      "excerpt": "There are plenty of reasons why Grand Theft Auto VI is so popular: the 13 years of anticipation, the relatable lead characters and romantic storyline, the sheer level of depth. But another major factor is the sense of place.",
-      "url": "https://www.theverge.com/entertainment/1042629/gta-6-city-design",
-      "publishedAt": "2026-11-26T15:00:00.000Z",
-      "firstSeen": "2026-11-26T21:37:01.926Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/1a20dbee8d365-screenshotUrl.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "The GTA series is unmatched when it comes to re-creating the feeling of a bustling, real-world city, and GTA VI’s fictional rendition of Florida is the studio’s most lifelike setting yet. For Emma Fraser, an assistant professor at UC Berkeley who studies urban ruins and virtual cities, the sense of realism has created a unique sensation while playing.",
-        "keywords": [
-          "GTA",
-          "real",
-          "Florida",
-          "Fraser"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "2c8e23270b54",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Here’s where you can save (a little) on the Ocarina of Time remake",
-      "excerpt": "A lot of people have The Legend of Zelda: Ocarina of Time for the Nintendo Switch 2 on their holiday wishlist. In case you haven’t bought it yet, I wanted to share some small but welcome deals happening on the physical and digital versions of the game.",
-      "url": "https://www.theverge.com/gadgets/1040110/zelda-ocarina-of-time-switch-2-black-friday-2026-deal-sale",
-      "publishedAt": "2026-11-26T14:00:00.000Z",
-      "firstSeen": "2026-11-26T21:36:01.926Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/NS2_TheLegendofZeldaOcarinaofTime_scrn_15_dce060.png?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "A lot of people have The Legend of Zelda: Ocarina of Time for the Nintendo Switch 2 on their holiday wishlist. In case you haven’t bought it yet, I wanted to share some small but welcome deals happening on the physical and digital versions of the game. Ocarina of Time is one of Nintendo’s most groundbreaking titles, having served as its first 3D Zelda game when it launched in 1998.",
-        "keywords": [
-          "Ocarina",
-          "game",
-          "Switch",
-          "digital"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Tech Industry"
       ],
       "contentHtml": null
     },
@@ -1234,34 +1670,6 @@
           "nendo",
           "France",
           "river"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "64da2d6c0c3f",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "hoor al qasimi appointed curator of the venice art biennale 2028",
-      "excerpt": "the sharjah art foundation founder will lead the 62nd international art exhibition, bringing her experience in cross-cultural exchange and international exhibition-making to venice The post hoor al qasimi appointed curator of the venice art biennale 2028 appeared first on designboom | architecture & design magazine .",
-      "url": "https://www.designboom.com/art/hoor-al-qasimi-curator-venice-art-biennale-2028/",
-      "publishedAt": "2026-11-26T11:28:54.000Z",
-      "firstSeen": "2026-11-26T21:42:09.268Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/hoor-al-qasimi-curator-venice-art-biennale-2028-designboom-700-500x400-22b08q85r621.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Hoor Al Qasimi has been appointed curator of the 62nd Venice Art Biennale, taking on the role of Director of the Visual Arts Department at La Biennale di Venezia ahead of the 2028 edition. Since founding the Sharjah Art Foundation, Al Qasimi has developed an extensive program of exhibitions, commissions, and public initiatives, positioning Sharjah as an important meeting point for contemporary art.",
-        "keywords": [
-          "Art Biennale",
-          "appointed curator",
-          "Qasimi",
-          "Venice"
         ],
         "by": "extract"
       },
@@ -1362,11 +1770,11 @@
       "feedUrl": "https://sidebar.io/feed.xml",
       "mode": "pulse",
       "title": "Forward-deployed design as plumbing",
-      "excerpt": "Notes on forward-deployed design, coordination debt and two classroom builds of scoped public fixes. I’m revisiting the forward-deployed design discussion, and I think the shape of teams is less important to me.",
+      "excerpt": "Notes on forward-deployed design, coordination debt and two classroom builds of scoped public fixes. I'm revisiting the forward-deployed design discussion, and I think the shape of teams is less important to me.",
       "url": "https://blog.ronbronson.com/forward-deployed-design-as-plumbing",
       "publishedAt": "2026-11-26T11:11:10.000Z",
       "firstSeen": "2026-11-26T21:42:09.802Z",
-      "thumbnail": null,
+      "thumbnail": "https://masthead.ronbronson.com/assets/og.png",
       "extractionStatus": "full",
       "digest": {
         "brief": "The product designer was closer to the designer-engineer archetype that’s always existed in some orgs, but AI is upending this and making everyone feel some need to rebrand into some kind of engineer to stay semirelevant in these complicated times. The whole “Design as Repair” ethos was really about what I told friends: designers as the folks who get into coveralls and tackle the problem.",
@@ -1434,35 +1842,6 @@
         "by": "extract"
       },
       "tags": [
-        "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "085e26343b78",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "mara rethinks how we furnish modern, flexible office at orgatec 2026",
-      "excerpt": "mara unveils an ecosystem of flexible office furniture at orgatec 2026, which aims to shape the future of dynamic, remote-friendly workspaces.",
-      "url": "https://www.designboom.com/design/mara-furniture-ecosystem-office-orgatec-2026/",
-      "publishedAt": "2026-11-26T11:00:20.000Z",
-      "firstSeen": "2026-11-26T21:41:09.268Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/mara-furniture-ecosystem-office-orgatec-2026-designboom700-500x400-22b08q85r844.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "The past decade has seen countless changes in the working landscape, and Mara’s furniture has evolved alongside them. Aligned with this increasingly fluid and flexible world, the collection Mara presents at Orgatec 2026 stands out for its versatility, flexibility, and durability. Alongside these additions, Mara presents a new interpretation of a classic: Aera Metal, which draws on the brand’s metalworking roots.",
-        "keywords": [
-          "Mara presents",
-          "Orgatec",
-          "flexible",
-          "Aera"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product",
         "Speculative"
       ],
       "contentHtml": null
@@ -1604,35 +1983,6 @@
       "contentHtml": null
     },
     {
-      "id": "ce7bad55c402",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "podcast: how to create utopia for everyone when architecture scales to the metropolis",
-      "excerpt": "from resident-voted skyscrapers in mumbai to adaptive structural grids, the final episode of the room for utopias podcast series explores what happens when ideals scale up.",
-      "url": "https://www.designboom.com/architecture/podcast-room-for-utopias-11/",
-      "publishedAt": "2026-11-26T09:30:13.000Z",
-      "firstSeen": "2026-11-26T21:40:09.268Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/indx-global-room-for-utopias-06-designboom-700-500x400-22b08q85r482.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Because one person’s utopia rarely matches another’s, architecture only succeeds at a civic scale when it stops being a solitary monument and becomes a collective negotiation. Closing the Room for Utopias podcast series produced in collaboration with INDX|GLOBAL during Paris Design Week 2026, the final episode explores how personal design visions transform into shared urban realities.",
-        "keywords": [
-          "architecture",
-          "utopia",
-          "podcast",
-          "urban"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Speculative",
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "7eda9d9f1f9a",
       "sourceId": "dezeen",
       "sourceName": "Dezeen",
@@ -1652,34 +2002,6 @@
           "birth bags",
           "Lucy McRae",
           "femininity coexist"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "e32474da10f6",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "how sound, fungi, and material experimentation shape thomas feriero’s music project",
-      "excerpt": "composer thomas feriero discusses the three experimental systems behind 'will you still love me when i’m a system in the ground?', a collaboration that turns musical erosion, biological growth, and material transformation into a shared creative process.",
-      "url": "https://www.designboom.com/art/sound-fungi-material-experimentation-thomas-feriero-music-project-challenging-conditions-hidden-mountain-alea-work-interview/",
-      "publishedAt": "2026-11-26T08:45:41.000Z",
-      "firstSeen": "2026-11-26T21:39:09.268Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/sound-fungi-material-experimentation-thomas-feriero-music-project-challenging-conditions-hidden-mountain-alea-work-interview-designboom-700-500x400-22b08q85r112.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "In collaboration with Paris-based material design studio Aléa Work and designer Oscar Morgan, these sonic experiments extend into the physical world through a series of objects grown from mycelium. ‘For Condition 01 we wanted the music and the mycelium to actually share a space, so we rented a room in Paris where the piece played continuously while the mycelium grew,’ Feriero tells designboom.",
-        "keywords": [
-          "Oscar Morgan",
-          "Feriero",
-          "played continuously",
-          "tells designboom"
         ],
         "by": "extract"
       },
@@ -1764,34 +2086,6 @@
           "support legs",
           "camping",
           "box"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "ae1bfc1e912e",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "clustered cycladic village residences shape aristides dallas architects’ hospitality masterplan",
-      "excerpt": "a landscape-led hospitality settlement explores how architecture can bring together privacy, community and the everyday rituals of living.",
-      "url": "https://www.designboom.com/architecture/clustered-cycladic-village-residences-aristides-dallas-architects-hospitality-masterplan-shared-ground/",
-      "publishedAt": "2026-11-26T07:15:05.000Z",
-      "firstSeen": "2026-11-26T21:38:09.268Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/shared-ground-hospitality-masterplan-aristides-dallas-architects-cyclades-designboom-700-1-500x400-22b08q85r387.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Sited on a sloping hillside on a Greek island in the Cyclades, angled away from the sea, Shared Ground is a hospitality masterplan by Aristides Dallas Architects organized around topography and sightlines. Drawing on the spatial logic of traditional Cycladic villages rather than imitating vernacular forms, the design studio groups residences into small neighborhood clusters.",
-        "keywords": [
-          "hospitality masterplan",
-          "Aristides Dallas",
-          "residences",
-          "Cycladic"
         ],
         "by": "extract"
       },
@@ -2154,34 +2448,6 @@
       "contentHtml": null
     },
     {
-      "id": "40d72b2ee099",
-      "sourceId": "dezeen",
-      "sourceName": "Dezeen",
-      "feedUrl": "https://www.dezeen.com/design/feed/",
-      "mode": "inspiration",
-      "title": "Assemble covers miniature agricultural buildings in intense blue pigment for Building Blue exhibition in Tokyo",
-      "excerpt": "Architecture collective Assemble has created small, climbable cedar buildings that \"play with scale\" to showcase a new pigment made from industrial waste at Tokyo's SKAC gallery.",
-      "url": "https://www.dezeen.com/2026/11/25/assemble-building-blue-skac/",
-      "publishedAt": "2026-11-25T06:00:00.000Z",
-      "firstSeen": "2026-11-25T10:28:52.035Z",
-      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/assemble-building-blue-skwat-tokyo_dezeen_2364_col_sq2-1024x1024.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Architecture collective Assemble has created small, climbable cedar buildings that \"play with scale\" to showcase a new pigment made from industrial waste at Tokyo's SKAC gallery. The post Assemble covers miniature agricultural buildings in intense blue pigment for Building Blue exhibition in Tokyo appeared first on Dezeen.",
-        "keywords": [
-          "agricultural buildings",
-          "Blue exhibition",
-          "Assemble",
-          "Tokyo"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "24dc3bd800f9",
       "sourceId": "core77",
       "sourceName": "Core77",
@@ -2378,34 +2644,6 @@
       "contentHtml": null
     },
     {
-      "id": "0e4148512247",
-      "sourceId": "dezeen",
-      "sourceName": "Dezeen",
-      "feedUrl": "https://www.dezeen.com/design/feed/",
-      "mode": "inspiration",
-      "title": "Dezeen reports from New York's new November design week",
-      "excerpt": "A collection of showcases, old and new, took place in New York this November, effectively becoming the city's second design week. The post Dezeen reports from New York's new November design week appeared first on Dezeen .",
-      "url": "https://www.dezeen.com/2026/11/24/new-york-design-events-november-2026/",
-      "publishedAt": "2026-11-24T16:57:28.000Z",
-      "firstSeen": "2026-11-25T01:21:37.310Z",
-      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/new-york-november-design-week-2026_dezeen_2364_sq-1024x1024.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "A collection of showcases, old and new, took place in New York this November, effectively adding a second design week to a city already loaded with events. Even NYCxDesign, still scheduled for May as usual in 2027, held a November event bringing in designers Ross Lovegrove, Karim Rashid and Rem D Koolhaas for a talk moderated by New York-based design writer Camille Okhio.",
-        "keywords": [
-          "design week",
-          "November",
-          "York",
-          "NYCxDesign"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "d9a5308ad882",
       "sourceId": "microsoft",
       "sourceName": "Microsoft Design",
@@ -2515,51 +2753,6 @@
         ],
         "by": "extract"
       },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "9bb2c49e00b7",
-      "sourceId": "core77",
-      "sourceName": "Core77",
-      "feedUrl": "http://feeds.feedburner.com/core77/blog",
-      "mode": "pulse",
-      "title": "HOZO's Powered Metal Filing Heads for Detail Work",
-      "excerpt": "For those fabricating small parts, HOZO's Metal Filing Heads offer an alternative to thin files or sandpaper-wrapped sticks. They're a series of eight heads that fit in the company's NeoSander , a cordless miniature reciprocating detail sander that delivers 13,000 strokes per minute.",
-      "url": "https://www.core77.com/posts/145969/HOZOs-Powered-Metal-Filing-Heads-for-Detail-Work",
-      "publishedAt": null,
-      "firstSeen": "2026-11-24T13:26:57.906Z",
-      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1857724_lead_400_145969_.png",
-      "extractionStatus": "excerpt-only",
-      "digest": {
-        "brief": "For those fabricating small parts, HOZO's Metal Filing Heads offer an alternative to thin files or sandpaper-wrapped sticks. The filing heads are stainless steel that's been etched with radiating patterns of cutting teeth, and coated in Teflon to prevent debris from building up. The idea is that they're far less fatiguing to use than a manual file, and will last a lot longer than sandpaper.",
-        "keywords": [
-          "Filing Heads",
-          "HOZO",
-          "Metal"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "7a26ba82d7cb",
-      "sourceId": "core77",
-      "sourceName": "Core77",
-      "feedUrl": "http://feeds.feedburner.com/core77/blog",
-      "mode": "pulse",
-      "title": "Core77 Weekly Roundup (11-16-26 to 11-20-26)",
-      "excerpt": "Here's what we looked at this week: A progress-bar-style Linear Clock , by engineer Johannes van Ginkel. SpaceX succeeds in recapturing not just the booster, but the ship itself!",
-      "url": "https://www.core77.com/posts/145907/Core77-Weekly-Roundup-11-16-26-to-11-20-26",
-      "publishedAt": null,
-      "firstSeen": "2026-11-24T13:25:57.906Z",
-      "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1857133_lead_400_145907_.jpeg",
-      "extractionStatus": "no-digest",
       "tags": [
         "Product"
       ],
@@ -2737,65 +2930,6 @@
       "contentHtml": null
     },
     {
-      "id": "02839082ff9f",
-      "sourceId": "mittr",
-      "sourceName": "MIT Technology Review",
-      "feedUrl": "https://www.technologyreview.com/feed/",
-      "mode": "research",
-      "title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
-      "excerpt": "Anthropic warned investors that AI might be conscious—but acting accordingly could hurt its business. So what’s the plan? Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for anyone investing.",
-      "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
-      "publishedAt": "2026-11-23T17:36:08.000Z",
-      "firstSeen": "2026-11-24T13:30:10.339Z",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/simulacra2a.jpg?resize=1200,600",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Form versus function: The gist of Nagel’s view is that we can’t just look at the information processing happening in human brains and AI models while ignoring the physical differences between them—neurons and biology for humans, silicon chips and circuits for AI. Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for anyone investing.",
-        "keywords": [
-          "information processing",
-          "physical differences",
-          "silicon chips",
-          "Anthropic"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "AI",
-        "Speculative",
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "9c079ad7f691",
-      "sourceId": "mittr",
-      "sourceName": "MIT Technology Review",
-      "feedUrl": "https://www.technologyreview.com/feed/",
-      "mode": "research",
-      "title": "The Download: AI’s judgment problem and carbon removal’s crop threat",
-      "excerpt": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology.",
-      "url": "https://www.technologyreview.com/2026/11/23/1149548/the-download-ai-judgment-problem-carbon-removal-crop-threat/",
-      "publishedAt": "2026-11-23T13:10:00.000Z",
-      "firstSeen": "2026-11-24T13:29:10.339Z",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/08/starlink-grid-gradient.jpg?fit=1920,1280",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "A new report from the AI evaluation nonprofit METR finds that some capabilities are improving exponentially—but models aren’t as good at tasks that require judgment as they are at coding. The report updates METR’s widely shared time horizon plot, which tested models on a large suite of tasks. The approach, known as enhanced rock weathering, could also improve soil quality and boost crop yields.",
-        "keywords": [
-          "enhanced rock",
-          "tasks",
-          "report",
-          "judgment"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "6edeea2b4b92",
       "sourceId": "aeon",
       "sourceName": "Aeon / Psyche",
@@ -2872,35 +3006,6 @@
       },
       "tags": [
         "Health"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "dc02d0ba7ca7",
-      "sourceId": "mittr",
-      "sourceName": "MIT Technology Review",
-      "feedUrl": "https://www.technologyreview.com/feed/",
-      "mode": "research",
-      "title": "Why using rocks for carbon removal could eventually reduce crop growth",
-      "excerpt": "Spreading alkaline rock on fields to lock away carbon helps farmers at first, but new research shows that those benefits could be strictly limited.",
-      "url": "https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/",
-      "publishedAt": "2026-11-23T11:00:00.000Z",
-      "firstSeen": "2026-11-24T13:28:10.339Z",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/Drone-Rice-Fields-3.jpg?resize=1200,600",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "A number of influential models have found that this approach, known as enhanced rock weathering (ERW), could eventually remove 3 billion to 8 billion metric tons of carbon dioxide per year, helping to slow or one day even reverse global warming. The analyses were led by researchers at CarbonPlan, a San Francisco nonprofit known for rigorous scientific analysis of carbon removal methods.",
-        "keywords": [
-          "carbon removal",
-          "rock weathering",
-          "enhanced",
-          "eventually"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "AI",
-        "Tech Industry"
       ],
       "contentHtml": null
     },
@@ -3614,32 +3719,6 @@
       "contentHtml": null
     },
     {
-      "id": "0f182834f99b",
-      "sourceId": "aeon",
-      "sourceName": "Aeon / Psyche",
-      "feedUrl": "https://aeon.co/feed.rss",
-      "mode": "deep",
-      "title": "The last klavern",
-      "excerpt": "Inside one of America’s last Ku Klux Klan halls, architects, historians and residents reckon with preserving Fort Worth’s past - by Aeon Video Watch on Aeon.",
-      "url": "https://aeon.co/videos/how-a-texas-community-chose-to-transform-a-former-klan-headquarters",
-      "publishedAt": "2026-11-16T11:01:00.000Z",
-      "firstSeen": "2026-11-24T13:04:13.213Z",
-      "thumbnail": "https://images.aeonmedia.co/images/3758ffc1-9a88-42df-b85d-9576ad7f3d5a/last-klavern-cover.jpg?width=1200&quality=75&format=auto",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "In Fort Worth, Texas, a massive, dilapidated building serves as an ever-present symbol of racial violence and segregation to those who know its history. Constructed in the 1920s, the structure, initially known as Klavern No 101, was briefly the auditorium and headquarters of Fort Worth’s Ku Klux Klan chapter.",
-        "keywords": [
-          "Fort Worth",
-          "Klavern"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "603f8d4bfc5d",
       "sourceId": "aeon",
       "sourceName": "Aeon / Psyche",
@@ -3863,59 +3942,6 @@
       },
       "tags": [
         "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "df4a0b1a53fd",
-      "sourceId": "aeon",
-      "sourceName": "Aeon / Psyche",
-      "feedUrl": "https://psyche.co/feed.rss",
-      "mode": "deep",
-      "title": "The power of group thought",
-      "excerpt": "Are groups smarter than the sum of their parts? What homing pigeons’ flight paths can teach us about ‘weighted democracy’ - Video by The Well and the John Templeton Foundation Watch on Psyche.",
-      "url": "https://psyche.co/videos/what-the-flight-paths-of-pigeons-tell-us-about-collective-intelligence",
-      "publishedAt": "2026-11-13T11:01:00.000Z",
-      "firstSeen": "2026-11-24T13:05:19.139Z",
-      "thumbnail": "https://images.aeonmedia.co/images/1616da12-e7d8-4291-8c07-6ba0d9baf4e8/the-power-of-group-thought-landscape-1.jpg?top=0&left=0&cropWidth=2560&cropHeight=1440&width=1200&quality=75&format=auto",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Dora Biro, a behavioural biologist and professor at the University of Rochester in New York, studies how homing pigeons learn from one another. By fitting them with GPS trackers, introducing new variables into flocks and observing how they respond, Biro has seen how pigeons’ flight routes improve in environments where they can share knowledge.",
-        "keywords": [
-          "Biro"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Health"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "d4bab599791d",
-      "sourceId": "aeon",
-      "sourceName": "Aeon / Psyche",
-      "feedUrl": "https://psyche.co/feed.rss",
-      "mode": "deep",
-      "title": "My friend, my witness",
-      "excerpt": "I lost my best friend just as motherhood began shaking the very roots of my being - by Ashwaq Masoodi Read on Psyche.",
-      "url": "https://psyche.co/turning-points/what-does-motherhood-look-like-without-my-best-friend",
-      "publishedAt": "2026-11-13T11:00:00.000Z",
-      "firstSeen": "2026-11-24T13:04:19.139Z",
-      "thumbnail": "https://images.aeonmedia.co/images/3d33c705-5a17-49bc-913f-6ed90498a718/this-sz-2026-01-27t111347z_52683355_rc2e9ja6zh76_rtrmadp_3_india-weather.jpg?top=295&left=0&cropWidth=2736&cropHeight=1539&width=1200&quality=75&format=auto",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Naaz first knew me as a bushy-browed teenager, travelling 110 km each day to study journalism in Baramulla, a small town in Kashmir. Growing up, I’d seldom encountered older people who weren’t in survival mode, always braced for the next loss or threat, who were able to support those dreaming of lives larger than the ones they’d inherited.",
-        "keywords": [
-          "Naaz",
-          "Kashmir",
-          "always",
-          "lives"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Health"
       ],
       "contentHtml": null
     },
@@ -4782,33 +4808,6 @@
       "tags": [
         "AI",
         "Tech Industry",
-        "UX"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "7d178a173728",
-      "sourceId": "nngroup",
-      "sourceName": "NN/g",
-      "feedUrl": "https://www.nngroup.com/feed/rss/",
-      "mode": "practice",
-      "title": "UX Disciplines: Glossary",
-      "excerpt": "Definitions of fields related to user experience, including UX design, UI design, visual design, interaction design, service design, UX research, and DesignOps.",
-      "url": "https://www.nngroup.com/articles/ux-disciplines-glossary/",
-      "publishedAt": "2026-10-23T17:00:00.000Z",
-      "firstSeen": "2026-11-24T13:25:23.135Z",
-      "thumbnail": "https://media.nngroup.com/media/articles/opengraph_images/UX_Disciplines__Glossary.png",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "People often use terms such as UX , UI , CX , and visual design interchangeably, even though they refer to different fields of practice. For example, user experience can refer to the field of user experience or to the experience of users interacting with a particular product, while information architecture can refer to the field of information architecture or the content organization on a specific site.",
-        "keywords": [
-          "user experience",
-          "information architecture",
-          "refer"
-        ],
-        "by": "extract"
-      },
-      "tags": [
         "UX"
       ],
       "contentHtml": null
