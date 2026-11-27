@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T21:47:21.839Z",
+  "updated": "2026-11-27T08:53:05.153Z",
   "modes": [
     {
       "id": "pulse",
@@ -472,6 +472,218 @@
   "public": true,
   "items": [
     {
+      "id": "e2a6ede5943c",
+      "sourceId": "dezeen",
+      "sourceName": "Dezeen",
+      "feedUrl": "https://www.dezeen.com/design/feed/",
+      "mode": "inspiration",
+      "title": "Rachel Whiteread punctures 2027 Brit Award trophy",
+      "excerpt": "Artist Rachel Whiteread has revealed her design for next year's Brit Awards trophy, a silver statuette covered in holes to \"expose the interior of the statue\".",
+      "url": "https://www.dezeen.com/2026/11/27/rachel-whiteread-2027-brit-award-trophy/",
+      "publishedAt": "2026-11-27T08:00:00.000Z",
+      "firstSeen": "2026-11-27T08:51:54.124Z",
+      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/brit-award-2026-rachel-whiteread-news-sq-1024x1024.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product",
+        "HMI / Mobility"
+      ],
+      "digest": {
+        "brief": "Artist Rachel Whiteread has revealed her design for next year's Brit Awards trophy, a silver sculpture covered in holes to \"expose the interior of the statue\". Essex-born Whiteread has designed the statuette for next February's ceremony, which is her interpretation of the annual trophy depicting Britannia, a helmeted warrior that is a traditional symbol of Britain.",
+        "keywords": [
+          "Brit Awards",
+          "Rachel Whiteread",
+          "trophy",
+          "silver"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "106e9e0375d4",
+      "sourceId": "sidebar",
+      "sourceName": "Sidebar",
+      "feedUrl": "https://sidebar.io/feed.xml",
+      "mode": "pulse",
+      "title": "The judge used to be the user",
+      "excerpt": "AI collapsed the slow middle of building models. The people who once defined correct went with it.",
+      "url": "https://uxdesign.cc/the-judge-used-to-be-the-user-0a958f24bb32?sk=e8c664d3852c69ce41f28a0f997a2a71",
+      "publishedAt": "2026-11-27T06:47:06.000Z",
+      "firstSeen": "2026-11-27T08:50:59.104Z",
+      "thumbnail": null,
+      "extractionStatus": null,
+      "tags": [
+        "AI",
+        "UX"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "7089475fa9de",
+      "sourceId": "sidebar",
+      "sourceName": "Sidebar",
+      "feedUrl": "https://sidebar.io/feed.xml",
+      "mode": "pulse",
+      "title": "Worn into shape",
+      "excerpt": "A pebble acquires its shape through contact: with water, with grit, with other stones. The objects gathered here bring that familiarity into manufactured form.",
+      "url": "https://mouthprint.com/e/worn-into-shape",
+      "publishedAt": "2026-11-27T06:46:30.000Z",
+      "firstSeen": "2026-11-27T08:49:59.104Z",
+      "thumbnail": "https://mouthprint.com/social/e002/2eea0511698e1c1e5572.png",
+      "extractionStatus": "full",
+      "tags": [
+        "UX"
+      ],
+      "digest": {
+        "brief": "A pebble acquires its shape through contact: with water, with grit, with other stones. The objects gathered here bring that familiarity into manufactured form, from things carried in a pocket to a place to sit. New case files, exhibitions, and interviews, delivered to your inbox.",
+        "keywords": [
+          "shape"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "48044361ddd3",
+      "sourceId": "sidebar",
+      "sourceName": "Sidebar",
+      "feedUrl": "https://sidebar.io/feed.xml",
+      "mode": "pulse",
+      "title": "The year the web industry gave up",
+      "excerpt": "The one where I lament what the web industry once was. I’ve been drafting my personal “year in review” and one topic stood out as needing its own follow-up. So let’s get that out of the way! That’s sarcasm.",
+      "url": "https://dbushell.com/2026/11/25/web-industry/",
+      "publishedAt": "2026-11-27T06:45:13.000Z",
+      "firstSeen": "2026-11-27T08:48:59.104Z",
+      "thumbnail": "https://dbushell.com/images/articles/2026-11-25-web-industry.png",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry",
+        "UX"
+      ],
+      "digest": {
+        "brief": "Nevertheless, today I’m talking about/to the real web industry. TL;DR: the web industry is dismantling itself from the inside. People who have spent years, decades in some cases, building a reputation as leaders within the web industry are now destroying what they’ve built.",
+        "keywords": [
+          "web industry"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "e3b200a86269",
+      "sourceId": "sidebar",
+      "sourceName": "Sidebar",
+      "feedUrl": "https://sidebar.io/feed.xml",
+      "mode": "pulse",
+      "title": "I’m a 100x engineer now",
+      "excerpt": "Extremely enthusiastic and about 100x faster with AI. It has changed my entire workflow, and my life. (This essay won second prize (and $2,500! 🎉) in The Pragmatic Engineer ’s essay challenge ).",
+      "url": "https://veszelovszki.com/a/tpe/",
+      "publishedAt": "2026-11-27T06:44:44.000Z",
+      "firstSeen": "2026-11-27T08:47:59.104Z",
+      "thumbnail": "https://veszelovszki.com/og/a/tpe.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "AI",
+        "UX"
+      ],
+      "digest": {
+        "brief": "194 sweaty, reviewed, production-ready code lines from my own little fingers—okay, with the help of GitHub Copilot. Over the last 10 months, I also built Prvw, a simple and delightful free image viewer (135k LoC), a few libraries that support Cmdr (mtp-rs being 45k LoC and smb2 116k LoC), plus several side projects like gitstrata.",
+        "keywords": [
+          "GitHub Copilot",
+          "Cmdr",
+          "code",
+          "LoC"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "153183f34185",
+      "sourceId": "sidebar",
+      "sourceName": "Sidebar",
+      "feedUrl": "https://sidebar.io/feed.xml",
+      "mode": "pulse",
+      "title": "Design.md VS Code Extension",
+      "excerpt": "A VS Code extension that adds linting, autocomplete and a rich preview for design.md design system files. I’ve been working a lot with DESIGN.md files recently.",
+      "url": "https://christianoliff.com/blog/design-md-vs-code-extension/",
+      "publishedAt": "2026-11-27T06:43:31.000Z",
+      "firstSeen": "2026-11-27T08:46:59.104Z",
+      "thumbnail": "https://christianoliff.com/img/header/2026/header-design-md-vscode-extension.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "UX"
+      ],
+      "digest": {
+        "brief": "Broken token references, missing primary colors, low contrast, unused tokens and out-of-order sections show up in the Problems panel as you type. Front matter checks for a missing or empty name and duplicate keys, each flagged on the exact line. Rich preview with color swatches, typography samples, spacing and radius scales, component previews, the rendered prose and the lint results.",
+        "keywords": [
+          "Front matter",
+          "color swatches",
+          "Rich preview",
+          "missing"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "f8a07293d488",
+      "sourceId": "marginalian",
+      "sourceName": "The Marginalian",
+      "feedUrl": "https://feeds.feedburner.com/brainpickings/rss",
+      "mode": "deep",
+      "title": "Vladimir Nabokov on What Makes a Good Reader",
+      "excerpt": "\"A good reader, a major reader, an active and creative reader is a rereader.\" Every month, I spend hundreds of hours and thousands of dollars keeping The Marginalian going.",
+      "url": "https://www.themarginalian.org/2026/11/26/nabokov-on-what-makes-a-good-reader/",
+      "publishedAt": "2026-11-27T04:31:33.000Z",
+      "firstSeen": "2026-11-27T08:52:36.921Z",
+      "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2013/01/lecturesonliterature.jpg?w=680&ssl=1",
+      "extractionStatus": "full",
+      "tags": [
+        "Speculative"
+      ],
+      "digest": {
+        "brief": "“All attempts at gaining literary polish must begin with judicious reading,” H. Vladimir Nabokov (April 22, 1899–July 2, 1977) was a man of wonderfully opinionated insights on literature and life. The reader should prefer a story with action and dialogue to one with none.",
+        "keywords": [
+          "reader",
+          "Nabokov",
+          "reading",
+          "Vladimir"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "fe448fc34973",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "rounded volumes and sweet color palettes shape dessert-inspired lighting collection",
+      "excerpt": "what if a lamp could be as tempting as your favorite dessert? decadent studio presents chubby, a collection of table lamps inspired by the shapes, colors and textures of sweet treats.",
+      "url": "https://www.designboom.com/design/rounded-volumes-sweet-color-palettes-dessert-inspired-lighting-collection-chubby-decadent-studio/",
+      "publishedAt": "2026-11-27T03:10:04.000Z",
+      "firstSeen": "2026-11-27T08:51:59.331Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/rounded-volumes-sweet-color-palettes-dessert-lighting-collection-chubby-decadent-studio-designboom-700-500x400-22b08q85r288.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "Chubby is the first lighting collection by Decadent Studio, an independent design studio based in Galicia, Spain. Inspired by desserts such as pavlova, cherry pie and tangerine ice cream, the collection explores the relationship between food, design and desire. Decadent Studio pays special attention to every detail, from the color of the textile cable to the back of the lamp.",
+        "keywords": [
+          "lighting collection",
+          "Decadent Studio",
+          "color",
+          "lamp"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
       "id": "595d11ee7ffa",
       "sourceId": "core77",
       "sourceName": "Core77",
@@ -484,9 +696,6 @@
       "firstSeen": "2026-11-26T21:45:03.110Z",
       "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1858404_lead_400_146023_.jpg",
       "extractionStatus": "excerpt-only",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "In 1966 Carlo Nason, an Italian glassmaker and self-taught designer, created this LT316 Lamp. Designed for manufacturer Mazzega, the lamp consisted of hand-blown glass sections that stacked, with one section per lightbulb. Had 2001: A Space Odyssey come out earlier than it did (1968), you get the feeling this lamp would have appeared in it.",
         "keywords": [
@@ -496,6 +705,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -511,9 +723,6 @@
       "firstSeen": "2026-11-26T21:46:09.268Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/alchemy-interactive-free-play-installation-exhibition-space-florian-lopez-designboom-700-500x400-22b08q85r122.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Designed by Florian López, Alchemy is an interactive free-play installation for children and adults that organizes an exhibition space as an anatomical body to be traversed. The post charred wooden modules conceal six-sided mirror chamber inside interactive play installation appeared first on designboom | architecture & design magazine.",
         "keywords": [
@@ -524,6 +733,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -539,9 +751,6 @@
       "firstSeen": "2026-11-26T21:45:01.925Z",
       "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-26-at-3.34.34-PM.png?quality=90&strip=all&crop=0,0,100,100",
       "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "The bigger Netflix gets, the easier it is to miss stuff. If you haven’t seen it, Midnight Diner is probably the most comforting thing available on Netflix. What’s especially notable about the show’s return is the huge gap: season 2 of the Netflix iteration streamed in 2019, and it took seven years for it to come back.",
         "keywords": [
@@ -552,6 +761,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -567,9 +779,6 @@
       "firstSeen": "2026-11-26T21:45:09.268Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/huangguoshu-waterfall-tianxingqiao-scenic-area-china-designboom-700-500x400-22b08q85r823.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "The Huangguoshu Scenic Area in China‘s mountainous Guizhou province welcomes visitors beneath a pair of serpentine roofs designed by the China Academy of Urban Planning and Design (CAUPD) and AEPA&TSC. At the Great Waterfall visitor center, the design team takes advantage of an existing five-meter difference in elevation between the entrance and exit of the scenic area.",
         "keywords": [
@@ -580,6 +789,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -595,9 +807,6 @@
       "firstSeen": "2026-11-26T21:44:01.926Z",
       "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24483620/236554_Garmin_Forerunner_265S_AKrales_0072.jpg?quality=90&strip=all&crop=0,0,100,100",
       "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "The Forerunner 265S may not be the newest or flashiest Garmin, but it’s one that I’ve always loved most in testing. 99 (a $150 discount off its MSRP) at Amazon and Best Buy for Black Friday, I can easily recommend it. The Garmin Fenix 8 is $749 at Amazon, Best Buy, and REI, which is a 25 percent discount off its original price.",
         "keywords": [
@@ -608,6 +817,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -623,9 +835,6 @@
       "firstSeen": "2026-11-26T21:46:04.515Z",
       "thumbnail": "https://static-2026.dezeen.com/uploads/2026/03/gambosa-lamp-mathias-hahn-marset-design_dezeen_2364_sq2-411x411.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Spanish lighting brand Marset has showcased five of its products on Dezeen Showroom, including a mid-century reissue and a ceiling light that appears like a block of ice. Marset's selection includes the Gambosa table lamp, created by designer Mathias Hahn to reinterpret the classic shade, stem and base as one smooth, glossy sculpture in steel and opal polycarbonate.",
         "keywords": [
@@ -636,6 +845,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -651,10 +863,6 @@
       "firstSeen": "2026-11-26T21:45:04.516Z",
       "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/royal-scoiety-arts-royal-designers-for-industry_dezeen_2364_col_sq-1024x1024.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product",
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "The UK's Royal Society for Arts has announced five Royal Designers for Industry, who include Durrell Bishop and Bridget Baines, as well as naming an Honorary Royal Designer as it celebrates its 90th anniversary. Baines co-founded international practice Gross Max, and her fellow Gross Max founder Eelco Hooftman (pictured in main image with Baines) was given the Honorary Royal Designer award this year.",
         "keywords": [
@@ -665,6 +873,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product",
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -680,9 +892,6 @@
       "firstSeen": "2026-11-26T21:44:04.516Z",
       "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/visa-base-design-brand-identity_dezeen_2364_sq-1-1024x1024.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Design agency Base Design has created a more compact version of credit card company Visa's logo and worked with Displaay Type Foundry on a new typeface, as part of a refresh of the brand's visual identity. \"When you’re working with a brand as iconic as Visa, the challenge isn't recognition – it's relevance,\" said Base Design executive creative director Min Lew.",
         "keywords": [
@@ -690,6 +899,37 @@
           "Visa",
           "Displaay Type",
           "refresh"
+        ],
+        "by": "extract"
+      },
+      "tags": [
+        "Product"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "bda483ee1bcd",
+      "sourceId": "marginalian",
+      "sourceName": "The Marginalian",
+      "feedUrl": "https://feeds.feedburner.com/brainpickings/rss",
+      "mode": "deep",
+      "title": "The Third Thing: Poet Donald Hall on the Secret to Lasting Love",
+      "excerpt": "\"Third things are essential to marriages, objects or practices or habits or arts or institutions or games or human beings that provide a site of joint rapture or contentment.\"",
+      "url": "https://www.themarginalian.org/2026/11/26/donald-hall-the-third-thing/",
+      "publishedAt": "2026-11-26T17:33:39.000Z",
+      "firstSeen": "2026-11-27T08:51:36.921Z",
+      "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2022/07/donaldhall_without.jpg?fit=320%2C479&ssl=1",
+      "extractionStatus": "full",
+      "tags": [
+        "Speculative"
+      ],
+      "digest": {
+        "brief": "“The encounter between two differences is an event,” French philosopher Alain Badiou wrote in his tremendous treatise on why we fall and how we stay in love. Reflecting on his life with the love of his life — the poet Jane Kenyon, herself the keeper and giver of uncommonly clarifying wisdom on writing and life — Hall considers the secret to the kind of lasting love that blooms between the mundane and the magical.",
+        "keywords": [
+          "Jane Kenyon",
+          "Hall",
+          "love",
+          "secret"
         ],
         "by": "extract"
       },
@@ -708,9 +948,6 @@
       "firstSeen": "2026-11-26T21:43:01.926Z",
       "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268387_Apple_MacBook_Neo_AKrales_0543.jpg?quality=90&strip=all&crop=0,0,100,100",
       "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "If you’re looking for a new laptop or a gift for the student in your life, you can save $100 on the MacBook Neo at several retailers, in both storage sizes and all four colors. None of the retailers currently list an end date for the discount, which is the biggest price drop we’ve seen since Apple raised the laptop’s MSRP by $100 in July in response to the ongoing RAM crisis.",
         "keywords": [
@@ -720,6 +957,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -735,9 +975,6 @@
       "firstSeen": "2026-11-26T21:42:01.926Z",
       "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24007893/acastro_STK112_android_02.jpg?quality=90&strip=all&crop=0,0,100,100",
       "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "Independent Android app developers are worried about their privacy after Google announced that from next year many of them will be required to share a phone number and address publicly. If they self-declare as a trader, developers’ contact details will be shared publicly starting March 1st, including a phone number and address.",
         "keywords": [
@@ -748,6 +985,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -763,9 +1003,6 @@
       "firstSeen": "2026-11-26T21:44:09.268Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/movebon-boutique-training-studio-jotajotamas-madrid-designboom-700-500x400-22b08q85r890.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Occupying 126 sqm, Movebon is a boutique training studio in Madrid designed by JOTAJOTA+ around a clear spatial division between an open workout area and private service facilities. In the main workout space, both the floor and ceiling are coated in brown-red (RAL 3011), framing sightlines toward a newly built concrete block wall at the rear.",
         "keywords": [
@@ -776,6 +1013,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -791,9 +1031,6 @@
       "firstSeen": "2026-11-26T21:41:01.926Z",
       "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268838_BF_CM_EARLY_DEALS_Headers_CVirginia.jpg?quality=90&strip=all&crop=0,0,100,100",
       "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "The countdown to Black Friday is on, and many discounts have already arrived. Although the shopping holiday isn’t officially until tomorrow, November 27th, retailers are already dropping early deals on some of our favorite tech. Prices could drop further as Black Friday approaches, as is always the case, but these deals are worth considering if you’d rather shop early and beat the holiday rush.",
         "keywords": [
@@ -804,6 +1041,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -819,9 +1059,6 @@
       "firstSeen": "2026-11-26T21:40:01.926Z",
       "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25840497/STKP211_BRENDAN_CARR_B.jpg?quality=90&strip=all&crop=0,0,100,100",
       "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "The judge has preliminarily sided with ABC, rejecting the FCC’s efforts to dismiss the case. The preliminary injunction issued by the judge on Wednesday prohibits the FCC from taking any further action in the early review of ABC’s broadcast licenses and noted that the network had shown that the court’s intervention in the agency’s actions was in the public interest.",
         "keywords": [
@@ -832,6 +1069,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -847,9 +1087,6 @@
       "firstSeen": "2026-11-26T21:39:01.926Z",
       "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/peter-claffey-dexter-sol-ansell.jpg?quality=90&strip=all&crop=0,0,92.21171875,100",
       "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "Black Friday isn’t just a good time to save on a new TV but also a chance to spend less on what you watch on it. With everything from Disney classics and Marvel movies to FX dramas like The Bear and Shōgun, the Disney Plus and Hulu bundle offers plenty for the whole family to watch. 99 per month ($8 off) for a year via Hulu or Disney Plus, saving you $96 in total.",
         "keywords": [
@@ -860,6 +1097,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -875,9 +1115,6 @@
       "firstSeen": "2026-11-26T21:38:01.926Z",
       "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Jason_and_Lucia_01.jpg?quality=90&strip=all&crop=0,0,100,100",
       "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "Workers at Grand Theft Auto VI developer Rockstar Games won’t unionize, after the vote for a formal recognition agreement failed, with only 25 percent of votes in favor of unionization. The Independent Workers Union of Great Britain (IWGB) said that Rockstar workers in the union will continue organizing even without formal recognition.",
         "keywords": [
@@ -888,6 +1125,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -903,9 +1143,6 @@
       "firstSeen": "2026-11-26T21:37:01.926Z",
       "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/1a20dbee8d365-screenshotUrl.jpg?quality=90&strip=all&crop=0,0,100,100",
       "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "The GTA series is unmatched when it comes to re-creating the feeling of a bustling, real-world city, and GTA VI’s fictional rendition of Florida is the studio’s most lifelike setting yet. For Emma Fraser, an assistant professor at UC Berkeley who studies urban ruins and virtual cities, the sense of realism has created a unique sensation while playing.",
         "keywords": [
@@ -916,6 +1153,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -931,9 +1171,6 @@
       "firstSeen": "2026-11-26T21:36:01.926Z",
       "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/NS2_TheLegendofZeldaOcarinaofTime_scrn_15_dce060.png?quality=90&strip=all&crop=0,0,100,100",
       "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "A lot of people have The Legend of Zelda: Ocarina of Time for the Nintendo Switch 2 on their holiday wishlist. In case you haven’t bought it yet, I wanted to share some small but welcome deals happening on the physical and digital versions of the game. Ocarina of Time is one of Nintendo’s most groundbreaking titles, having served as its first 3D Zelda game when it launched in 1998.",
         "keywords": [
@@ -944,6 +1181,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -959,10 +1199,6 @@
       "firstSeen": "2026-11-26T21:46:57.110Z",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/vincentkilbride-mit-technology-review-ai-puzzles.jpg?w=840",
       "extractionStatus": "full",
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "Just one example: Plans for the Meta data center in Louisiana that David focused on have expanded, and the local utility went from three planned natural-gas plants to 10. 1 SpaceX has won approval to launch 1 million data center satellitesThe FCC says they’ll help meet AI computing demand. 2 The US Army just blew up nearly five tons of unstable explosivesThe EPA reports ‘zero’ airborne lead following the detonation.",
         "keywords": [
@@ -972,6 +1208,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -987,9 +1227,6 @@
       "firstSeen": "2026-11-26T21:43:09.268Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/nendo-river-inspired-design-france-tgv-inoui-motion-interview-designboom-700-500x400-22b08q85r843.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "This observation from Japanese design studio nendo became the starting point for the design of France’s TGV INOUI, developed in collaboration with French agency AREP. The studio was interested in all the different qualities water carries: ‘The smooth flow and depth of a river, pebbles on the riverbed, and the sense of floating and bubbles on the water’s surface informed both the exterior and interior.’",
         "keywords": [
@@ -1000,6 +1237,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -1015,9 +1255,6 @@
       "firstSeen": "2026-11-26T21:42:09.268Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/hoor-al-qasimi-curator-venice-art-biennale-2028-designboom-700-500x400-22b08q85r621.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Hoor Al Qasimi has been appointed curator of the 62nd Venice Art Biennale, taking on the role of Director of the Visual Arts Department at La Biennale di Venezia ahead of the 2028 edition. Since founding the Sharjah Art Foundation, Al Qasimi has developed an extensive program of exhibitions, commissions, and public initiatives, positioning Sharjah as an important meeting point for contemporary art.",
         "keywords": [
@@ -1028,6 +1265,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -1043,9 +1283,6 @@
       "firstSeen": "2026-11-26T21:45:09.802Z",
       "thumbnail": "https://blog.maximeheckel.com/static/og/05d28cd9a3b09d119f267f91435fc43b.png?v2",
       "extractionStatus": "full",
-      "tags": [
-        "UX"
-      ],
       "digest": {
         "brief": "A brightly lit surface contributes no lighting at all to the objects or scene around it. In our Volumetric Lighting work, we had to reconstruct a surface’s position to know when to stop marching a ray from the camera 5. A surface can receive light from many directions, so we can’t just trace a single ray and hope to get a reliable estimate of its indirect lighting.",
         "keywords": [
@@ -1056,6 +1293,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "UX"
+      ],
       "contentHtml": null
     },
     {
@@ -1071,9 +1311,6 @@
       "firstSeen": "2026-11-26T21:44:09.802Z",
       "thumbnail": null,
       "extractionStatus": "full",
-      "tags": [
-        "UX"
-      ],
       "digest": {
         "brief": "This is where we collect the experiments, tools and prototypes that come about alongside our projects at 12ft. Experiments and prototypes that come about alongside our client work, kept because we find them fun or useful. Tools we build to make our lives simpler, and hopefully yours too.",
         "keywords": [
@@ -1084,6 +1321,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "UX"
+      ],
       "contentHtml": null
     },
     {
@@ -1099,10 +1339,6 @@
       "firstSeen": "2026-11-26T21:43:09.802Z",
       "thumbnail": null,
       "extractionStatus": "full",
-      "tags": [
-        "Product",
-        "UX"
-      ],
       "digest": {
         "brief": "Later, when the industry collapsed both roles into the \"product designer,\" I still found it common to move from low to high fidelity in many of my projects. Now I am seeing a pattern on AI-native teams: they start in high fidelity prototypes. Low fidelity enables your team to move at high velocity in the stages of early definition.",
         "keywords": [
@@ -1113,6 +1349,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product",
+        "UX"
+      ],
       "contentHtml": null
     },
     {
@@ -1128,9 +1368,6 @@
       "firstSeen": "2026-11-26T21:42:09.802Z",
       "thumbnail": null,
       "extractionStatus": "full",
-      "tags": [
-        "UX"
-      ],
       "digest": {
         "brief": "The product designer was closer to the designer-engineer archetype that’s always existed in some orgs, but AI is upending this and making everyone feel some need to rebrand into some kind of engineer to stay semirelevant in these complicated times. The whole “Design as Repair” ethos was really about what I told friends: designers as the folks who get into coveralls and tackle the problem.",
         "keywords": [
@@ -1141,6 +1378,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "UX"
+      ],
       "contentHtml": null
     },
     {
@@ -1156,9 +1396,6 @@
       "firstSeen": "2026-11-26T21:41:09.802Z",
       "thumbnail": "https://tegaki.ink/tegaki-card.png",
       "extractionStatus": "full",
-      "tags": [
-        "UX"
-      ],
       "digest": {
         "brief": "Tegaki extracts each glyph's strokes, their order and width, and draws them stroke by stroke on a canvas over real, selectable text. Hebrew and Arabic right to left with positional forms, Devanagari and Bengali headlines drawn across the word, and Japanese, Korean and Chinese in reference stroke order (KanjiVG, Make Me a Hanzi).",
         "keywords": [
@@ -1169,6 +1406,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "UX"
+      ],
       "contentHtml": null
     },
     {
@@ -1184,9 +1424,6 @@
       "firstSeen": "2026-11-26T21:46:24.726Z",
       "thumbnail": "https://images.aeonmedia.co/images/54815ddf-dc20-474d-82d9-757571536dd1/lina-ghotmeh-archaeology-of-the-future-landscape-1.jpg?width=1200&quality=75&format=auto",
       "extractionStatus": "full",
-      "tags": [
-        "Speculative"
-      ],
       "digest": {
         "brief": "The Lebanese architect Lina Ghotmeh is known for works that preserve memories of the past but are built for the future. This short documentary from the London-based director Stephen Pook deconstructs Ghotmeh’s approach to architecture, revealing how her designs and thoughtful use of materials are born of a process in which history matters as much as the physical environment.",
         "keywords": [
@@ -1196,6 +1433,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Speculative"
+      ],
       "contentHtml": null
     },
     {
@@ -1211,10 +1451,6 @@
       "firstSeen": "2026-11-26T21:41:09.268Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/mara-furniture-ecosystem-office-orgatec-2026-designboom700-500x400-22b08q85r844.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product",
-        "Speculative"
-      ],
       "digest": {
         "brief": "The past decade has seen countless changes in the working landscape, and Mara’s furniture has evolved alongside them. Aligned with this increasingly fluid and flexible world, the collection Mara presents at Orgatec 2026 stands out for its versatility, flexibility, and durability. Alongside these additions, Mara presents a new interpretation of a classic: Aera Metal, which draws on the brand’s metalworking roots.",
         "keywords": [
@@ -1225,6 +1461,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product",
+        "Speculative"
+      ],
       "contentHtml": null
     },
     {
@@ -1240,9 +1480,6 @@
       "firstSeen": "2026-11-26T21:45:24.726Z",
       "thumbnail": "https://images.aeonmedia.co/images/e68a91ac-5959-4ae2-9d6b-7320076b26c7/grey-owl-feather-essay.jpg?width=1200&quality=75&format=auto",
       "extractionStatus": "full",
-      "tags": [
-        "Speculative"
-      ],
       "digest": {
         "brief": "Anthropologists who study Indigenous cultural identity use the term ethnogenesis to describe how the identities of ethnic communities are formed or understood, and how they can change over time. People ‘become’ Indian when they claim to ‘be’ Indian with no connection to a tribal community, or little to no evidence of Native ancestry.",
         "keywords": [
@@ -1253,29 +1490,9 @@
         ],
         "by": "extract"
       },
-      "contentHtml": null
-    },
-    {
-      "id": "21481b3fb89d",
-      "sourceId": "aeon",
-      "sourceName": "Aeon / Psyche",
-      "feedUrl": "https://psyche.co/feed.rss",
-      "mode": "deep",
-      "title": "There and back",
-      "excerpt": "A lost home lives on in spikes of joy and longing; it shifts in memory as life changes. But it’s never the same - by Pam Weintraub Read on Psyche.",
-      "url": "https://psyche.co/notes-to-self/im-moving-back-where-i-grew-up-i-know-it-wont-be-the-same",
-      "publishedAt": "2026-11-26T11:00:00.000Z",
-      "firstSeen": "2026-11-26T21:46:27.975Z",
-      "thumbnail": "https://images.aeonmedia.co/images/d78fd84c-6589-4089-ac48-f2f7f41cb932/pam-projects-main.jpg?top=283&left=9&cropWidth=2656&cropHeight=1494&width=1200&quality=75&format=auto",
-      "extractionStatus": "full",
       "tags": [
-        "Health"
+        "Speculative"
       ],
-      "digest": {
-        "brief": "At first, our cluster of 19 buildings in an East New York housing project had felt like a little town; we walked safely everywhere, just us kids. In our new ‘luxe digs’ in Co-op City in the Bronx, I carried the world that made me: the asphalt park called the Circle, where I raced on roller skates tightened by key; nights on concrete barrels, transistor radios straining with Stevie Wonder and the early Stones.",
-        "keywords": [],
-        "by": "extract"
-      },
       "contentHtml": null
     },
     {
@@ -1291,9 +1508,6 @@
       "firstSeen": "2026-11-26T21:45:27.976Z",
       "thumbnail": "https://images.aeonmedia.co/images/68ada2f7-60e3-4dde-8222-99fab8ecc80a/sz-rp-p-1896-a-19368-1049.jpg?top=130&left=0&cropWidth=2480&cropHeight=1395&width=1200&quality=75&format=auto",
       "extractionStatus": "full",
-      "tags": [
-        "Health"
-      ],
       "digest": {
         "brief": "One dark night in 1683, a 19-year-old girl from the small town of Saint-Paul-Trois-Châteaux, not far from Grenoble in southeastern France, approached the fire in the hearth of her family home. This was a time of high religious tension in France, and Blanche Gamond’s Protestant family had been forced to host soldiers in their house whose goal it was to intimidate them into converting to Catholicism.",
         "keywords": [
@@ -1304,6 +1518,32 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Health"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "21481b3fb89d",
+      "sourceId": "aeon",
+      "sourceName": "Aeon / Psyche",
+      "feedUrl": "https://psyche.co/feed.rss",
+      "mode": "deep",
+      "title": "There and back",
+      "excerpt": "A lost home lives on in spikes of joy and longing; it shifts in memory as life changes. But it’s never the same - by Pam Weintraub Read on Psyche.",
+      "url": "https://psyche.co/notes-to-self/im-moving-back-where-i-grew-up-i-know-it-wont-be-the-same",
+      "publishedAt": "2026-11-26T11:00:00.000Z",
+      "firstSeen": "2026-11-26T21:46:27.975Z",
+      "thumbnail": "https://images.aeonmedia.co/images/d78fd84c-6589-4089-ac48-f2f7f41cb932/pam-projects-main.jpg?top=283&left=9&cropWidth=2656&cropHeight=1494&width=1200&quality=75&format=auto",
+      "extractionStatus": "full",
+      "digest": {
+        "brief": "At first, our cluster of 19 buildings in an East New York housing project had felt like a little town; we walked safely everywhere, just us kids. In our new ‘luxe digs’ in Co-op City in the Bronx, I carried the world that made me: the asphalt park called the Circle, where I raced on roller skates tightened by key; nights on concrete barrels, transistor radios straining with Stevie Wonder and the early Stones.",
+        "keywords": [],
+        "by": "extract"
+      },
+      "tags": [
+        "Health"
+      ],
       "contentHtml": null
     },
     {
@@ -1319,9 +1559,6 @@
       "firstSeen": "2026-11-26T21:43:04.516Z",
       "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/climate-change-global-warming-sq_dezeen_2364_col_0-1024x1024.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "In the face of planetary collapse, design education and practice need to change to show young designers that it's possible for them to make a difference, writes Céline Semaan. During class, we discussed the political, ecological and economic infrastructures that make design possible: mineral extraction, exploited labour and the colonial systems sustaining much of what we produce and consume.",
         "keywords": [
@@ -1332,6 +1569,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -1347,10 +1587,6 @@
       "firstSeen": "2026-11-26T21:45:57.110Z",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/261124_ProsetheticHand_Embed1.jpg?w=840",
       "extractionStatus": "full",
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "Helping others, not himself: Davidson won't keep the device forever and isn't compensated. Davidson, who is taking part in a clinical trial run by the University of Utah, is the ninth person to have this experimental device implanted in his arm. Since 2013, the team had been running a trial of a system that could connect with the nerves of a residual limb, allowing an amputee to control a bionic one.",
         "keywords": [
@@ -1361,6 +1597,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -1376,10 +1616,6 @@
       "firstSeen": "2026-11-26T21:40:09.268Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/indx-global-room-for-utopias-06-designboom-700-500x400-22b08q85r482.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Speculative",
-        "Product"
-      ],
       "digest": {
         "brief": "Because one person’s utopia rarely matches another’s, architecture only succeeds at a civic scale when it stops being a solitary monument and becomes a collective negotiation. Closing the Room for Utopias podcast series produced in collaboration with INDX|GLOBAL during Paris Design Week 2026, the final episode explores how personal design visions transform into shared urban realities.",
         "keywords": [
@@ -1390,6 +1626,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Speculative",
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -1405,9 +1645,6 @@
       "firstSeen": "2026-11-26T21:42:04.516Z",
       "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/lucy-mcrae-blade-runner-2099_dezeen_1704_col_sq.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Los Angeles-based artist Lucy McRae has created tactile, custom-made designs for sci-fi mini-series Blade Runner 2099 that veer away from the traditionally cold and metallic aesthetic of the films. The post Lucy McRae creates replicant birth bags for Blade Runner 2099 show where \"violence and femininity coexist\" appeared first on Dezeen.",
         "keywords": [
@@ -1418,6 +1655,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -1433,9 +1673,6 @@
       "firstSeen": "2026-11-26T21:39:09.268Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/sound-fungi-material-experimentation-thomas-feriero-music-project-challenging-conditions-hidden-mountain-alea-work-interview-designboom-700-500x400-22b08q85r112.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "In collaboration with Paris-based material design studio Aléa Work and designer Oscar Morgan, these sonic experiments extend into the physical world through a series of objects grown from mycelium. ‘For Condition 01 we wanted the music and the mycelium to actually share a space, so we rented a room in Paris where the piece played continuously while the mycelium grew,’ Feriero tells designboom.",
         "keywords": [
@@ -1446,6 +1683,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -1545,9 +1785,6 @@
       "firstSeen": "2026-11-26T21:38:09.268Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/shared-ground-hospitality-masterplan-aristides-dallas-architects-cyclades-designboom-700-1-500x400-22b08q85r387.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Sited on a sloping hillside on a Greek island in the Cyclades, angled away from the sea, Shared Ground is a hospitality masterplan by Aristides Dallas Architects organized around topography and sightlines. Drawing on the spatial logic of traditional Cycladic villages rather than imitating vernacular forms, the design studio groups residences into small neighborhood clusters.",
         "keywords": [
@@ -1558,6 +1795,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -1585,35 +1825,6 @@
       },
       "tags": [
         "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "e482a9f2f187",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "developed with travelers aged 75+, moove on reimagines luggage as discreet mobility aid",
-      "excerpt": "combining luggage storage, walking support and an integrated resting perch, moove on by lorenzo rimini challenges the conventional aesthetics of assistive products.",
-      "url": "https://www.designboom.com/design/older-travelers-moove-on-luggage-discreet-mobility-aid-lorenzo-rimini/",
-      "publishedAt": "2026-11-26T03:10:28.000Z",
-      "firstSeen": "2026-11-26T08:40:32.848Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/lorenzo-rimini-moove-on-rolling-suitcase-mobility-aid-designboom-700-1-500x400-22b08q85r579.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Designed by Lorenzo Rimini, Moove On reconfigures the conventional rolling suitcase into a multi-functional mobility aid for older travelers. Developed by designer Lorenzo Rimini over an eight-month period, the project progressed through 45 iterative prototypes examining alternative form factors, handle geometries, structural reinforcements, and functional configurations.",
-        "keywords": [
-          "mobility aid",
-          "Lorenzo Rimini",
-          "Moove",
-          "Developed"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product",
-        "HMI / Mobility"
       ],
       "contentHtml": null
     },
@@ -1938,73 +2149,6 @@
       "thumbnail": null,
       "extractionStatus": null,
       "tags": [
-        "UX"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "05bf2cc9a557",
-      "sourceId": "sidebar",
-      "sourceName": "Sidebar",
-      "feedUrl": "https://sidebar.io/feed.xml",
-      "mode": "pulse",
-      "title": "The attack of the giant AI design slop monster",
-      "excerpt": "In 2026, AI has transformed UX design in unpredictable and scary ways.",
-      "url": "https://uxdesign.cc/the-attack-of-the-giant-ai-design-slop-monster-a-survivors-guide-55f5918f78f4",
-      "publishedAt": "2026-11-25T09:07:42.000Z",
-      "firstSeen": "2026-11-25T10:28:00.126Z",
-      "thumbnail": null,
-      "extractionStatus": null,
-      "tags": [
-        "AI",
-        "UX"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "b6aa556ad17b",
-      "sourceId": "sidebar",
-      "sourceName": "Sidebar",
-      "feedUrl": "https://sidebar.io/feed.xml",
-      "mode": "pulse",
-      "title": "Generative Loaders",
-      "excerpt": "Animated React loaders for text, inline, and image generation states.",
-      "url": "https://generativeloaders.com/",
-      "publishedAt": "2026-11-25T09:06:57.000Z",
-      "firstSeen": "2026-11-25T10:27:00.126Z",
-      "thumbnail": "https://generativeloaders.com/generative-loaders-social-v2.png",
-      "extractionStatus": "no-digest",
-      "tags": [
-        "AI",
-        "UX"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "5634497bee7b",
-      "sourceId": "sidebar",
-      "sourceName": "Sidebar",
-      "feedUrl": "https://sidebar.io/feed.xml",
-      "mode": "pulse",
-      "title": "The Slopnami is an accessibility problem",
-      "excerpt": "Automation that saves the sender time usually spends someone else’s. Disabled people have the least margin to absorb it. As part of my series on AI, automation, and inclusive design, I want to acknowledge that many people, including disabled folks, are required or need to use AI in their work.",
-      "url": "https://www.soren.work/writing/the-slopnami-is-an-accessibility-problem/",
-      "publishedAt": "2026-11-25T09:06:25.000Z",
-      "firstSeen": "2026-11-25T10:26:00.127Z",
-      "thumbnail": "https://storage.ghost.io/c/62/6e/626e965b-3b3c-484d-9872-fb6d95152863/content/images/size/w1200/2026/11/Slopnami.png",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Disabled people have the least margin to absorb that cost, whether we pay it in screen reader listening time, energy, cognitive load, or the chance to reach a human who can actually help. When discussing disability and accessibility, the intersections and complexity are both the challenge in the space and also what generates energy for problem-solvers.",
-        "keywords": [
-          "screen reader",
-          "cognitive load",
-          "accessibility",
-          "Disabled"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "AI",
         "UX"
       ],
       "contentHtml": null
@@ -2533,71 +2677,6 @@
       "tags": [
         "AI",
         "Tech Industry"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "8ccad72aab2d",
-      "sourceId": "dezeen",
-      "sourceName": "Dezeen",
-      "feedUrl": "https://www.dezeen.com/design/feed/",
-      "mode": "inspiration",
-      "title": "Biscuit-tin lids, horse brasses and scrap metal form sculptural V&A Christmas tree by Burberry",
-      "excerpt": "Fashion brand Burberry's chief creative officer Daniel Lee worked with artist Ann Carrington to create a Christmas tree sculpture for the Victoria & Albert Museum, made from \"memories, traditions and little treasures.\"",
-      "url": "https://www.dezeen.com/2026/11/24/va-christmas-tree-burberry/",
-      "publishedAt": "2026-11-24T10:45:00.000Z",
-      "firstSeen": "2026-11-24T13:11:43.006Z",
-      "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/burberry-va-christmas-tree-2026_dezeen_2364_col_sq-1024x1024.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Fashion brand Burberry's chief creative officer Daniel Lee worked with artist Ann Carrington to create a Christmas tree sculpture for the Victoria & Albert Museum, made from \"memories, traditions and little treasures.\" The tree, which was made as part of Burberry's 170th anniversary celebrations, also features ribbons and bows made of scrap metal.",
-        "keywords": [
-          "Christmas tree",
-          "scrap metal",
-          "Burberry",
-          "little treasures"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "0ab1b1cded24",
-      "sourceId": "sidebar",
-      "sourceName": "Sidebar",
-      "feedUrl": "https://sidebar.io/feed.xml",
-      "mode": "pulse",
-      "title": "Are we actually building better things?",
-      "excerpt": "The most successful product may not be the one that solves the best problem, but the one with the most compelling narrative about solving a problem.",
-      "url": "https://medium.com/design-bootcamp/are-we-actually-building-better-things-the-great-software-bazaar-c2494d208934",
-      "publishedAt": "2026-11-24T07:17:26.000Z",
-      "firstSeen": "2026-11-24T13:30:09.907Z",
-      "thumbnail": null,
-      "extractionStatus": null,
-      "tags": [
-        "Product",
-        "UX"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "7b3705049ecc",
-      "sourceId": "sidebar",
-      "sourceName": "Sidebar",
-      "feedUrl": "https://sidebar.io/feed.xml",
-      "mode": "pulse",
-      "title": "Chimera",
-      "excerpt": "A physically modelled voice synthesizer. Every sound comes from a simulated airway.",
-      "url": "https://www.chimera.audio/",
-      "publishedAt": "2026-11-24T07:15:54.000Z",
-      "firstSeen": "2026-11-24T13:29:09.907Z",
-      "thumbnail": null,
-      "extractionStatus": "failed",
-      "tags": [
-        "UX"
       ],
       "contentHtml": null
     },
@@ -3260,34 +3339,6 @@
       "contentHtml": null
     },
     {
-      "id": "b3db22387bd8",
-      "sourceId": "marginalian",
-      "sourceName": "The Marginalian",
-      "feedUrl": "https://feeds.feedburner.com/brainpickings/rss",
-      "mode": "deep",
-      "title": "Legendary Cellist Pablo Casals, at Age 93, on Creative Vitality and How Working with Love Prolongs Your Life",
-      "excerpt": "\"The man who works and is never bored is never old. Work and interest in worthwhile things are the best remedy for age.\" Every month, I spend hundreds of hours and thousands of dollars keeping The Marginalian going.",
-      "url": "https://www.themarginalian.org/2026/11/19/pablo-casals-work-age/",
-      "publishedAt": "2026-11-19T19:07:03.000Z",
-      "firstSeen": "2026-11-24T13:05:52.430Z",
-      "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2014/11/pablocasals_joysandsorrows.jpg?w=680&ssl=1",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Long before there was Yo-Yo Ma, there was Spanish Catalan cellist and conductor Pablo Casals (December 29, 1876–October 22, 1973), regarded by many — including Yo-Yo Ma — as the greatest cellist of all time. Kahn that would eventually become the 1970 autobiography-of-sorts Joys and Sorrows (public library) — one of the most magnificent perspectives of the creative life ever committed to words.",
-        "keywords": [
-          "Casals",
-          "life",
-          "cellist",
-          "creative"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "700b59cd9a8f",
       "sourceId": "noema",
       "sourceName": "Noema",
@@ -3307,34 +3358,6 @@
           "salmon",
           "already",
           "fishmeal"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Speculative"
-      ],
-      "contentHtml": null
-    },
-    {
-      "id": "7ab37f990d57",
-      "sourceId": "marginalian",
-      "sourceName": "The Marginalian",
-      "feedUrl": "https://feeds.feedburner.com/brainpickings/rss",
-      "mode": "deep",
-      "title": "The Art of Conversation: Timeless Do’s and Don’ts from 1866",
-      "excerpt": "\"In disputes upon moral or scientific points, ever let your aim be to come at truth, not to conquer your opponent. So you never shall be at a loss in losing the argument, and gaining a new discovery.\"",
-      "url": "https://www.themarginalian.org/2026/11/19/the-art-of-conversation-martine-etiquette-1866/",
-      "publishedAt": "2026-11-19T12:53:30.000Z",
-      "firstSeen": "2026-11-24T13:04:52.430Z",
-      "thumbnail": "https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2013/04/martineetiquette.jpg?w=680&ssl=1",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "Manners today are often seen as a quaint subject that belongs in Lord Chesterfield’s outlandish advice on the art of pleasing or Esquire‘s dated guide to dating. Never give short or sharp answers in ordinary conversation, unless you aspire to gain distinction by mere rudeness; for they have in fact no merit, and are only uncivil.",
-        "keywords": [
-          "conversation",
-          "Never",
-          "Manners",
-          "unless"
         ],
         "by": "extract"
       },
