@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T21:31:32.743Z",
+  "updated": "2026-11-28T08:10:45.479Z",
   "modes": [
     {
       "id": "pulse",
@@ -472,6 +472,314 @@
   "public": true,
   "items": [
     {
+      "id": "557b1ca7fbec",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The M5 MacBook Air just got its biggest discount since Apple raised the price",
+      "excerpt": "If you’ve been holding off on buying a new MacBook Air since Apple raised prices by $200 in June, you’re in luck. The 13-inch M5 MacBook Air is on sale at Amazon and Best Buy with 16GB of RAM and 512GB of storage starting at $999 ($300 off) for Black Friday, which is the lowest […].",
+      "url": "https://www.theverge.com/gadgets/1044771/m5-macbook-air-black-friday-2026-deal-sale",
+      "publishedAt": "2026-11-28T03:30:00.000Z",
+      "firstSeen": "2026-11-28T08:08:27.899Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268408_Apple_MacBook_Air_15_M5_laptop_ADiBenedetto_0010.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "If you’ve been holding off on buying a new MacBook Air since Apple raised prices by $200 in June, you’re in luck. The 13-inch M5 MacBook Air is on sale at Amazon and Best Buy with 16GB of RAM and 512GB of storage starting at $999 ($300 off) for Black Friday, which is the lowest price we’ve seen since the hike.",
+        "keywords": [
+          "MacBook Air",
+          "Apple",
+          "RAM",
+          "raised"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "7c1769739d07",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The absolute best Black Friday deals you can still get",
+      "excerpt": "Black Friday is nearly over, but many of this year’s best deals are still available. You can still find some of the lowest prices we’ve seen in-store and online for video games, wireless earbuds, TVs, robot vacuums, and so much more.",
+      "url": "https://www.theverge.com/gadgets/1039190/best-black-friday-2026-deals-tech-gadgets-gift-ideas",
+      "publishedAt": "2026-11-28T03:28:32.000Z",
+      "firstSeen": "2026-11-27T21:29:13.861Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268838_BF_CM_BLACK_FRIDAY_Headers_CVirginia.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "digest": {
+        "brief": "This year’s Black Friday deals have launched in waves over the past several weeks, but now the floodgates have officially opened. As usual, we sorted through thousands of deals to find the ones truly worth sharing, with an eye for the products and services we’ve tested here at The Verge. With prices up across multiple categories due to RAMageddon, some deals may not seem as big as in prior years.",
+        "keywords": [
+          "deals",
+          "several",
+          "Black",
+          "Friday"
+        ],
+        "by": "extract"
+      },
+      "tags": [
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "6b0ef3f83195",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "We found 60-odd Black Friday deals we love for $100 or less",
+      "excerpt": "Between holiday travel, gifts, and the rising cost of just about everything, expenses can quickly add up during this time of year.",
+      "url": "https://www.theverge.com/gadgets/1043445/black-friday-best-cheap-tech-deals-under-100-2026",
+      "publishedAt": "2026-11-28T01:30:00.000Z",
+      "firstSeen": "2026-11-28T08:06:27.901Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24662269/DSCF0790_Enhanced_NR_2.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Between holiday travel, gifts, and the rising cost of just about everything, expenses can quickly add up during this time of year. Thankfully, you don’t have to dip too far into your savings to take advantage of some of the better Black Friday deals we’ve seen.",
+        "keywords": [
+          "deals",
+          "Black",
+          "Friday"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "f7299fca6240",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "This purple electric Chinese minivan can go up to 559 miles on a charge",
+      "excerpt": "Electric minivans could be the ultimate in utility, with room for passengers, gear, and huge batteries. While VW's ID Buzz only gave us 200 miles of real-world driving on a charge in 2023, China's BYD has just announced a flagship purple peoplemover that can go an estimated 559 miles (900 km) on electricity.",
+      "url": "https://www.theverge.com/transportation/1044706/this-purple-electric-chinese-minivan-can-go-up-to-559-miles-on-a-charge",
+      "publishedAt": "2026-11-28T00:02:49.000Z",
+      "firstSeen": "2026-11-28T08:05:27.901Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/img_20261127171000_s224i5s0.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "HMI / Mobility",
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Electric minivans could be the ultimate in utility, with room for passengers, gear, and huge batteries. While VW’s ID Buzz only gave us 200 miles of real-world driving on a charge in 2023, China’s BYD has just announced a flagship purple peoplemover that can go an estimated 559 miles (900 km) on electricity.",
+        "keywords": [
+          "miles",
+          "charge",
+          "Electric",
+          "purple"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "badc48b15acb",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The best Black Friday deals you can still get on AirPods, Macs, and other Apple gear",
+      "excerpt": "Black Friday is entering the evening, which means one of the best times of the year to save some cash on a new pair of AirPods or the latest Apple Watch is coming to a close.",
+      "url": "https://www.theverge.com/gadgets/1043935/best-black-friday-apple-deals-2026",
+      "publishedAt": "2026-11-27T23:53:19.000Z",
+      "firstSeen": "2026-11-27T21:21:13.863Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268836_MacBook_Pro_touchscreen_OLED_handson_ADiBenedetto_0048.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "digest": {
+        "brief": "Black Friday is one of the best times of the year to save some cash on a new pair of AirPods or the latest Apple Watch. Apple’s last-gen earbuds lack active noise cancellation, but they still deliver good, relatively bass-rich sound, even if they don’t quite match the newer AirPods 5. The 14-inch M6-powered MacBook Pro is on sale starting at $1,749 ($250 off) at Amazon and Best Buy, which is a new low price.",
+        "keywords": [
+          "Apple Watch",
+          "MacBook Pro",
+          "noise cancellation",
+          "low price"
+        ],
+        "by": "extract"
+      },
+      "tags": [
+        "Tech Industry"
+      ],
+      "contentHtml": null
+    },
+    {
+      "id": "f86289b36212",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The best robot vacuums we’ve tested are up to 60 percent off for Black Friday",
+      "excerpt": "Black Friday is here, and if you want a little help keeping your floors clean this holiday season, now is a great time to pick up a robot vacuum.",
+      "url": "https://www.theverge.com/gadgets/1044487/best-black-friday-robot-vacuum-mop-deals-2026",
+      "publishedAt": "2026-11-27T23:32:17.000Z",
+      "firstSeen": "2026-11-28T08:03:27.902Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/8A0A6240.jpeg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Black Friday is here, and if you want a little help keeping your floors clean this holiday season, now is a great time to pick up a robot vacuum. Some of the best models we’ve tested over the last year or two are on sale for up to 60 percent off, whether you’re after a basic robovac for quick cleanups or a more advanced model that vacuums, mops, and practically takes care of itself.",
+        "keywords": [
+          "vacuums",
+          "robot",
+          "tested",
+          "percent"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "9fdfb6028ef4",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Sony’s 1000XM4C headphones are a Black Friday bargain at $198",
+      "excerpt": "Instead of purely looking forward with its headphone designs, Sony went back to its popular WH-1000XM4 design and made some improvements to make it even better.",
+      "url": "https://www.theverge.com/gadgets/1043976/sony-wh1000xm4c-noise-canceling-headphones-black-friday-2026-deal-sale",
+      "publishedAt": "2026-11-27T23:32:00.000Z",
+      "firstSeen": "2026-11-28T08:02:27.902Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268823_Sony_XM4C_JHiggins_0006.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "The 2026 version, called the WH-1000XM4C, sounds nearly as good as the pricier XM6 model (currently $348), but is down to $198 during Black Friday at Amazon, Best Buy, and Walmart. Now, with the XM4C, there are further improvements, most notably a 10-band equalizer in the app (compared to the original XM4’s five-band) that my colleague John Higgins says really helped the headphones’ midrange frequencies open up.",
+        "keywords": [
+          "Black Friday",
+          "headphones",
+          "XM4C",
+          "Buy"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "59992b622cec",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Yooka-Laylee’s free upgrade is skipping Xbox",
+      "excerpt": "Playtronic Games is getting ready to launch Yooka-Laylee and the Impossible Lair: Definitive Edition as a free update on PlayStation 5, Switch 2, and PC on December 15th.",
+      "url": "https://www.theverge.com/games/1044715/yooka-laylees-free-upgrade-is-skipping-xbox",
+      "publishedAt": "2026-11-27T23:30:32.000Z",
+      "firstSeen": "2026-11-28T08:01:27.902Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/V1-scaled-1.png?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry",
+        "Product"
+      ],
+      "digest": {
+        "brief": "Unfortunately for Xbox owners, the developer says it “can’t commit to any additional platforms for the foreseeable future.” Others, like John Linneman of Digital Foundry, have countered that Yooka-Laylee and the Impossible Lair: Definitive Edition is ultimately a minor update and pointed out that the Xbox Series X version was already available in native 4K, unlike the PS4 and Switch versions.",
+        "keywords": [
+          "Definitive Edition",
+          "Impossible Lair",
+          "Xbox",
+          "Yooka-Laylee"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "78335544791d",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "Many of our favorite Blu-ray movies are over 50 percent off for Black Friday",
+      "excerpt": "No shade to those who love their subscription services, but viewing physical movies is a time-honored tradition that shouldn’t go away.",
+      "url": "https://www.theverge.com/gadgets/1040471/4k-bluray-movie-film-black-friday-deal-sale",
+      "publishedAt": "2026-11-27T23:30:00.000Z",
+      "firstSeen": "2026-11-28T08:00:27.902Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/9349173/BR-TRL-059_2040.0.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "No shade to those who love their subscription services, but viewing physical movies is a time-honored tradition that shouldn’t go away. While standard Blu-ray players that display movies at up to 1080p are fairly inexpensive, 4K Blu-ray counterparts that can show movies in all their 4K HDR glory are significantly pricier (but totally worth it if you’re a movie buff).",
+        "keywords": [
+          "movies",
+          "Blu-ray",
+          "movie"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "ec4a209e1285",
+      "sourceId": "designboom",
+      "sourceName": "designboom",
+      "feedUrl": "https://www.designboom.com/feed/",
+      "mode": "inspiration",
+      "title": "jean couvreur transforms iconic train emergency hammers into bookends, wall hooks, and candlesticks",
+      "excerpt": "to celebrate the 45th anniversary of the TGV, designer jean couvreur composes new objects using iconic parts salvaged from the train.",
+      "url": "https://www.designboom.com/design/jean-couvreur-iconic-tgv-train-emergency-hammers-bookends-wall-hooks-candlesticks/",
+      "publishedAt": "2026-11-27T22:35:33.000Z",
+      "firstSeen": "2026-11-28T08:09:35.875Z",
+      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/tgv-re-use-jean-couvreur-objects-train-parts-designboom-700-500x400-22b08q85r918.jpg",
+      "extractionStatus": "full",
+      "tags": [
+        "Product"
+      ],
+      "digest": {
+        "brief": "To celebrate the 45th anniversary of the TGV, SNCF invited designer Jean Couvreur to create new objects from salvaged train parts. By leveraging its formal and functional features, Jean Couvreur conceived three distinct creations: bookends that utilize the tool’s weight, a wall hook incorporating its rounded edges, and a candlestick crafted from its handle.",
+        "keywords": [
+          "Jean Couvreur",
+          "train",
+          "bookends",
+          "wall"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
+      "id": "214aefd03e6a",
+      "sourceId": "verge",
+      "sourceName": "The Verge",
+      "feedUrl": "https://www.theverge.com/rss/index.xml",
+      "mode": "pulse",
+      "title": "The new iPad Mini is getting its first major discount for Black Friday",
+      "excerpt": "We were big fans of Apple’s new iPad Mini when we reviewed it in early November, but its steep starting price of $699 was hard to swallow. Thankfully, the small tablet is already getting a sizable discount for Black Friday.",
+      "url": "https://www.theverge.com/gadgets/1042705/ipad-mini-black-friday-deal-sale-2026",
+      "publishedAt": "2026-11-27T22:30:00.000Z",
+      "firstSeen": "2026-11-28T07:59:27.902Z",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268850_iPad_Mini_2026_DPierce_0010.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "extractionStatus": "full",
+      "tags": [
+        "Tech Industry"
+      ],
+      "digest": {
+        "brief": "Thankfully, the small tablet is already getting a sizable discount for Black Friday. Right now, Amazon and Walmart are both selling the 2026 iPad Mini with Wi-Fi and 128GB of storage starting at $599 ($100 off), its lowest price to date. The last-gen iPad Mini, which runs on Apple’s A17 Pro chip, is available for under $500 if you’d rather save another $100 and can live without the OLED screen and water resistance.",
+        "keywords": [
+          "iPad Mini",
+          "Black Friday",
+          "Pro chip",
+          "water resistance"
+        ],
+        "by": "extract"
+      },
+      "contentHtml": null
+    },
+    {
       "id": "bd2f03afc4ed",
       "sourceId": "core77",
       "sourceName": "Core77",
@@ -502,9 +810,6 @@
       "firstSeen": "2026-11-27T21:28:15.034Z",
       "thumbnail": "https://s3files.core77.com/blog/images/lead_n_spotlight/1858326_lead_400_146018_.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Smartwatches are a convenient way to display small pieces of information. \"Smartwatch screens are too small for the touch interactions people use every day on phones and laptops,\" says Chenhan Xu, an Assistant Professor of Computer Science at North Carolina State University, \"such as two-finger scrolling, pinch-to-zoom, or pressing harder to trigger a different command.\"",
         "keywords": [
@@ -512,116 +817,9 @@
         ],
         "by": "extract"
       },
-      "contentHtml": null
-    },
-    {
-      "id": "7c1769739d07",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The absolute best Black Friday deals we’ve found (so far)",
-      "excerpt": "This year’s Black Friday deals have launched in waves over the past several weeks, but now the floodgates have officially opened. Posts from this topic will be added to your daily email digest and your homepage feed.",
-      "url": "https://www.theverge.com/gadgets/1039190/best-black-friday-2026-deals-tech-gadgets-gift-ideas",
-      "publishedAt": "2026-11-27T21:09:43.000Z",
-      "firstSeen": "2026-11-27T21:29:13.861Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268838_BF_CM_BLACK_FRIDAY_Headers_CVirginia.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
       "tags": [
-        "Tech Industry"
+        "Product"
       ],
-      "digest": {
-        "brief": "This year’s Black Friday deals have launched in waves over the past several weeks, but now the floodgates have officially opened. As usual, we sorted through thousands of deals to find the ones truly worth sharing, with an eye for the products and services we’ve tested here at The Verge. With prices up across multiple categories due to RAMageddon, some deals may not seem as big as in prior years.",
-        "keywords": [
-          "deals",
-          "several",
-          "Black",
-          "Friday"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "17214fd653db",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "My favorite MPC beat maker is ready for your vibe-coded firmware and effects",
-      "excerpt": "Akai is continuing to open up its various music-making platforms with the MPC Sample 1. Posts from this topic will be added to your daily email digest and your homepage feed.",
-      "url": "https://www.theverge.com/gadgets/1044485/mpc-sample-firmware-sdk",
-      "publishedAt": "2026-11-27T20:48:04.000Z",
-      "firstSeen": "2026-11-27T21:28:13.862Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268415_MPC_Sample_TO_Brien_0006.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "My favorite (and the most affordable) of the MPC samplers has become a popular home for vibe-coded custom firmwares and mods. The latest update adds several new developer features, including support for the new SDK and custom Knob Effects plugins. Plugins added to the appropriate folder on your microSD card are now automatically recognized and will appear at the bottom of the list in the Knob Effects menu.",
-        "keywords": [
-          "Knob Effects",
-          "custom firmwares",
-          "microSD card",
-          "MPC"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "79cb4c669107",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Nothing’s ANC-equipped earbuds are on sale for less than $20 for Black Friday",
-      "excerpt": "If our sub-$30 Black Friday roundup has you hungry for more great gadgets at low prices, you can currently grab the Nothing CMF Buds 2A in black starting at $17.",
-      "url": "https://www.theverge.com/gadgets/1041717/nothing-cmf-buds-2a-earbuds-black-friday-2026-deal-sale",
-      "publishedAt": "2026-11-27T20:30:00.000Z",
-      "firstSeen": "2026-11-27T21:27:13.862Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/CMF-Buds-2a-in-Dark-Grey.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "If our sub-$30 Black Friday roundup has you hungry for more great gadgets at low prices, you can currently grab the Nothing CMF Buds 2A in black starting at $17. 89 on Amazon for Black Friday, which is about $11 less than the MSRP and the lowest price we’ve seen. The wireless earbuds are discounted in all three colors; however, the light gray and orange sets are slightly more expensive at $19.",
-        "keywords": [
-          "Black Friday",
-          "earbuds",
-          "Buds",
-          "Nothing"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "6499d82ed9e6",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Apple’s latest AirTags have dropped to just $18 a pop for Black Friday",
-      "excerpt": "If you’re tired of constantly scrounging around for your lost belongings, Apple’s second-gen AirTags are on sale for an all-time low of $18 at Amazon, Walmart, and Best Buy.",
-      "url": "https://www.theverge.com/gadgets/1042841/apple-airtag-2-black-friday-deal-2026-sale",
-      "publishedAt": "2026-11-27T20:30:00.000Z",
-      "firstSeen": "2026-11-27T21:26:13.863Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/268280_AirTags_2_AKrales_0003.webp?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "If you’re tired of constantly scrounging around for your lost belongings, Apple’s second-gen AirTags are on sale for an all-time low of $18 at Amazon, Walmart, and Best Buy. The handy location trackers have a list price of $29 each, but have been consistently available for around $24 since Amazon Prime Day in late June.",
-        "keywords": [
-          "AirTags",
-          "Apple"
-        ],
-        "by": "extract"
-      },
       "contentHtml": null
     },
     {
@@ -637,10 +835,6 @@
       "firstSeen": "2026-11-27T21:30:24.584Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/84-key-foldable-piano-PLIAVO-designboom-700-500x400-22b08q85r772.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Tech Industry",
-        "Product"
-      ],
       "digest": {
         "brief": "Denver-based Pliavo introduces its Fold-and-Go Piano, a portable digital instrument whose 84 keys collapse into a compact bundle small enough to carry inside a backpack. While many compact electronic pianos take the form of flexible silicone mats, here the musician plays across a continuous arrangement of rigid keys with three millimeters of vertical travel.",
         "keywords": [
@@ -651,117 +845,10 @@
         ],
         "by": "extract"
       },
-      "contentHtml": null
-    },
-    {
-      "id": "30f525a2f5e2",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "You might lose your Oura health data if you’re still using an old Android phone",
-      "excerpt": "Oura will be dropping support for Android 11 on December 8th, 2026, and users may not have access to all of their data if they don't upgrade to Android 12 or higher before the deadline.",
-      "url": "https://www.theverge.com/gadgets/1044314/oura-ring-health-data-android-11",
-      "publishedAt": "2026-11-27T19:44:19.000Z",
-      "firstSeen": "2026-11-27T21:25:13.863Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/268600_oura_ring_5_AKrales_0176.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Health",
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "Oura will be dropping support for Android 11 on December 8th, 2026, and users may not have access to all of their data if they don’t upgrade to Android 12 or higher before the deadline. If you are using an Android device, be sure to update to Android 12 or higher to ensure no loss of data or features. Please note that if you do upgrade your smartphone system later, your historical Oura data will not carry over.",
-        "keywords": [
-          "historical Oura",
-          "Android",
-          "data",
-          "support"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "34515dc04fe5",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The best Black Friday deals on smart home gear",
-      "excerpt": "I’ve spent my post-turkey haze powering through reams of deals on smart home gadgets to find the best discounts on some of my favorite products.",
-      "url": "https://www.theverge.com/gadgets/1043912/best-smart-home-deals-black-friday",
-      "publishedAt": "2026-11-27T19:30:00.000Z",
-      "firstSeen": "2026-11-27T21:24:13.863Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/257805_Govee_Table_Lamp_2_Pro_JTuohy_0005.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
       "tags": [
         "Tech Industry",
         "Product"
       ],
-      "digest": {
-        "brief": "Smart home is often one of the best categories to shop around Black Friday, as it’s traditionally when robot vacuums, video doorbells, smart locks, and thermostats see their lowest prices of the year. Roborock’s flagship Saros 20 is under $1,000 for the first time, and Ecobee’s excellent Smart Thermostat Premium has finally dropped under $200 (for Costco members and today only).",
-        "keywords": [
-          "Smart home",
-          "Black",
-          "Friday"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "5648d4b4387f",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Anker’s 100W universal travel charger is down to $60, its lowest price yet",
-      "excerpt": "During Black Friday, the Anker 100W Universal Charger is on sale for $59.99 at Amazon, Best Buy, and Walmart, a $20 discount from its list price.",
-      "url": "https://www.theverge.com/gadgets/1041006/anker-100w-universal-travel-charger-black-friday-deal-sale",
-      "publishedAt": "2026-11-27T18:30:00.000Z",
-      "firstSeen": "2026-11-27T21:23:13.863Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/anker-nano-100w-universal-travel-adapter.png?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "During Black Friday, the Anker 100W Universal Charger is on sale for $59. With four USB ports and support for over 200 countries, you can keep all of your devices charged wherever you end up. Anker’s travel charger supports outlets in over 200 countries, including Type A for the United States, Canada, Japan, and China; Type C for the European Union; and Type G for the UK and Singapore.",
-        "keywords": [
-          "Anker",
-          "Charger",
-          "Type",
-          "ports"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "637be427288c",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "Here are the best Black Friday deals you can grab for $30 or less",
-      "excerpt": "What can you get for $30 these days? When it comes to tech, you might be surprised. Even as gadgets get more expensive, $30 can still go a long way, especially on Black Friday.",
-      "url": "https://www.theverge.com/gadgets/1039645/black-friday-best-cheap-tech-deals-under-30-2026",
-      "publishedAt": "2026-11-27T17:30:00.000Z",
-      "firstSeen": "2026-11-27T21:22:13.863Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/268280_AirTags_2_AKrales_0003.webp?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "Even as gadgets get more expensive, $30 can still go a long way, especially on Black Friday. For just $8, for instance, TP-Link’s Tapo smart plug will let you control the Christmas tree lights from your phone. Below, we’ve rounded up the best Black Friday deals for $30 or less, from charging accessories and smart home tech to earbuds, streaming subscriptions, games, and more.",
-        "keywords": [
-          "Black Friday",
-          "deals"
-        ],
-        "by": "extract"
-      },
       "contentHtml": null
     },
     {
@@ -777,10 +864,6 @@
       "firstSeen": "2026-11-27T21:29:24.584Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/lavvu-xl-re-buro-armenia-modular-mobile-home-unit-designboom-700-500x400-22b08q85r439.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "HMI / Mobility",
-        "Product"
-      ],
       "digest": {
         "brief": "Developed and manufactured in Armenia by Re:Büro, LAVVU XL is a transportable modular dwelling that applies automotive manufacturing principles to residential architecture. At the core of the module is a welded steel frame paired with lightweight internal framing, mineral wool insulation, and an aluminum composite exterior shell.",
         "keywords": [
@@ -791,6 +874,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "HMI / Mobility",
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -806,10 +893,6 @@
       "firstSeen": "2026-11-27T21:30:18.118Z",
       "thumbnail": "https://media.nngroup.com/media/articles/opengraph_images/Usability_Testing_101.png",
       "extractionStatus": "full",
-      "tags": [
-        "Product",
-        "UX"
-      ],
       "digest": {
         "brief": "Summary: Usability testing involves watching people use a design to uncover problems and opportunities. Usability testing is a research method in which researchers observe people attempting a realistic task with one or more user interfaces, to identify usability problems and opportunities for improvement.",
         "keywords": [
@@ -820,62 +903,10 @@
         ],
         "by": "extract"
       },
-      "contentHtml": null
-    },
-    {
-      "id": "badc48b15acb",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "The best Black Friday deals on AirPods, MacBooks, and other Apple gear",
-      "excerpt": "Black Friday is one of the best times of the year to save some cash on a new pair of AirPods or the latest Apple Watch. After all, the holiday savings can help offset the unfortunate price hikes from earlier this year, when Apple raised the cost of some of its most popular gear.",
-      "url": "https://www.theverge.com/gadgets/1043935/best-black-friday-apple-deals-2026",
-      "publishedAt": "2026-11-27T16:30:37.000Z",
-      "firstSeen": "2026-11-27T21:21:13.863Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268836_MacBook_Pro_touchscreen_OLED_handson_ADiBenedetto_0048.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
       "tags": [
-        "Tech Industry"
+        "Product",
+        "UX"
       ],
-      "digest": {
-        "brief": "Black Friday is one of the best times of the year to save some cash on a new pair of AirPods or the latest Apple Watch. Apple’s last-gen earbuds lack active noise cancellation, but they still deliver good, relatively bass-rich sound, even if they don’t quite match the newer AirPods 5. The 14-inch M6-powered MacBook Pro is on sale starting at $1,749 ($250 off) at Amazon and Best Buy, which is a new low price.",
-        "keywords": [
-          "Apple Watch",
-          "MacBook Pro",
-          "noise cancellation",
-          "low price"
-        ],
-        "by": "extract"
-      },
-      "contentHtml": null
-    },
-    {
-      "id": "1ca6e8834054",
-      "sourceId": "verge",
-      "sourceName": "The Verge",
-      "feedUrl": "https://www.theverge.com/rss/index.xml",
-      "mode": "pulse",
-      "title": "You can grab a 12-pack of Zepath’s rechargeable AA batteries for just $24",
-      "excerpt": "If you’re picking up any gifts that require AA batteries, it’s not a bad idea to buy a set you can keep using long after the holidays.",
-      "url": "https://www.theverge.com/gadgets/1043272/zepath-rechargeable-aa-batteries-black-friday-2026-deal-sale",
-      "publishedAt": "2026-11-27T15:30:00.000Z",
-      "firstSeen": "2026-11-27T21:20:13.863Z",
-      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/usb-aa-sean-hollister-verge-331A1632.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "extractionStatus": "full",
-      "tags": [
-        "Tech Industry"
-      ],
-      "digest": {
-        "brief": "If you’re picking up any gifts that require AA batteries, it’s not a bad idea to buy a set you can keep using long after the holidays. Thankfully, you can currently get a 12-pack of Zepath’s rechargeable 3,000mWh AAs on Amazon with a charger for $23. My colleague Sean Hollister tested Zepath’s higher-capacity 3,600mWh batteries against competing lithium-ion AAs in April, and he picked them as his top choice.",
-        "keywords": [
-          "batteries",
-          "Zepath",
-          "pack",
-          "rechargeable"
-        ],
-        "by": "extract"
-      },
       "contentHtml": null
     },
     {
@@ -891,10 +922,6 @@
       "firstSeen": "2026-11-27T21:31:11.697Z",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/02/MITcarscams.jpg?w=840",
       "extractionStatus": "full",
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "Every year, MIT Technology Review honors 35 of the world’s brightest young scientists, entrepreneurs, and inventors in our Innovators Under 35 list. MIT Technology Review identified more than a dozen cases involving high-end vehicles, obtained court records, and spoke to law enforcement, brokers, drivers, and victims in multiple states to reveal how transport fraud is wreaking havoc across the country.",
         "keywords": [
@@ -905,6 +932,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -920,9 +951,6 @@
       "firstSeen": "2026-11-27T21:28:24.585Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/midcentury-kinetic-environments-states-motion-designboom-700-500x400-22b08q85r760.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Throughout the 1950s and 1960s, an international network of artists began to explore the possibilities of kinetic art at the scale of architecture. Over the following decade, some of the most ambitious projects in kinetic art would take the form of environments that visitors could physically enter. Schöffer also developed an animated light wall for the neighboring building.",
         "keywords": [
@@ -933,6 +961,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -948,9 +979,6 @@
       "firstSeen": "2026-11-27T21:30:19.327Z",
       "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/kiki-goti-interview-20x20-kelly-wearstler_dezeen_2364_sq_126-1024x1024.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Next up in Dezeen's 20x20 project in partnership with Kohler, which marks 20 years of Dezeen, is Greek designer Kiki Goti, who was nominated by Kelly Wearstler for her innovative approach to ornament and artisanship. Goti was nominated as an emerging talent to watch by American designer Wearstler, who praised how Goti “approaches ornament with the precision of an engineer and the instincts of a sculptor”.",
         "keywords": [
@@ -961,6 +989,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -976,9 +1007,6 @@
       "firstSeen": "2026-11-27T21:30:42.104Z",
       "thumbnail": "https://images.aeonmedia.co/images/beeadc0e-c11c-4e22-b94b-ba83dcc4ef86/liminal-landscape-1.jpg?top=0&left=0&cropWidth=2560&cropHeight=1440&width=1200&quality=75&format=auto",
       "extractionStatus": "full",
-      "tags": [
-        "Health"
-      ],
       "digest": {
         "brief": "At the Protez Foundation in Oakdale, Minnesota, such patients are fitted with state-of-the-art prosthetics free of charge and are taught how to use their new limbs. For the film, the director Brennan Vance profiled a group of Ukrainian soldiers who, injured on the front lines, came to Minnesota to recover far from the brutal war that had defined their lives for years.",
         "keywords": [
@@ -987,6 +1015,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Health"
+      ],
       "contentHtml": null
     },
     {
@@ -1002,9 +1033,6 @@
       "firstSeen": "2026-11-27T21:27:24.585Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/artscience-museum-singapore-more-than-human-exhibition-designboom700-500x400-22b08q85r712.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "From November 28, 2026, to May 16, 2027, visitors can experience More than Human: Making With the Living World at ArtScience Museum. Building on the original London presentation, the Singapore edition has been significantly expanded and co-curated by ArtScience Museum and the Design Museum, London, with support from the DesignSingapore Council.",
         "keywords": [
@@ -1015,6 +1043,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -1030,9 +1061,6 @@
       "firstSeen": "2026-11-27T21:30:39.903Z",
       "thumbnail": "https://images.aeonmedia.co/images/c26f206d-2e06-4e5b-8156-0d964a42cffc/essay-main-gettyimages-2247445825.jpg?width=1200&quality=75&format=auto",
       "extractionStatus": "full",
-      "tags": [
-        "Speculative"
-      ],
       "digest": {
         "brief": "Making sense of the mind is, in part, a matter of modelling, and philosophers and scientists have created an astonishing number of models. Recently, the philosophers Mazviita Chirimuuta, Corey Maley and Rosa Cao have each argued that information-processing in brains depends on signal amplitudes, metabolic molecules and energy supply.",
         "keywords": [
@@ -1043,6 +1071,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Speculative"
+      ],
       "contentHtml": null
     },
     {
@@ -1058,9 +1089,6 @@
       "firstSeen": "2026-11-27T21:29:42.104Z",
       "thumbnail": "https://images.aeonmedia.co/images/4db55ad1-c87d-492b-a65f-c1949765db16/main-img_20261017_0025.jpg?top=130&left=0&cropWidth=2464&cropHeight=1386&width=1200&quality=75&format=auto",
       "extractionStatus": "full",
-      "tags": [
-        "Health"
-      ],
       "digest": {
         "brief": "After playing in their yard until sunset, my cousins and I would gather on their bed, where Teta would turn down Umm Kulthum on the television to tell us the story of the Elderly Woman and her Cow while slicing apples. Eyes half-open, I put on my school uniform and ran down the stairs to my grandparents’ house, the scent of Arabic coffee rising from the stove.",
         "keywords": [
@@ -1071,6 +1099,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Health"
+      ],
       "contentHtml": null
     },
     {
@@ -1086,11 +1117,6 @@
       "firstSeen": "2026-11-27T21:30:11.697Z",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/IU35-2027-SA.jpg?resize=1200,600",
       "extractionStatus": "full",
-      "tags": [
-        "Speculative",
-        "AI",
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "Every year, the editors at MIT Technology Review select 35 of the world’s top young scientists, entrepreneurs, and inventors to honor as our newest class of Innovators Under 35. After the deadline, our editors will review all nominees and select a group of semifinalists, whom we’ll invite to complete a formal application.",
         "keywords": [
@@ -1098,6 +1124,11 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Speculative",
+        "AI",
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -1113,9 +1144,6 @@
       "firstSeen": "2026-11-27T21:29:19.327Z",
       "thumbnail": "https://static-2026.dezeen.com/uploads/2026/11/dezeen-weekly-27-november_dezeen_2364_col_1-1024x1024.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "Product"
-      ],
       "digest": {
         "brief": "Listen to the latest episode of Dezeen Weekly now. In this week's episode, Jennifer Hahn and Nat Barker dive into the debate surrounding one of 21st-century architecture's major movements: buildings festooned with trees. The post The debate over putting trees on buildings appeared first on Dezeen.",
         "keywords": [
@@ -1126,6 +1154,9 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -1141,10 +1172,6 @@
       "firstSeen": "2026-11-27T21:29:11.697Z",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/11/Avi-and-Leanne.jpeg?resize=1200,600",
       "extractionStatus": "full",
-      "tags": [
-        "AI",
-        "Tech Industry"
-      ],
       "digest": {
         "brief": "Unlike standard prosthetics, this one connects directly to nerves in Avi’s arm. What struck me the most over our conversations was Avi’s outlook and approach to not just his injuries and learning to use this cutting-edge technology, but to life itself. By taking part in this trial, he’s had to fit hundreds of hours of lab-based training and physical therapy around his demanding job.",
         "keywords": [
@@ -1155,6 +1182,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "AI",
+        "Tech Industry"
+      ],
       "contentHtml": null
     },
     {
@@ -1170,10 +1201,6 @@
       "firstSeen": "2026-11-27T21:26:24.585Z",
       "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/1960s-grand-touring-car-design-acte-deux-renovation-paris-apartment-designboom-700-500x400-22b08q85r121.jpg",
       "extractionStatus": "full",
-      "tags": [
-        "HMI / Mobility",
-        "Product"
-      ],
       "digest": {
         "brief": "Acte Deux, founded by Johanna Lapray and Hugo L’ahélec, renovates a 65-square-meter apartment in the Paris’s 18th arrondissement, drawing on the streamlined forms and richly appointed interiors of 1960s grand touring cars. Paris-based design studio Acte Deux reorganizes the living spaces into a continuous horizontal sequence.",
         "keywords": [
@@ -1184,6 +1211,10 @@
         ],
         "by": "extract"
       },
+      "tags": [
+        "HMI / Mobility",
+        "Product"
+      ],
       "contentHtml": null
     },
     {
@@ -1651,34 +1682,6 @@
       "contentHtml": null
     },
     {
-      "id": "85ecb9e6be31",
-      "sourceId": "designboom",
-      "sourceName": "designboom",
-      "feedUrl": "https://www.designboom.com/feed/",
-      "mode": "inspiration",
-      "title": "nendo on bringing the river-inspired design of france’s TGV INOUI into motion",
-      "excerpt": "seven years of development turned an idea about the movement of water into a detailed design language, from the train’s exterior patterns to its passenger spaces and everyday fittings.",
-      "url": "https://www.designboom.com/design/nendo-river-inspired-design-france-tgv-inoui-motion-interview/",
-      "publishedAt": "2026-11-26T11:50:24.000Z",
-      "firstSeen": "2026-11-26T21:43:09.268Z",
-      "thumbnail": "https://www.designboom.com/wp-content/uploads/2026/11/nendo-river-inspired-design-france-tgv-inoui-motion-interview-designboom-700-500x400-22b08q85r843.jpg",
-      "extractionStatus": "full",
-      "digest": {
-        "brief": "This observation from Japanese design studio nendo became the starting point for the design of France’s TGV INOUI, developed in collaboration with French agency AREP. The studio was interested in all the different qualities water carries: ‘The smooth flow and depth of a river, pebbles on the riverbed, and the sense of floating and bubbles on the water’s surface informed both the exterior and interior.’",
-        "keywords": [
-          "TGV INOUI",
-          "nendo",
-          "France",
-          "river"
-        ],
-        "by": "extract"
-      },
-      "tags": [
-        "Product"
-      ],
-      "contentHtml": null
-    },
-    {
       "id": "8b2d94ad8c02",
       "sourceId": "sidebar",
       "sourceName": "Sidebar",
@@ -1774,7 +1777,7 @@
       "url": "https://blog.ronbronson.com/forward-deployed-design-as-plumbing",
       "publishedAt": "2026-11-26T11:11:10.000Z",
       "firstSeen": "2026-11-26T21:42:09.802Z",
-      "thumbnail": "https://masthead.ronbronson.com/assets/og.png",
+      "thumbnail": "https://masthead.ronbronson.com/blog/forward-deployed-design-as-plumbing/og.png",
       "extractionStatus": "full",
       "digest": {
         "brief": "The product designer was closer to the designer-engineer archetype that’s always existed in some orgs, but AI is upending this and making everyone feel some need to rebrand into some kind of engineer to stay semirelevant in these complicated times. The whole “Design as Repair” ethos was really about what I told friends: designers as the folks who get into coveralls and tackle the problem.",
